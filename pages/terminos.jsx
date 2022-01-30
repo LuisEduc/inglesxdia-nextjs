@@ -10,7 +10,7 @@ export default function privacidad({ bloques, cats }) {
                 <title>Términos y condiciones | inglesxdia</title>
             </Head>
             <main className="bg-politicas">
-                <h2 class="mt-3">Términos y Condiciones de Uso</h2>
+                <h2 className="mt-3">Términos y Condiciones de Uso</h2>
                 <p><strong>INFORMACIÓN RELEVANTE</strong></p>
                 <p>Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que
                     lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El

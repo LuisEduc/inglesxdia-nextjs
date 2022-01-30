@@ -10,7 +10,7 @@ export default function privacidad({ bloques, cats }) {
                 <title>Políticas de privacidad | inglesxdia</title>
             </Head>
             <main className="bg-politicas">
-                <h2 class="mt-3">Política de Privacidad</h2>
+                <h2 className="mt-3">Política de Privacidad</h2>
                 <p>Esta política de privacidad explica nuestra práctica a la hora de recopilar, tratar y
                     divulgar nuestros datos. En ella se recoge el procedimiento mediante el cual gestionamos la
                     información de carácter personal que el servicio inglesxdia.tech y/o su app, en

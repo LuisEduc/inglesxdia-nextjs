@@ -10,7 +10,7 @@ export default function privacidad({ bloques, cats }) {
                 <title>Aviso de Cookies | inglesxdia</title>
             </Head>
             <main className="bg-politicas">
-                <h1 class="mt-3">Aviso de Cookies</h1>
+                <h1 className="mt-3">Aviso de Cookies</h1>
                 <h3>¿Qué son las cookies?</h3>
                 <p>Una cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las
                     cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los
@@ -58,18 +58,18 @@ export default function privacidad({ bloques, cats }) {
                 <p>A continuación puede acceder a la configuración de los navegadores webs más frecuentes para aceptar,
                     instalar o desactivar las cookies:</p>
 
-                <p><a class="text-info font-weight-bold" href="https://support.google.com/chrome/answer/95647?hl=es"
+                <p><a className="text-info font-weight-bold" href="https://support.google.com/chrome/answer/95647?hl=es"
                     target="_blank" rel="noopener">Configurar cookies en Google Chrome</a></p>
 
-                <p><a class="text-info font-weight-bold"
+                <p><a className="text-info font-weight-bold"
                     href="http://windows.microsoft.com/es-es/windows7/how-to-manage-cookies-in-internet-explorer-9"
                     target="_blank" rel="noopener">Configurar cookies en Microsoft Internet Explorer</a></p>
 
-                <p><a class="text-info font-weight-bold"
+                <p><a className="text-info font-weight-bold"
                     href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias?redirectlocale=es&amp;redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we"
                     target="_blank" rel="noopener">Configurar cookies en Mozilla Firefox</a></p>
 
-                <p><a class="text-info font-weight-bold" href="https://support.apple.com/es-es/HT201265" target="_blank"
+                <p><a className="text-info font-weight-bold" href="https://support.apple.com/es-es/HT201265" target="_blank"
                     rel="noopener">Configurar cookies en Safari (Apple)</a></p>
 
 
