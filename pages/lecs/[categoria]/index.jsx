@@ -71,7 +71,14 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     try {
-        const resCat = await fetch(`http://143.198.55.203/api/categoria/${params.categoria}`)
+        const resCat = await fetch(`http://143.198.55.203/api/categoria/${params.categoria}`,
+        {
+            method: "GET",
+            headers: {
+                "User-Agent":"*",
+                Accept: "application/json; charset=UTF-8",
+            },
+        })
         const dataCat = await resCat.json()
         return {
             props: {

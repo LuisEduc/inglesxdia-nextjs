@@ -60,6 +60,7 @@ export default function index({ data }) {
                         <div className="img-bloque-tip mx-auto">
                             <Image
                                 src="/img/dedicacion.svg"
+                                alt="Dedicación en inglés"
                                 width="100%"
                                 height="100%"
                                 layout="responsive"
@@ -80,6 +81,7 @@ export default function index({ data }) {
                         <div className="img-bloque-tip mx-auto">
                             <Image
                                 src="/img/sesion.svg"
+                                alt="Constancia en inglés"
                                 width="100%"
                                 height="100%"
                                 layout="responsive"
@@ -101,6 +103,7 @@ export default function index({ data }) {
                         <div className="img-bloque-tip mx-auto">
                             <Image
                                 src="/img/brain.svg"
+                                alt="Imaginación en inglés"
                                 width="100%"
                                 height="100%"
                                 layout="responsive"
@@ -124,6 +127,7 @@ export default function index({ data }) {
                         <div className="img-bloque-tip mx-auto">
                             <Image
                                 src="/img/asociacion.svg"
+                                alt="Asociación en inglés"
                                 width="100%"
                                 height="100%"
                                 layout="responsive"

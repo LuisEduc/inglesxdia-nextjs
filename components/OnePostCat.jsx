@@ -33,6 +33,7 @@ export default function OnePostCat({ slug, slug_cat, titulo, imagen, audio }) {
                             <div className="one-post-cat-mid">
                                 <Image
                                     src={`http://143.198.55.203/imagen/${imagen}`}
+                                    alt={`${titulo}`}
                                     width="85%"
                                     height="100%"
                                     layout="responsive"

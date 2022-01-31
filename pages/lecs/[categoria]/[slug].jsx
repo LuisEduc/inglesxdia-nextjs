@@ -87,6 +87,7 @@ export default function Individual({ dataLec, dataCat }) {
                                 <div key={id} className="carousel-lec" >
                                     <Image
                                         src={`http://143.198.55.203/imagen/${imagen}`}
+                                        alt={`${leccion[0].titulo_seo}`}
                                         width="85%"
                                         height="100%"
                                         layout="responsive"
@@ -167,9 +168,25 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     try {
-        const resLec = await fetch(`http://143.198.55.203/api/lecciones/${params.categoria}/${params.slug}`)
+        const resLec = await fetch(`http://143.198.55.203/api/lecciones/${params.categoria}/${params.slug}`
+            ,
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            })
         const dataLec = await resLec.json()
-        const resCat = await fetch(`http://143.198.55.203/api/categoria/${params.categoria}`)
+        const resCat = await fetch(`http://143.198.55.203/api/categoria/${params.categoria}`,
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            }
+        )
         const dataCat = await resCat.json()
         return {
             props: {

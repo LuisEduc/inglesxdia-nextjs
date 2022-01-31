@@ -93,11 +93,32 @@ export default function index({ bloques, cats, buscar }) {
 
 export async function getStaticProps() {
     try {
-        const resBloques = await fetch('http://143.198.55.203/api/inicio')
+        const resBloques = await fetch('http://143.198.55.203/api/inicio',
+        {
+            method: "GET",
+            headers: {
+                "User-Agent":"*",
+                Accept: "application/json; charset=UTF-8",
+            },
+        })
         const bloques = await resBloques.json()
-        const resCats = await fetch('http://143.198.55.203/api/categorias')
+        const resCats = await fetch('http://143.198.55.203/api/categorias',
+        {
+            method: "GET",
+            headers: {
+                "User-Agent":"*",
+                Accept: "application/json; charset=UTF-8",
+            },
+        })
         const cats = await resCats.json()
-        const resBuscar = await fetch(`http://143.198.55.203/api/buscar`)
+        const resBuscar = await fetch(`http://143.198.55.203/api/buscar`,
+        {
+            method: "GET",
+            headers: {
+                "User-Agent":"*",
+                Accept: "application/json; charset=UTF-8",
+            },
+        })
         const buscar = await resBuscar.json()
         return {
             props: {
