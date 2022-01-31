@@ -33,9 +33,9 @@ export default function index({ data }) {
                         <h1 className="font-weight-bold text-light info-text-titulo">Aprender palabras en inglés cada día<span className="text-primary">.</span></h1>
                     </div>
                     <div>
-                        <a type="button" href="https://www.facebook.com/inglesxdia/" target="_blank" className="btn btn-outline-blue btn-redes">Visítanos
+                        <a type="button" onClick={()=> window.open("https://www.facebook.com/inglesxdia/", "_blank")} className="btn btn-outline-blue btn-redes">Visítanos
                             en Facebook<i className="ms-2 fab fa-facebook-square"></i></a>
-                        <a type="button" href="https://www.youtube.com/channel/UC17wrAHkky26woClR91Pr1A" target="_blank" className="btn btn-outline-red btn-redes">Visítanos
+                        <a type="button" onClick={()=> window.open("https://www.youtube.com/channel/UC17wrAHkky26woClR91Pr1A", "_blank")} className="btn btn-outline-red btn-redes">Visítanos
                             en Youtube<i className="ms-2 fab fa-youtube"></i></a>
                     </div>
                 </div>

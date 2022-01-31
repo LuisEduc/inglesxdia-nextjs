@@ -58,19 +58,19 @@ export default function privacidad({ bloques, cats }) {
                 <p>A continuación puede acceder a la configuración de los navegadores webs más frecuentes para aceptar,
                     instalar o desactivar las cookies:</p>
 
-                <p><a className="text-info font-weight-bold" href="https://support.google.com/chrome/answer/95647?hl=es"
-                    target="_blank" rel="noopener">Configurar cookies en Google Chrome</a></p>
+                <p><a className="text-info font-weight-bold" onClick={()=> window.open("https://support.google.com/chrome/answer/95647?hl=es", "_blank")}  
+                    >Configurar cookies en Google Chrome</a></p>
 
                 <p><a className="text-info font-weight-bold"
-                    href="http://windows.microsoft.com/es-es/windows7/how-to-manage-cookies-in-internet-explorer-9"
-                    target="_blank" rel="noopener">Configurar cookies en Microsoft Internet Explorer</a></p>
+                    onClick={()=> window.open("http://windows.microsoft.com/es-es/windows7/how-to-manage-cookies-in-internet-explorer-9", "_blank")}
+                    >Configurar cookies en Microsoft Internet Explorer</a></p>
 
                 <p><a className="text-info font-weight-bold"
-                    href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias?redirectlocale=es&amp;redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we"
-                    target="_blank" rel="noopener">Configurar cookies en Mozilla Firefox</a></p>
+                    onClick={()=> window.open("https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias?redirectlocale=es&amp;redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we", "_blank")} 
+                    >Configurar cookies en Mozilla Firefox</a></p>
 
-                <p><a className="text-info font-weight-bold" href="https://support.apple.com/es-es/HT201265" target="_blank"
-                    rel="noopener">Configurar cookies en Safari (Apple)</a></p>
+                <p><a className="text-info font-weight-bold" onClick={()=> window.open("https://support.apple.com/es-es/HT201265", "_blank")} 
+                    >Configurar cookies en Safari (Apple)</a></p>
 
 
                 <h3>Cookies de terceros.</h3>

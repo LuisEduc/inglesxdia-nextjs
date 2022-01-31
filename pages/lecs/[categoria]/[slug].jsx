@@ -27,7 +27,7 @@ const settings = {
     swipeScrollTolerance: 40,
 };
 
-export default function individual({ dataLec, dataCat }) {
+export default function Individual({ dataLec, dataCat }) {
 
 
     const { leccion, preguntas, imagenes } = dataLec;
@@ -110,7 +110,7 @@ export default function individual({ dataLec, dataCat }) {
                     <i className={`fas fa-graduation-cap`}></i>
                     <h2>Cuestionario</h2>
                 </div>
-                
+
                 <Cuestionario
                     questions={preguntas}
                     nextQ={nextQ}
