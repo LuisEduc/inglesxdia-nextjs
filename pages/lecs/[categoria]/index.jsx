@@ -53,7 +53,14 @@ export default function post({ dataCat }) {
 
 export async function getStaticPaths() {
     try {
-        const res = await fetch('http://143.198.55.203/api/categorias')
+        const res = await fetch('http://143.198.55.203/api/categorias',
+        {
+            method: "GET",
+            headers: {
+                "User-Agent": "*",
+                Accept: "application/json; charset=UTF-8",
+            },
+        })
         const data = await res.json()
         const paths = data.categorias.map(({ slug }) => ({
             params: {
