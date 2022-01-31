@@ -149,7 +149,14 @@ export default function Individual({ dataLec, dataCat }) {
 
 export async function getStaticPaths() {
     try {
-        const res = await fetch('http://143.198.55.203/api/lecciones')
+        const res = await fetch('http://143.198.55.203/api/lecciones',
+        {
+            method: "GET",
+            headers: {
+                "User-Agent": "*",
+                Accept: "application/json; charset=UTF-8",
+            },
+        })
         const data = await res.json()
         const paths = data.map(({ slug_cat, slug }) => ({
             params: {
