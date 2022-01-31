@@ -1,14 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["143.198.55.203"],
+    domains: ["admin.inglesxdia.com"],
   },
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: '/privacidad',
-  //       destination: '/privacidad.html',
-  //     },
-  //   ]
-  // },
 }

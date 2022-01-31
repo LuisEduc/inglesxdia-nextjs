@@ -12,7 +12,7 @@ export default function OnePostCat({ slug, slug_cat, titulo, imagen, audio }) {
     let refAudio = useRef()
 
     const Play = (music) => {
-            refAudio.current.audio.current.src = `http://143.198.55.203/api/audio/${music}`
+            refAudio.current.audio.current.src = `https://admin.inglesxdia.com/api/audio/${music}`
             refAudio.current.audio.current.play();
     }
 
@@ -32,7 +32,7 @@ export default function OnePostCat({ slug, slug_cat, titulo, imagen, audio }) {
                         <a className="bg-one-post-cat-mid ">
                             <div className="one-post-cat-mid">
                                 <Image
-                                    src={`http://143.198.55.203/imagen/${imagen}`}
+                                    src={`https://admin.inglesxdia.com/imagen/${imagen}`}
                                     alt={`${titulo}`}
                                     width="85%"
                                     height="100%"

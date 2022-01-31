@@ -93,7 +93,7 @@ export default function index({ bloques, cats, buscar }) {
 
 export async function getStaticProps() {
     try {
-        const resBloques = await fetch('http://143.198.55.203/api/inicio',
+        const resBloques = await fetch('https://admin.inglesxdia.com/api/inicio',
         {
             method: "GET",
             headers: {
@@ -102,7 +102,7 @@ export async function getStaticProps() {
             },
         })
         const bloques = await resBloques.json()
-        const resCats = await fetch('http://143.198.55.203/api/categorias',
+        const resCats = await fetch('https://admin.inglesxdia.com/api/categorias',
         {
             method: "GET",
             headers: {
@@ -111,7 +111,7 @@ export async function getStaticProps() {
             },
         })
         const cats = await resCats.json()
-        const resBuscar = await fetch(`http://143.198.55.203/api/buscar`,
+        const resBuscar = await fetch(`https://admin.inglesxdia.com/api/buscar`,
         {
             method: "GET",
             headers: {
@@ -125,7 +125,8 @@ export async function getStaticProps() {
                 bloques,
                 cats,
                 buscar,
-            }
+            },
+            revalidate: 10, // In seconds
         }
     } catch (error) {
         console.log(error)

@@ -11,7 +11,7 @@ export default function BloqueInicio({ children, titulo, imagen, slug_cat, slug 
                         <a>
                             <div className="img-bloque-inicio">
                                 <Image
-                                    src={`http://143.198.55.203/imagen/${imagen}`}
+                                    src={`https://admin.inglesxdia.com/imagen/${imagen}`}
                                     alt={titulo}
                                     layout="fill"
                                     objectFit="cover"

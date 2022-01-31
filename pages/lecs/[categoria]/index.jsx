@@ -1,6 +1,5 @@
 
 import Layout from "../../../components/Layout"
-import Link from 'next/link'
 import BotonMain from "../../../components/BotonMain"
 import InfoCat from "../../../components/InfoCat"
 import OnePostCat from "../../../components/OnePostCat"
@@ -53,7 +52,7 @@ export default function post({ dataCat }) {
 
 export async function getStaticPaths() {
     try {
-        const res = await fetch('http://143.198.55.203/api/categorias',
+        const res = await fetch('https://admin.inglesxdia.com/api/categorias',
         {
             method: "GET",
             headers: {
@@ -69,7 +68,7 @@ export async function getStaticPaths() {
         }))
         return {
             paths,
-            fallback: false,
+            fallback: blocking,
         }
     } catch (error) {
         console.log(error)
@@ -78,7 +77,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     try {
-        const resCat = await fetch(`http://143.198.55.203/api/categoria/${params.categoria}`,
+        const resCat = await fetch(`https://admin.inglesxdia.com/api/categoria/${params.categoria}`,
         {
             method: "GET",
             headers: {
@@ -90,7 +89,8 @@ export async function getStaticProps({ params }) {
         return {
             props: {
                 dataCat,
-            }
+            },
+            revalidate: 10, // In seconds
         }
     } catch (error) {
         console.log(error)

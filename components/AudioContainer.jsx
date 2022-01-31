@@ -11,7 +11,7 @@ export default function AudioContainer({ titulo, audio }) {
                 </div>
                 <div >
                     <AudioPlayer
-                        src={`http://143.198.55.203/api/audio/${audio}`}
+                        src={`https://admin.inglesxdia.com/api/audio/${audio}`}
                         customAdditionalControls={[]}
                         customVolumeControls={[]}
                         autoPlay={false}

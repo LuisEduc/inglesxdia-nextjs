@@ -5,7 +5,7 @@ export default function ImgPost({ imagen }) {
         <>
             <div className="img-post">
                 <Image
-                    src={`http://143.198.55.203/imagen/${imagen}`}
+                    src={`https://admin.inglesxdia.com/imagen/${imagen}`}
                     width="85%"
                     height="100%"
                     layout="responsive"

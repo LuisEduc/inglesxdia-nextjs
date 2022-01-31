@@ -1,7 +1,7 @@
 import Layout from "../components/Layout"
 import Head from "next/head"
 
-export default function privacidad({ bloques, cats }) {
+export default function privacidad() {
 
     return (
         <Layout>

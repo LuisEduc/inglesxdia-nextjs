@@ -1,8 +1,6 @@
 
 import Layout from "../../../components/Layout"
-import Link from 'next/link'
 import BotonMain from "../../../components/BotonMain"
-import ImgPost from "../../../components/ImgPost"
 import TituloBloque from "../../../components/TituloBloque"
 import AudioContainer from "../../../components/AudioContainer"
 import BloqueInicio from "../../../components/BloqueInicio"
@@ -13,7 +11,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-h5-audio-player/lib/styles.css";
 import Image from "next/image"
 import { useRouter } from 'next/router'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 const settings = {
     showIndicators: false,
@@ -28,6 +26,8 @@ const settings = {
 };
 
 export default function Individual({ dataLec, dataCat }) {
+
+    console.log(dataCat)
 
 
     const { leccion, preguntas, imagenes } = dataLec;
@@ -86,7 +86,7 @@ export default function Individual({ dataLec, dataCat }) {
                             imagenes.map(({ imagen }, id) => (
                                 <div key={id} className="carousel-lec" >
                                     <Image
-                                        src={`http://143.198.55.203/imagen/${imagen}`}
+                                        src={`https://admin.inglesxdia.com/imagen/${imagen}`}
                                         alt={`${leccion[0].titulo_seo}`}
                                         width="85%"
                                         height="100%"
@@ -149,7 +149,7 @@ export default function Individual({ dataLec, dataCat }) {
 
 export async function getStaticPaths() {
     try {
-        const res = await fetch('http://143.198.55.203/api/lecciones',
+        const res = await fetch('https://admin.inglesxdia.com/api/lecciones',
         {
             method: "GET",
             headers: {
@@ -166,7 +166,7 @@ export async function getStaticPaths() {
         }))
         return {
             paths,
-            fallback: false,
+            fallback: blocking,
         }
     } catch (error) {
         console.log(error)
@@ -175,7 +175,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     try {
-        const resLec = await fetch(`http://143.198.55.203/api/lecciones/${params.categoria}/${params.slug}`
+        const resLec = await fetch(`https://admin.inglesxdia.com/api/lecciones/${params.categoria}/${params.slug}`
             ,
             {
                 method: "GET",
@@ -185,7 +185,7 @@ export async function getStaticProps({ params }) {
                 },
             })
         const dataLec = await resLec.json()
-        const resCat = await fetch(`http://143.198.55.203/api/categoria/${params.categoria}`,
+        const resCat = await fetch(`https://admin.inglesxdia.com/api/categoria/${params.categoria}`,
             {
                 method: "GET",
                 headers: {
@@ -199,7 +199,8 @@ export async function getStaticProps({ params }) {
             props: {
                 dataLec,
                 dataCat,
-            }
+            },
+            revalidate: 10, // In seconds
         }
     } catch (error) {
         console.log(error)

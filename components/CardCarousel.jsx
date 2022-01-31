@@ -34,7 +34,7 @@ export default function CardCarousel({ data }) {
   }
 
   const Play = () => {
-      refAudio.current.audio.current.src = `http://143.198.55.203/api/audio/${audioVoc}`
+      refAudio.current.audio.current.src = `https://admin.inglesxdia.com/api/audio/${audioVoc}`
       refAudio.current.audio.current.play()
   }
 
@@ -45,7 +45,7 @@ export default function CardCarousel({ data }) {
           data.palabras.map(({ id, imagen }) => (
             <div key={id} className="carousel-voc">
               <Image
-                src={`http://143.198.55.203/imagen/${imagen}`}
+                src={`https://admin.inglesxdia.com/imagen/${imagen}`}
                 width="85%"
                 height="100%"
                 layout="responsive"

@@ -160,12 +160,20 @@ export default function index({ data }) {
 
 export async function getStaticProps() {
     try {
-        const res = await fetch('http://143.198.55.203/api/palabras')
+        const res = await fetch('https://admin.inglesxdia.com/api/palabras',
+        {
+            method: "GET",
+            headers: {
+                "User-Agent": "*",
+                Accept: "application/json; charset=UTF-8",
+            },
+        })
         const data = await res.json()
         return {
             props: {
                 data,
-            }
+            },
+            revalidate: 10, // In seconds
         }
     } catch (error) {
         console.log(error)
