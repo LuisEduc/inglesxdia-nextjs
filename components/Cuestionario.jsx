@@ -33,6 +33,7 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
         setNumeroPregunta(0)
         setScore(0)
         setPuntaje(0)
+        refBtnClose.current.click()
     }, [dynamicRoute])
 
 
@@ -165,6 +166,7 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
         setPuntaje(0)
         refQuizOver.current.classList.remove("show")
     }
+    
 
     return (
         <>
