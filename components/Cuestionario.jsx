@@ -29,12 +29,21 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
     const preguntas = []
 
     const dynamicRoute = useRouter().asPath
+
     useEffect(() => {
         setNumeroPregunta(0)
         setScore(0)
         setPuntaje(0)
         refBtnClose.current.click()
     }, [dynamicRoute])
+
+    useEffect(() => {
+        router.beforePopState(({ as }) => {
+            if (as !== router.asPath) {
+                refBtnClose.current.click()
+            }
+        });
+    }, [router]);
 
 
     questions.map((e, i) => {
@@ -166,7 +175,7 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
         setPuntaje(0)
         refQuizOver.current.classList.remove("show")
     }
-    
+
 
     return (
         <>
