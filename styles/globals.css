@@ -660,7 +660,6 @@ a {
   border-right: 12px solid #7c76b8 !important;
 }
 
-
 /* ----------------- */
 /*      NAVBAR       */
 /* ----------------- */
@@ -2188,7 +2187,12 @@ a {
 
 .modal-dialog {
   top: 4rem;
-  margin: 1rem !important;
+}
+
+@media (max-width: 575px) {
+  .modal-dialog {
+    margin: 1rem !important;
+  }
 }
 
 .answers-tracker .circulo {
