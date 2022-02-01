@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 
 const preguntaInicial = [{
@@ -31,7 +32,6 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
     useEffect(() => {
         setNumeroPregunta(0)
         setScore(0)
-        enableClick()
         setPuntaje(0)
     }, [dynamicRoute])
 
@@ -168,6 +168,12 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
 
     return (
         <>
+            <a>
+                <div className={`btn btn-main bg-primario`} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <i className={`fas fa-graduation-cap`}></i>
+                    <h2>Cuestionario</h2>
+                </div>
+            </a>
 
             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div className="modal-dialog">
@@ -189,8 +195,8 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                                     {addOpciones()}
                                 </div>
                                 <div className="d-flex justify-content-between">
-                                    <button onClick={() => reiniciar()} className="boton-primary"><i className="fas fa-lg fa-redo-alt"></i></button>
-                                    <button onClick={() => next()} className="boton-primary"><i className="fas fa-lg fa-chevron-circle-right"></i></button>
+                                    <button onClick={() => reiniciar()} className="boton-primary">Reiniciar</button>
+                                    <button onClick={() => next()} className="boton-primary">Siguiente</button>
                                 </div>
                             </div>
                             <div ref={refQuizOver} className="quiz-over">

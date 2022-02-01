@@ -27,9 +27,6 @@ const settings = {
 
 export default function Individual({ dataLec, dataCat }) {
 
-    console.log(dataCat)
-
-
     const { leccion, preguntas, imagenes } = dataLec;
 
     const [slide, setSlide] = useState(0);
@@ -106,11 +103,6 @@ export default function Individual({ dataLec, dataCat }) {
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
                 />
-
-                <div className={`btn-main bg-primario`} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    <i className={`fas fa-graduation-cap`}></i>
-                    <h2>Cuestionario</h2>
-                </div>
 
                 <Cuestionario
                     questions={preguntas}

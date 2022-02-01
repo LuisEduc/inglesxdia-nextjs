@@ -660,14 +660,6 @@ a {
   border-right: 12px solid #7c76b8 !important;
 }
 
-.modal-backdrop {
-  opacity: 1 !important;
-  background-color: #1687a7 !important;
-}
-
-.modal-dialog {
-  top: 4rem;
-}
 
 /* ----------------- */
 /*      NAVBAR       */
@@ -2071,6 +2063,7 @@ a {
   border-bottom: 1px solid #ccc;
   margin: 0;
   padding-bottom: 10px;
+  font-size: 1.2rem !important;
 }
 
 .question {
@@ -2161,15 +2154,41 @@ a {
 }
 
 .boton-primary {
-  padding: 10px 30px;
-  background-color: var(--color-primario);
+  padding: 7px 20px;
+  background-color: var(--color-secundario);
   font-size: 18px;
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 15px;
   display: inline-block;
   margin: 10px 0;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 1px 1px rgb(0 0 0 / 40%);
+}
+
+.boton-primary:active {
+  box-shadow: 3px 3px 1px 1px rgb(0 0 0 / 80%);
+}
+
+.modal-content {
+  border-radius: 0.8rem !important;
+  box-shadow: 2px 2px 1px 1px rgb(0 0 0 / 40%);
+}
+
+.modal-backdrop {
+  opacity: 1 !important;
+  background: rgb(234, 204, 248) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(234, 204, 248, 1) 0%,
+    rgba(105, 234, 203, 1) 100%
+  ) !important;
+}
+
+.modal-dialog {
+  top: 4rem;
+  margin: 1rem !important;
 }
 
 .answers-tracker .circulo {
