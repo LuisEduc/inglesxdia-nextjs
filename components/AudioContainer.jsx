@@ -16,6 +16,7 @@ export default function AudioContainer({ titulo, audio }) {
                         customVolumeControls={[]}
                         autoPlay={false}
                         autoPlayAfterSrcChange={false}
+                        preload="none"
                     />
                 </div>
             </div>

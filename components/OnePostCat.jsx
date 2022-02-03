@@ -2,19 +2,11 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useRef } from 'react'
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 
 
 export default function OnePostCat({ slug, slug_cat, titulo, imagen, audio }) {
-
-    let refAudio = useRef()
-
-    const Play = (music) => {
-            refAudio.current.audio.current.src = `https://admin.inglesxdia.com/api/audio/${music}`
-            refAudio.current.audio.current.play();
-    }
 
     return (
         <>
@@ -47,13 +39,12 @@ export default function OnePostCat({ slug, slug_cat, titulo, imagen, audio }) {
                     </Link>
                     <div>
                         <AudioPlayer
-                            ref={refAudio}
-                            src = ''
-                            onPlayError={() => Play(`${audio}`)}
+                            src = {`https://admin.inglesxdia.com/api/audio/${audio}`}
                             customAdditionalControls={[]}
                             customVolumeControls={[]}
                             autoPlay={false}
                             autoPlayAfterSrcChange={false}
+                            preload="none"
                         />
                     </div>
                 </div>

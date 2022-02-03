@@ -30,12 +30,6 @@ export default function CardCarousel({ data }) {
     setAudioVoc(data.palabras[item].audio)
     refAudio.current.audio.current.pause()
     refAudio.current.audio.current.currentTime = 0
-    refAudio.current.audio.current.src = ''
-  }
-
-  const Play = () => {
-      refAudio.current.audio.current.src = `https://admin.inglesxdia.com/api/audio/${audioVoc}`
-      refAudio.current.audio.current.play()
   }
 
   return (
@@ -61,12 +55,12 @@ export default function CardCarousel({ data }) {
       <div className="audio-palabras mx-auto">
         <AudioPlayer
           ref={refAudio}
-          src=''
-          onPlayError={() => Play()}
+          src={`https://admin.inglesxdia.com/api/audio/${audioVoc}`}
           customAdditionalControls={[]}
           customVolumeControls={[]}
           autoPlay={false}
           autoPlayAfterSrcChange={false}
+          preload="none"
         />
       </div>
     </>
