@@ -108,6 +108,7 @@ export default function Individual({ dataLec, dataCat }) {
                     questions={preguntas}
                     nextQ={nextQ}
                     firstQ={firstQ}
+                    valorInicial={0}
                 />
 
                 <TituloBloque

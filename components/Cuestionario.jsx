@@ -10,6 +10,7 @@ const preguntaInicial = [{
 }]
 
 export default function Cuestionario({ questions, nextQ, firstQ }) {
+    
     const router = useRouter()
 
     let refBtnClose = useRef()
@@ -20,7 +21,7 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
     let refCorrectAnswers = useRef()
     let refTotalQuestions = useRef()
     let refTextBtnEnd = useRef()
-    // const [preguntas, setPreguntas] = useState(preguntaInicial);
+    const [modal, setModal] = useState(0);
     const [score, setScore] = useState(0);
     const [puntaje, setPuntaje] = useState(0);
     const [numeroPregunta, setNumeroPregunta] = useState(0);
@@ -34,17 +35,17 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
         setNumeroPregunta(0)
         setScore(0)
         setPuntaje(0)
-        refBtnClose.current.click()
     }, [dynamicRoute])
 
     useEffect(() => {
-        router.beforePopState(({ as }) => {
-            if (as !== router.asPath) {
+        router.beforePopState(() => {
+            if (modal === 1) {
                 refBtnClose.current.click()
+            } else {
+                return true
             }
-        });
-    }, [router]);
-
+        })
+    }, [modal])
 
     questions.map((e, i) => {
         const question = {}
@@ -179,19 +180,22 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
 
     return (
         <>
-            <a>
-                <div className={`btn btn-main bg-primario`} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    <i className={`fas fa-graduation-cap`}></i>
-                    <h2>Cuestionario</h2>
-                </div>
-            </a>
+            <Link href="#c">
+                <a>
+                    <div onClick={() => setModal(1)} className={`btn btn-main bg-primario`} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <i className={`fas fa-graduation-cap`}></i>
+                        <h2>Cuestionario</h2>
+                    </div>
+                </a>
+            </Link>
 
             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div className="modal-dialog mx-auto">
                     <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title" id="staticBackdropLabel">Cuestionario</h5>
-                            <button ref={refBtnClose} type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button onClick={() => (router.back())} className="btn-close" ></button>
+                            <button onClick={() => setModal(0)} style={{ display: 'none' }} ref={refBtnClose} className="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
                             <div className="quiz-container">
