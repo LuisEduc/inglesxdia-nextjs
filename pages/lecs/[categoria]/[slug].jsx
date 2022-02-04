@@ -22,7 +22,7 @@ const settings = {
     centerMode: false,
     infiniteLoop: true,
     preventMovementUntilSwipeScrollTolerance: true,
-    swipeScrollTolerance: 40,
+    swipeScrollTolerance: 60,
 };
 
 export default function Individual({ dataLec, dataCat }) {

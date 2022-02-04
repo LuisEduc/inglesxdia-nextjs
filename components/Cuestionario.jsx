@@ -101,7 +101,7 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
             setNumeroPregunta(0)
             let puntos = score / preguntas.length
             setPuntaje(puntos)
-            if (puntos < 0.9) {
+            if (puntos < 0.99) {
                 refQuizOver.current.classList.add("show")
                 refTextEnd1.current.innerHTML = "¡Lección reprobada!"
                 refTextEnd2.current.innerHTML = "¡Puedes hacerlo mejor!"
@@ -231,7 +231,7 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                                         }
                                     </h2>
                                     <p className="text-center">
-                                        Has acertado <span ref={refCorrectAnswers}></span> de <span ref={refTotalQuestions}></span> respuestas correctas.
+                                        <span ref={refCorrectAnswers}></span> de <span ref={refTotalQuestions}></span> respuestas correctas.
                                         <br />
                                     </p>
                                     <h5 ref={refTextEnd2} className="text-end text-center"></h5>
