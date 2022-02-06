@@ -185,7 +185,7 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                     <div onClick={() => setModal(1)} className={`btn btn-cuestionario bg-primario`} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <i className={`fas fa-graduation-cap`}></i>
                         <h2>Cuestionario</h2>
-                        <i class="fas fa-chevron-right"></i>
+                        <i className="fas fa-chevron-right"></i>
                     </div>
                 </a>
             </Link>

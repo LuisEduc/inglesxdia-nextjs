@@ -125,7 +125,6 @@ a {
 }
 
 .titulo-bloque h2 {
-  /* text-transform: uppercase; */
   font-size: 1.4rem;
   color: var(--color-blanco);
   margin-top: auto;
