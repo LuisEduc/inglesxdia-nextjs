@@ -21,6 +21,7 @@ const settings = {
     showThumbs: false,
     centerMode: false,
     infiniteLoop: true,
+    showIndicators: true,
     preventMovementUntilSwipeScrollTolerance: true,
     swipeScrollTolerance: 60,
 };

@@ -52,8 +52,8 @@ export default function Hero({buscar}) {
                             <span>3</span>
                         </div>
                         <div className="item-hero-text" >
-                            <h2>Practicar listening.</h2>
-                            <p>Todas las categorías de vocabulario incluyen pronunciación en inglés y español, la voz es muy natural y pausada.</p>
+                            <h2>Ejercicios para practicar.</h2>
+                            <p>Todas las lecciones incluyen cuestionario, traducción y pronunciación en inglés-español, la voz es natural y pausada.</p>
                         </div>
                     </div>
                 </div>
