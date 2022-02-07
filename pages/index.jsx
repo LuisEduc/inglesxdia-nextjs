@@ -29,7 +29,7 @@ export default function index({ bloques, cats, buscar }) {
                 // articulo-inicio
                 client='ca-pub-3630578707238850'
                 slot='7902116142'
-                style={{ display: 'block' }}
+                style={{ display: 'block', textAlign: 'center' }}
                 layout='in-article'
                 format='fluid'
             />
