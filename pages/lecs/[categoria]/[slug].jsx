@@ -12,6 +12,7 @@ import "react-h5-audio-player/lib/styles.css";
 import Image from "next/image"
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
+import AdSense from 'react-ssr-adsense';
 
 const settings = {
     showIndicators: false,
@@ -71,6 +72,14 @@ export default function Individual({ dataLec, dataCat }) {
                     icono='fa-stream'
                     dir='/vocabulario'
                     bg='bg-secundario'
+                />
+                <AdSense
+                    client='ca-pub-3630578707238850'
+                    slot='6905737434'
+                    style={{ display: 'block' }}
+                    format='auto'
+                    responsive='true'
+                    layoutKey='-gw-1+2a-9x+5c'
                 />
                 <BotonMain
                     titulo='Lecciones similares'
@@ -143,13 +152,13 @@ export default function Individual({ dataLec, dataCat }) {
 export async function getStaticPaths() {
     try {
         const res = await fetch('https://admin.inglesxdia.com/api/lecciones',
-        {
-            method: "GET",
-            headers: {
-                "User-Agent": "*",
-                Accept: "application/json; charset=UTF-8",
-            },
-        })
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            })
         const data = await res.json()
         const paths = data.map(({ slug_cat, slug }) => ({
             params: {

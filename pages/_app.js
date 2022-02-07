@@ -22,7 +22,6 @@ const App = ({ Component, pageProps }) => {
       {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
         strategy="afterInteractive"
-        data-ad-client="ca-pub-3630578707238850" 
         async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
       />
       <Script
