@@ -21,9 +21,9 @@ export default function Hero({buscar}) {
                             objectFit="cover"
                         />
                     </div>
-                    <div className="mx-auto">
+                    {/* <div className="mx-auto">
                         <a href="./blog/adquisicion-diaria-de-ingles" className="btn-mor">¿Cómo aprender inglés?</a>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="hero-resumen-grid">
                     <div className="hero-resumen-titulo">

@@ -32,11 +32,11 @@ export default function Navbar() {
                                             <a className="active">Vocabulario de hoy</a>
                                         </Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link href="/blog">
                                             <a>Blog</a>
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <Link href="/">
                                             <a>Lecciones</a>
