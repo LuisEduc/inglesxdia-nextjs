@@ -6,6 +6,7 @@ import BloqueCatInicio from "../components/BloqueCatInicio"
 import IconoSuperior from "../components/IconoSuperior"
 import Head from "next/head"
 import CookieConsent from "react-cookie-consent"
+import AdSense from 'react-adsense';
 
 export default function index({ bloques, cats, buscar }) {
 
@@ -22,6 +23,26 @@ export default function index({ bloques, cats, buscar }) {
                 icono='fa-stream'
                 dir='/vocabulario'
                 bg='bg-secundario'
+            />
+
+            <AdSense.Google
+                // full-inicio
+                client='ca-pub-3630578707238850'
+                slot='3265336329'
+                className='ads-web'
+                style={{ display: 'block', textAlign: 'center' }}
+                format='auto'
+                responsive='true'
+                layoutKey='-gw-1+2a-9x+5c'
+            />
+
+            <AdSense.Google
+                // 300x90-inicio
+                client='ca-pub-3630578707238850'
+                slot='4200920141'
+                className='ads-mob'
+                style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px' }}
+                format=''
             />
 
             {
@@ -94,31 +115,31 @@ export default function index({ bloques, cats, buscar }) {
 export async function getStaticProps() {
     try {
         const resBloques = await fetch('https://admin.inglesxdia.com/api/inicio',
-        {
-            method: "GET",
-            headers: {
-                "User-Agent":"*",
-                Accept: "application/json; charset=UTF-8",
-            },
-        })
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            })
         const bloques = await resBloques.json()
         const resCats = await fetch('https://admin.inglesxdia.com/api/categorias',
-        {
-            method: "GET",
-            headers: {
-                "User-Agent":"*",
-                Accept: "application/json; charset=UTF-8",
-            },
-        })
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            })
         const cats = await resCats.json()
         const resBuscar = await fetch(`https://admin.inglesxdia.com/api/buscar`,
-        {
-            method: "GET",
-            headers: {
-                "User-Agent":"*",
-                Accept: "application/json; charset=UTF-8",
-            },
-        })
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            })
         const buscar = await resBuscar.json()
         return {
             props: {
