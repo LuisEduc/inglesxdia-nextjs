@@ -2400,6 +2400,9 @@ a {
 }
 
 @media (max-width: 992px) {
+  .ads-mob {
+    display:inline-grid !important;
+  }
   .ads-web {
     display: none !important;
   }
