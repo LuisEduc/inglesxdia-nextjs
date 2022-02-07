@@ -40,12 +40,6 @@ const App = ({ Component, pageProps }) => {
       {/* Global Site Tag (gtag.js) - Google Analytics */}
 
       <Script
-        src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
-        strategy="afterInteractive"
-        async=""
-      />
-
-      <Script
         strategy="afterInteractive"
         async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
       />
