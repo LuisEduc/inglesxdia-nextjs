@@ -25,24 +25,6 @@ export default function Layout({ children, home, buscar }) {
 
     }, [])
 
-    useEffect(() => {
-        window.OneSignal = window.OneSignal || [];
-        OneSignal.push(function () {
-            OneSignal.init({
-                appId: "afd4d492-d05b-45b1-857e-fc08aa277e62",
-                notifyButton: {
-                    enable: true,
-                },
-    
-                allowLocalhostAsSecureOrigin: true,
-            });
-        });
-    
-        return () => {
-            window.OneSignal = undefined;
-        };
-    }, []);
-
     return (
         <div>
             <Head>
