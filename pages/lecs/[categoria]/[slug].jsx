@@ -74,6 +74,7 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
                 <AdSense.Google
+                    // full-indi
                     client='ca-pub-3630578707238850'
                     slot='6905737434'
                     style={{ display: 'block', textAlign: 'center' }}
@@ -111,9 +112,10 @@ export default function Individual({ dataLec, dataCat }) {
                 </div>
 
                 <AdSense.Google
+                    // 300x90-indi
                     client='ca-pub-3630578707238850'
                     slot='2960276072'
-                    style={{ display: 'inline-grid', width: 98+'%', height: 90+'px' }}
+                    style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px' }}
                     format=''
                 />
 

@@ -5,6 +5,7 @@ import "react-h5-audio-player/lib/styles.css";
 import AudioPlayer from "react-h5-audio-player";
 import Image from "next/image";
 import Head from "next/head"
+import AdSense from 'react-adsense';
 
 export default function index({ data }) {
 
@@ -25,6 +26,16 @@ export default function index({ data }) {
                     dir='/'
                 />
             </div>
+
+            <AdSense.Google
+                // full-voc
+                client='ca-pub-3630578707238850'
+                slot='1345454840'
+                style={{ display: 'block', textAlign: 'center' }}
+                format='auto'
+                responsive='true'
+                layoutKey='-gw-1+2a-9x+5c'
+            />
 
             <div className="grid-info">
                 <div className="info">

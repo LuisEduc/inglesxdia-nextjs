@@ -4,6 +4,7 @@ import BotonMain from "../../../components/BotonMain"
 import InfoCat from "../../../components/InfoCat"
 import OnePostCat from "../../../components/OnePostCat"
 import Head from "next/head"
+import AdSense from 'react-adsense';
 
 export default function post({ dataCat }) {
     return (
@@ -20,6 +21,17 @@ export default function post({ dataCat }) {
                 dir='/vocabulario'
                 bg='bg-secundario'
             />
+
+            <AdSense.Google
+                // full-cat
+                client='ca-pub-3630578707238850'
+                slot='2941801066'
+                style={{ display: 'block', textAlign: 'center' }}
+                format='auto'
+                responsive='true'
+                layoutKey='-gw-1+2a-9x+5c'
+            />
+
             <InfoCat
                 icono={dataCat.categoria[0].icono}
                 titulo={dataCat.categoria[0].titulo}
@@ -53,13 +65,13 @@ export default function post({ dataCat }) {
 export async function getStaticPaths() {
     try {
         const res = await fetch('https://admin.inglesxdia.com/api/categorias',
-        {
-            method: "GET",
-            headers: {
-                "User-Agent": "*",
-                Accept: "application/json; charset=UTF-8",
-            },
-        })
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            })
         const data = await res.json()
         const paths = data.categorias.map(({ slug }) => ({
             params: {
@@ -78,13 +90,13 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
     try {
         const resCat = await fetch(`https://admin.inglesxdia.com/api/categoria/${params.categoria}`,
-        {
-            method: "GET",
-            headers: {
-                "User-Agent":"*",
-                Accept: "application/json; charset=UTF-8",
-            },
-        })
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            })
         const dataCat = await resCat.json()
         return {
             props: {
