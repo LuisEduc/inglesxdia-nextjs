@@ -29,7 +29,6 @@ export default function index({ bloques, cats, buscar }) {
                 // full-inicio
                 client='ca-pub-3630578707238850'
                 slot='3265336329'
-                className='ads-web'
                 style={{ display: 'block', textAlign: 'center' }}
                 format='auto'
                 responsive='true'
@@ -40,7 +39,6 @@ export default function index({ bloques, cats, buscar }) {
                 // 300x90-inicio
                 client='ca-pub-3630578707238850'
                 slot='4200920141'
-                className='ads-mob'
                 style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px', textAlign: 'center' }}
                 format=''
             />
