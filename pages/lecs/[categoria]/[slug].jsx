@@ -12,7 +12,7 @@ import "react-h5-audio-player/lib/styles.css";
 import Image from "next/image"
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
-import AdSense from 'react-ssr-adsense';
+import AdSense from 'react-adsense';
 
 const settings = {
     showIndicators: false,
