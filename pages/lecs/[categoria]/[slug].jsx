@@ -109,6 +109,14 @@ export default function Individual({ dataLec, dataCat }) {
                     </Carousel>
 
                 </div>
+
+                <AdSense.Google
+                    client='ca-pub-3630578707238850'
+                    slot='2960276072'
+                    style={{ display: 'inline-grid', width: 98+'%', height: 90+'px' }}
+                    format=''
+                />
+
                 <AudioContainer
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
