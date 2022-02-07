@@ -73,7 +73,7 @@ export default function Individual({ dataLec, dataCat }) {
                     dir='/vocabulario'
                     bg='bg-secundario'
                 />
-                <AdSense
+                <AdSense.Google
                     client='ca-pub-3630578707238850'
                     slot='6905737434'
                     style={{ display: 'block' }}
