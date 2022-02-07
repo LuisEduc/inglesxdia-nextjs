@@ -2399,14 +2399,7 @@ a {
   display: none !important;
 }
 
-.ads-web {
-  display:block !important;
-}
-
 @media (max-width: 992px) {
-  .ads-mob {
-    display:block !important;
-  }
   .ads-web {
     display: none !important;
   }
