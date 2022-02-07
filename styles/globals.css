@@ -2390,3 +2390,24 @@ a {
   align-items: center;
   padding: 5rem 0rem;
 }
+
+/* ----------------------------------------------------------- */
+/* ANUNCIOS */
+/* ----------------------------------------------------------- */
+
+.ads-mob {
+  display: none;
+}
+
+.ads-web {
+  display:block;
+}
+
+@media (max-width: 992px) {
+  .ads-mob {
+    display:block;
+  }
+  .ads-web {
+    display: none;
+  }
+}
