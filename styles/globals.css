@@ -2346,7 +2346,7 @@ a {
   margin: auto;
 }
 
-.overlay-class{
+.overlay-class {
   z-index: 10000 !important;
 }
 
@@ -2371,4 +2371,22 @@ a {
   margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
+}
+
+/* ----------------------------------------------------------- */
+/* 404 */
+/* ----------------------------------------------------------- */
+
+.bg-404 {
+  background-color: #fff;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+.container-404 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0rem;
 }
