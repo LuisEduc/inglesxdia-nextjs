@@ -41,6 +41,7 @@ const App = ({ Component, pageProps }) => {
 
       <Script
         src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+        strategy="afterInteractive"
         async=""
       />
 
