@@ -29,18 +29,10 @@ export default function index({ bloques, cats, buscar }) {
                 // full-inicio
                 client='ca-pub-3630578707238850'
                 slot='3265336329'
-                style={{ display: 'block', textAlign: 'center' }}
+                style={{ display: 'block', textAlign: 'center', height: 250 + 'px' }}
                 format='auto'
                 responsive='true'
                 layoutKey='-gw-1+2a-9x+5c'
-            />
-
-            <AdSense.Google
-                // 300x90-inicio
-                client='ca-pub-3630578707238850'
-                slot='4200920141'
-                style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px', textAlign: 'center' }}
-                format=''
             />
 
             {
