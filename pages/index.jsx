@@ -41,7 +41,7 @@ export default function index({ bloques, cats, buscar }) {
                 client='ca-pub-3630578707238850'
                 slot='4200920141'
                 className='ads-mob'
-                style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px' }}
+                style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px', textAlign: 'center' }}
                 format=''
             />
 
