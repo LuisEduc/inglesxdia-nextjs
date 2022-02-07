@@ -76,7 +76,7 @@ export default function Individual({ dataLec, dataCat }) {
                 <AdSense.Google
                     client='ca-pub-3630578707238850'
                     slot='6905737434'
-                    style={{ display: 'block' }}
+                    style={{ display: 'block', textAlign: 'center' }}
                     format='auto'
                     responsive='true'
                     layoutKey='-gw-1+2a-9x+5c'
