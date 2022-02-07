@@ -26,13 +26,12 @@ export default function index({ bloques, cats, buscar }) {
             />
 
             <AdSense.Google
-                // full-inicio
+                // articulo-inicio
                 client='ca-pub-3630578707238850'
-                slot='3265336329'
-                style={{ display: 'block', textAlign: 'center', height: 250 + 'px' }}
-                format='auto'
-                responsive='true'
-                layoutKey='-gw-1+2a-9x+5c'
+                slot='7902116142'
+                style={{ display: 'block' }}
+                layout='in-article'
+                format='fluid'
             />
 
             {
