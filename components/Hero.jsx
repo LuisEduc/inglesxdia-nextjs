@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Buscador from "../components/Buscador"
+import AdSense from 'react-adsense';
 
 export default function Hero({buscar}) {
     return (
@@ -25,6 +26,16 @@ export default function Hero({buscar}) {
                         <a href="./blog/adquisicion-diaria-de-ingles" className="btn-mor">¿Cómo aprender inglés?</a>
                     </div> */}
                 </div>
+
+                <AdSense.Google
+                    // 300x90-hero
+                    client='ca-pub-3630578707238850'
+                    slot='9778773781'
+                    className='ads-mob'
+                    style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px' }}
+                    format=''
+                />
+
                 <div className="hero-resumen-grid">
                     <div className="hero-resumen-titulo">
                         <h2>¿Qué ofrece <span className="resalt-mor">inglesxdia.tech</span>?</h2>
