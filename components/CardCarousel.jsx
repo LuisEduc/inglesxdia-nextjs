@@ -6,7 +6,7 @@ import Image from "next/image";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { useState } from 'react'
-
+import AdSense from 'react-adsense';
 
 const settings = {
   showIndicators: false,
@@ -52,6 +52,14 @@ export default function CardCarousel({ data }) {
           ))
         }
       </Carousel>
+      <AdSense.Google
+        // 300x90-voc
+        client='ca-pub-3630578707238850'
+        slot='4436723862'
+        className='ads-mob'
+        style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px' }}
+        format=''
+      />
       <div className="audio-palabras mx-auto">
         <AudioPlayer
           ref={refAudio}
