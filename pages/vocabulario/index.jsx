@@ -40,7 +40,7 @@ export default function index({ data }) {
                 // articulo-voc
                 client='ca-pub-3630578707238850'
                 slot='6551066522'
-                style={{ display: 'block', textAlign: 'center' }}
+                style={{ display: 'block', textAlign: 'center', marginTop: 30 + 'px' }}
                 layout='in-article'
                 format='fluid'
             />
