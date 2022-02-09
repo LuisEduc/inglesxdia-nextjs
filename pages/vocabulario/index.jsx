@@ -27,14 +27,22 @@ export default function index({ data }) {
                 />
             </div>
 
-            <AdSense.Google
+            {/* <AdSense.Google
                 // full-voc
                 client='ca-pub-3630578707238850'
                 slot='1345454840'
-                style={{ display: 'block', textAlign: 'center', marginTop: 30+'px' }}
+                style={{ display: 'block', textAlign: 'center', marginTop: 30 + 'px' }}
                 format='auto'
                 responsive='true'
                 layoutKey='-gw-1+2a-9x+5c'
+            /> */}
+            <AdSense.Google
+                // articulo-voc
+                client='ca-pub-3630578707238850'
+                slot='6551066522'
+                style={{ display: 'block', textAlign: 'center' }}
+                layout='in-article'
+                format='fluid'
             />
 
             <div className="grid-info">
@@ -44,9 +52,9 @@ export default function index({ data }) {
                         <h1 className="font-weight-bold text-light info-text-titulo">Aprender palabras en inglés cada día<span className="text-primary">.</span></h1>
                     </div>
                     <div>
-                        <a type="button" onClick={()=> window.open("https://www.facebook.com/inglesxdia/", "_blank")} className="btn btn-outline-blue btn-redes">Visítanos
+                        <a type="button" onClick={() => window.open("https://www.facebook.com/inglesxdia/", "_blank")} className="btn btn-outline-blue btn-redes">Visítanos
                             en Facebook<i className="ms-2 fab fa-facebook-square"></i></a>
-                        <a type="button" onClick={()=> window.open("https://www.youtube.com/channel/UC17wrAHkky26woClR91Pr1A", "_blank")} className="btn btn-outline-red btn-redes">Visítanos
+                        <a type="button" onClick={() => window.open("https://www.youtube.com/channel/UC17wrAHkky26woClR91Pr1A", "_blank")} className="btn btn-outline-red btn-redes">Visítanos
                             en Youtube<i className="ms-2 fab fa-youtube"></i></a>
                     </div>
                 </div>
@@ -172,13 +180,13 @@ export default function index({ data }) {
 export async function getStaticProps() {
     try {
         const res = await fetch('https://admin.inglesxdia.com/api/palabras',
-        {
-            method: "GET",
-            headers: {
-                "User-Agent": "*",
-                Accept: "application/json; charset=UTF-8",
-            },
-        })
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            })
         const data = await res.json()
         return {
             props: {
