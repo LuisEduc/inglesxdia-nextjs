@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-
+import AdSense from 'react-adsense';
 
 const preguntaInicial = [{
     q: '',
@@ -242,6 +242,14 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                         </div>
                     </div>
                 </div>
+                <AdSense.Google
+                    // 300x90-cues
+                    client='ca-pub-3630578707238850'
+                    slot='8459329975'
+                    className='ads-mob'
+                    style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px' }}
+                    format=''
+                />
             </div>
 
         </>
