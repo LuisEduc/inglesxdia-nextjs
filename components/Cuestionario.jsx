@@ -10,7 +10,7 @@ const preguntaInicial = [{
 }]
 
 export default function Cuestionario({ questions, nextQ, firstQ }) {
-    
+
     const router = useRouter()
 
     let refBtnClose = useRef()
@@ -194,6 +194,14 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                 <div className="modal-dialog mx-auto">
                     <div className="modal-content">
                         <div className="modal-header">
+                            <AdSense.Google
+                                // 300x90-cues
+                                client='ca-pub-3630578707238850'
+                                slot='8459329975'
+                                className='ads-mob'
+                                style={{ display: 'inline-grid', width: 98 + '%', height: 50 + 'px', marginBottom: 10 + 'px' }}
+                                format=''
+                            />
                             <h5 className="modal-title" id="staticBackdropLabel">Cuestionario</h5>
                             <button onClick={() => (router.back())} className="btn-close" ></button>
                             <button onClick={() => setModal(0)} style={{ display: 'none' }} ref={refBtnClose} className="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -242,14 +250,6 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                         </div>
                     </div>
                 </div>
-                <AdSense.Google
-                    // 300x90-cues
-                    client='ca-pub-3630578707238850'
-                    slot='8459329975'
-                    className='ads-mob'
-                    style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px' }}
-                    format=''
-                />
             </div>
 
         </>
