@@ -73,7 +73,7 @@ export default function Individual({ dataLec, dataCat }) {
                     dir='/vocabulario'
                     bg='bg-secundario'
                 />
-                {/* <AdSense.Google
+                <AdSense.Google
                     // full-indi
                     client='ca-pub-3630578707238850'
                     slot='6905737434'
@@ -81,15 +81,15 @@ export default function Individual({ dataLec, dataCat }) {
                     format='auto'
                     responsive='true'
                     layoutKey='-gw-1+2a-9x+5c'
-                /> */}
-                <AdSense.Google
+                />
+                {/* <AdSense.Google
                     // articulo-indi
                     client='ca-pub-3630578707238850'
                     slot='8359285877'
                     style={{ display: 'block', textAlign: 'center' }}
                     layout='in-article'
                     format='fluid'
-                />
+                /> */}
                 <BotonMain
                     titulo='Lecciones similares'
                     icono='fa-chevron-circle-left'

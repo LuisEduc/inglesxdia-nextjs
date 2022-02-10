@@ -22,7 +22,7 @@ export default function post({ dataCat }) {
                 bg='bg-secundario'
             />
 
-            {/* <AdSense.Google
+            <AdSense.Google
                 // full-cat
                 client='ca-pub-3630578707238850'
                 slot='2941801066'
@@ -30,15 +30,15 @@ export default function post({ dataCat }) {
                 format='auto'
                 responsive='true'
                 layoutKey='-gw-1+2a-9x+5c'
-            /> */}
-            <AdSense.Google
+            />
+            {/* <AdSense.Google
                 // articulo-cat
                 client='ca-pub-3630578707238850'
                 slot='1490311533'
                 style={{ display: 'block', textAlign: 'center' }}
                 layout='in-article'
                 format='fluid'
-            />
+            /> */}
 
             <InfoCat
                 icono={dataCat.categoria[0].icono}
