@@ -11,76 +11,22 @@ export default function privacidad() {
             </Head>
             <main className="bg-politicas">
                 <h2 className="mt-3">Términos y Condiciones de Uso</h2>
-                <p><strong>INFORMACIÓN RELEVANTE</strong></p>
-                <p>Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que
-                    lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El
-                    uso de nuestros servicios así como la compra de nuestros productos implicará que usted
-                    ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todas
-                    los productos que son ofrecidos por nuestro sitio web/app pudieran ser creadas, cobradas, enviadas
-                    o presentadas por una página web/app tercera y en tal caso estarían sujetas a sus propios
-                    Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el
-                    registro por parte del usuario, con ingreso de datos personales fidedignos y definición de
-                    una contraseña.</p>
-                <p>El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en
-                    cualquier momento, en caso de que se haya registrado y que sea necesario para la compra de alguno de
-                    nuestros productos. http://inglesxdia.tech/ no asume la responsabilidad en caso de que entregue
-                    dicha clave a terceros.</p>
-                <p>Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están
-                    sujetas a un proceso de confirmación y verificación, el cual podría incluir la
-                    verificación del stock y disponibilidad de producto, validación de la forma de pago,
-                    validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas
-                    por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación
-                    por medio de correo electrónico.</p>
-                <p>La información proporcionada en INGLESXDIA es revisada en los diccionarios más importantes de inglés 
-                    americano como: Merriam-Webster, Cambridge, Oxford, Collins, Wordreference, etc. Todos los derechos
-                     reservados.</p>
-                <p><strong>LICENCIA</strong></p>
-                <p>INGLESXDIA través de su sitio web/app concede una licencia para que los usuarios
-                    utilice los productos que son vendidos en este sitio web/app de acuerdo a los Términos y
-                    Condiciones que se describen en este documento.</p>
-                <p><strong>USO NO AUTORIZADO</strong></p>
-                <p>En caso de que aplique (para venta de software, templetes, u otro producto de diseño y
-                    programación) usted no puede colocar uno de nuestros productos, modificado o sin modificar,
-                    en un CD, sitio web/app o ningún otro medio y ofrecerlos para la redistribución o la
-                    reventa de ningún tipo.</p>
-                <p><strong>PROPIEDAD</strong></p>
-                <p>Usted no puede declarar propiedad intelectual o exclusiva a ninguno de nuestros productos, modificado
-                    o sin modificar. Todos los productos son propiedad de los proveedores del contenido. En caso
-                    de que no se especifique lo contrario, nuestros productos se proporciona  sin ningún
-                    tipo de garantía, expresa o implícita. En ningún esta compañía
-                    será responsables de ningún daño incluyendo, pero no limitado a,
-                    daños directos, indirectos, especiales, fortuitos o consecuentes u otras pérdidas
-                    resultantes del uso o de la imposibilidad de utilizar nuestros productos.</p>
-                <p><strong>POLÍTICA DE REEMBOLSO Y GARANTÍA</strong></p>
-                <p>En el caso de productos que sea  mercancías irrevocables no-tangibles, no realizamos
-                    reembolsos después de que se envíe el producto, usted tiene la responsabilidad de
-                    entender antes de comprarlo. Le pedimos que lea cuidadosamente antes de comprarlo. Hacemos
-                    solamente excepciones con esta regla cuando la descripción no se ajusta al producto. Hay
-                    algunos productos que pudieran tener garantía y posibilidad de reembolso pero este
-                    será especificado al comprar el producto. En tales casos la garantía solo
-                    cubrirá fallas de fábrica y sólo se hará efectiva cuando el producto se
-                    haya usado correctamente. La garantía no cubre averías o daños ocasionados por
-                    uso indebido. Los términos de la garantía están asociados a fallas de
-                    fabricación y funcionamiento en condiciones normales de los productos y sólo se
-                    harán efectivos estos términos si el equipo ha sido usado correctamente. Esto incluye:
-                </p>
-                <p>- De acuerdo a las especificaciones técnicas indicadas para cada producto.<br />-
-                    En condiciones ambientales acorde con las especificaciones indicadas por el fabricante.<br />-
-                    En uso específico para la función con que fue diseñado de
-                    fábrica.<br />- En condiciones de operación eléctricas acorde con las
-                    especificaciones y tolerancias indicadas.</p>
-                <p><strong>COMPROBACIÓN ANTIFRAUDE</strong></p>
-                <p>La compra del cliente puede ser aplazada para la comprobación antifraude. También puede
-                    ser suspendida por más tiempo para una investigación más rigurosa, para evitar
-                    transacciones fraudulentas.</p>
-                <p><strong>PRIVACIDAD</strong></p>
-                <p>El sitio web/app http://inglesxdia.tech/ garantiza que la información personal que usted envía
-                    cuenta con la seguridad necesaria. Los datos ingresados por usuario o en el caso de requerir una
-                    validación de los pedidos no serán entregados a terceros, salvo que deba ser revelada
-                    en cumplimiento a una orden judicial o requerimientos legales.</p>
-                <p>La suscripción a boletines de correos electrónicos publicitarios es voluntaria y
-                    podría ser seleccionada al momento de crear su cuenta.</p>
-                <p>INGLESXDIA reserva los derechos de cambiar o de modificar estos términos sin previo aviso.</p>
+                <p><strong>CONDICIONES DE USO.</strong></p>
+                <p>Es requisito necesario para la adquisición de los servicios que se ofrecen en esta web/app, que lea los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios implica que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento.</p>
+                <p>La finalidad de INGLESXDIA es ofrecer un servicio relacionado con el aprendizaje del inglés americano como lengua extranjera mediante servicios destinados al estudio de este idioma. La información proporcionada en INGLESXDIA es revisada en los diccionarios más importantes de inglés americano como: Merriam-Webster, Cambridge, Oxford, Collins, Wordreference, etc. Todos los derechos reservados.</p>
+                <p><strong>RESTRICCIONES DE USO DE NUESTRO CONTENIDO.</strong></p>
+                <p>La información contenida puede ser utilizada por el usuario con fines informativos, pero nunca con fines comerciales sin la previa autorización de INGLESXDIA. No se podrá obtener ninguna licencia sobre los derechos de propiedad intelectual de INGLESXDIA. El usuario no está autorizado a revender, transformar o publicar ningún producto adquirido a través del sitio web o la aplicación, incluyendo documentos, archivos de audio, fotografías, dibujos, videos, logos o cualquier otro contenido mostrado en la web/app.</p>
+                <p>Todos los derechos de uso son propiedad de INGLESXDIA y están controlados por los propietarios de esta web/app. Usted, el visitante, puede descargar los contenidos online sólo para su uso personal, nunca para uso comercial, siempre que 1.- conserve todos los mensajes de derechos de autor, propiedad intelectual y marcas registradas, 2.- no realice ninguna modificación de los mismos, 3.- no utilice los contenidos de ninguna manera que pueda parecer que se vinculan a cualquiera de nuestros productos, servicios, eventos o marcas, y 4.- no descargue grandes cantidades de contenido para su almacenamiento en una base de datos, servidor u ordenador personal para su uso con fines comerciales. Sin embargo, no está autorizado, bajo ninguna circunstancia, a copiar, reproducir, publicar, ya sea físicamente o en la web, transmitir o distribuir el contenido en línea, a menos que haya solicitado y obtenido, por escrito, nuestro permiso expreso. Tampoco puede añadir, eliminar, alterar o tergiversar ningún contenido de este sitio web. Queda expresamente prohibido cualquier intento de modificar cualquier material en línea, o de manipular o eludir nuestras medidas de seguridad.</p>
+                <p><strong>LIMITACIONES DE RESPONSABILIDAD.</strong></p>
+                <p>INGLESXDIA no se hace responsable de daños o perjuicios que los usuarios puedan sufrir como consecuencia de fallos de la línea, averías, virus informáticos, interrupciones, desconexiones o deficiencias en el sistema operativo electrónico.</p>
+                <p><strong>DERECHO DE EXCLUSIÓN.</strong></p>
+                <p>INGLESXDIA se reserva el derecho a denegar o retirar el acceso a la web/app, sin necesidad de previo aviso, a instancia propia o de un tercero, a aquellos usuarios que incumplan los presentes términos de uso o hagan un uso indebido de la web/app.</p>
+                <p><strong>ENLACES EXTERNOS.</strong></p>
+                <p>INGLESXDIA no se hace responsable del contenido mostrado en todos los sitios vinculados a este sitio web. El responsable de este sitio web no ha revisado todos los sitios vinculados al mismo y no es responsable de los contenidos de dicho sitio. El uso de cualquier sitio web vinculado es bajo el propio riesgo del usuario.</p>
+                <p><strong>REVISIONES Y ERRATAS.</strong></p>
+                <p>Los materiales que aparecen en la web/app podrían incluir aspectos técnicos, tipográficos o errores fotográficos. INGLESXDIA no garantiza que cualquiera de los materiales en su sitio web/app sea precisa, completa o actualizada. INGLESXDIA puede hacer cambios en los materiales o sus contenidos en su sitio web en cualquier momento sin previo aviso.</p>
+                <p><strong>TÉRMINOS DE USO MODIFICACIONES.</strong></p>
+                <p>INGLESXDIA podrá revisar estos términos de uso de la web/app en cualquier momento sin previo aviso. Al usar esta web/app usted acepta que quedará vinculado por la versión actual de estos Términos y Condiciones de uso.</p>
             </main>
         </Layout>
     )
