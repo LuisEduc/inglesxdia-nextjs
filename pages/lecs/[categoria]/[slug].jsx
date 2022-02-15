@@ -119,14 +119,16 @@ export default function Individual({ dataLec, dataCat }) {
 
                 </div>
 
-                <AdSense.Google
-                    // 300x90-indi
-                    client='ca-pub-3630578707238850'
-                    slot='2960276072'
-                    className='ads-mob'
-                    style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px' }}
-                    format=''
-                />
+                <div style={{ textAlign: 'center' }}>
+                    <AdSense.Google
+                        // 300x90-indi
+                        client='ca-pub-3630578707238850'
+                        slot='2960276072'
+                        className='ads-mob'
+                        style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px' }}
+                        format=''
+                    />
+                </div>
 
                 <AudioContainer
                     titulo={leccion[0].titulo}
