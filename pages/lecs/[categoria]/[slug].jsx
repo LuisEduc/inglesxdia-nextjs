@@ -124,7 +124,7 @@ export default function Individual({ dataLec, dataCat }) {
                     client='ca-pub-3630578707238850'
                     slot='2960276072'
                     className='ads-mob'
-                    style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px', textAlign: 'center' }}
+                    style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px', margin: 'auto' }}
                     format=''
                 />
 
