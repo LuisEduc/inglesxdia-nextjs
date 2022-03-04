@@ -31,14 +31,6 @@ export default function post({ dataCat }) {
                 responsive='true'
                 layoutKey='-gw-1+2a-9x+5c'
             />
-            {/* <AdSense.Google
-                // articulo-cat
-                client='ca-pub-3630578707238850'
-                slot='1490311533'
-                style={{ display: 'block', textAlign: 'center' }}
-                layout='in-article'
-                format='fluid'
-            /> */}
 
             <InfoCat
                 icono={dataCat.categoria[0].icono}
