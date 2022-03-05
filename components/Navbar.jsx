@@ -42,7 +42,7 @@ export default function Navbar() {
                                             <a>Lecciones</a>
                                         </Link>
                                     </li>
-                                   
+
                                 </ul>
                                 <a ref={refMenu} onClick={Desplegar} className='menu-trigger'>
                                     <span>Menu</span>
@@ -51,8 +51,12 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
+                <div className="descarga-app" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.inglesxdia.app", "_blank")}>
+                    <span>Descargar aplicación gratis</span>
+                    <img src="/play.svg" />
+                </div>
             </div>
-            <div style={{ height: 80 }}></div>
+            <div style={{ height: 110 }}></div>
         </>
     )
 }

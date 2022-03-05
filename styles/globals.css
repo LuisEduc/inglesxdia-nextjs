@@ -983,7 +983,7 @@ a {
   }
   .header-area {
     background-color: #f7f7f7;
-    padding: 0px 15px;
+    padding: 0px 0px;
     height: 80px;
     box-shadow: none;
     text-align: center;
@@ -2400,9 +2400,63 @@ a {
 
 @media (max-width: 992px) {
   .ads-mob {
-    display:block !important;
+    display: block !important;
   }
   .ads-web {
     display: none !important;
   }
+}
+
+/* ----------------------------------------------------------- */
+/* DESCARGAR APP */
+/* ----------------------------------------------------------- */
+
+.descarga-app {
+  cursor: pointer;
+  text-align: center !important;
+  height: 30px;
+  padding: 0 !important;
+  border-top: solid 1px rgb(165 165 165 / 80%);
+  background: #da4453; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.descarga-app:hover {
+  background: var(--color-blanco);
+}
+.descarga-app:hover > span {
+  color: #232d39;
+}
+
+.descarga-app span {
+  font-family: "Righteous", cursive;
+  font-size: 1.1rem;
+  color: var(--color-blanco);
+}
+
+.descarga-app img {
+  height: 22px;
+  margin-bottom: 3px;
+}
+
+.bagde-app {
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.bagde-app img {
+  height: 70px;
+  padding: 8px 12px
+}
+
+.negrita{
+  font-weight: bold;
 }
