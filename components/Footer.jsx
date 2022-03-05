@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <>
             <div className="text-center bg-light rounded mx-1 my-3">
-                <div className="bagde-app" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.inglesxdia.app", "_blank")}>
+                <div className="bagde-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
                     <span>Descargue nuestra aplicación </span>
                     <span className="negrita">GRATIS</span>
                     <br/>
