@@ -118,7 +118,7 @@ export default function Individual({ dataLec, dataCat }) {
                     </Carousel>
 
                 </div>
-                
+
                 <AdSense.Google
                     // 300x90-indi
                     client='ca-pub-3630578707238850'
@@ -164,15 +164,23 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // 300x90-indi
                     client='ca-pub-3630578707238850'
                     slot='2960276072'
                     className='ads-mob'
                     style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px', margin: 'auto' }}
                     format=''
+                /> */}
+
+                <AdSense.Google
+                    // rel-indi
+                    client='ca-pub-3630578707238850'
+                    slot='3752127301'
+                    style={{ display: 'block', textAlign: 'center' }}
+                    format='autorelaxed'
                 />
-                
+
             </Layout>
         </>
     )
