@@ -2,7 +2,7 @@ import Image from "next/image"
 import Buscador from "../components/Buscador"
 import AdSense from 'react-adsense';
 
-export default function Hero({buscar}) {
+export default function Hero({ buscar }) {
     return (
         <>
             <div className="hero hero-bg">
@@ -27,13 +27,22 @@ export default function Hero({buscar}) {
                     </div> */}
                 </div>
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // 300x90-hero
                     client='ca-pub-3630578707238850'
                     slot='9778773781'
                     className='ads-mob'
                     style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px' }}
                     format=''
+                /> */}
+
+                <AdSense.Google
+                    // articulo-hero
+                    client='ca-pub-3630578707238850'
+                    slot='4231990522'
+                    style={{ display: 'block', textAlign: 'center' }}
+                    layout='in-article'
+                    format='fluid'
                 />
 
                 <div className="hero-resumen-grid">

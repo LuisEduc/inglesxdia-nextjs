@@ -71,6 +71,14 @@ export default function index({ data }) {
                 </h2>
             </div>
 
+            <AdSense.Google
+                // rel-indi
+                client='ca-pub-3630578707238850'
+                slot='3752127301'
+                style={{ display: 'block' }}
+                format='autorelaxed'
+            />
+
             <div className="tips-container">
                 <div className="tip">
                     <div className="tip-preview">
