@@ -173,12 +173,21 @@ export default function Individual({ dataLec, dataCat }) {
                     format=''
                 /> */}
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // rel-indi
                     client='ca-pub-3630578707238850'
                     slot='3752127301'
                     style={{ display: 'block', textAlign: 'center' }}
                     format='autorelaxed'
+                /> */}
+
+                <AdSense.Google
+                    // articulo-indi
+                    client='ca-pub-3630578707238850'
+                    slot='8359285877'
+                    style={{ display: 'block', textAlign: 'center', margin: 'auto' }}
+                    layout='in-article'
+                    format='fluid'
                 />
 
             </Layout>
