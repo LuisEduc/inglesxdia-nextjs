@@ -8,7 +8,7 @@ export default function Hero({ buscar }) {
             <div className="hero hero-bg">
                 <div className="hero-text">
                     <div className="hero-titulo">
-                        <h1>Curso de inglés básico en línea<span className="text-primary">.</span></h1>
+                        <h1>Aprende inglés diario<span className="text-primary">.</span></h1>
                     </div>
                     <div className="buscador">
                         <Buscador buscar={buscar} />

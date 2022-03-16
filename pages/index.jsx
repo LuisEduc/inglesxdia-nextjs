@@ -15,7 +15,7 @@ export default function index({ bloques, cats, buscar }) {
             <Head>
                 <link rel="icon" href="/favicon.png" />
                 <title>Aprender inglés diario | inglesxdia</title>
-                <meta name="description" content="Curso de inglés básico en línea con más de 100 lecciones para principiantes con pronunciación y ejercicios. Aprende inglés todos los días con nuestras publicaciones de vocabulario básico, frases comunes, expresiones útiles, lecturas, formas de decir, frases para una conversación, phrasal verbs y mucho más." />
+                <meta name="description" content="Aprende inglés gratis todos los días con nuestras publicaciones de vocabulario básico, frases comunes, expresiones útiles, lecturas, formas de decir, frases para una conversación, phrasal verbs y mucho más." />
             </Head>
 
             <BotonMain
