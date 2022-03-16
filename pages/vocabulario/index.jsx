@@ -36,14 +36,6 @@ export default function index({ data }) {
                 responsive='true'
                 layoutKey='-gw-1+2a-9x+5c'
             />
-            {/* <AdSense.Google
-                // articulo-voc
-                client='ca-pub-3630578707238850'
-                slot='6551066522'
-                style={{ display: 'block', textAlign: 'center', marginTop: 30 + 'px' }}
-                layout='in-article'
-                format='fluid'
-            /> */}
 
             <div className="grid-info">
                 <div className="info">

@@ -67,6 +67,14 @@ export default function Individual({ dataLec, dataCat }) {
                     <title>{leccion[0].titulo_seo} | inglesxdia</title>
                     <meta name="description" content={leccion[0].descripcion} />
                 </Head>
+                <AdSense.Google
+                    // 300x50-indi
+                    client='ca-pub-3630578707238850'
+                    slot='4052295657'
+                    className='ads-mob'
+                    style={{ display: 'inline-grid', width: 98 + '%', height: 50 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px' }}
+                    format=''
+                />
                 <BotonMain
                     titulo='Vocabulario de hoy'
                     icono='fa-stream'
@@ -164,14 +172,14 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // 300x90-indi
                     client='ca-pub-3630578707238850'
                     slot='2960276072'
                     className='ads-mob'
                     style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px', margin: 'auto' }}
                     format=''
-                />
+                /> */}
 
             </Layout>
         </>
