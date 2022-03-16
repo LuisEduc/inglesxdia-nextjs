@@ -72,7 +72,7 @@ export default function Individual({ dataLec, dataCat }) {
                     client='ca-pub-3630578707238850'
                     slot='4052295657'
                     className='ads-mob'
-                    style={{ display: 'inline-grid', width: 98 + '%', height: 50 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px' }}
+                    style={{ display: 'block', width: 100 + '%', height: 50 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px' }}
                     format=''
                 />
                 <BotonMain
