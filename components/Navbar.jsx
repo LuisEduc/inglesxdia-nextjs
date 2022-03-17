@@ -51,12 +51,12 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className="descarga-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
+                {/* <div className="descarga-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
                     <span>Descargar aplicación gratis</span>
                     <img src="/play.svg" />
-                </div>
+                </div> */}
             </div>
-            <div style={{ height: 110 }}></div>
+            <div style={{ height: 80 }}></div>
         </>
     )
 }
