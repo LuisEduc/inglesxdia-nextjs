@@ -25,13 +25,23 @@ export default function index({ bloques, cats, buscar }) {
                 bg='bg-secundario'
             />
 
-            <AdSense.Google
+            {/* <AdSense.Google
                 // articulo-inicio
                 client='ca-pub-3630578707238850'
                 slot='7902116142'
                 style={{ display: 'block', textAlign: 'center' }}
                 layout='in-article'
                 format='fluid'
+            /> */}
+
+            <AdSense.Google
+                // full-voc
+                client='ca-pub-3630578707238850'
+                slot='1345454840'
+                style={{ display: 'block', textAlign: 'center', marginTop: 30 + 'px' }}
+                format='auto'
+                responsive='true'
+                layoutKey='-gw-1+2a-9x+5c'
             />
 
             {
