@@ -32,7 +32,6 @@ export default function index({ data }) {
                 client='ca-pub-3630578707238850'
                 slot='1345454840'
                 style={{ display: 'inline-block', textAlign: 'center', marginTop: 30 + 'px' }}
-                format='auto'
                 responsive='true'
                 layoutKey='-gw-1+2a-9x+5c'
             />
