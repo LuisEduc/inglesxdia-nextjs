@@ -31,9 +31,8 @@ export default function index({ data }) {
                 // full-voc
                 client='ca-pub-3630578707238850'
                 slot='1345454840'
-                style={{ display: 'inline-block', textAlign: 'center', marginTop: 30 + 'px' }}
+                style={{ display: 'inline-block', marginTop: 30 + 'px' }}
                 responsive='true'
-                layoutKey='-gw-1+2a-9x+5c'
             />
 
             <div className="grid-info">
