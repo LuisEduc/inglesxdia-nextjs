@@ -1,7 +1,7 @@
 
 export default function InfoCat({ titulo, descripcion, icono }) {
     return (
-        <>
+        <div>
             <div className="grid-cat-info">
                 <div className="titulo-cat-inicio">
                     <div>
@@ -16,6 +16,6 @@ export default function InfoCat({ titulo, descripcion, icono }) {
                     <p>{descripcion}</p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
