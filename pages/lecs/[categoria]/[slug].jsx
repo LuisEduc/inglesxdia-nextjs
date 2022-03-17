@@ -172,14 +172,14 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                {/* <AdSense.Google
-                    // 300x90-indi
+                <AdSense.Google
+                    // 300x90-indi-bajo
                     client='ca-pub-3630578707238850'
-                    slot='2960276072'
+                    slot='8034749563'
                     className='ads-mob'
                     style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px', margin: 'auto' }}
                     format=''
-                /> */}
+                />
 
             </Layout>
         </>
