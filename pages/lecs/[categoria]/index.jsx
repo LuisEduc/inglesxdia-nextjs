@@ -37,12 +37,16 @@ export default function post({ dataCat }) {
                 titulo={dataCat.categoria[0].titulo}
                 descripcion={dataCat.categoria[0].descripcion}
             />
+            
+            <div>
             <BotonMain
                 titulo='Todas las lecciones'
                 icono='fa-home'
                 dir='/'
                 bg='bg-primario'
             />
+            </div>
+
             <div className="galeria-posts-cat">
                 {
                     dataCat.lecciones.map(({ id, slug, slug_cat, titulo, imagen, audio }) => (
