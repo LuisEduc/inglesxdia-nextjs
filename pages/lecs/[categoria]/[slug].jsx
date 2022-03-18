@@ -81,23 +81,16 @@ export default function Individual({ dataLec, dataCat }) {
                     dir='/vocabulario'
                     bg='bg-secundario'
                 />
-                {/* <AdSense.Google
+
+                <AdSense.Google
                     // full-indi
                     client='ca-pub-3630578707238850'
                     slot='6905737434'
                     style={{ display: 'block', textAlign: 'center' }}
                     format='auto'
                     responsive='true'
-                    layoutKey='-gw-1+2a-9x+5c'
-                /> */}
-                <AdSense.Google
-                    // feed-indi
-                    client='ca-pub-3630578707238850'
-                    slot='6354658773'
-                    style={{ display: 'block', textAlign: 'center' }}
-                    format='fluid'
-                    layoutKey='-6t+ed+2i-1n-4w'
                 />
+
                 <BotonMain
                     titulo='Lecciones similares'
                     icono='fa-chevron-circle-left'
