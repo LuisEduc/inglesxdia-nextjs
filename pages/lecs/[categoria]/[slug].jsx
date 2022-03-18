@@ -128,11 +128,11 @@ export default function Individual({ dataLec, dataCat }) {
                 </div>
 
                 <AdSense.Google
-                    // 300x90-indi
+                    // 300x250-indi
                     client='ca-pub-3630578707238850'
-                    slot='2960276072'
+                    slot='6438145214'
                     className='ads-mob'
-                    style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px', margin: 'auto' }}
+                    style={{ display: 'inline-block', width: 300 + 'px', height: 250 + 'px', margin: 'auto' }}
                     format=''
                 />
 
