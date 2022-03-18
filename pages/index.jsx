@@ -35,9 +35,9 @@ export default function index({ bloques, cats, buscar }) {
             /> */}
 
             <AdSense.Google
-                // full-voc
+                // full-inicio
                 client='ca-pub-3630578707238850'
-                slot='1345454840'
+                slot='3265336329'
                 style={{ display: 'block', textAlign: 'center', marginTop: 30 + 'px' }}
                 format='auto'
                 responsive='true'
