@@ -68,12 +68,13 @@ export default function Individual({ dataLec, dataCat }) {
                     <meta name="description" content={leccion[0].descripcion} />
                 </Head>
                 <AdSense.Google
-                    // 300x50-indi
+                    // 300x90-indi
                     client='ca-pub-3630578707238850'
-                    slot='4052295657'
+                    slot='2960276072'
                     className='ads-mob'
-                    style={{ display: 'block', width: 100 + '%', height: 50 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px' }}
+                    style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px' }}
                     format=''
+                    responsive='true'
                 />
                 <BotonMain
                     titulo='Vocabulario de hoy'
@@ -89,6 +90,7 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{ display: 'block', textAlign: 'center' }}
                     format='auto'
                     responsive='true'
+                    layoutKey='-gw-1+2a-9x+5c'
                 />
 
                 <BotonMain
