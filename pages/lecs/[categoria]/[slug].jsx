@@ -67,9 +67,6 @@ export default function Individual({ dataLec, dataCat }) {
                     <title>{leccion[0].titulo_seo} | inglesxdia</title>
                     <meta name="description" content={leccion[0].descripcion} />
                 </Head>
-                <AdSense.Google
-                    client='ca-pub-3630578707238850'
-                />
                 {/* <AdSense.Google
                     // 300x90-indi
                     client='ca-pub-3630578707238850'
