@@ -27,7 +27,7 @@ export default function index({ data }) {
                 />
             </div>
 
-            {/* <AdSense.Google
+            <AdSense.Google
                 // full-voc
                 client='ca-pub-3630578707238850'
                 slot='1345454840'
@@ -35,7 +35,7 @@ export default function index({ data }) {
                 format='auto'
                 responsive='true'
                 layoutKey='-gw-1+2a-9x+5c'
-            /> */}
+            />
 
             <div className="grid-info">
                 <div className="info">

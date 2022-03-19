@@ -67,7 +67,7 @@ export default function Individual({ dataLec, dataCat }) {
                     <title>{leccion[0].titulo_seo} | inglesxdia</title>
                     <meta name="description" content={leccion[0].descripcion} />
                 </Head>
-                {/* <AdSense.Google
+                <AdSense.Google
                     // 300x90-indi
                     client='ca-pub-3630578707238850'
                     slot='2960276072'
@@ -75,7 +75,7 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px' }}
                     format=''
                     responsive='true'
-                /> */}
+                />
                 <BotonMain
                     titulo='Vocabulario de hoy'
                     icono='fa-stream'
@@ -83,7 +83,7 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
 
-                {/* <AdSense.Google
+                <AdSense.Google
                     // full-indi
                     client='ca-pub-3630578707238850'
                     slot='6905737434'
@@ -91,7 +91,7 @@ export default function Individual({ dataLec, dataCat }) {
                     format='auto'
                     responsive='true'
                     layoutKey='-gw-1+2a-9x+5c'
-                /> */}
+                />
 
                 <BotonMain
                     titulo='Lecciones similares'
@@ -122,14 +122,14 @@ export default function Individual({ dataLec, dataCat }) {
 
                 </div>
 
-                {/* <AdSense.Google
+                <AdSense.Google
                     // 300x250-indi
                     client='ca-pub-3630578707238850'
                     slot='6438145214'
                     className='ads-mob'
                     style={{ display: 'inline-block', width: 300 + 'px', height: 250 + 'px', margin: 'auto' }}
                     format=''
-                /> */}
+                />
 
                 <AudioContainer
                     titulo={leccion[0].titulo}

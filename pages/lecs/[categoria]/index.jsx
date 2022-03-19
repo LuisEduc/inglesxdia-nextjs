@@ -22,7 +22,7 @@ export default function post({ dataCat }) {
                 bg='bg-secundario'
             />
 
-            {/* <AdSense.Google
+            <AdSense.Google
                 // full-cat
                 client='ca-pub-3630578707238850'
                 slot='2941801066'
@@ -30,7 +30,7 @@ export default function post({ dataCat }) {
                 format='auto'
                 responsive='true'
                 layoutKey='-gw-1+2a-9x+5c'
-            /> */}
+            />
 
             {/* <AdSense.Google
                 // feed-cat

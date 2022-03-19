@@ -34,7 +34,7 @@ export default function index({ bloques, cats, buscar }) {
                 format='fluid'
             /> */}
 
-            {/* <AdSense.Google
+            <AdSense.Google
                 // full-inicio
                 client='ca-pub-3630578707238850'
                 slot='3265336329'
@@ -42,7 +42,7 @@ export default function index({ bloques, cats, buscar }) {
                 format='auto'
                 responsive='true'
                 layoutKey='-gw-1+2a-9x+5c'
-            /> */}
+            />
 
             {
                 bloques.secciones.map(({ id, icono, titulo, color, bg, data }) => (
