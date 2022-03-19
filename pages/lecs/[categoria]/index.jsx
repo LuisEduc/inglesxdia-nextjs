@@ -32,14 +32,14 @@ export default function post({ dataCat }) {
                 layoutKey='-gw-1+2a-9x+5c'
             /> */}
 
-            <AdSense.Google
+            {/* <AdSense.Google
                 // feed-cat
                 client='ca-pub-3630578707238850'
                 slot='9843295884'
                 style={{ display: 'block', textAlign: 'center' }}
                 format='fluid'
                 layoutKey='-6t+ed+2i-1n-4w'
-            />
+            /> */}
 
             <InfoCat
                 icono={dataCat.categoria[0].icono}
