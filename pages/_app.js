@@ -47,7 +47,7 @@ const App = ({ Component, pageProps }) => {
 
       <Script
         strategy="afterInteractive"
-        async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3630578707238850"
+        async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         crossOrigin="anonymous"
       />
       <Script
