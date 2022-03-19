@@ -67,7 +67,7 @@ export default function Individual({ dataLec, dataCat }) {
                     <title>{leccion[0].titulo_seo} | inglesxdia</title>
                     <meta name="description" content={leccion[0].descripcion} />
                 </Head>
-                {/* <AdSense.Google
+                <AdSense.Google
                     // 300x90-indi
                     client='ca-pub-3630578707238850'
                     slot='2960276072'
@@ -75,7 +75,7 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px' }}
                     format=''
                     responsive='true'
-                /> */}
+                />
                 <BotonMain
                     titulo='Vocabulario de hoy'
                     icono='fa-stream'
