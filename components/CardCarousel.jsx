@@ -65,7 +65,7 @@ export default function CardCarousel({ data }) {
         client='ca-pub-3630578707238850'
         slot='6102898405'
         className='ads-mob'
-        style={{ display: 'inline-block', width: 300 + 'px', height: 250 + 'px', margin: 'auto' }}
+        style={{ display: 'inline-block', width: 300 + 'px', height: 250 + 'px', margin: '0 auto 30px' }}
         format=''
       />
       <div className="audio-palabras mx-auto">
