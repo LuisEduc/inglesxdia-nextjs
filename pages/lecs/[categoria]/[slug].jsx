@@ -122,14 +122,14 @@ export default function Individual({ dataLec, dataCat }) {
 
                 </div>
 
-                {/* <AdSense.Google
+                <AdSense.Google
                     // 300x250-indi
                     client='ca-pub-3630578707238850'
                     slot='6438145214'
                     className='ads-mob'
                     style={{ display: 'inline-block', width: 300 + 'px', height: 250 + 'px', margin: 'auto' }}
                     format=''
-                /> */}
+                />
 
                 {/* <AdSense.Google
                     // 300x90-indi
@@ -140,7 +140,7 @@ export default function Individual({ dataLec, dataCat }) {
                     format=''
                     responsive='true'
                 /> */}
-                <AdSense.Google
+                {/* <AdSense.Google
                     // full-indi-medio
                     client='ca-pub-3630578707238850'
                     slot='3511398233'
@@ -148,7 +148,7 @@ export default function Individual({ dataLec, dataCat }) {
                     format='auto'
                     responsive='true'
                     layoutKey='-gw-1+2a-9x+5c'
-                />
+                /> */}
                 <AudioContainer
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
