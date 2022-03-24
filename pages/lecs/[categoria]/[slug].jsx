@@ -144,6 +144,7 @@ export default function Individual({ dataLec, dataCat }) {
                     // full-indi-medio
                     client='ca-pub-3630578707238850'
                     slot='3511398233'
+                    className='ads-mob'
                     style={{ display: 'block', textAlign: 'center' }}
                     format='auto'
                     responsive='true'
