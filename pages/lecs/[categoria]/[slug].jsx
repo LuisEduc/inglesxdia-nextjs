@@ -130,8 +130,8 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{ display: 'inline-block', width: 300 + 'px', height: 250 + 'px', margin: 'auto' }}
                     format=''
                 /> */}
-                
-                <AdSense.Google
+
+                {/* <AdSense.Google
                     // 300x90-indi
                     client='ca-pub-3630578707238850'
                     slot='2960276072'
@@ -139,8 +139,16 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{ display: 'block', height: 90 + 'px' }}
                     format=''
                     responsive='true'
+                /> */}
+                <AdSense.Google
+                    // full-indi-medio
+                    client='ca-pub-3630578707238850'
+                    slot='3511398233'
+                    style={{ display: 'block', textAlign: 'center' }}
+                    format='auto'
+                    responsive='true'
+                    layoutKey='-gw-1+2a-9x+5c'
                 />
-
                 <AudioContainer
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
