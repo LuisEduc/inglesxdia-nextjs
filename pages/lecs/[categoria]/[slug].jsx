@@ -122,13 +122,23 @@ export default function Individual({ dataLec, dataCat }) {
 
                 </div>
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // 300x250-indi
                     client='ca-pub-3630578707238850'
                     slot='6438145214'
                     className='ads-mob'
                     style={{ display: 'inline-block', width: 300 + 'px', height: 250 + 'px', margin: 'auto' }}
                     format=''
+                /> */}
+                
+                <AdSense.Google
+                    // 300x90-indi
+                    client='ca-pub-3630578707238850'
+                    slot='2960276072'
+                    className='ads-mob'
+                    style={{ display: 'block', height: 90 + 'px' }}
+                    format=''
+                    responsive='true'
                 />
 
                 <AudioContainer
@@ -167,14 +177,15 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                {/* <AdSense.Google
+                <AdSense.Google
                     // 300x90-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='8034749563'
                     className='ads-mob'
-                    style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px', margin: 'auto' }}
+                    style={{ display: 'block', height: 90 + 'px' }}
                     format=''
-                /> */}
+                    responsive='true'
+                />
 
             </Layout>
         </>
