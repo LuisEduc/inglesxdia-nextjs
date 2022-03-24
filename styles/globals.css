@@ -2412,11 +2412,16 @@ a {
 /* ----------------------------------------------------------- */
 
 .descarga-app {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  text-align: center !important;
-  height: 30px;
-  padding: 0 !important;
-  border-top: solid 1px rgb(165 165 165 / 80%);
+  height: 40px;
   background: #da4453; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -2444,7 +2449,6 @@ a {
 
 .descarga-app img {
   height: 22px;
-  margin-bottom: 3px;
 }
 
 .bagde-app {
@@ -2454,9 +2458,9 @@ a {
 
 .bagde-app img {
   height: 70px;
-  padding: 8px 12px
+  padding: 8px 12px;
 }
 
-.negrita{
+.negrita {
   font-weight: bold;
 }

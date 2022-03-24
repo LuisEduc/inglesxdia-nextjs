@@ -3,11 +3,15 @@ import Link from "next/link"
 export default function Footer() {
     return (
         <>
-            <div className="text-center bg-light rounded mx-1 my-3">
+            <div className="descarga-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
+                <span>Descargar aplicación gratis</span>
+                <img src="/play.svg" />
+            </div>
+            <div className="text-center bg-light rounded mx-1 my-3 mb-5">
                 <div className="bagde-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
                     <span>Descargue nuestra aplicación </span>
                     <span className="negrita">GRATIS</span>
-                    <br/>
+                    <br />
                     <img src="/google-play-badge.svg" alt="aplicacion" />
                 </div>
                 <div className="container">
