@@ -2478,3 +2478,7 @@ a {
 .negrita {
   font-weight: bold;
 }
+
+.info-foot{
+  margin-bottom: 3.7rem !important;
+}
