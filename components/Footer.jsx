@@ -14,7 +14,7 @@ export default function Footer() {
                     client='ca-pub-3630578707238850'
                     slot='2949297043'
                     style={{ display: 'block', maxHeight: 90 + 'px', minHeight: 50 + 'px', width: 80 + '%', marginLeft: 'auto', marginRight: 'auto' }}
-                    format=''
+                    format='horizontal'
                 />
             </div>
             <div className="info-foot text-center bg-light rounded mx-1 my-3">
