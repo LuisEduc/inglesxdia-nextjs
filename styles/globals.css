@@ -2417,6 +2417,7 @@ a {
 
 @media (max-width: 992px) {
   .banner-inferior-fijo {
+    display: block;
     position: fixed;
     bottom: 0px;
     right: 0;
