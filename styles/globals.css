@@ -2420,6 +2420,7 @@ a {
   width: 100%;
   background-color: var(--color-blanco);
   height: 50px !important;
+  max-height: 51px !important;
 }
 
 /* ----------------------------------------------------------- */
