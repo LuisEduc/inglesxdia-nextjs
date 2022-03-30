@@ -8,12 +8,11 @@ export default function Footer() {
                 <span>Descargar aplicación gratis</span>
                 <img src="/play.svg" />
             </div> */}
-            <div>
-            <AdSense.Google
+            <div className='banner-inferior-fijo'>
+            <AdSense.Google 
                 // banner-inferior-fijo
                 client='ca-pub-3630578707238850'
                 slot='2949297043'
-                className='banner-inferior-fijo'
                 style={{ display: 'block', height: 50 + 'px', width: 80 + '%' }}
                 format=''
             />

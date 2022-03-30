@@ -2414,9 +2414,13 @@ a {
 .banner-inferior-fijo {
   position: fixed;
   bottom: 0px;
+  right: 0;
+  left: 0;
   z-index: 99;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  background-color: #f7f7f7
 }
 
 /* ----------------------------------------------------------- */
