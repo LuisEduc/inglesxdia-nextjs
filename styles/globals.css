@@ -2419,7 +2419,7 @@ a {
   z-index: 99;
   width: 100%;
   background-color: var(--color-blanco);
-  max-height: 90px;
+  max-height: 50px;
   min-height: 50px;
 }
 
