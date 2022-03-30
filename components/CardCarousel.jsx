@@ -52,14 +52,6 @@ export default function CardCarousel({ data }) {
           ))
         }
       </Carousel>
-      {/* <AdSense.Google
-        // 300x50-voc
-        client='ca-pub-3630578707238850'
-        slot='3428838498'
-        className='ads-mob'
-        style={{ display: 'inline-grid', width: 98 + '%', height: 50 + 'px', marginBottom: 15 + 'px', marginTop: -8 + 'px' }}
-        format=''
-      /> */}
       <AdSense.Google
         // 300x90-voc
         client='ca-pub-3630578707238850'
