@@ -2419,8 +2419,14 @@ a {
   z-index: 99;
   width: 100%;
   background-color: var(--color-blanco);
-  height: 50px !important;
-  max-height: 51px !important;
+  height: 90px;
+}
+
+@media (max-width: 992px) {
+  .banner-inferior-fijo {
+    height: 50px;
+    max-height: 51px;
+  }
 }
 
 /* ----------------------------------------------------------- */
