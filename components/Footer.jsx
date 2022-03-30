@@ -12,9 +12,8 @@ export default function Footer() {
                 <AdSense.Google
                     // banner-inferior-fijo
                     client='ca-pub-3630578707238850'
-                    className='ads-mob'
                     slot='2949297043'
-                    style={{ display: 'block', height: 50 + 'px', width: 80 + '%', marginLeft: 'auto', marginRight: 'auto' }}
+                    style={{ display: 'block', maxHeight: 90 + 'px', minHeight: 50 + 'px', width: 80 + '%', marginLeft: 'auto', marginRight: 'auto' }}
                     format=''
                 />
             </div>
