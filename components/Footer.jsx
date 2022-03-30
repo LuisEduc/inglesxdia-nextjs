@@ -9,13 +9,13 @@ export default function Footer() {
                 <img src="/play.svg" />
             </div> */}
             <div className='banner-inferior-fijo'>
-            <AdSense.Google 
-                // banner-inferior-fijo
-                client='ca-pub-3630578707238850'
-                slot='2949297043'
-                style={{ display: 'block', height: 50 + 'px', width: 80 + '%' }}
-                format=''
-            />
+                <AdSense.Google
+                    // banner-inferior-fijo
+                    client='ca-pub-3630578707238850'
+                    slot='2949297043'
+                    style={{ display: 'block', height: 50 + 'px', width: 80 + '%', marginLeft: 'center', marginRight: 'center' }}
+                    format=''
+                />
             </div>
             <div className="text-center bg-light rounded mx-1 my-3 mb-5">
                 <div className="bagde-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
