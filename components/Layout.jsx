@@ -41,6 +41,13 @@ export default function Layout({ children, home, buscar }) {
                 </link>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossOrigin="anonymous"></script>
 
+                <script dangerouslySetInnerHTML={{
+                    __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                    })(window,document,'script','dataLayer','GTM-N4SG9PL');`}}></script>
+
             </Head>
 
             <Navbar />
@@ -51,6 +58,9 @@ export default function Layout({ children, home, buscar }) {
             </header>
 
             <main>
+                <noscript dangerouslySetInnerHTML={{
+                    __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4SG9PL"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscript>
                 {children}
             </main>
 
