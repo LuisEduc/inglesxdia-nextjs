@@ -160,6 +160,16 @@ export default function Individual({ dataLec, dataCat }) {
                     valorInicial={0}
                 />
 
+                <AdSense.Google
+                    // 300x90-indi-bajo
+                    client='ca-pub-3630578707238850'
+                    slot='8034749563'
+                    className='ads-mob'
+                    style={{ display: 'block', height: 90 + 'px' }}
+                    format=''
+                    responsive='true'
+                />
+
                 <TituloBloque
                     titulo='Relacionadas'
                     icono='fa-grip-horizontal'
@@ -183,16 +193,6 @@ export default function Individual({ dataLec, dataCat }) {
                         }
                     </div>
                 }
-
-                <AdSense.Google
-                    // 300x90-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='8034749563'
-                    className='ads-mob'
-                    style={{ display: 'block', height: 90 + 'px' }}
-                    format=''
-                    responsive='true'
-                />
 
             </Layout>
         </>
