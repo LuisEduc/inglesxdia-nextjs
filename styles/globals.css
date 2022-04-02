@@ -2491,3 +2491,7 @@ a {
 /* .info-foot {
   margin-bottom: 3.7rem !important;
 } */
+
+.adsbygoogle > .adsbygoogle-noablate {
+  height: 50px !important;
+}
