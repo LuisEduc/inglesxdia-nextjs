@@ -32,15 +32,13 @@ export default function Navbar() {
                                             <a className="active">Vocabulario de hoy</a>
                                         </Link>
                                     </li>
-                                    {/* <li>
-                                        <Link href="/blog">
-                                            <a>Blog</a>
-                                        </Link>
-                                    </li> */}
                                     <li>
-                                        <Link href="/">
-                                            <a>Lecciones</a>
+                                        <Link href="/#lecs">
+                                            <a href="/#lecs">Lecciones</a>
                                         </Link>
+                                    </li>
+                                    <li onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
+                                            <a className="fw-bold mano">Aplicación gratis</a>
                                     </li>
 
                                 </ul>

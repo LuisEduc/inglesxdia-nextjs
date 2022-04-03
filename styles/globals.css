@@ -1144,11 +1144,15 @@ a {
   box-shadow: 1px 1px 5px rgb(65, 64, 64, 0.2);
 }
 
-.item-hero-text h2 {
+.item-hero-text a {
   margin: 0px;
   color: var(--color-primario);
   font-family: "Righteous", cursive;
   font-size: 1.1rem;
+}
+
+.item-hero-text a:hover {
+  color: #7c76b9c7;
 }
 
 .item-hero-text p {
@@ -2486,4 +2490,8 @@ a {
 
 .negrita {
   font-weight: bold;
+}
+
+.mano {
+  cursor: pointer;
 }

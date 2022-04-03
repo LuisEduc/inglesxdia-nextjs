@@ -43,6 +43,7 @@ export default function index({ bloques, cats, buscar }) {
                 responsive='true'
                 layoutKey='-gw-1+2a-9x+5c'
             />
+            <div id="lecs"></div>
 
             {
                 bloques.secciones.map(({ id, icono, titulo, color, bg, data }) => (

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Buscador from "../components/Buscador"
 import AdSense from 'react-adsense';
+import Link from "next/link";
 
 export default function Hero({ buscar }) {
     return (
@@ -41,29 +42,51 @@ export default function Hero({ buscar }) {
                         <h2>¿Qué ofrece <span className="resalt-mor">inglesxdia.tech</span>?</h2>
                     </div>
                     <div className="hero-resumen-item">
-                        <div className="item-hero-number">
-                            <span>1</span>
-                        </div>
+                        <Link href="/vocabulario">
+                            <a>
+                                <div className="item-hero-number">
+                                    <span>1</span>
+                                </div>
+                            </a>
+                        </Link>
                         <div className="item-hero-text">
-                            <h2>Aprender vocabulario en inglés.</h2>
-                            <p>Vocabulario fácil, medio y avanzado en inglés, significado, traducción, frases de ejemplo y pronunciación, todos los días.</p>
+                            <Link href="/vocabulario">
+                                <a>Vocabulario diario en inglés.</a>
+                            </Link>
+                            <p>Vocabulario fácil, medio y avanzado en inglés. Significado, traducción, frases de ejemplo y pronunciación, todos los días.</p>
                         </div>
                     </div>
                     <div className="hero-resumen-item">
                         <div className="item-hero-number">
-                            <span>2</span>
+                            <Link href="/#lecs">
+                                <a href="/#lecs">
+                                    <div className="item-hero-number">
+                                        <span>2</span>
+                                    </div>
+                                </a>
+                            </Link>
                         </div>
                         <div className="item-hero-text">
-                            <h2>Frases y expresiones en inglés.</h2>
+                            <Link href="/#lecs">
+                                <a href="/#lecs">Frases y expresiones en inglés.</a>
+                            </Link>
                             <p>Expresiones y frases útiles en inglés, verbos con todas las letras, lecturas, vocabulario básico de inglés y mucho más.</p>
                         </div>
                     </div>
                     <div className="hero-resumen-item">
                         <div className="item-hero-number">
-                            <span>3</span>
+                            <Link href="/#lecs">
+                                <a href="/#lecs">
+                                    <div className="item-hero-number">
+                                        <span>3</span>
+                                    </div>
+                                </a>
+                            </Link>
                         </div>
                         <div className="item-hero-text" >
-                            <h2>Ejercicios para practicar.</h2>
+                            <Link href="/#lecs">
+                                <a href="/#lecs">Ejercicios para practicar.</a>
+                            </Link>
                             <p>Todas las lecciones incluyen cuestionario, traducción y pronunciación en inglés-español, la voz es natural y pausada.</p>
                         </div>
                     </div>

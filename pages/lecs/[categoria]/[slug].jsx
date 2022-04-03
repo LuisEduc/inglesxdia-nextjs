@@ -193,7 +193,6 @@ export default function Individual({ dataLec, dataCat }) {
                         }
                     </div>
                 }
-
             </Layout>
         </>
     )
