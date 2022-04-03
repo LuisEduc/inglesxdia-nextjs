@@ -1019,7 +1019,7 @@ a {
   .header-area .main-nav .nav li {
     width: 100%;
     background: #fff;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgb(236, 236, 236);
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
