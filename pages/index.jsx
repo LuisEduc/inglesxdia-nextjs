@@ -71,6 +71,16 @@ export default function index({ bloques, cats, buscar }) {
                     </div>
                 ))
             }
+
+            <AdSense.Google
+                // 300x90-inicio
+                client='ca-pub-3630578707238850'
+                slot='4200920141'
+                style={{ display: 'block', height: 90 + 'px', textAlign: 'center' }}
+                format=''
+                responsive='true'
+            />
+
             <TituloBloque
                 titulo='Todas las categorías'
                 icono='fa-sort-amount-down'

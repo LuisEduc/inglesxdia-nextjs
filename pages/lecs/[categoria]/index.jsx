@@ -51,7 +51,7 @@ export default function post({ dataCat }) {
             <BotonMain
                 titulo='Todas las lecciones'
                 icono='fa-home'
-                dir='/'
+                dir='/#lecs'
                 bg='bg-primario'
             />
             </div>
