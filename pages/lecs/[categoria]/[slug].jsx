@@ -164,17 +164,25 @@ export default function Individual({ dataLec, dataCat }) {
                     // 300x90-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='8034749563'
-                    className='ads-mob'
                     style={{ display: 'block', height: 90 + 'px' }}
                     format=''
                     responsive='true'
                 />
 
-                <TituloBloque
+                <div className='mt-2'>
+                    <BotonMain
+                        titulo='Relacionadas'
+                        icono='fa-grip-horizontal'
+                        dir={`/lecs/${dataCat.categoria[0].slug}`}
+                        bg='bg-secundario'
+                    />
+                </div>
+
+                {/* <TituloBloque
                     titulo='Relacionadas'
                     icono='fa-grip-horizontal'
                     bg='bg-secundario'
-                />
+                /> */}
                 {
                     <div className="galeria-bloque-inicio">
                         {
