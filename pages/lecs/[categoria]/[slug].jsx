@@ -153,13 +153,6 @@ export default function Individual({ dataLec, dataCat }) {
                     audio={leccion[0].audio}
                 />
 
-                <Cuestionario
-                    questions={preguntas}
-                    nextQ={nextQ}
-                    firstQ={firstQ}
-                    valorInicial={0}
-                />
-
                 <AdSense.Google
                     // 300x90-indi-bajo
                     client='ca-pub-3630578707238850'
@@ -169,7 +162,14 @@ export default function Individual({ dataLec, dataCat }) {
                     responsive='true'
                 />
 
-                <div className='mt-2'>
+                <Cuestionario
+                    questions={preguntas}
+                    nextQ={nextQ}
+                    firstQ={firstQ}
+                    valorInicial={0}
+                />
+
+                <div className='mt-4'>
                     <BotonMain
                         titulo='Relacionadas'
                         icono='fa-grip-horizontal'
