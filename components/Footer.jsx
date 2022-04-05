@@ -4,10 +4,10 @@ import AdSense from 'react-adsense';
 export default function Footer() {
     return (
         <>
-            {/* <div className="descarga-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
+            <div className="descarga-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
                 <span>Descargar aplicación gratis</span>
                 <img src="/play.svg" />
-            </div> */}
+            </div>
             {/* <div className='banner-inferior-fijo'>
                 <AdSense.Google
                     // banner-inferior-fijo
@@ -17,7 +17,7 @@ export default function Footer() {
                     format=''
                 />
             </div> */}
-            <div className="text-center bg-light rounded mx-1 my-3">
+            <div className="text-center bg-light rounded mx-1 mb-5">
                 <div className="bagde-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
                     <span>Descargue nuestra aplicación </span>
                     <span className="negrita">GRATIS</span>

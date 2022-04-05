@@ -2448,7 +2448,7 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  height: 40px;
+  height: 32px;
   background: #da4453; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -2470,7 +2470,7 @@ a {
 
 .descarga-app span {
   font-family: "Righteous", cursive;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color-blanco);
 }
 
