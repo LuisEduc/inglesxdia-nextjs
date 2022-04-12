@@ -49,6 +49,16 @@ export default function index({ data }) {
                         <a type="button" onClick={() => window.open("https://www.youtube.com/channel/UC17wrAHkky26woClR91Pr1A", "_blank")} className="btn btn-outline-red btn-redes">Visítanos
                             en Youtube<i className="ms-2 fab fa-youtube"></i></a>
                     </div>
+
+                    <AdSense.Google
+                        // 300x90-voc-medio
+                        client='ca-pub-3630578707238850'
+                        slot='9411553602'
+                        style={{ display: 'block', height: 90 + 'px', textAlign: 'center' }}
+                        format=''
+                        responsive='true'
+                    />
+
                 </div>
                 <div className="div-carousel-voc">
                     <CardCarousel

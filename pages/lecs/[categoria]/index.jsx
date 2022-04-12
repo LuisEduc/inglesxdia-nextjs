@@ -46,14 +46,23 @@ export default function post({ dataCat }) {
                 titulo={dataCat.categoria[0].titulo}
                 descripcion={dataCat.categoria[0].descripcion}
             />
-            
-            <div>
-            <BotonMain
-                titulo='Todas las lecciones'
-                icono='fa-home'
-                dir='/#lecs'
-                bg='bg-primario'
+
+            <AdSense.Google
+                // 300x90-cat
+                client='ca-pub-3630578707238850'
+                slot='1582871333'
+                style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
+                format=''
+                responsive='true'
             />
+
+            <div>
+                <BotonMain
+                    titulo='Todas las lecciones'
+                    icono='fa-home'
+                    dir='/#lecs'
+                    bg='bg-primario'
+                />
             </div>
 
             <div className="galeria-posts-cat">
