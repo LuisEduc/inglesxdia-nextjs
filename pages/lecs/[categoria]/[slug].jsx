@@ -67,20 +67,27 @@ export default function Individual({ dataLec, dataCat }) {
                     <title>{leccion[0].titulo_seo} | inglesxdia</title>
                     <meta name="description" content={leccion[0].descripcion} />
                 </Head>
-                {/* <AdSense.Google
-                    // 300x90-indi
+                
+                <AdSense.Google
+                    // 300x90-indi-alto
                     client='ca-pub-3630578707238850'
-                    slot='2960276072'
-                    className='ads-mob'
-                    style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px' }}
+                    slot='7109410627'
+                    style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
                     format=''
                     responsive='true'
-                /> */}
+                />
                 <BotonMain
                     titulo='Vocabulario de hoy'
                     icono='fa-stream'
                     dir='/vocabulario'
                     bg='bg-secundario'
+                />
+
+                <BotonMain
+                    titulo='Lecciones similares'
+                    icono='fa-chevron-circle-left'
+                    dir={`/lecs/${dataCat.categoria[0].slug}`}
+                    bg='bg-primario'
                 />
 
                 <AdSense.Google
@@ -93,12 +100,6 @@ export default function Individual({ dataLec, dataCat }) {
                     layoutKey='-gw-1+2a-9x+5c'
                 />
 
-                <BotonMain
-                    titulo='Lecciones similares'
-                    icono='fa-chevron-circle-left'
-                    dir={`/lecs/${dataCat.categoria[0].slug}`}
-                    bg='bg-primario'
-                />
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
                         {
