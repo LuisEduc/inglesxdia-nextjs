@@ -67,7 +67,7 @@ export default function Individual({ dataLec, dataCat }) {
                     <title>{leccion[0].titulo_seo} | inglesxdia</title>
                     <meta name="description" content={leccion[0].descripcion} />
                 </Head>
-                
+
                 <AdSense.Google
                     // 300x90-indi-alto
                     client='ca-pub-3630578707238850'
@@ -149,6 +149,14 @@ export default function Individual({ dataLec, dataCat }) {
                     responsive='true'
                     layoutKey='-gw-1+2a-9x+5c'
                 /> */}
+
+                <Cuestionario
+                    questions={preguntas}
+                    nextQ={nextQ}
+                    firstQ={firstQ}
+                    valorInicial={0}
+                />
+
                 <AudioContainer
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
@@ -161,13 +169,6 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{ display: 'block', height: 90 + 'px', textAlign: 'center' }}
                     format=''
                     responsive='true'
-                />
-
-                <Cuestionario
-                    questions={preguntas}
-                    nextQ={nextQ}
-                    firstQ={firstQ}
-                    valorInicial={0}
                 />
 
                 <div className='mt-4'>
