@@ -171,14 +171,12 @@ export default function Individual({ dataLec, dataCat }) {
                     responsive='true'
                 />
 
-                <div className='mt-4'>
-                    <BotonMain
-                        titulo='Relacionadas'
-                        icono='fa-grip-horizontal'
-                        dir={`/lecs/${dataCat.categoria[0].slug}`}
-                        bg='bg-secundario'
-                    />
-                </div>
+                <BotonMain
+                    titulo='Relacionadas'
+                    icono='fa-grip-horizontal'
+                    dir={`/lecs/${dataCat.categoria[0].slug}`}
+                    bg='bg-secundario'
+                />
 
                 {/* <TituloBloque
                     titulo='Relacionadas'
