@@ -35,14 +35,14 @@ export default function index({ bloques, cats, buscar }) {
             /> */}
 
             <AdSense.Google
-                // full-inicio
+                // 300x90-inicio
                 client='ca-pub-3630578707238850'
-                slot='3265336329'
-                style={{ display: 'block', textAlign: 'center', marginTop: 30 + 'px' }}
-                format='auto'
+                slot='4200920141'
+                style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
+                format=''
                 responsive='true'
-                layoutKey='-gw-1+2a-9x+5c'
             />
+
             <div id="lecs"></div>
 
             {
