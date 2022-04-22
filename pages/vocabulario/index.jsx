@@ -54,9 +54,8 @@ export default function index({ data }) {
                         // 300x90-voc-medio
                         client='ca-pub-3630578707238850'
                         slot='9411553602'
-                        style={{ display: 'block', height: 90 + 'px', marginTop: 12 + 'px', textAlign: 'center' }}
+                        style={{ display: 'block', height: 90 + 'px', width: 98 + '%', marginTop: 12 + 'px', textAlign: 'center' }}
                         format=''
-                        responsive='true'
                     />
 
                 </div>
