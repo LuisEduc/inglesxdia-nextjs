@@ -14,7 +14,7 @@ export default function Hero({ buscar }) {
                     <div className="buscador">
                         <Buscador buscar={buscar} />
                     </div>
-                    <div className="div-img-hero">
+                    <div>
                         <AdSense.Google
                             // full-indi
                             client='ca-pub-3630578707238850'
