@@ -13,7 +13,7 @@ export default function Hero({ buscar }) {
                             // full-hero
                             client='ca-pub-3630578707238850'
                             slot='4810977003'
-                            style={{ display: 'block', textAlign: 'center', marginTop: 20 + 'px', marginLeft: 15 + 'px' }}
+                            style={{ display: 'block', textAlign: 'center', marginTop: 20 + 'px', marginBottom: 15 + 'px' }}
                             format='auto'
                             responsive='true'
                             layoutKey='-gw-1+2a-9x+5c'
