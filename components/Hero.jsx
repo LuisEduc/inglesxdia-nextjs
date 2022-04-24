@@ -8,7 +8,7 @@ export default function Hero({ buscar }) {
         <>
             <div className="hero hero-bg">
                 <div className="hero-text">
-                    <div>
+                    <div align="center">
                         <AdSense.Google
                             // full-hero
                             client='ca-pub-3630578707238850'
