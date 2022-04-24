@@ -21,6 +21,7 @@ export default function Buscador({ buscar }) {
                         fuseOptions={{ keys: ["titulo"] }}
                         resultStringKeyName="titulo"
                         onSelect={handleOnSelect}
+                        placeholder="Buscar lecciones"
                     />
                 }
             </div>
