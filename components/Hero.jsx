@@ -16,10 +16,10 @@ export default function Hero({ buscar }) {
                     </div>
                     <div>
                         <AdSense.Google
-                            // full-indi
+                            // full-hero
                             client='ca-pub-3630578707238850'
-                            slot='6905737434'
-                            style={{ display: 'block', textAlign: 'center', marginBottom: 8 + 'px', }}
+                            slot='4810977003'
+                            style={{ display: 'block', textAlign: 'center', marginTop: 15 + 'px', }}
                             format='auto'
                             responsive='true'
                             layoutKey='-gw-1+2a-9x+5c'
@@ -66,32 +66,28 @@ export default function Hero({ buscar }) {
                         </div>
                     </div>
                     <div className="hero-resumen-item">
-                        <div className="item-hero-number">
-                            <Link href="/#lecs">
-                                <a href="/#lecs">
-                                    <div className="item-hero-number">
-                                        <span>2</span>
-                                    </div>
-                                </a>
-                            </Link>
-                        </div>
+                        <Link href="/#lecs">
+                            <a href="/#lecs">
+                                <div className="item-hero-number">
+                                    <span>2</span>
+                                </div>
+                            </a>
+                        </Link>
                         <div className="item-hero-text">
                             <Link href="/#lecs">
-                                <a href="/#lecs">Frases y expresiones en inglés.</a>
+                                <a href="/#lecs">Frases y expresiones.</a>
                             </Link>
                             <p>Expresiones y frases útiles en inglés, verbos con todas las letras, lecturas, vocabulario básico de inglés y mucho más.</p>
                         </div>
                     </div>
                     <div className="hero-resumen-item">
-                        <div className="item-hero-number">
-                            <Link href="/#lecs">
-                                <a href="/#lecs">
-                                    <div className="item-hero-number">
-                                        <span>3</span>
-                                    </div>
-                                </a>
-                            </Link>
-                        </div>
+                        <Link href="/#lecs">
+                            <a href="/#lecs">
+                                <div className="item-hero-number">
+                                    <span>3</span>
+                                </div>
+                            </a>
+                        </Link>
                         <div className="item-hero-text" >
                             <Link href="/#lecs">
                                 <a href="/#lecs">Ejercicios para practicar.</a>
