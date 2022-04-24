@@ -15,13 +15,22 @@ export default function Hero({ buscar }) {
                         <Buscador buscar={buscar} />
                     </div>
                     <div className="div-img-hero">
-                        <Image
+                        <AdSense.Google
+                            // full-indi
+                            client='ca-pub-3630578707238850'
+                            slot='6905737434'
+                            style={{ display: 'block', textAlign: 'center', marginBottom: 8 + 'px', }}
+                            format='auto'
+                            responsive='true'
+                            layoutKey='-gw-1+2a-9x+5c'
+                        />
+                        {/* <Image
                             src="/img/study.svg"
                             alt="studying girl"
                             width={310}
                             height={300}
                             objectFit="cover"
-                        />
+                        /> */}
                     </div>
                     {/* <div className="mx-auto">
                         <a href="./blog/adquisicion-diaria-de-ingles" className="btn-mor">¿Cómo aprender inglés?</a>
@@ -36,18 +45,6 @@ export default function Hero({ buscar }) {
                     style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px' }}
                     format=''
                 /> */}
-
-                <AdSense.Google
-                    // full-indi
-                    client='ca-pub-3630578707238850'
-                    slot='6905737434'
-                    style={{ display: 'block', textAlign: 'center', marginBottom: 8 + 'px', }}
-                    format='auto'
-                    responsive='true'
-                    layoutKey='-gw-1+2a-9x+5c'
-                />
-
-
 
                 <div className="hero-resumen-grid">
                     <div className="hero-resumen-titulo">
