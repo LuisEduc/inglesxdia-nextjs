@@ -8,43 +8,24 @@ export default function Hero({ buscar }) {
         <>
             <div className="hero hero-bg">
                 <div className="hero-text">
+                    <div>
+                        <AdSense.Google
+                            // full-hero
+                            client='ca-pub-3630578707238850'
+                            slot='4810977003'
+                            style={{ display: 'block', textAlign: 'center', marginTop: 15 + 'px', marginBottom: 15 + 'px' }}
+                            format='auto'
+                            responsive='true'
+                            layoutKey='-gw-1+2a-9x+5c'
+                        />
+                    </div>
                     <div className="hero-titulo">
                         <h1>Aprende inglés diario<span className="text-primary">.</span></h1>
                     </div>
                     <div className="buscador">
                         <Buscador buscar={buscar} />
                     </div>
-                    <div>
-                        <AdSense.Google
-                            // full-hero
-                            client='ca-pub-3630578707238850'
-                            slot='4810977003'
-                            style={{ display: 'block', textAlign: 'center', marginTop: 15 + 'px', }}
-                            format='auto'
-                            responsive='true'
-                            layoutKey='-gw-1+2a-9x+5c'
-                        />
-                        {/* <Image
-                            src="/img/study.svg"
-                            alt="studying girl"
-                            width={310}
-                            height={300}
-                            objectFit="cover"
-                        /> */}
-                    </div>
-                    {/* <div className="mx-auto">
-                        <a href="./blog/adquisicion-diaria-de-ingles" className="btn-mor">¿Cómo aprender inglés?</a>
-                    </div> */}
                 </div>
-
-                {/* <AdSense.Google
-                    // 300x90-hero
-                    client='ca-pub-3630578707238850'
-                    slot='9778773781'
-                    className='ads-mob'
-                    style={{ display: 'inline-grid', width: 98 + '%', height: 90 + 'px' }}
-                    format=''
-                /> */}
 
                 <div className="hero-resumen-grid">
                     <div className="hero-resumen-titulo">
