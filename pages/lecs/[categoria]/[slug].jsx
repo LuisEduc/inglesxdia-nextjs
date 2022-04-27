@@ -57,7 +57,7 @@ export default function Individual({ dataLec, dataCat }) {
         }
     }
     firstQ.push(dataCat.lecciones[0]);
-    const dataRel = data.slice(0, 3)
+    const dataRel = data.slice(0, 6)
 
     return (
         <>
@@ -163,12 +163,13 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <AdSense.Google
-                    // 300x90-indi-bajo
+                    // full-indi-bajo
                     client='ca-pub-3630578707238850'
-                    slot='8034749563'
-                    style={{ display: 'block', height: 90 + 'px', textAlign: 'center' }}
-                    format=''
+                    slot='4370311034'
+                    style={{ display: 'block', textAlign: 'center' }}
+                    format='auto'
                     responsive='true'
+                    layoutKey='-gw-1+2a-9x+5c'
                 />
 
                 <BotonMain
@@ -201,6 +202,16 @@ export default function Individual({ dataLec, dataCat }) {
                         }
                     </div>
                 }
+
+                <AdSense.Google
+                    // 300x90-indi-bajo
+                    client='ca-pub-3630578707238850'
+                    slot='8034749563'
+                    style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center'}}
+                    format=''
+                    responsive='true'
+                />
+
             </Layout>
         </>
     )

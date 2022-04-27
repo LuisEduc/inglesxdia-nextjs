@@ -468,9 +468,10 @@ a {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   display: grid;
   grid-auto-rows: 18.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   column-gap: 1rem;
 }
 
@@ -543,10 +544,17 @@ a {
   z-index: 2;
 }
 
+@media (max-width: 1200px) {
+  .galeria-bloque-inicio {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+
 @media (max-width: 770px) {
   .galeria-bloque-inicio {
     width: 95%;
     grid-auto-rows: 14rem;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
   }
 
   .bloque-inicio {
@@ -1977,7 +1985,7 @@ a {
   border-radius: 10px;
   box-shadow: 3px 2px 1px 1px rgb(0 0 0 / 25%);
   overflow: hidden;
-  max-width: 37%;
+  max-width: 33%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2068,7 +2076,7 @@ a {
 
 @media (max-width: 1280px) {
   .div-carousel-lec .carousel-lec {
-    max-width: 50%;
+    max-width: 45%;
   }
 
   .div-carousel-lec .carousel .control-next.control-arrow {
