@@ -16,6 +16,16 @@ export default function index({ data }) {
                 <title>Aprender palabras en inglés cada día | inglesxdia</title>
                 <meta name="description" content="Aprende nuevo vocabulario en inglés todos los días. La palabras son básicas, medias y avanzadas, incluyen audio de la pronunciación y frases de ejemplo." />
             </Head>
+
+            <AdSense.Google
+                // 300x90-indi-alto
+                client='ca-pub-3630578707238850'
+                slot='6388904057'
+                style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
+                format=''
+                responsive='true'
+            />
+
             <div className="inicio-badge">
                 <BotonVoc
                     title='Lecciones útiles'
