@@ -72,10 +72,11 @@ export default function Individual({ dataLec, dataCat }) {
                     // 300x90-indi-alto
                     client='ca-pub-3630578707238850'
                     slot='7109410627'
-                    style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
+                    style={{ display: 'block', height: 50 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
                     format=''
                     responsive='true'
                 />
+
                 <BotonMain
                     titulo='Vocabulario de hoy'
                     icono='fa-stream'
@@ -87,6 +88,29 @@ export default function Individual({ dataLec, dataCat }) {
                     titulo='Lecciones similares'
                     icono='fa-chevron-circle-left'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
+                    bg='bg-primario'
+                />
+
+                <AdSense.Google
+                    // 300x90-indi-alto
+                    client='ca-pub-3630578707238850'
+                    slot='7109410627'
+                    style={{ display: 'block', height: 90 + 'px', marginBottom: 17 + 'px', marginTop: 17 + 'px', textAlign: 'center' }}
+                    format=''
+                    responsive='true'
+                />
+
+                <BotonMain
+                    titulo='Escuchar audio'
+                    icono='fa-headphones'
+                    dir='#audio'
+                    bg='bg-secundario'
+                />
+
+                <BotonMain
+                    titulo='Resolver test'
+                    icono='fa-graduation-cap'
+                    dir='#test'
                     bg='bg-primario'
                 />
 
@@ -131,6 +155,8 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{ display: 'inline-block', width: 300 + 'px', height: 250 + 'px', margin: 'auto' }}
                     format=''
                 /> */}
+
+                <div id="test"></div>
                 <AdSense.Google
                     // 300x90-indi
                     client='ca-pub-3630578707238850'
@@ -150,6 +176,7 @@ export default function Individual({ dataLec, dataCat }) {
                     layoutKey='-gw-1+2a-9x+5c'
                 /> */}
 
+                <div id="audio"></div>
                 <Cuestionario
                     questions={preguntas}
                     nextQ={nextQ}
@@ -203,7 +230,7 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 /> */}
                 {
-                    <div className="galeria-bloque-inicio" style={{ marginTop: -25 + 'px'}}>
+                    <div className="galeria-bloque-inicio" style={{ marginTop: -25 + 'px' }}>
                         {
                             dataRel.map(({ id, titulo, imagen, slug_cat, slug }) => (
                                 <div key={id}>
