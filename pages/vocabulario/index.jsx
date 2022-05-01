@@ -21,7 +21,14 @@ export default function index({ data }) {
                 // full-voc
                 client='ca-pub-3630578707238850'
                 slot='1345454840'
-                style={{ display: 'block', textAlign: 'center', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
+                style={{
+                    display: 'block',
+                    marginBottom: 15 + 'px',
+                    marginTop: 15 + 'px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    textAlign: 'center'
+                }}
                 format='auto'
                 responsive='true'
                 layoutKey='-gw-1+2a-9x+5c'
@@ -42,7 +49,14 @@ export default function index({ data }) {
                 // 300x90-indi-alto
                 client='ca-pub-3630578707238850'
                 slot='6388904057'
-                style={{ display: 'block', height: 90 + 'px', textAlign: 'center', marginTop: 30 + 'px' }}
+                style={{
+                    display: 'block',
+                    height: 90 + 'px',
+                    marginTop: 30 + 'px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    textAlign: 'center'
+                }}
                 format=''
                 responsive='true'
             />

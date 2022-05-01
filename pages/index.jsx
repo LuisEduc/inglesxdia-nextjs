@@ -38,7 +38,14 @@ export default function index({ bloques, cats, buscar }) {
                 // 300x90-inicio
                 client='ca-pub-3630578707238850'
                 slot='4200920141'
-                style={{ display: 'block', height: 90 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
+                style={{
+                    display: 'block',
+                    height: 90 + 'px',
+                    marginTop: 15 + 'px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    textAlign: 'center'
+                }}
                 format=''
                 responsive='true'
             />
@@ -76,7 +83,13 @@ export default function index({ bloques, cats, buscar }) {
                 // 300x90-inicio
                 client='ca-pub-3630578707238850'
                 slot='4200920141'
-                style={{ display: 'block', height: 90 + 'px', textAlign: 'center' }}
+                style={{
+                    display: 'block',
+                    height: 90 + 'px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    textAlign: 'center'
+                }}
                 format=''
                 responsive='true'
             />

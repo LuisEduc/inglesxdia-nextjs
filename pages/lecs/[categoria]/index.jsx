@@ -26,7 +26,12 @@ export default function post({ dataCat }) {
                 // full-cat
                 client='ca-pub-3630578707238850'
                 slot='2941801066'
-                style={{ display: 'block', textAlign: 'center' }}
+                style={{
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    textAlign: 'center'
+                }}
                 format='auto'
                 responsive='true'
                 layoutKey='-gw-1+2a-9x+5c'
@@ -51,7 +56,15 @@ export default function post({ dataCat }) {
                 // 300x90-cat
                 client='ca-pub-3630578707238850'
                 slot='1582871333'
-                style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
+                style={{
+                    display: 'block',
+                    height: 90 + 'px',
+                    marginBottom: 15 + 'px',
+                    marginTop: 15 + 'px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    textAlign: 'center'
+                }}
                 format=''
                 responsive='true'
             />

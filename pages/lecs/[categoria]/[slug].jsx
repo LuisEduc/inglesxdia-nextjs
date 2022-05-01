@@ -148,7 +148,7 @@ export default function Individual({ dataLec, dataCat }) {
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
                 />
-                
+
                 <div id="test"></div>
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
@@ -187,7 +187,13 @@ export default function Individual({ dataLec, dataCat }) {
                     client='ca-pub-3630578707238850'
                     slot='2960276072'
                     className='ads-mob'
-                    style={{ display: 'block', height: 90 + 'px' }}
+                    style={{
+                        display: 'block',
+                        height: 90 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
                     format=''
                     responsive='true'
                 />
@@ -244,7 +250,15 @@ export default function Individual({ dataLec, dataCat }) {
                     // 300x90-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='8034749563'
-                    style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
+                    style={{
+                        display: 'block',
+                        height: 90 + 'px',
+                        marginBottom: 15 + 'px', 
+                        marginTop: 15 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
                     format=''
                     responsive='true'
                 />
