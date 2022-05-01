@@ -68,7 +68,7 @@ export default function Individual({ dataLec, dataCat }) {
                     <meta name="description" content={leccion[0].descripcion} />
                 </Head>
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // 300x50-indi
                     client='ca-pub-3630578707238850'
                     slot='4052295657'
@@ -83,6 +83,23 @@ export default function Individual({ dataLec, dataCat }) {
                         textAlign: 'center'
                     }}
                     format=''
+                /> */}
+
+                <AdSense.Google
+                    // 300x90-indi-alto
+                    client='ca-pub-3630578707238850'
+                    slot='7109410627'
+                    style={{
+                        display: 'block',
+                        height: 90 + 'px',
+                        marginBottom: 15 + 'px',
+                        marginTop: 15 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
+                    format=''
+                    responsive='true'
                 />
 
                 <BotonMain
@@ -100,21 +117,22 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-primario'
                     cssIcon='vibrar-x'
                 />
+
                 <AdSense.Google
-                    // 300x90-indi-alto
+                    // full-indi
                     client='ca-pub-3630578707238850'
-                    slot='7109410627'
+                    slot='6905737434'
                     style={{
                         display: 'block',
-                        height: 90 + 'px',
                         marginBottom: 17 + 'px',
                         marginTop: 17 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
-                    format=''
+                    format='auto'
                     responsive='true'
+                    layoutKey='-gw-1+2a-9x+5c'
                 />
 
                 <BotonMain
@@ -129,16 +147,6 @@ export default function Individual({ dataLec, dataCat }) {
                     icono='fa-chevron-circle-left'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
-                />
-
-                <AdSense.Google
-                    // full-indi
-                    client='ca-pub-3630578707238850'
-                    slot='6905737434'
-                    style={{ display: 'block', textAlign: 'center', marginBottom: 8 + 'px', }}
-                    format='auto'
-                    responsive='true'
-                    layoutKey='-gw-1+2a-9x+5c'
                 />
 
                 <div className="div-carousel-lec">
