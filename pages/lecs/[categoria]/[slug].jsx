@@ -72,7 +72,16 @@ export default function Individual({ dataLec, dataCat }) {
                     // 300x50-indi
                     client='ca-pub-3630578707238850'
                     slot='4052295657'
-                    style={{ display: 'block', height: 50 + 'px', width: 85 + '%', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
+                    style={{
+                        display: 'block',
+                        height: 50 + 'px',
+                        width: 85 + '%',
+                        marginBottom: 15 + 'px',
+                        marginTop: 15 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
                     format=''
                 />
 
