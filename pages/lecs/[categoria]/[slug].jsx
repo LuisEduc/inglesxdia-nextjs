@@ -75,7 +75,7 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{
                         display: 'block',
                         height: 50 + 'px',
-                        width: 85 + '%',
+                        width: 90 + '%',
                         marginBottom: 15 + 'px',
                         marginTop: 15 + 'px',
                         marginLeft: 'auto',
@@ -103,9 +103,17 @@ export default function Individual({ dataLec, dataCat }) {
                     // 300x90-indi-alto
                     client='ca-pub-3630578707238850'
                     slot='7109410627'
-                    style={{ display: 'block', height: 90 + 'px', marginBottom: 17 + 'px', marginTop: 17 + 'px', textAlign: 'center' }}
+                    style={{
+                        display: 'block',
+                        height: 90 + 'px',
+                        width: 90 + '%',
+                        marginBottom: 17 + 'px',
+                        marginTop: 17 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
                     format=''
-                    responsive='true'
                 />
 
                 <BotonMain
