@@ -203,7 +203,7 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 /> */}
                 {
-                    <div className="galeria-bloque-inicio">
+                    <div className="galeria-bloque-inicio" style={{ marginTop: -20 + 'px'}}>
                         {
                             dataRel.map(({ id, titulo, imagen, slug_cat, slug }) => (
                                 <div key={id}>
@@ -213,6 +213,7 @@ export default function Individual({ dataLec, dataCat }) {
                                         slug_cat={slug_cat}
                                         slug={slug}
                                     >
+                                        <div style={{ height: '25px' }}></div>
                                     </BloqueInicio>
                                 </div>
                             ))
