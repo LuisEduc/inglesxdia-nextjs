@@ -162,7 +162,7 @@ export default function Individual({ dataLec, dataCat }) {
                     audio={leccion[0].audio}
                 />
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // full-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='4370311034'
@@ -170,6 +170,15 @@ export default function Individual({ dataLec, dataCat }) {
                     format='auto'
                     responsive='true'
                     layoutKey='-gw-1+2a-9x+5c'
+                /> */}
+
+                <AdSense.Google
+                    // 300x50-indi
+                    client='ca-pub-3630578707238850'
+                    slot='4052295657'
+                    style={{ display: 'block', height: 50 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
+                    format=''
+                    responsive='true'
                 />
 
                 <BotonMain
@@ -207,7 +216,7 @@ export default function Individual({ dataLec, dataCat }) {
                     // 300x90-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='8034749563'
-                    style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center'}}
+                    style={{ display: 'block', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
                     format=''
                     responsive='true'
                 />
