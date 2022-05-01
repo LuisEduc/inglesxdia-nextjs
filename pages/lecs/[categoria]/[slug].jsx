@@ -69,12 +69,11 @@ export default function Individual({ dataLec, dataCat }) {
                 </Head>
 
                 <AdSense.Google
-                    // 300x90-indi-alto
+                    // 300x50-indi
                     client='ca-pub-3630578707238850'
-                    slot='7109410627'
-                    style={{ display: 'block', height: 50 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
+                    slot='4052295657'
+                    style={{ display: 'block', height: 50 + 'px', width: 85 + '%', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
                     format=''
-                    responsive='true'
                 />
 
                 <BotonMain
