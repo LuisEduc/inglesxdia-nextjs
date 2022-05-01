@@ -106,7 +106,6 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{
                         display: 'block',
                         height: 90 + 'px',
-                        width: 90 + '%',
                         marginBottom: 17 + 'px',
                         marginTop: 17 + 'px',
                         marginLeft: 'auto',
@@ -114,6 +113,7 @@ export default function Individual({ dataLec, dataCat }) {
                         textAlign: 'center'
                     }}
                     format=''
+                    responsive='true'
                 />
 
                 <BotonMain
