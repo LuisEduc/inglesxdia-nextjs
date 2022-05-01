@@ -86,19 +86,20 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <BotonMain
-                    titulo='Vocabulario de hoy'
-                    icono='fa-stream'
-                    dir='/vocabulario'
+                    titulo='Escuchar audio'
+                    icono='fa-headphones'
+                    dir='#audio'
                     bg='bg-secundario'
+                    cssIcon='vibrar-x'
                 />
 
                 <BotonMain
-                    titulo='Lecciones similares'
-                    icono='fa-chevron-circle-left'
-                    dir={`/lecs/${dataCat.categoria[0].slug}`}
+                    titulo='Resolver cuestionario'
+                    icono='fa-graduation-cap'
+                    dir='#test'
                     bg='bg-primario'
+                    cssIcon='vibrar-x'
                 />
-
                 <AdSense.Google
                     // 300x90-indi-alto
                     client='ca-pub-3630578707238850'
@@ -117,16 +118,16 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <BotonMain
-                    titulo='Escuchar audio'
-                    icono='fa-headphones'
-                    dir='#audio'
+                    titulo='Vocabulario de hoy'
+                    icono='fa-stream'
+                    dir='/vocabulario'
                     bg='bg-secundario'
                 />
 
                 <BotonMain
-                    titulo='Resolver test'
-                    icono='fa-graduation-cap'
-                    dir='#test'
+                    titulo='Lecciones similares'
+                    icono='fa-chevron-circle-left'
+                    dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
                 />
 
