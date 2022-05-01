@@ -148,7 +148,8 @@ export default function Individual({ dataLec, dataCat }) {
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
                 />
-
+                
+                <div id="test"></div>
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
                         {
@@ -181,7 +182,6 @@ export default function Individual({ dataLec, dataCat }) {
                     format=''
                 /> */}
 
-                <div id="test"></div>
                 <AdSense.Google
                     // 300x90-indi
                     client='ca-pub-3630578707238850'
