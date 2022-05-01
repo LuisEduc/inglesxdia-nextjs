@@ -213,7 +213,6 @@ export default function Individual({ dataLec, dataCat }) {
                                         slug_cat={slug_cat}
                                         slug={slug}
                                     >
-                                        <div style={{ height: '25px' }}></div>
                                     </BloqueInicio>
                                 </div>
                             ))
