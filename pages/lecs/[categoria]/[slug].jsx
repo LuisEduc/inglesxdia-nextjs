@@ -213,6 +213,23 @@ export default function Individual({ dataLec, dataCat }) {
                     audio={leccion[0].audio}
                 />
 
+                <AdSense.Google
+                    // 300x90-indi-bajo
+                    client='ca-pub-3630578707238850'
+                    slot='8034749563'
+                    style={{
+                        display: 'block',
+                        height: 90 + 'px',
+                        marginBottom: 15 + 'px',
+                        marginTop: 15 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
+                    format=''
+                    responsive='true'
+                />
+
                 {/* <AdSense.Google
                     // full-indi-bajo
                     client='ca-pub-3630578707238850'
@@ -237,23 +254,6 @@ export default function Individual({ dataLec, dataCat }) {
                     icono='fa-grip-horizontal'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-secundario'
-                />
-
-                <AdSense.Google
-                    // 300x90-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='8034749563'
-                    style={{
-                        display: 'block',
-                        height: 90 + 'px',
-                        marginBottom: 15 + 'px',
-                        marginTop: 15 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                    responsive='true'
                 />
 
                 {/* <TituloBloque
