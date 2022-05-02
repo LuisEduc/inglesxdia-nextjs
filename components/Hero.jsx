@@ -27,7 +27,7 @@ export default function Hero({ buscar }) {
                         />
                     </div>
                     <div className="hero-titulo">
-                        <h1>Aprende inglés diario<span className="text-primary">.</span></h1>
+                        <h1>Estudiar inglés online<span className="text-primary">.</span></h1>
                     </div>
                     <div className="buscador">
                         <Buscador buscar={buscar} />
@@ -78,7 +78,7 @@ export default function Hero({ buscar }) {
                         </Link>
                         <div className="item-hero-text" >
                             <Link href="/#lecs">
-                                <a href="/#lecs">Ejercicios para practicar.</a>
+                                <a href="/#lecs">Ejercicios para estudiar.</a>
                             </Link>
                             <p>Todas las lecciones incluyen cuestionario, traducción y pronunciación en inglés-español, la voz es natural y pausada.</p>
                         </div>

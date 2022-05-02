@@ -14,8 +14,8 @@ export default function index({ bloques, cats, buscar }) {
         <Layout home buscar={buscar}>
             <Head>
                 <link rel="icon" href="/favicon.png" />
-                <title>Aprender inglés diario | inglesxdia</title>
-                <meta name="description" content="Aprende inglés gratis todos los días con nuestras publicaciones de vocabulario básico, frases comunes, expresiones útiles, lecturas, formas de decir, frases para una conversación, phrasal verbs y mucho más." />
+                <title>Estudiar inglés online | inglesxdia</title>
+                <meta name="description" content="Estudia inglés online todos los días con nuestras publicaciones de vocabulario básico, frases comunes, expresiones útiles, lecturas, formas de decir, frases para una conversación, phrasal verbs y mucho más." />
             </Head>
 
             <BotonMain
