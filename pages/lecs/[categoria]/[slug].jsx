@@ -112,21 +112,20 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <BotonMain
-                    titulo='Ir al audio'
-                    icono='fa-headphones'
-                    dir='#audio'
+                    titulo='Vocabulario de hoy'
+                    icono='fa-stream'
+                    dir='/vocabulario'
                     bg='bg-secundario'
-                    cssIcon='vibrar-x'
                 />
 
                 <BotonMain
-                    titulo='Ir a la lección'
-                    icono='fa-graduation-cap'
-                    dir='#lec'
+                    titulo='Lecciones similares'
+                    icono='fa-chevron-circle-left'
+                    dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
-                    cssIcon='vibrar-x'
                 />
 
+                <div id="lec"></div>
                 <AdSense.Google
                     // full-indi
                     client='ca-pub-3630578707238850'
@@ -142,21 +141,6 @@ export default function Individual({ dataLec, dataCat }) {
                     format='auto'
                     responsive='true'
                     layoutKey='-gw-1+2a-9x+5c'
-                />
-
-                <BotonMain
-                    titulo='Vocabulario de hoy'
-                    icono='fa-stream'
-                    dir='/vocabulario'
-                    bg='bg-secundario'
-                />
-
-                <div id="lec"></div>
-                <BotonMain
-                    titulo='Lecciones similares'
-                    icono='fa-chevron-circle-left'
-                    dir={`/lecs/${dataCat.categoria[0].slug}`}
-                    bg='bg-primario'
                 />
 
                 <div className="div-carousel-lec">
