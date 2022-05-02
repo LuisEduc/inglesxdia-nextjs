@@ -118,6 +118,7 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
 
+                <div id="lec"></div>
                 <BotonMain
                     titulo='Lecciones similares'
                     icono='fa-chevron-circle-left'
@@ -125,7 +126,6 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-primario'
                 />
 
-                <div id="lec"></div>
                 <AdSense.Google
                     // full-indi
                     client='ca-pub-3630578707238850'
