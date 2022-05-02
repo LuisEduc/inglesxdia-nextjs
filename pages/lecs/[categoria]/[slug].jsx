@@ -144,6 +144,7 @@ export default function Individual({ dataLec, dataCat }) {
                     layoutKey='-gw-1+2a-9x+5c'
                 />
 
+                <div id="lec"></div>
                 <BotonMain
                     titulo='Vocabulario de hoy'
                     icono='fa-stream'
@@ -158,7 +159,6 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-primario'
                 />
 
-                <div id="lec"></div>
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
                         {
