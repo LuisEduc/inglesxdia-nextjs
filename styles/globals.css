@@ -665,7 +665,7 @@ a {
   display: flex;
   justify-content: center;
   margin-top: auto;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 15px 20px;
   text-align: center;
   background-color: var(--color-blanco);
@@ -674,9 +674,10 @@ a {
 }
 
 .lecs-titulo h1 {
-  font-size: 1.4rem;
+  font-size: 1.22rem;
   color: var(--color-primario);
   font-family: "Righteous", cursive;
+  margin-bottom: 0px;
 }
 
 .img-post {
