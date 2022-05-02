@@ -13,6 +13,7 @@ import Image from "next/image"
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import AdSense from 'react-adsense';
+import Link from "next/link"
 
 const settings = {
     showIndicators: false,
@@ -67,6 +68,14 @@ export default function Individual({ dataLec, dataCat }) {
                     <title>{leccion[0].titulo_seo} | Estudiar inglés online</title>
                     <meta name="description" content={leccion[0].descripcion} />
                 </Head>
+
+                <Link href="#test">
+                    <a href="#test">
+                        <div className="lecs-titulo">
+                            <h1>{leccion[0].titulo_seo}</h1>
+                        </div>
+                    </a>
+                </Link>
 
                 {/* <AdSense.Google
                     // 300x50-indi
@@ -253,7 +262,7 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{
                         display: 'block',
                         height: 90 + 'px',
-                        marginBottom: 15 + 'px', 
+                        marginBottom: 15 + 'px',
                         marginTop: 15 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',

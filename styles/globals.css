@@ -661,6 +661,24 @@ a {
 /* POST INDIVIDUAL */
 /* ----------------------------------------------------------- */
 
+.lecs-titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin: 20px auto;
+  padding: 15px 20px;
+  text-align: center;
+  background-color: var(--color-blanco);
+  border-radius: 15px;
+  width: 85%;
+}
+
+.lecs-titulo h1 {
+  font-size: 1.4rem;
+  color: var(--color-primario);
+  font-family: "Righteous", cursive;
+}
+
 .img-post {
   margin-left: auto;
   margin-right: auto;
