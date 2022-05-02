@@ -144,7 +144,6 @@ export default function Individual({ dataLec, dataCat }) {
                     layoutKey='-gw-1+2a-9x+5c'
                 />
 
-                <div id="lec"></div>
                 <BotonMain
                     titulo='Vocabulario de hoy'
                     icono='fa-stream'
@@ -152,6 +151,7 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
 
+                <div id="lec"></div>
                 <BotonMain
                     titulo='Lecciones similares'
                     icono='fa-chevron-circle-left'
