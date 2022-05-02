@@ -69,8 +69,8 @@ export default function Individual({ dataLec, dataCat }) {
                     <meta name="description" content={leccion[0].descripcion} />
                 </Head>
 
-                <Link href="#test">
-                    <a href="#test">
+                <Link href="#lec">
+                    <a href="#lec">
                         <div className="lecs-titulo">
                             <h1>{leccion[0].titulo_seo}</h1>
                         </div>
@@ -112,7 +112,7 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <BotonMain
-                    titulo='Escuchar audio'
+                    titulo='Ir al audio'
                     icono='fa-headphones'
                     dir='#audio'
                     bg='bg-secundario'
@@ -120,9 +120,9 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <BotonMain
-                    titulo='Resolver cuestionario'
+                    titulo='Ir a la lección'
                     icono='fa-graduation-cap'
-                    dir='#test'
+                    dir='#lec'
                     bg='bg-primario'
                     cssIcon='vibrar-x'
                 />
@@ -158,7 +158,7 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-primario'
                 />
 
-                <div id="test"></div>
+                <div id="lec"></div>
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
                         {
