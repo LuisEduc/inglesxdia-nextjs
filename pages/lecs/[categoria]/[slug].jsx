@@ -175,7 +175,7 @@ export default function Individual({ dataLec, dataCat }) {
                     format=''
                 /> */}
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // 300x90-indi
                     client='ca-pub-3630578707238850'
                     slot='2960276072'
@@ -189,7 +189,17 @@ export default function Individual({ dataLec, dataCat }) {
                     }}
                     format=''
                     responsive='true'
+                /> */}
+
+                <AdSense.Google
+                    // feed-indi
+                    client='ca-pub-3630578707238850'
+                    slot='6354658773'
+                    style={{ display: 'block' }}
+                    format='fluid'
+                    layoutKey='-6t+ed+2i-1n-4w'
                 />
+
                 {/* <AdSense.Google
                     // full-indi-medio
                     client='ca-pub-3630578707238850'
