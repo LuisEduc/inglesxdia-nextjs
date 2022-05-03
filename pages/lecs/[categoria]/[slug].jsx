@@ -127,12 +127,12 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <AdSense.Google
-                    // 300x90-indi-alto
+                    // 300x50-indi-alto
                     client='ca-pub-3630578707238850'
-                    slot='7109410627'
+                    slot='2418913037'
                     style={{
                         display: 'block',
-                        height: 90 + 'px',
+                        height: 50 + 'px',
                         marginTop: 17 + 'px',
                         marginBottom: 7 + 'px',
                         marginLeft: 'auto',
@@ -175,29 +175,20 @@ export default function Individual({ dataLec, dataCat }) {
                     format=''
                 /> */}
 
-                {/* <AdSense.Google
-                    // 300x90-indi
+                <AdSense.Google
+                    // 300x50-indi
                     client='ca-pub-3630578707238850'
-                    slot='2960276072'
+                    slot='4052295657'
                     className='ads-mob'
                     style={{
                         display: 'block',
-                        height: 90 + 'px',
+                        height: 50 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
                     format=''
                     responsive='true'
-                /> */}
-
-                <AdSense.Google
-                    // feed-indi
-                    client='ca-pub-3630578707238850'
-                    slot='6354658773'
-                    style={{ display: 'block' }}
-                    format='fluid'
-                    layoutKey='-6t+ed+2i-1n-4w'
                 />
 
                 {/* <AdSense.Google
