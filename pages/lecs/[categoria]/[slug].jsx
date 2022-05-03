@@ -101,7 +101,7 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{
                         display: 'block',
                         marginTop: 12 + 'px',
-                        marginBottom: 0 + 'px',
+                        marginBottom: 12 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
