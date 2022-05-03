@@ -78,23 +78,6 @@ export default function Individual({ dataLec, dataCat }) {
                 </Link>
 
                 {/* <AdSense.Google
-                    // 300x50-indi
-                    client='ca-pub-3630578707238850'
-                    slot='4052295657'
-                    style={{
-                        display: 'block',
-                        height: 50 + 'px',
-                        width: 90 + '%',
-                        marginBottom: 15 + 'px',
-                        marginTop: 15 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                /> */}
-
-                <AdSense.Google
                     // full-indi
                     client='ca-pub-3630578707238850'
                     slot='6905737434'
@@ -109,6 +92,22 @@ export default function Individual({ dataLec, dataCat }) {
                     format='auto'
                     responsive='true'
                     layoutKey='-gw-1+2a-9x+5c'
+                /> */}
+
+                <AdSense.Google
+                    // article-indi
+                    client='ca-pub-3630578707238850'
+                    slot='1961153001'
+                    style={{
+                        display: 'block',
+                        marginTop: 12 + 'px',
+                        marginBottom: 12 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
+                    layout='in-article'
+                    format='fluid'
                 />
 
                 <BotonMain
