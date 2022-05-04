@@ -69,13 +69,9 @@ export default function Individual({ dataLec, dataCat }) {
                     <meta name="description" content={leccion[0].descripcion} />
                 </Head>
 
-                <Link href="#lec">
-                    <a href="#lec">
-                        <div className="lecs-titulo">
-                            <h1>{leccion[0].titulo_seo}</h1>
-                        </div>
-                    </a>
-                </Link>
+                <div className="lecs-titulo">
+                    <h1>{leccion[0].titulo_seo}</h1>
+                </div>
 
                 <AdSense.Google
                     // 300x90-indi-alto
@@ -102,7 +98,6 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
 
-                <div id="lec"></div>
                 <BotonMain
                     titulo='Lecciones similares'
                     icono='fa-chevron-circle-left'
