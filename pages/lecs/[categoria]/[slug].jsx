@@ -77,38 +77,22 @@ export default function Individual({ dataLec, dataCat }) {
                     </a>
                 </Link>
 
-                {/* <AdSense.Google
-                    // 300x50-indi
-                    client='ca-pub-3630578707238850'
-                    slot='4052295657'
-                    style={{
-                        display: 'block',
-                        height: 50 + 'px',
-                        width: 90 + '%',
-                        marginBottom: 15 + 'px',
-                        marginTop: 15 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                /> */}
-
                 <AdSense.Google
-                    // full-indi
+                    // 300x90-indi-alto
                     client='ca-pub-3630578707238850'
-                    slot='6905737434'
+                    slot='7109410627'
+                    className='ads-mob'
                     style={{
                         display: 'block',
+                        height: 90 + 'px',
                         marginTop: 12 + 'px',
                         marginBottom: 12 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
-                    format='auto'
+                    format=''
                     responsive='true'
-                    layoutKey='-gw-1+2a-9x+5c'
                 />
 
                 <BotonMain
@@ -127,21 +111,20 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <AdSense.Google
-                    // 300x90-indi-alto
+                    // full-indi
                     client='ca-pub-3630578707238850'
-                    slot='7109410627'
-                    className='ads-mob'
+                    slot='6905737434'
                     style={{
                         display: 'block',
-                        height: 90 + 'px',
                         marginTop: 17 + 'px',
                         marginBottom: 7 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
-                    format=''
+                    format='auto'
                     responsive='true'
+                    layoutKey='-gw-1+2a-9x+5c'
                 />
 
                 <div className="div-carousel-lec">

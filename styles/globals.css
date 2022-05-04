@@ -665,16 +665,16 @@ a {
   display: flex;
   justify-content: center;
   margin-top: auto;
-  margin: 10px auto;
+  margin: 8px auto;
   padding: 10px 20px;
   text-align: center;
-  background-color: #fff;
-  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
   width: 85%;
 }
 
 .lecs-titulo h1 {
-  font-size: 1.22rem;
+  font-size: 1.1rem;
   color: var(--color-primario);
   font-family: "Righteous", cursive;
   margin-bottom: 0px;
