@@ -77,7 +77,6 @@ export default function Individual({ dataLec, dataCat }) {
                     // 300x90-indi-alto
                     client='ca-pub-3630578707238850'
                     slot='7109410627'
-                    className='ads-mob'
                     style={{
                         display: 'block',
                         height: 90 + 'px',
