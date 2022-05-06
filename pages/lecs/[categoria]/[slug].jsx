@@ -153,6 +153,14 @@ export default function Individual({ dataLec, dataCat }) {
                     format=''
                 /> */}
 
+                <div id="audio"></div>
+                <Cuestionario
+                    questions={preguntas}
+                    nextQ={nextQ}
+                    firstQ={firstQ}
+                    valorInicial={0}
+                />
+
                 <AdSense.Google
                     // 300x90-indi-medio
                     client='ca-pub-3630578707238850'
@@ -169,30 +177,12 @@ export default function Individual({ dataLec, dataCat }) {
                     responsive='true'
                 />
 
-                {/* <AdSense.Google
-                    // full-indi-medio
-                    client='ca-pub-3630578707238850'
-                    slot='3511398233'
-                    style={{ display: 'block', textAlign: 'center' }}
-                    format='auto'
-                    responsive='true'
-                    layoutKey='-gw-1+2a-9x+5c'
-                /> */}
-
-                <div id="audio"></div>
-                <Cuestionario
-                    questions={preguntas}
-                    nextQ={nextQ}
-                    firstQ={firstQ}
-                    valorInicial={0}
-                />
-
                 <AudioContainer
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
                 />
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // 300x90-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='8034749563'
@@ -205,25 +195,6 @@ export default function Individual({ dataLec, dataCat }) {
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
-                    format=''
-                    responsive='true'
-                />
-
-                {/* <AdSense.Google
-                    // full-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='4370311034'
-                    style={{ display: 'block', textAlign: 'center' }}
-                    format='auto'
-                    responsive='true'
-                    layoutKey='-gw-1+2a-9x+5c'
-                /> */}
-
-                {/* <AdSense.Google
-                    // 300x50-indi
-                    client='ca-pub-3630578707238850'
-                    slot='4052295657'
-                    style={{ display: 'block', height: 50 + 'px', marginBottom: 15 + 'px', marginTop: 15 + 'px', textAlign: 'center' }}
                     format=''
                     responsive='true'
                 /> */}
