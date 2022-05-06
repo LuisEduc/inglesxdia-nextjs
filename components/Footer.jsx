@@ -22,7 +22,7 @@ export default function Footer() {
                     <span>Descargue nuestra aplicación </span>
                     <span className="negrita">GRATIS</span>
                     <br />
-                    <i class="fab fa-5x fa-google-play my-1"></i>
+                    <i className="fab fa-5x fa-google-play my-1"></i>
                 </div>
                 <div className="container">
                     <p className="text-secondary">
