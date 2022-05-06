@@ -135,6 +135,7 @@ export default function Individual({ dataLec, dataCat }) {
                                         objectFit="cover"
                                         placeholder="blur"
                                         blurDataURL="/img/placeholder.webp"
+                                        sizes="50vw"
                                         priority
                                     />
                                 </div>
