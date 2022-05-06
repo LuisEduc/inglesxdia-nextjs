@@ -11,6 +11,10 @@ export default function Footer() {
                 integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
                 crossOrigin="anonymous"
             />
+
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossOrigin="anonymous">
+            </link>
+            
             <div className="descarga-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
                 <span>Descargar aplicación gratis</span>
             </div>
