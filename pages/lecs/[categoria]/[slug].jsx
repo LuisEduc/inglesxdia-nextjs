@@ -58,7 +58,7 @@ export default function Individual({ dataLec, dataCat }) {
         }
     }
     firstQ.push(dataCat.lecciones[0]);
-    const dataRel = data.slice(0, 6)
+    const dataRel = data.slice(0, 3)
 
     return (
         <>

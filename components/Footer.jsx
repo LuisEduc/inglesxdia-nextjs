@@ -6,7 +6,6 @@ export default function Footer() {
         <>
             <div className="descarga-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
                 <span>Descargar aplicación gratis</span>
-                <img src="/play.svg" />
             </div>
             {/* <div className='banner-inferior-fijo'>
                 <AdSense.Google
@@ -18,7 +17,7 @@ export default function Footer() {
                 />
             </div> */}
             <div className="text-center bg-light rounded mx-1 mb-5">
-            {/* <div className="text-center bg-light rounded mx-1"> */}
+                {/* <div className="text-center bg-light rounded mx-1"> */}
                 <div className="bagde-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
                     <span>Descargue nuestra aplicación </span>
                     <span className="negrita">GRATIS</span>
