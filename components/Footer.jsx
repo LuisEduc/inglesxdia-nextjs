@@ -1,9 +1,16 @@
 import Link from "next/link"
-import AdSense from 'react-adsense';
+import Script from 'next/script'
 
 export default function Footer() {
     return (
         <>
+            <Script
+                id="bootstrap-min-js"
+                strategy="afterInteractive"
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+                integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+                crossOrigin="anonymous"
+            />
             <div className="descarga-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
                 <span>Descargar aplicación gratis</span>
             </div>
