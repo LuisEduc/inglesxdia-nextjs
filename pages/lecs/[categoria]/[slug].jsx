@@ -69,9 +69,17 @@ export default function Individual({ dataLec, dataCat }) {
                     <meta name="description" content={leccion[0].descripcion} />
                 </Head>
 
+                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
+                <div id="ezoic-pub-ad-placeholder-103"> </div>
+                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
+
                 <div className="lecs-titulo">
                     <h1>{leccion[0].titulo_seo}</h1>
                 </div>
+
+                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
+                <div id="ezoic-pub-ad-placeholder-103"> </div>
+                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
 
                 <AdSense.Google
                     // 300x90-indi-alto
@@ -97,12 +105,20 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
 
+                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
+                <div id="ezoic-pub-ad-placeholder-103"> </div>
+                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
+
                 <BotonMain
                     titulo='Lecciones similares'
                     icono='fa-chevron-circle-left'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
                 />
+
+                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
+                <div id="ezoic-pub-ad-placeholder-103"> </div>
+                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
 
                 <AdSense.Google
                     // full-indi
@@ -145,6 +161,10 @@ export default function Individual({ dataLec, dataCat }) {
 
                 </div>
 
+                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
+                <div id="ezoic-pub-ad-placeholder-103"> </div>
+                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
+
                 {/* <AdSense.Google
                     // 300x250-indi
                     client='ca-pub-3630578707238850'
@@ -161,6 +181,10 @@ export default function Individual({ dataLec, dataCat }) {
                     firstQ={firstQ}
                     valorInicial={0}
                 />
+
+                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
+                <div id="ezoic-pub-ad-placeholder-103"> </div>
+                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
 
                 <AdSense.Google
                     // 300x90-indi-medio
@@ -181,6 +205,10 @@ export default function Individual({ dataLec, dataCat }) {
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
                 />
+
+                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
+                <div id="ezoic-pub-ad-placeholder-103"> </div>
+                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
 
                 {/* <AdSense.Google
                     // 300x90-indi-bajo
@@ -206,6 +234,10 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
 
+                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
+                <div id="ezoic-pub-ad-placeholder-103"> </div>
+                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
+
                 {/* <TituloBloque
                     titulo='Relacionadas'
                     icono='fa-grip-horizontal'
@@ -229,6 +261,10 @@ export default function Individual({ dataLec, dataCat }) {
                         }
                     </div>
                 }
+
+                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
+                <div id="ezoic-pub-ad-placeholder-103"> </div>
+                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
 
 
             </Layout>
