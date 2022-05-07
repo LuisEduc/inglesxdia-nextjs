@@ -77,9 +77,9 @@ export default function Individual({ dataLec, dataCat }) {
                     <h1>{leccion[0].titulo_seo}</h1>
                 </div>
 
-                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
-                <div id="ezoic-pub-ad-placeholder-103"> </div>
-                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
+                {/* <!-- Ezoic - display-lec-titulo - top_of_page --> */}
+                <div id="ezoic-pub-ad-placeholder-104"> </div>
+                {/* <!-- End Ezoic - display-lec-titulo - top_of_page --> */}
 
                 <AdSense.Google
                     // 300x90-indi-alto
@@ -105,9 +105,9 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
 
-                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
-                <div id="ezoic-pub-ad-placeholder-103"> </div>
-                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
+                {/* <!-- Ezoic - display-lec-btn-voc - top_of_page --> */}
+                <div id="ezoic-pub-ad-placeholder-105"> </div>
+                {/* <!-- End Ezoic - display-lec-btn-voc - top_of_page --> */}
 
                 <BotonMain
                     titulo='Lecciones similares'
@@ -116,9 +116,9 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-primario'
                 />
 
-                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
-                <div id="ezoic-pub-ad-placeholder-103"> </div>
-                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
+                {/* <!-- Ezoic - display-lec-btn-simil - top_of_page --> */}
+                <div id="ezoic-pub-ad-placeholder-106"> </div>
+                {/* <!-- End Ezoic - display-lec-btn-simil - top_of_page --> */}
 
                 <AdSense.Google
                     // full-indi
@@ -158,23 +158,12 @@ export default function Individual({ dataLec, dataCat }) {
                             ))
                         }
                     </Carousel>
-
                 </div>
 
-                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
-                <div id="ezoic-pub-ad-placeholder-103"> </div>
-                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
+                {/* <!-- Ezoic - display-lec-carousel - top_of_page --> */}
+                <div id="ezoic-pub-ad-placeholder-108"> </div>
+                {/* <!-- End Ezoic - display-lec-carousel - top_of_page --> */}
 
-                {/* <AdSense.Google
-                    // 300x250-indi
-                    client='ca-pub-3630578707238850'
-                    slot='6438145214'
-                    className='ads-mob'
-                    style={{ display: 'inline-block', width: 300 + 'px', height: 250 + 'px', margin: 'auto' }}
-                    format=''
-                /> */}
-
-                <div id="audio"></div>
                 <Cuestionario
                     questions={preguntas}
                     nextQ={nextQ}
@@ -182,9 +171,9 @@ export default function Individual({ dataLec, dataCat }) {
                     valorInicial={0}
                 />
 
-                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
-                <div id="ezoic-pub-ad-placeholder-103"> </div>
-                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
+                {/* <!-- Ezoic - display-lec-test - top_of_page --> */}
+                <div id="ezoic-pub-ad-placeholder-110"> </div>
+                {/* <!-- End Ezoic - display-lec-test - top_of_page --> */}
 
                 <AdSense.Google
                     // 300x90-indi-medio
@@ -206,26 +195,9 @@ export default function Individual({ dataLec, dataCat }) {
                     audio={leccion[0].audio}
                 />
 
-                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
-                <div id="ezoic-pub-ad-placeholder-103"> </div>
-                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
-
-                {/* <AdSense.Google
-                    // 300x90-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='8034749563'
-                    style={{
-                        display: 'block',
-                        height: 90 + 'px',
-                        marginBottom: 15 + 'px',
-                        marginTop: 15 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                    responsive='true'
-                /> */}
+                {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
+                <div id="ezoic-pub-ad-placeholder-109"> </div>
+                {/* <!-- End Ezoic - display-lec-audio - top_of_page --> */}
 
                 <BotonMain
                     titulo='Relacionadas'
@@ -234,15 +206,10 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
 
-                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
-                <div id="ezoic-pub-ad-placeholder-103"> </div>
-                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
+                {/* <!-- Ezoic - display-lec-btn-rel - top_of_page --> */}
+                <div id="ezoic-pub-ad-placeholder-111"> </div>
+                {/* <!-- End Ezoic - display-lec-btn-rel - top_of_page --> */}
 
-                {/* <TituloBloque
-                    titulo='Relacionadas'
-                    icono='fa-grip-horizontal'
-                    bg='bg-secundario'
-                /> */}
                 {
                     <div className="galeria-bloque-inicio" style={{ marginTop: -15 + 'px' }}>
                         {
@@ -262,10 +229,9 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
-                <div id="ezoic-pub-ad-placeholder-103"> </div>
-                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
-
+                {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
+                <div id="ezoic-pub-ad-placeholder-112"> </div>
+                {/* <!-- End Ezoic - display-lec-rel - top_of_page --> */}
 
             </Layout>
         </>
