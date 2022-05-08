@@ -160,21 +160,6 @@ export default function Individual({ dataLec, dataCat }) {
                     </Carousel>
                 </div>
 
-                <AdSense.Google
-                    // full-indi-medio
-                    client='ca-pub-3630578707238850'
-                    slot='3511398233'
-                    style={{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format='auto'
-                    responsive='true'
-                    layoutKey='-gw-1+2a-9x+5c'
-                />
-
                 {/* <!-- Ezoic - display-lec-carousel - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-108"> </div>
                 {/* <!-- End Ezoic - display-lec-carousel - top_of_page --> */}
@@ -184,15 +169,6 @@ export default function Individual({ dataLec, dataCat }) {
                     nextQ={nextQ}
                     firstQ={firstQ}
                     valorInicial={0}
-                />
-
-                {/* <!-- Ezoic - display-lec-test - top_of_page --> */}
-                <div id="ezoic-pub-ad-placeholder-110"> </div>
-                {/* <!-- End Ezoic - display-lec-test - top_of_page --> */}
-
-                <AudioContainer
-                    titulo={leccion[0].titulo}
-                    audio={leccion[0].audio}
                 />
 
                 <AdSense.Google
@@ -209,6 +185,15 @@ export default function Individual({ dataLec, dataCat }) {
                     format=''
                     responsive='true'
                 />
+                {/* <!-- Ezoic - display-lec-test - top_of_page --> */}
+                <div id="ezoic-pub-ad-placeholder-110"> </div>
+                {/* <!-- End Ezoic - display-lec-test - top_of_page --> */}
+
+                <AudioContainer
+                    titulo={leccion[0].titulo}
+                    audio={leccion[0].audio}
+                />
+
 
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-109"> </div>
@@ -243,6 +228,21 @@ export default function Individual({ dataLec, dataCat }) {
                         }
                     </div>
                 }
+
+                <AdSense.Google
+                    // full-indi-bajo
+                    client='ca-pub-3630578707238850'
+                    slot='4370311034'
+                    style={{
+                        display: 'block',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
+                    format='auto'
+                    responsive='true'
+                    layoutKey='-gw-1+2a-9x+5c'
+                />
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-112"> </div>
