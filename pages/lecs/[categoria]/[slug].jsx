@@ -229,10 +229,10 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                <div align="center" >
                     <AdSense.Google
                         // full-indi-bajo
                         client='ca-pub-3630578707238850'
+                        align='center'
                         slot='4370311034'
                         style={{
                             display: 'block',
@@ -245,7 +245,6 @@ export default function Individual({ dataLec, dataCat }) {
                         responsive='true'
                         layoutKey='-gw-1+2a-9x+5c'
                     />
-                </div>
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-112"> </div>
