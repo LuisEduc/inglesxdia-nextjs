@@ -229,21 +229,23 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                <AdSense.Google
-                    // full-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='4370311034'
-                    style={{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginBottom: 15 + 'px',
-                        textAlign: 'center'
-                    }}
-                    format='auto'
-                    responsive='true'
-                    layoutKey='-gw-1+2a-9x+5c'
-                />
+                <div style={{ marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }} >
+                    <AdSense.Google
+                        // full-indi-bajo
+                        client='ca-pub-3630578707238850'
+                        slot='4370311034'
+                        style={{
+                            display: 'block',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginBottom: 15 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='auto'
+                        responsive='true'
+                        layoutKey='-gw-1+2a-9x+5c'
+                    />
+                </div>
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-112"> </div>
