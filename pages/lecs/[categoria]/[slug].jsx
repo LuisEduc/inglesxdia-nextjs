@@ -232,7 +232,6 @@ export default function Individual({ dataLec, dataCat }) {
                     <AdSense.Google
                         // full-indi-bajo
                         client='ca-pub-3630578707238850'
-                        align='center'
                         slot='4370311034'
                         style={{
                             display: 'block',
