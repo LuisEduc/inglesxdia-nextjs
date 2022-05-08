@@ -229,7 +229,7 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                <div style={{ marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }} >
+                <div align="center" >
                     <AdSense.Google
                         // full-indi-bajo
                         client='ca-pub-3630578707238850'
