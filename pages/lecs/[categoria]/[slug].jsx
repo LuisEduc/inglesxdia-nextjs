@@ -81,28 +81,26 @@ export default function Individual({ dataLec, dataCat }) {
                 <div id="ezoic-pub-ad-placeholder-104"> </div>
                 {/* <!-- End Ezoic - display-lec-titulo - top_of_page --> */}
 
-                <AdSense.Google
-                    // 300x90-indi-alto
-                    client='ca-pub-3630578707238850'
-                    slot='7109410627'
-                    style={{
-                        display: 'block',
-                        height: 90 + 'px',
-                        marginTop: 12 + 'px',
-                        marginBottom: 12 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                    responsive='true'
-                />
-
                 <BotonMain
                     titulo='Vocabulario de hoy'
                     icono='fa-stream'
                     dir='/vocabulario'
                     bg='bg-secundario'
+                />
+
+                <AdSense.Google
+                    // full-indi
+                    client='ca-pub-3630578707238850'
+                    slot='6905737434'
+                    style={{
+                        display: 'block',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
+                    format='auto'
+                    responsive='true'
+                    layoutKey='-gw-1+2a-9x+5c'
                 />
 
                 {/* <!-- Ezoic - display-lec-btn-voc - top_of_page --> */}
@@ -119,23 +117,6 @@ export default function Individual({ dataLec, dataCat }) {
                 {/* <!-- Ezoic - display-lec-btn-simil - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-106"> </div>
                 {/* <!-- End Ezoic - display-lec-btn-simil - top_of_page --> */}
-
-                <AdSense.Google
-                    // full-indi
-                    client='ca-pub-3630578707238850'
-                    slot='6905737434'
-                    style={{
-                        display: 'block',
-                        marginTop: 17 + 'px',
-                        marginBottom: 7 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format='auto'
-                    responsive='true'
-                    layoutKey='-gw-1+2a-9x+5c'
-                />
 
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
@@ -160,17 +141,6 @@ export default function Individual({ dataLec, dataCat }) {
                     </Carousel>
                 </div>
 
-                {/* <!-- Ezoic - display-lec-carousel - top_of_page --> */}
-                <div id="ezoic-pub-ad-placeholder-108"> </div>
-                {/* <!-- End Ezoic - display-lec-carousel - top_of_page --> */}
-
-                <Cuestionario
-                    questions={preguntas}
-                    nextQ={nextQ}
-                    firstQ={firstQ}
-                    valorInicial={0}
-                />
-
                 <AdSense.Google
                     // 300x90-indi-medio
                     client='ca-pub-3630578707238850'
@@ -185,6 +155,18 @@ export default function Individual({ dataLec, dataCat }) {
                     format=''
                     responsive='true'
                 />
+
+                {/* <!-- Ezoic - display-lec-carousel - top_of_page --> */}
+                <div id="ezoic-pub-ad-placeholder-108"> </div>
+                {/* <!-- End Ezoic - display-lec-carousel - top_of_page --> */}
+
+                <Cuestionario
+                    questions={preguntas}
+                    nextQ={nextQ}
+                    firstQ={firstQ}
+                    valorInicial={0}
+                />
+
                 {/* <!-- Ezoic - display-lec-test - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-110"> </div>
                 {/* <!-- End Ezoic - display-lec-test - top_of_page --> */}
@@ -229,21 +211,21 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                    <AdSense.Google
-                        // full-indi-bajo
-                        client='ca-pub-3630578707238850'
-                        slot='4370311034'
-                        style={{
-                            display: 'block',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                            marginBottom: 15 + 'px',
-                            textAlign: 'center'
-                        }}
-                        format='auto'
-                        responsive='true'
-                        layoutKey='-gw-1+2a-9x+5c'
-                    />
+                <AdSense.Google
+                    // 300x90-indi-bajo
+                    client='ca-pub-3630578707238850'
+                    slot='8034749563'
+                    style={{
+                        display: 'block',
+                        height: 90 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        marginBottom: 15 + 'px',
+                        textAlign: 'center'
+                    }}
+                    format=''
+                    responsive='true'
+                />
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-112"> </div>
