@@ -88,7 +88,7 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // full-indi
                     client='ca-pub-3630578707238850'
                     slot='6905737434'
@@ -101,6 +101,18 @@ export default function Individual({ dataLec, dataCat }) {
                     format='auto'
                     responsive='true'
                     layoutKey='-gw-1+2a-9x+5c'
+                /> */}
+
+                <AdSense.Google
+                    // article-indi
+                    client='ca-pub-3630578707238850'
+                    slot='1961153001'
+                    style={{
+                        display: 'block',
+                        textAlign: 'center'
+                    }}
+                    layout='in-article'
+                    format='fluid'
                 />
 
                 {/* <!-- Ezoic - display-lec-btn-voc - top_of_page --> */}
