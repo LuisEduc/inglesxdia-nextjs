@@ -240,9 +240,9 @@ export default function Individual({ dataLec, dataCat }) {
                 /> */}
 
                 <AdSense.Google
-                    // feed-txt-indi-bajo
+                    // feed-indi-bajo
                     client='ca-pub-3630578707238850'
-                    slot='1961153001'
+                    slot='6511815685'
                     style={{
                         display: 'block',
                         marginLeft: 'auto',
@@ -251,7 +251,7 @@ export default function Individual({ dataLec, dataCat }) {
                         textAlign: 'center'
                     }}
                     format='fluid'
-                    layoutKey='-gw-1+2a-9x+5c'
+                    layoutKey='-f9+4w+7x-eg+3a'
                 />
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
