@@ -9,7 +9,7 @@ export default function Hero({ buscar }) {
             <div className="hero hero-bg">
                 <div className="hero-text">
                     <div align="center">
-                        <AdSense.Google
+                        {/* <AdSense.Google
                             // full-hero
                             client='ca-pub-3630578707238850'
                             slot='4810977003'
@@ -24,7 +24,24 @@ export default function Hero({ buscar }) {
                             format='auto'
                             responsive='true'
                             layoutKey='-gw-1+2a-9x+5c'
+                        /> */}
+
+                        <AdSense.Google
+                            // article-hero
+                            client='ca-pub-3630578707238850'
+                            slot='1889210241'
+                            style={{
+                                display: 'block',
+                                marginTop: 0 + 'px',
+                                marginBottom: 15 + 'px',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                textAlign: 'center'
+                            }}
+                            layout='in-article'
+                            format='fluid'
                         />
+
                     </div>
                     <div className="hero-titulo">
                         <h1>Estudiar inglés online<span className="text-primary">.</span></h1>
