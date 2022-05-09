@@ -251,7 +251,7 @@ export default function Individual({ dataLec, dataCat }) {
                         textAlign: 'center'
                     }}
                     format='fluid'
-                    layoutKey='-f9+4w+7x-eg+3a'
+                    layoutKey='-g5+29+83-7c-3i'
                 />
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
