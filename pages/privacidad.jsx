@@ -38,6 +38,7 @@ export default function privacidad() {
                     >https://adssettings.google.com</a></p>
                 <p><br /><strong>CAMBIOS EN NUESTRA POLÍTICA DE PRIVACIDAD.</strong></p>
                 <p>Puede revisar esta política de privacidad en cualquier momento. Debería visitar esta página periódicamente para revisar nuestra Política de Privacidad actual, de modo que siempre sepa qué información recopilamos y cómo podemos utilizarla.</p>
+                <span id="ezoic-privacy-policy-embed"> </span>
             </main>
         </Layout>
     )
