@@ -224,20 +224,17 @@ export default function Individual({ dataLec, dataCat }) {
                 }
 
                 <AdSense.Google
-                    // interstitial-indi
+                    // full-indi-bajo
                     client='ca-pub-3630578707238850'
-                    slot='3542354648'
-                    className='ads-mob'
+                    slot='4370311034'
                     style={{
-                        display: 'inline-block',
-                        height: 480 + 'px',
-                        with: 320 + 'px',
+                        display: 'block',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         marginBottom: 15 + 'px',
                         textAlign: 'center'
                     }}
-                    format=''
+                    format='auto'
                     responsive='true'
                 />
 
