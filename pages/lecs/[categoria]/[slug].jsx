@@ -227,10 +227,11 @@ export default function Individual({ dataLec, dataCat }) {
                     // interstitial-indi
                     client='ca-pub-3630578707238850'
                     slot='3542354648'
+                    className='ads-mob'
                     style={{
                         display: 'inline-block',
-                        height: 480 + 'px',
-                        with: 320 + 'px',
+                        height: 600 + 'px',
+                        with: 160 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         marginBottom: 15 + 'px',
