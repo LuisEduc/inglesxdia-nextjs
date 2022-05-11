@@ -164,7 +164,7 @@ export default function Individual({ dataLec, dataCat }) {
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
-                    format='auto'
+                    format=''
                     responsive='true'
                 />
 
