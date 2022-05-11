@@ -214,22 +214,6 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                                     <button onClick={() => reiniciar()} className="boton-primary">Reiniciar</button>
                                     <button onClick={() => next()} className="boton-primary">Siguiente</button>
                                 </div>
-                                <AdSense.Google
-                                    // 300x90-test
-                                    client='ca-pub-3630578707238850'
-                                    slot='7925588253'
-                                    style={{
-                                        display: 'block',
-                                        height: 90 + 'px',
-                                        marginLeft: 'auto',
-                                        marginRight: 'auto',
-                                        marginBottom: 15 + 'px',
-                                        marginTop: 15 + 'px',
-                                        textAlign: 'center'
-                                    }}
-                                    format=''
-                                    responsive='true'
-                                />
                             </div>
                             <div ref={refQuizOver} className="quiz-over">
                                 <div className="box">
