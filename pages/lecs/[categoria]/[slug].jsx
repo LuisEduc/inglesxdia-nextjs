@@ -223,7 +223,7 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // full-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='4370311034'
@@ -236,7 +236,7 @@ export default function Individual({ dataLec, dataCat }) {
                     }}
                     format='auto'
                     responsive='true'
-                />
+                /> */}
 
                 {/* <AdSense.Google
                     // feed-indi-bajo
@@ -252,6 +252,21 @@ export default function Individual({ dataLec, dataCat }) {
                     format='fluid'
                     layoutKey='-g5+29+83-7c-3i'
                 /> */}
+
+                <AdSense.Google
+                    // feed-txt-indi-medio
+                    client='ca-pub-3630578707238850'
+                    slot='1206220947'
+                    style={{
+                        display: 'block',
+                        marginBottom: 15 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
+                    format='fluid'
+                    layoutKey='-gi-2o-1j-4h+yc'
+                />
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-112"> </div>
