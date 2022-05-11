@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import AdSense from 'react-adsense'
 
 const preguntaInicial = [{
     q: '',
