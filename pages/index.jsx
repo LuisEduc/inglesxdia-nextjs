@@ -46,7 +46,7 @@ export default function index({ bloques, cats, buscar }) {
                     textAlign: 'center'
                 }}
                 format='fluid'
-                layoutKey='-h2-2o-1j-4h+yc'
+                layoutKey='-gi-2o-1j-4h+yc'
             />
 
             <div id="lecs"></div>
