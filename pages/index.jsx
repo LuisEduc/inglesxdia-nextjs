@@ -35,12 +35,12 @@ export default function index({ bloques, cats, buscar }) {
             /> */}
 
             <AdSense.Google
-                // 300x90-inicio
+                // 300x100-inicio
                 client='ca-pub-3630578707238850'
-                slot='4200920141'
+                slot='3544609678'
                 style={{
                     display: 'block',
-                    height: 90 + 'px',
+                    height: 100 + 'px',
                     marginTop: 15 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
@@ -80,12 +80,12 @@ export default function index({ bloques, cats, buscar }) {
             }
 
             <AdSense.Google
-                // 300x90-inicio
+                // 300x100-inicio
                 client='ca-pub-3630578707238850'
-                slot='4200920141'
+                slot='3544609678'
                 style={{
                     display: 'block',
-                    height: 90 + 'px',
+                    height: 100 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     textAlign: 'center'
