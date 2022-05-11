@@ -53,12 +53,12 @@ export default function post({ dataCat }) {
             />
 
             <AdSense.Google
-                // 300x90-cat
+                // 300x100-cat
                 client='ca-pub-3630578707238850'
-                slot='1582871333'
+                slot='8253725468'
                 style={{
                     display: 'block',
-                    height: 90 + 'px',
+                    height: 100 + 'px',
                     marginBottom: 15 + 'px',
                     marginTop: 15 + 'px',
                     marginLeft: 'auto',

@@ -53,10 +53,10 @@ export default function CardCarousel({ data }) {
         }
       </Carousel>
       <AdSense.Google
-        // 300x90-voc-bajo
+        // 300x100-voc-bajo
         client='ca-pub-3630578707238850'
-        slot='6732357286'
-        style={{ display: 'block', width: 100 + '%', height: 90 + 'px', marginBottom: 15 + 'px', marginTop: -8 + 'px' }}
+        slot='6114932695'
+        style={{ display: 'block', width: 100 + '%', height: 100 + 'px', marginBottom: 15 + 'px', marginTop: -8 + 'px' }}
         format=''
       />
       <div className="audio-palabras mx-auto">

@@ -46,12 +46,12 @@ export default function index({ data }) {
             </div>
 
             <AdSense.Google
-                // 300x90-indi-alto
+                // 300x100-voc-alto
                 client='ca-pub-3630578707238850'
-                slot='6388904057'
+                slot='4255056118'
                 style={{
                     display: 'block',
-                    height: 90 + 'px',
+                    height: 100 + 'px',
                     marginTop: 30 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
@@ -75,10 +75,10 @@ export default function index({ data }) {
                     </div>
 
                     <AdSense.Google
-                        // 300x90-voc-medio
+                        // 300x100-voc-medio
                         client='ca-pub-3630578707238850'
-                        slot='9411553602'
-                        style={{ display: 'block', height: 90 + 'px', width: 98 + '%', marginTop: 12 + 'px', textAlign: 'center' }}
+                        slot='1820464467'
+                        style={{ display: 'block', height: 100 + 'px', width: 98 + '%', marginTop: 12 + 'px', textAlign: 'center' }}
                         format=''
                     />
 
