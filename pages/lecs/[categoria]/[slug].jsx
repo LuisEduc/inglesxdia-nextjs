@@ -88,7 +88,7 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
 
-                {/* <AdSense.Google
+                <AdSense.Google
                     // full-indi
                     client='ca-pub-3630578707238850'
                     slot='6905737434'
@@ -101,18 +101,6 @@ export default function Individual({ dataLec, dataCat }) {
                     format='auto'
                     responsive='true'
                     layoutKey='-gw-1+2a-9x+5c'
-                /> */}
-
-                <AdSense.Google
-                    // article-indi
-                    client='ca-pub-3630578707238850'
-                    slot='1961153001'
-                    style={{
-                        display: 'block',
-                        textAlign: 'center'
-                    }}
-                    layout='in-article'
-                    format='fluid'
                 />
 
                 {/* <!-- Ezoic - display-lec-btn-voc - top_of_page --> */}
@@ -223,49 +211,20 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                {/* <AdSense.Google
-                    // full-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='4370311034'
-                    style={{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginBottom: 15 + 'px',
-                        textAlign: 'center'
-                    }}
-                    format='auto'
-                    responsive='true'
-                /> */}
-
-                {/* <AdSense.Google
-                    // feed-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='6511815685'
-                    style={{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginBottom: 15 + 'px',
-                        textAlign: 'center'
-                    }}
-                    format='fluid'
-                    layoutKey='-g5+29+83-7c-3i'
-                /> */}
-
                 <AdSense.Google
-                    // feed-txt-indi-medio
+                    // 300x100-indi-bajo
                     client='ca-pub-3630578707238850'
-                    slot='1206220947'
+                    slot='1183870334'
                     style={{
                         display: 'block',
-                        marginBottom: 15 + 'px',
+                        height: 100 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
+                        marginBottom: 15 + 'px',
                         textAlign: 'center'
                     }}
-                    format='fluid'
-                    layoutKey='-gi-2o-1j-4h+yc'
+                    format=''
+                    responsive='true'
                 />
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
