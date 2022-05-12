@@ -6,12 +6,13 @@ html {
 }
 
 body {
-  background: rgb(234, 204, 248);
+  background: #fff;
+  /* background: rgb(234, 204, 248);
   background: linear-gradient(
     90deg,
     rgba(234, 204, 248, 1) 0%,
     rgba(105, 234, 203, 0.5441526952577906) 100%
-  );
+  ); */
 }
 
 :root {
@@ -482,7 +483,7 @@ a {
   margin-right: auto;
 }
 
-.img-bloque-inicio {
+/* .img-bloque-inicio {
   width: 150px;
   height: 190px;
   border-radius: 8px;
@@ -490,6 +491,15 @@ a {
   object-position: center center;
   position: relative;
   box-shadow: -3px 2px 1px 1px rgb(0 0 0 / 40%);
+} */
+.img-bloque-inicio {
+  width: 150px;
+  height: 190px;
+  border-radius: 8px;
+  overflow: hidden;
+  object-position: center center;
+  position: relative;
+  box-shadow: -2px 2px 1px 2px rgb(0 0 0 / 40%);
 }
 
 .img-bloque-inicio:hover {
@@ -661,7 +671,7 @@ a {
 /* POST INDIVIDUAL */
 /* ----------------------------------------------------------- */
 
-.lecs-titulo {
+/* .lecs-titulo {
   display: flex;
   justify-content: center;
   margin-top: auto;
@@ -669,6 +679,17 @@ a {
   padding: 10px 20px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  width: 85%;
+} */
+.lecs-titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin: 8px auto -8px;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: rgba(235, 235, 235, 0.75);
   border-radius: 5px;
   width: 85%;
 }
@@ -1117,7 +1138,7 @@ a {
   background: linear-gradient(
     170deg,
     var(--color-primario) 0%,
-    rgba(0, 255, 194, 0) 60%
+    rgba(0, 255, 194, 0) 65%
   );
 }
 
@@ -1407,11 +1428,22 @@ a {
 /* INICIO EN VOCABULARIO */
 /* -------------------------------- */
 
-.inicio-badge {
+/* .inicio-badge {
   margin-top: 20px;
   width: 80%;
   padding: 10px 20px;
   background: #fff;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.inicio-badge {
+  margin-top: 20px;
+  width: 80%;
+  padding: 10px 20px;
+  background: rgba(235, 235, 235, 0.75);
   border-radius: 100px;
   display: flex;
   justify-content: center;
@@ -2000,18 +2032,34 @@ a {
   padding: 0px 5px;
 }
 
-.carousel-lec {
+/* .carousel-lec {
   border-radius: 10px;
   box-shadow: 3px 2px 1px 1px rgb(0 0 0 / 25%);
   overflow: hidden;
   max-width: 33%;
   margin-left: auto;
   margin-right: auto;
+} */
+.carousel-lec {
+  border-radius: 10px;
+  box-shadow: 4px 2px 1px 2px rgb(0 0 0 / 25%);
+  overflow: hidden;
+  max-width: 33%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.carousel-voc {
+/* .carousel-voc {
   border-radius: 10px;
   box-shadow: 3px 2px 1px 1px rgb(0 0 0 / 25%);
+  overflow: hidden;
+  max-width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.carousel-voc {
+  border-radius: 10px;
+  box-shadow: 4px 2px 1px 2px rgb(0 0 0 / 25%);
   overflow: hidden;
   max-width: 91%;
   margin-left: auto;
