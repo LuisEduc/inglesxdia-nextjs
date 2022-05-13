@@ -46,12 +46,11 @@ const App = ({ Component, pageProps }) => {
         async=""
       /> */}
 
-      {/* <Script
+      <Script
         strategy="afterInteractive"
         async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3630578707238850"
         crossOrigin="anonymous"
-      /> */}
-      
+      />
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
