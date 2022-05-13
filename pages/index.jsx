@@ -169,7 +169,7 @@ export async function getStaticProps() {
                 cats,
                 buscar,
             },
-            revalidate: 10, // In seconds
+            // revalidate: 10, // In seconds
         }
     } catch (error) {
         console.log(error)

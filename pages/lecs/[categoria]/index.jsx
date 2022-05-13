@@ -115,7 +115,8 @@ export async function getStaticPaths() {
         }))
         return {
             paths,
-            fallback: 'blocking',
+            fallback: false,
+            // fallback: 'blocking',
         }
     } catch (error) {
         console.log(error)
@@ -137,7 +138,7 @@ export async function getStaticProps({ params }) {
             props: {
                 dataCat,
             },
-            revalidate: 10, // In seconds
+            // revalidate: 10, // In seconds
         }
     } catch (error) {
         console.log(error)
