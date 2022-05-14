@@ -6,13 +6,13 @@ html {
 }
 
 body {
-  background: #fff;
-  /* background: rgb(234, 204, 248);
+  /* background: #fff; */
+  background: rgb(234, 204, 248);
   background: linear-gradient(
     90deg,
     rgba(234, 204, 248, 1) 0%,
     rgba(105, 234, 203, 0.5441526952577906) 100%
-  ); */
+  );
 }
 
 :root {
@@ -671,7 +671,7 @@ a {
 /* POST INDIVIDUAL */
 /* ----------------------------------------------------------- */
 
-/* .lecs-titulo {
+.lecs-titulo {
   display: flex;
   justify-content: center;
   margin-top: auto;
@@ -681,8 +681,8 @@ a {
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 5px;
   width: 85%;
-} */
-.lecs-titulo {
+}
+/* .lecs-titulo {
   display: flex;
   justify-content: center;
   margin-top: auto;
@@ -692,7 +692,7 @@ a {
   background-color: rgba(235, 235, 235, 0.75);
   border-radius: 5px;
   width: 85%;
-}
+} */
 
 .lecs-titulo h1 {
   font-size: 1.1rem;
