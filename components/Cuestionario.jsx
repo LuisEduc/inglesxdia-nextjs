@@ -194,6 +194,20 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                 <div className="modal-dialog mx-auto">
                     <div className="modal-content">
                         <div className="modal-header">
+                            <AdSense.Google
+                                // 300x100-indi-audio
+                                client='ca-pub-3630578707238850'
+                                slot='5210050725'
+                                style={{
+                                    display: 'block',
+                                    height: 100 + 'px',
+                                    width: 100 + '%',
+                                    marginLeft: 'auto',
+                                    marginRight: 'auto',
+                                    textAlign: 'center'
+                                }}
+                                format=''
+                            />
                             <h5 className="modal-title" id="staticBackdropLabel">Cuestionario</h5>
                             <button onClick={() => (router.back())} className="btn-close" ></button>
                             <button onClick={() => setModal(0)} style={{ display: 'none' }} ref={refBtnClose} className="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>

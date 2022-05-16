@@ -176,6 +176,21 @@ export default function Individual({ dataLec, dataCat }) {
                     audio={leccion[0].audio}
                 />
 
+                <AdSense.Google
+                    // 300x100-indi-audio
+                    client='ca-pub-3630578707238850'
+                    slot='5210050725'
+                    style={{
+                        display: 'block',
+                        height: 100 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
+                    format=''
+                    responsive='true'
+                />
+
 
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-109"> </div>
