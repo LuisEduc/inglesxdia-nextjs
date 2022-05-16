@@ -41,7 +41,18 @@ export default function index({ data }) {
                     icon='fas fa-headphones fa-xs'
                     bg='bg-primario'
                     border='border-blanco'
-                    dir='/'
+                    dir='/#lecs'
+                />
+            </div>
+
+            <div className="inicio-badge">
+                <BotonVoc
+                    title='Lecturas en inglés'
+                    text='color-blanco'
+                    icon='fas fa-book-open fa-xs'
+                    bg='bg-secundario'
+                    border='border-blanco'
+                    dir='/lecs/lc'
                 />
             </div>
 
