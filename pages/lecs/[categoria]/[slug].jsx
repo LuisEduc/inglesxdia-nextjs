@@ -80,9 +80,10 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{
                         display: 'block',
                         height: 50 + 'px',
+                        with: 85 + '%',
                         marginLeft: 'auto',
                         marginRight: 'auto',
-                        marginTop: 15 + 'px',
+                        marginTop: 10 + 'px',
                         textAlign: 'center'
                     }}
                     format=''
