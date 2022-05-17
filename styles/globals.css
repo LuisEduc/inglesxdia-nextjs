@@ -564,7 +564,7 @@ a {
   .galeria-bloque-inicio {
     width: 95%;
     grid-auto-rows: 14rem;
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   }
 
   .bloque-inicio {
