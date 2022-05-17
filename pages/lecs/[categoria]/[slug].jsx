@@ -73,6 +73,22 @@ export default function Individual({ dataLec, dataCat }) {
                 <div id="ezoic-pub-ad-placeholder-103"> </div>
                 {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
 
+                <AdSense.Google
+                    // 300x50-indi-alto
+                    client='ca-pub-3630578707238850'
+                    slot='2418913037'
+                    style={{
+                        display: 'block',
+                        height: 50 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        marginTop: 15 + 'px',
+                        textAlign: 'center'
+                    }}
+                    format=''
+                    responsive='true'
+                />
+
                 <div className="lecs-titulo">
                     <h1>{leccion[0].titulo_seo}</h1>
                 </div>
@@ -104,12 +120,12 @@ export default function Individual({ dataLec, dataCat }) {
                 /> */}
 
                 <AdSense.Google
-                    // 300x100-indi-medio
+                    // 300x100-indi-alto
                     client='ca-pub-3630578707238850'
-                    slot='8201754571'
+                    slot='7427405551'
                     style={{
                         display: 'block',
-                        height: 200 + 'px',
+                        height: 100 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
@@ -190,22 +206,6 @@ export default function Individual({ dataLec, dataCat }) {
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
                 />
-
-                <AdSense.Google
-                    // 300x100-indi-audio
-                    client='ca-pub-3630578707238850'
-                    slot='5210050725'
-                    style={{
-                        display: 'block',
-                        height: 100 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                    responsive='true'
-                />
-
 
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-109"> </div>
