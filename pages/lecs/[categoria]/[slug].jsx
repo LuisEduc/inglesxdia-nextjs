@@ -80,10 +80,10 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{
                         display: 'block',
                         height: 50 + 'px',
-                        width: 85 + '%',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         marginTop: 10 + 'px',
+                        marginBottom: 2 + 'px',
                         textAlign: 'center'
                     }}
                     format=''
@@ -126,7 +126,7 @@ export default function Individual({ dataLec, dataCat }) {
                     slot='7427405551'
                     style={{
                         display: 'block',
-                        height: 50 + 'px',
+                        height: 100 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
