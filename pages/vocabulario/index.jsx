@@ -18,12 +18,12 @@ export default function index({ data }) {
             </Head>
 
             <AdSense.Google
-                // 300x100-voc-hero
+                // 300x50-voc-hero
                 client='ca-pub-3630578707238850'
-                slot='8340267634'
+                slot='2780571773'
                 style={{
                     display: 'block',
-                    height: 100 + 'px',
+                    height: 50 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginBottom: 15 + 'px',
