@@ -18,20 +18,20 @@ export default function index({ data }) {
             </Head>
 
             <AdSense.Google
-                // full-voc
+                // 300x100-voc-hero
                 client='ca-pub-3630578707238850'
-                slot='1345454840'
+                slot='8340267634'
                 style={{
                     display: 'block',
-                    marginBottom: 15 + 'px',
-                    marginTop: 15 + 'px',
+                    height: 100 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
+                    marginBottom: 15 + 'px',
+                    marginTop: 15 + 'px',
                     textAlign: 'center'
                 }}
-                format='auto'
+                format=''
                 responsive='true'
-                layoutKey='-gw-1+2a-9x+5c'
             />
 
             <div className="inicio-badge">
