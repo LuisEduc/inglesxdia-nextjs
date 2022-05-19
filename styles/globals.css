@@ -2512,7 +2512,7 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  height: 35px;
+  height: 33px;
   background: #da4453; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,

@@ -58,7 +58,7 @@ export default function Individual({ dataLec, dataCat }) {
         }
     }
     firstQ.push(dataCat.lecciones[0]);
-    const dataRel = data.slice(0, 3)
+    const dataRel = data.slice(0, 6)
 
     return (
         <>
@@ -217,6 +217,21 @@ export default function Individual({ dataLec, dataCat }) {
                     icono='fa-grip-horizontal'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-secundario'
+                />
+
+                <AdSense.Google
+                    // 300x50-indi-bajo
+                    client='ca-pub-3630578707238850'
+                    slot='5989861498'
+                    style={{
+                        display: 'block',
+                        height: 50 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
+                    format=''
+                    responsive='true'
                 />
 
                 {/* <!-- Ezoic - display-lec-btn-rel - top_of_page --> */}
