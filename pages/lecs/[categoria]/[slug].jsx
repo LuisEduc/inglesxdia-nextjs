@@ -239,7 +239,7 @@ export default function Individual({ dataLec, dataCat }) {
                 {/* <!-- End Ezoic - display-lec-btn-rel - top_of_page --> */}
 
                 {
-                    <div className="galeria-bloque-inicio" style={{ marginTop: -15 + 'px' }}>
+                    <div className="galeria-bloque-inicio" style={{ marginTop: -10 + 'px' }}>
                         {
                             dataRel.map(({ id, titulo, imagen, slug_cat, slug }) => (
                                 <div key={id}>
