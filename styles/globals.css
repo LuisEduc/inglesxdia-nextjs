@@ -1155,7 +1155,7 @@ a {
 
 .hero-resumen-grid {
   display: grid;
-  grid-template-rows: repeat(4, 120px);
+  grid-template-rows: repeat(5, 120px);
   row-gap: 5px;
 }
 
