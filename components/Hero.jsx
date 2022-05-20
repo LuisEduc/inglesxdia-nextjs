@@ -16,7 +16,7 @@ export default function Hero({ buscar }) {
                         height: 100 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
-                        marginTop: 12 + 'px',
+                        marginTop: 12 + 'px !important',
                         textAlign: 'center'
                     }}
                     format=''
