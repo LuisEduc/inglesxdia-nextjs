@@ -17,7 +17,7 @@ export default function BloqueInicio({ children, titulo, imagen, slug_cat, slug 
                                     objectFit="cover"
                                     placeholder="blur"
                                     blurDataURL="/img/placeholder.webp"
-                                    sizes="20vw"
+                                    sizes="17vw"
                                     priority
                                 />
                             </div>
