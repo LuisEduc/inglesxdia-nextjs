@@ -10,6 +10,21 @@ export default function Hero({ buscar }) {
                 <div className="hero-text">
                     <div align="center">
 
+                        <AdSense.Google
+                            // 300x100-inicio-hero
+                            client='ca-pub-3630578707238850'
+                            slot='8009250674'
+                            style={{
+                                display: 'block',
+                                height: 100 + 'px',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                marginBottom: 15 + 'px',
+                                textAlign: 'center'
+                            }}
+                            format=''
+                            responsive='true'
+                        />
 
                     </div>
                     <div className="hero-titulo">
@@ -24,7 +39,22 @@ export default function Hero({ buscar }) {
                     <div className="hero-resumen-titulo">
                         <h2>¿Qué ofrece <span className="resalt-mor">inglesxdia.tech</span>?</h2>
                     </div>
-                    
+                    <div>
+                        <AdSense.Google
+                            // 300x100-inicio-alto
+                            client='ca-pub-3630578707238850'
+                            slot='6588357798'
+                            style={{
+                                display: 'block',
+                                height: 0 + 'px',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                textAlign: 'center'
+                            }}
+                            format=''
+                            responsive='true'
+                        />
+                    </div>
                     <div className="hero-resumen-item">
                         <Link href="/vocabulario">
                             <a>
