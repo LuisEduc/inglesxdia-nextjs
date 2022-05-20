@@ -6,22 +6,21 @@ import Link from "next/link";
 export default function Hero({ buscar }) {
     return (
         <>
+            <AdSense.Google
+                // 300x100-inicio-hero
+                client='ca-pub-3630578707238850'
+                slot='8009250674'
+                style={{
+                    display: 'block',
+                    height: 100 + 'px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    textAlign: 'center'
+                }}
+                format=''
+                responsive='true'
+            />
             <div className="hero hero-bg">
-                <AdSense.Google
-                    // 300x100-inicio-hero
-                    client='ca-pub-3630578707238850'
-                    slot='8009250674'
-                    style={{
-                        display: 'block',
-                        height: 100 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginBottom: 15 + 'px',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                    responsive='true'
-                />
                 <div className="hero-text">
                     <div className="hero-titulo">
                         <h1>Estudiar inglés online<span className="text-primary">.</span></h1>
@@ -30,22 +29,6 @@ export default function Hero({ buscar }) {
                         <Buscador buscar={buscar} />
                     </div>
                 </div>
-
-                <AdSense.Google
-                    // 300x100-inicio-alto
-                    client='ca-pub-3630578707238850'
-                    slot='6588357798'
-                    style={{
-                        display: 'block',
-                        height: 100 + 'px',
-                        maxHeight: 100 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                    responsive='true'
-                />
 
                 <div className="hero-resumen-grid">
                     <div className="hero-resumen-titulo">
