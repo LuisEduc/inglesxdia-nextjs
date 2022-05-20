@@ -25,28 +25,19 @@ export default function index({ bloques, cats, buscar }) {
                 bg='bg-secundario'
             />
 
-            {/* <AdSense.Google
-                // articulo-inicio
-                client='ca-pub-3630578707238850'
-                slot='7902116142'
-                style={{ display: 'block', textAlign: 'center' }}
-                layout='in-article'
-                format='fluid'
-            /> */}
-
             <AdSense.Google
-                // feed-txt-inicio
+                // 300x100-inicio-voc
                 client='ca-pub-3630578707238850'
-                slot='9443518206'
+                slot='5353536865'
                 style={{
                     display: 'block',
-                    marginTop: 15 + 'px',
+                    height: 100 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     textAlign: 'center'
                 }}
-                format='fluid'
-                layoutKey='-gi-2o-1j-4h+yc'
+                format=''
+                responsive='true'
             />
 
             <div id="lecs"></div>
@@ -78,10 +69,16 @@ export default function index({ bloques, cats, buscar }) {
                 ))
             }
 
+            <TituloBloque
+                titulo='Todas las categorías'
+                icono='fa-th-list'
+                bg='bg-primario'
+            />
+
             <AdSense.Google
-                // 300x100-inicio
+                // 300x100-inicio-bajo
                 client='ca-pub-3630578707238850'
-                slot='3544609678'
+                slot='5282218829'
                 style={{
                     display: 'block',
                     height: 100 + 'px',
@@ -93,11 +90,6 @@ export default function index({ bloques, cats, buscar }) {
                 responsive='true'
             />
 
-            <TituloBloque
-                titulo='Todas las categorías'
-                icono='fa-sort-amount-down'
-                bg='bg-primario'
-            />
             <div className="galeria-cat">
                 {
                     cats.categorias.map(({ id, icono, slug, nivel, titulo, descripcion }) => (

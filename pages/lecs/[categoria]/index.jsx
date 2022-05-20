@@ -15,6 +15,7 @@ export default function post({ dataCat }) {
                 <title>{dataCat.categoria[0].titulo} en inglés | Estudiar inglés online</title>
                 <meta name="description" content={dataCat.categoria[0].descripcion} />
             </Head>
+
             <BotonMain
                 titulo='Vocabulario de hoy'
                 icono='fa-stream'
@@ -23,28 +24,19 @@ export default function post({ dataCat }) {
             />
 
             <AdSense.Google
-                // full-cat
+                // 300x100-cat-hero
                 client='ca-pub-3630578707238850'
-                slot='2941801066'
+                slot='3033090313'
                 style={{
                     display: 'block',
+                    height: 100 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     textAlign: 'center'
                 }}
-                format='auto'
+                format=''
                 responsive='true'
-                layoutKey='-gw-1+2a-9x+5c'
             />
-
-            {/* <AdSense.Google
-                // feed-cat
-                client='ca-pub-3630578707238850'
-                slot='9843295884'
-                style={{ display: 'block', textAlign: 'center' }}
-                format='fluid'
-                layoutKey='-6t+ed+2i-1n-4w'
-            /> */}
 
             <InfoCat
                 icono={dataCat.categoria[0].icono}
@@ -53,9 +45,9 @@ export default function post({ dataCat }) {
             />
 
             <AdSense.Google
-                // 300x100-cat
+                // 300x100-cat-alto
                 client='ca-pub-3630578707238850'
-                slot='8253725468'
+                slot='8093845306'
                 style={{
                     display: 'block',
                     height: 100 + 'px',
@@ -77,6 +69,22 @@ export default function post({ dataCat }) {
                     bg='bg-primario'
                 />
             </div>
+
+            <AdSense.Google
+                // 300x50-cat-medio
+                client='ca-pub-3630578707238850'
+                slot='3722806718'
+                style={{
+                    display: 'block',
+                    height: 100 + 'px',
+                    marginBottom: 15 + 'px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    textAlign: 'center'
+                }}
+                format=''
+                responsive='true'
+            />
 
             <div className="galeria-posts-cat">
                 {

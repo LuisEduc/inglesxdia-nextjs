@@ -11,20 +11,19 @@ export default function Hero({ buscar }) {
                     <div align="center">
 
                         <AdSense.Google
-                            // full-hero
+                            // 300x100-inicio-hero
                             client='ca-pub-3630578707238850'
-                            slot='4810977003'
+                            slot='8009250674'
                             style={{
                                 display: 'block',
-                                marginTop: 0 + 'px',
-                                marginBottom: 15 + 'px',
+                                height: 100 + 'px',
                                 marginLeft: 'auto',
                                 marginRight: 'auto',
+                                marginBottom: 15 + 'px',
                                 textAlign: 'center'
                             }}
-                            format='auto'
+                            format=''
                             responsive='true'
-                            layoutKey='-gw-1+2a-9x+5c'
                         />
 
                     </div>
@@ -40,6 +39,20 @@ export default function Hero({ buscar }) {
                     <div className="hero-resumen-titulo">
                         <h2>¿Qué ofrece <span className="resalt-mor">inglesxdia.tech</span>?</h2>
                     </div>
+                    <AdSense.Google
+                        // 300x100-inicio-alto
+                        client='ca-pub-3630578707238850'
+                        slot='6588357798'
+                        style={{
+                            display: 'block',
+                            height: 100 + 'px',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            textAlign: 'center'
+                        }}
+                        format=''
+                        responsive='true'
+                    />
                     <div className="hero-resumen-item">
                         <Link href="/vocabulario">
                             <a>
