@@ -16,7 +16,7 @@ export default function Hero({ buscar }) {
                             slot='8009250674'
                             style={{
                                 display: 'block',
-                                height: 100 + 'px',
+                                height: 50 + 'px',
                                 marginLeft: 'auto',
                                 marginRight: 'auto',
                                 marginBottom: 15 + 'px',
@@ -39,20 +39,22 @@ export default function Hero({ buscar }) {
                     <div className="hero-resumen-titulo">
                         <h2>¿Qué ofrece <span className="resalt-mor">inglesxdia.tech</span>?</h2>
                     </div>
-                    <AdSense.Google
-                        // 300x100-inicio-alto
-                        client='ca-pub-3630578707238850'
-                        slot='6588357798'
-                        style={{
-                            display: 'block',
-                            height: 100 + 'px',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                            textAlign: 'center'
-                        }}
-                        format=''
-                        responsive='true'
-                    />
+                    <div>
+                        <AdSense.Google
+                            // 300x100-inicio-alto
+                            client='ca-pub-3630578707238850'
+                            slot='6588357798'
+                            style={{
+                                display: 'block',
+                                height: 50 + 'px',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                textAlign: 'center'
+                            }}
+                            format=''
+                            responsive='true'
+                        />
+                    </div>
                     <div className="hero-resumen-item">
                         <Link href="/vocabulario">
                             <a>

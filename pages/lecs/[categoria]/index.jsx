@@ -76,7 +76,7 @@ export default function post({ dataCat }) {
                 slot='3722806718'
                 style={{
                     display: 'block',
-                    height: 100 + 'px',
+                    height: 50 + 'px',
                     marginBottom: 15 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
