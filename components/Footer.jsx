@@ -16,7 +16,7 @@ export default function Footer() {
             </link>
 
             <div className="descarga-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
-                <span>Descargar aplicación gratis</span>
+                <span>Aplicación inglesxdia gratis</span>
             </div>
             {/* <div className='banner-inferior-fijo'>
                 <AdSense.Google

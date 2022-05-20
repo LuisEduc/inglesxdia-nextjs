@@ -58,7 +58,7 @@ export default function Individual({ dataLec, dataCat }) {
         }
     }
     firstQ.push(dataCat.lecciones[0]);
-    const dataRel = data.slice(0, 6)
+    const dataRel = data.slice(0, 3)
 
     return (
         <>
@@ -219,27 +219,12 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
 
-                <AdSense.Google
-                    // 300x50-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='5989861498'
-                    style={{
-                        display: 'block',
-                        height: 50 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                    responsive='true'
-                />
-
                 {/* <!-- Ezoic - display-lec-btn-rel - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-111"> </div>
                 {/* <!-- End Ezoic - display-lec-btn-rel - top_of_page --> */}
 
                 {
-                    <div className="galeria-bloque-inicio" style={{ marginTop: -10 + 'px' }}>
+                    <div className="galeria-bloque-inicio" style={{ marginTop: -15 + 'px' }}>
                         {
                             dataRel.map(({ id, titulo, imagen, slug_cat, slug }) => (
                                 <div key={id}>
