@@ -7,6 +7,7 @@ export default function Hero({ buscar }) {
     return (
         <>
             <div className="hero-bg">
+                <div style={{ height: '12px' }}></div>
                 <AdSense.Google
                     // 300x100-inicio-hero
                     client='ca-pub-3630578707238850'
@@ -16,7 +17,6 @@ export default function Hero({ buscar }) {
                         height: 100 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
-                        paddingTop: 12 + 'px !important',
                         textAlign: 'center'
                     }}
                     format=''
