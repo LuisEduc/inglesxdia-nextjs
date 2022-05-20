@@ -16,7 +16,7 @@ export default function Hero({ buscar }) {
                             slot='8009250674'
                             style={{
                                 display: 'block',
-                                height: 50 + 'px',
+                                height: 50 + 'px !important',
                                 marginLeft: 'auto',
                                 marginRight: 'auto',
                                 marginBottom: 15 + 'px',
@@ -46,7 +46,7 @@ export default function Hero({ buscar }) {
                             slot='6588357798'
                             style={{
                                 display: 'block',
-                                height: 50 + 'px',
+                                height: 50 + 'px !important',
                                 marginLeft: 'auto',
                                 marginRight: 'auto',
                                 textAlign: 'center'

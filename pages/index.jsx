@@ -84,6 +84,7 @@ export default function index({ bloques, cats, buscar }) {
                     height: 100 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
+                    marginBottom: -30 + 'px',
                     textAlign: 'center'
                 }}
                 format=''

@@ -77,7 +77,6 @@ export default function post({ dataCat }) {
                 style={{
                     display: 'block',
                     height: 50 + 'px',
-                    marginBottom: 15 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     textAlign: 'center'
