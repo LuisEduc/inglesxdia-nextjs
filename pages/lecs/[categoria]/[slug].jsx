@@ -160,9 +160,9 @@ export default function Individual({ dataLec, dataCat }) {
                 </div>
 
                 <AdSense.Google
-                    // 300x100-indi-medio
+                    // 300x50-indi-medio
                     client='ca-pub-3630578707238850'
-                    slot='8201754571'
+                    slot='9884836482'
                     style={{
                         display: 'block',
                         height: 100 + 'px',
@@ -228,23 +228,7 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                <GoogleAdSense
-                    // multiplex-indi-bajo
-                    html={
-                        `<ins 
-                        class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-3630578707238850"
-                        data-ad-slot="5066859732"
-                        data-matched-content-ui-type="text"
-                        data-matched-content-rows-num="3"
-                        data-matched-content-columns-num="1"
-                        data-ad-format="autorelaxed"
-                        ></ins>`
-                    }
-                />,
-
-                {/* <AdSense.Google
+                <AdSense.Google
                     // 300x100-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='1183870334'
@@ -258,7 +242,7 @@ export default function Individual({ dataLec, dataCat }) {
                     }}
                     format=''
                     responsive='true'
-                /> */}
+                />
 
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
