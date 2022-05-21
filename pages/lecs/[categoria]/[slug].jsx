@@ -236,7 +236,7 @@ export default function Individual({ dataLec, dataCat }) {
                         style="display:block"
                         data-ad-client="ca-pub-3630578707238850"
                         data-ad-slot="5066859732"
-                        data-matched-content-ui-type="text_card"
+                        data-matched-content-ui-type="text"
                         data-matched-content-rows-num="4"
                         data-matched-content-columns-num="1"
                         data-ad-format="autorelaxed"
