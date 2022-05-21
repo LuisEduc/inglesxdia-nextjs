@@ -24,6 +24,21 @@ export default function post({ dataCat }) {
             />
 
             <AdSense.Google
+                // full-cat
+                client='ca-pub-3630578707238850'
+                slot='2941801066'
+                style={{
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    textAlign: 'center'
+                }}
+                format='auto'
+                responsive='true'
+                layoutKey='-gw-1+2a-9x+5c'
+            />
+
+            {/* <AdSense.Google
                 // 300x100-cat-hero
                 client='ca-pub-3630578707238850'
                 slot='3033090313'
@@ -36,7 +51,7 @@ export default function post({ dataCat }) {
                 }}
                 format=''
                 responsive='true'
-            />
+            /> */}
 
             <InfoCat
                 icono={dataCat.categoria[0].icono}
