@@ -117,7 +117,6 @@ export default function Individual({ dataLec, dataCat }) {
                     }}
                     format='auto'
                     responsive='true'
-                    layoutKey='-gw-1+2a-9x+5c'
                 />
 
                 {/* <AdSense.Google
