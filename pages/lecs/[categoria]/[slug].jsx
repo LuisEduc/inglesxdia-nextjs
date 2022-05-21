@@ -106,20 +106,6 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <AdSense.Google
-                    // full-indi
-                    client='ca-pub-3630578707238850'
-                    slot='6905737434'
-                    style={{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format='auto'
-                    responsive='true'
-                />
-
-                {/* <AdSense.Google
                     // 300x100-indi-alto
                     client='ca-pub-3630578707238850'
                     slot='7427405551'
@@ -132,7 +118,7 @@ export default function Individual({ dataLec, dataCat }) {
                     }}
                     format=''
                     responsive='true'
-                /> */}
+                />
 
                 {/* <!-- Ezoic - display-lec-btn-voc - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-105"> </div>
