@@ -13,6 +13,7 @@ import Image from "next/image"
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import AdSense from 'react-adsense';
+import GoogleAdSense from 'react-simple-adsense';
 import Link from "next/link"
 
 const settings = {
@@ -227,7 +228,16 @@ export default function Individual({ dataLec, dataCat }) {
                     </div>
                 }
 
-                <AdSense.Google
+                <GoogleAdSense
+                    html={
+                        '<ins class="adsbygoogle"\n' +
+                        'style="display:inline-block;width:200px;height:200px"\n' +
+                        'data-ad-client="ca-pub-3630578707238850"\n' +
+                        'data-ad-slot="1183870334"></ins>'
+                    }
+                />,
+
+                {/* <AdSense.Google
                     // 300x100-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='1183870334'
@@ -241,7 +251,8 @@ export default function Individual({ dataLec, dataCat }) {
                     }}
                     format=''
                     responsive='true'
-                />
+                /> */}
+
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-112"> </div>
