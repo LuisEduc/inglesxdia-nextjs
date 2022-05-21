@@ -229,11 +229,18 @@ export default function Individual({ dataLec, dataCat }) {
                 }
 
                 <GoogleAdSense
+                    // multiplex-indi-bajo
                     html={
-                        '<ins class="adsbygoogle"\n' +
-                        'style="display:inline-block;width:200px;height:200px"\n' +
-                        'data-ad-client="ca-pub-3630578707238850"\n' +
-                        'data-ad-slot="1183870334"></ins>'
+                        `<ins 
+                        class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-3630578707238850"
+                        data-ad-slot="5066859732"
+                        data-matched-content-ui-type="text_card"
+                        data-matched-content-rows-num="4"
+                        data-matched-content-columns-num="1"
+                        data-ad-format="autorelaxed"
+                        ></ins>`
                     }
                 />,
 
