@@ -214,6 +214,7 @@ export default function Individual({ dataLec, dataCat }) {
                         height: 100 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
+                        marginBottom: 5 + 'px',
                         textAlign: 'center'
                     }}
                     format=''
