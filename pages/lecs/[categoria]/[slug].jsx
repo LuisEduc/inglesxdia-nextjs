@@ -165,7 +165,8 @@ export default function Individual({ dataLec, dataCat }) {
                     slot='9884836482'
                     style={{
                         display: 'block',
-                        height: 50 + 'px',
+                        height: 150 + 'px',
+                        width: 85 + '%',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
