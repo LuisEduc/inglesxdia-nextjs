@@ -172,7 +172,6 @@ export default function Individual({ dataLec, dataCat }) {
                         textAlign: 'center'
                     }}
                     format=''
-                    responsive='true'
                 />
 
                 {/* <!-- Ezoic - display-lec-carousel - top_of_page --> */}
