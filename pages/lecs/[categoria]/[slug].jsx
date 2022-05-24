@@ -107,18 +107,18 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <AdSense.Google
-                    // 300x100-indi-alto
+                    // 300x200-indi-alto
                     client='ca-pub-3630578707238850'
-                    slot='7427405551'
+                    slot='6369839715'
                     style={{
                         display: 'block',
-                        height: 100 + 'px',
+                        height: 200 + 'px',
+                        width: 85 + '%',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
                     format=''
-                    responsive='true'
                 />
 
                 {/* <!-- Ezoic - display-lec-btn-voc - top_of_page --> */}
