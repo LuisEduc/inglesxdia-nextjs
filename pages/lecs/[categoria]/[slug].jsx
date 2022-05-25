@@ -160,9 +160,9 @@ export default function Individual({ dataLec, dataCat }) {
                 </div>
 
                 <AdSense.Google
-                    // 300x50-indi-medio
+                    // 300x200-indi-medio
                     client='ca-pub-3630578707238850'
-                    slot='9884836482'
+                    slot='1475292605'
                     style={{
                         display: 'block',
                         height: 200 + 'px',
