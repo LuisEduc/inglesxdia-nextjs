@@ -84,6 +84,8 @@ export default function Individual({ dataLec, dataCat }) {
                         width: 85 + '%',
                         marginLeft: 'auto',
                         marginRight: 'auto',
+                        marginBottom: 15 + 'px',
+                        marginTop: 15 + 'px',
                         textAlign: 'center'
                     }}
                     format=''
