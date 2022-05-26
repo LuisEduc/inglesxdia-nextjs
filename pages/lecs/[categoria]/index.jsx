@@ -12,7 +12,7 @@ export default function post({ dataCat }) {
         <Layout>
             <Head>
                 <link rel="icon" href="/favicon.png" />
-                <title>{dataCat.categoria[0].titulo} en inglés | Estudiar inglés online</title>
+                <title>{dataCat.categoria[0].titulo} | Estudiar inglés online</title>
                 <meta name="description" content={dataCat.categoria[0].descripcion} />
             </Head>
 
