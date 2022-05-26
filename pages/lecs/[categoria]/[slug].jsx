@@ -75,20 +75,18 @@ export default function Individual({ dataLec, dataCat }) {
                 {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
 
                 <AdSense.Google
-                    // 300x50-indi-alto
+                    // 300x200-indi-hero
                     client='ca-pub-3630578707238850'
-                    slot='2418913037'
+                    slot='9793368963'
                     style={{
                         display: 'block',
-                        height: 50 + 'px',
+                        height: 200 + 'px',
+                        width: 85 + '%',
                         marginLeft: 'auto',
                         marginRight: 'auto',
-                        marginTop: 10 + 'px',
-                        marginBottom: 2 + 'px',
                         textAlign: 'center'
                     }}
                     format=''
-                    responsive='true'
                 />
 
                 <div className="lecs-titulo">
@@ -160,18 +158,18 @@ export default function Individual({ dataLec, dataCat }) {
                 </div>
 
                 <AdSense.Google
-                    // 300x200-indi-medio
+                    // 300x100-indi-medio
                     client='ca-pub-3630578707238850'
-                    slot='1475292605'
+                    slot='8201754571'
                     style={{
                         display: 'block',
-                        height: 200 + 'px',
-                        width: 85 + '%',
+                        height: 100 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
                     format=''
+                    responsive='true'
                 />
 
                 {/* <!-- Ezoic - display-lec-carousel - top_of_page --> */}
