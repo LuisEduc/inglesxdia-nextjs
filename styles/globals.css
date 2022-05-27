@@ -180,7 +180,7 @@ a {
 
 .btn-main h2 {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--color-blanco);
   margin-top: auto;
   margin-bottom: auto;
@@ -212,7 +212,7 @@ a {
 
 @media (max-width: 370px) {
   .btn-main h2 {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -239,7 +239,7 @@ a {
 
 .btn-cuestionario h2 {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--color-blanco);
   margin-top: auto;
   margin-bottom: auto;
@@ -271,7 +271,7 @@ a {
 
 @media (max-width: 370px) {
   .btn-cuestionario h2 {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -676,26 +676,15 @@ a {
   justify-content: center;
   margin-top: auto;
   margin: 8px auto -8px;
-  padding: 10px 20px;
+  padding: 8px 20px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 5px;
   width: 85%;
 }
-/* .lecs-titulo {
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
-  margin: 8px auto -8px;
-  padding: 10px 20px;
-  text-align: center;
-  background-color: rgba(235, 235, 235, 0.75);
-  border-radius: 5px;
-  width: 85%;
-} */
 
 .lecs-titulo h1 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: var(--color-primario);
   font-family: "Righteous", cursive;
   margin-bottom: 0px;
