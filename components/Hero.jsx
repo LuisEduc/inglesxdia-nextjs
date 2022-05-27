@@ -25,7 +25,7 @@ export default function Hero({ buscar }) {
                 <div className="hero">
                     <div className="hero-text">
                         <div className="hero-titulo">
-                            <h1>Estudiar inglés online<span className="text-primary">.</span></h1>
+                            <h1>Curso de inglés en línea<span className="text-primary">.</span></h1>
                         </div>
                         <div className="buscador">
                             <Buscador buscar={buscar} />
