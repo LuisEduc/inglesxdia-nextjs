@@ -75,20 +75,19 @@ export default function Individual({ dataLec, dataCat }) {
                 {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
 
                 <AdSense.Google
-                    // 300x100-indi-hero
+                    // full-indi
                     client='ca-pub-3630578707238850'
-                    slot='9793368963'
+                    slot='6905737434'
                     style={{
                         display: 'block',
-                        height: 200 + 'px',
-                        width: 85 + '%',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         marginTop: 12 + 'px',
                         marginBottom: 10 + 'px',
                         textAlign: 'center'
                     }}
-                    format=''
+                    format='auto'
+                    responsive='true'
                 />
 
                 <div className="lecs-titulo">
@@ -107,12 +106,12 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <AdSense.Google
-                    // 300x100-indi-alto
+                    // 300x50-indi-alto
                     client='ca-pub-3630578707238850'
-                    slot='7427405551'
+                    slot='2418913037'
                     style={{
                         display: 'block',
-                        height: 100 + 'px',
+                        height: 50 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
@@ -229,17 +228,18 @@ export default function Individual({ dataLec, dataCat }) {
                 }
 
                 <AdSense.Google
-                    // full-indi-bajo
+                    // 300x100-indi-bajo
                     client='ca-pub-3630578707238850'
-                    slot='4370311034'
+                    slot='1183870334'
                     style={{
                         display: 'block',
+                        height: 100 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         marginBottom: 15 + 'px',
                         textAlign: 'center'
                     }}
-                    format='auto'
+                    format=''
                     responsive='true'
                 />
 
