@@ -75,7 +75,7 @@ export default function Individual({ dataLec, dataCat }) {
                 {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
 
                 <AdSense.Google
-                    // 300x200-indi-hero
+                    // 300x100-indi-hero
                     client='ca-pub-3630578707238850'
                     slot='9793368963'
                     style={{
@@ -107,18 +107,18 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <AdSense.Google
-                    // 300x200-indi-alto
+                    // 300x100-indi-alto
                     client='ca-pub-3630578707238850'
-                    slot='6369839715'
+                    slot='7427405551'
                     style={{
                         display: 'block',
-                        height: 200 + 'px',
-                        width: 85 + '%',
+                        height: 100 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
                     format=''
+                    responsive='true'
                 />
 
                 {/* <!-- Ezoic - display-lec-btn-voc - top_of_page --> */}
@@ -229,18 +229,17 @@ export default function Individual({ dataLec, dataCat }) {
                 }
 
                 <AdSense.Google
-                    // 300x100-indi-bajo
+                    // full-indi-bajo
                     client='ca-pub-3630578707238850'
-                    slot='1183870334'
+                    slot='4370311034'
                     style={{
                         display: 'block',
-                        height: 100 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         marginBottom: 15 + 'px',
                         textAlign: 'center'
                     }}
-                    format=''
+                    format='auto'
                     responsive='true'
                 />
 
