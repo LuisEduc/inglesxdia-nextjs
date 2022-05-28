@@ -49,7 +49,7 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-            <div style={{ height: 60 }}></div>
+            <div style={{ height: 50 }}></div>
         </>
     )
 }
