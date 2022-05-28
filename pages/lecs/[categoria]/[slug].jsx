@@ -194,6 +194,15 @@ export default function Individual({ dataLec, dataCat }) {
                     audio={leccion[0].audio}
                 />
 
+                <Link href='https://bit.ly/34j0kVS'>
+                    <a>
+                        <div className='btn-main bg-app'>
+                            <i className='fab fa-google-play fa-xs'></i>
+                            <h2>Descargar aplicación</h2>
+                        </div>
+                    </a>
+                </Link>
+
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-109"> </div>
                 {/* <!-- End Ezoic - display-lec-audio - top_of_page --> */}

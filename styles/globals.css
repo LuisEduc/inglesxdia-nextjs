@@ -165,7 +165,7 @@ a {
   display: flex;
   justify-content: center;
   width: 40%;
-  height: 50px;
+  height: 46px;
   border-radius: 10px;
   box-shadow: 4px 4px 1px 1px rgb(0 0 0 / 25%);
   /* box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 15%); */
@@ -192,9 +192,9 @@ a {
 .btn-main i {
   margin-top: auto;
   margin-bottom: auto;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: #fff;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   margin-right: 10px;
 }
 
@@ -684,7 +684,7 @@ a {
 }
 
 .lecs-titulo h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--color-primario);
   font-family: "Righteous", cursive;
   margin-bottom: 0px;
@@ -808,7 +808,7 @@ a {
 }
 
 .header-area .main-nav .logo {
-  line-height: 47px;
+  line-height: 50px;
   color: #fff;
   font-size: 27px;
   font-weight: 800;
@@ -880,7 +880,7 @@ a {
   cursor: pointer;
   display: block;
   position: absolute;
-  top: 8px;
+  top: 7px;
   width: 32px;
   height: 40px;
   text-indent: -9999em;
@@ -2108,7 +2108,7 @@ a {
 }
 
 .div-carousel-lec {
-  margin-top: -10px;
+  margin-top: -12px;
 }
 
 .div-carousel-lec .carousel .control-next.control-arrow {
@@ -2533,6 +2533,25 @@ a {
 
 .descarga-app img {
   height: 22px;
+}
+
+.bg-app {
+  background: #da4453; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-app i{
+  font-size: 1.7rem;
+  margin-bottom: 8px;
 }
 
 .bagde-app {

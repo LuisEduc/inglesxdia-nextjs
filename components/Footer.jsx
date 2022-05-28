@@ -15,9 +15,9 @@ export default function Footer() {
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossOrigin="anonymous">
             </link>
 
-            <div className="descarga-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
+            {/* <div className="descarga-app" onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
                 <span>Aplicación inglesxdia gratis</span>
-            </div>
+            </div> */}
             {/* <div className='banner-inferior-fijo'>
                 <AdSense.Google
                     // banner-inferior-fijo
