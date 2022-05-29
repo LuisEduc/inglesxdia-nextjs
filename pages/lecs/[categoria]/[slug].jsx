@@ -80,15 +80,13 @@ export default function Individual({ dataLec, dataCat }) {
                     slot='6905737434'
                     style={{
                         display: 'block',
-                        height: 250 + 'px',
-                        width: 250 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         marginTop: 10 + 'px',
                         marginBottom: 10 + 'px',
                         textAlign: 'center'
                     }}
-                    format=''
+                    format='auto'
                     responsive='true'
                 />
 
@@ -104,7 +102,7 @@ export default function Individual({ dataLec, dataCat }) {
                     titulo='Vocabulario de hoy'
                     icono='fa-stream'
                     dir='/vocabulario'
-                    bg='bg-secundario'
+                    bg='bg-primario'
                 />
 
                 <AdSense.Google
@@ -126,12 +124,12 @@ export default function Individual({ dataLec, dataCat }) {
                 <div id="ezoic-pub-ad-placeholder-105"> </div>
                 {/* <!-- End Ezoic - display-lec-btn-voc - top_of_page --> */}
 
-                <BotonMain
+                {/* <BotonMain
                     titulo='Lecciones similares'
                     icono='fa-chevron-circle-left'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
-                />
+                /> */}
 
                 {/* <!-- Ezoic - display-lec-btn-simil - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-106"> </div>
