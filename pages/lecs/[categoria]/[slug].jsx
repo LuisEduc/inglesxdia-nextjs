@@ -75,15 +75,16 @@ export default function Individual({ dataLec, dataCat }) {
                 {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
 
                 <AdSense.Google
-                    // 300x50-indi-hero
+                    // full-indi
                     client='ca-pub-3630578707238850'
-                    slot='6724723621'
+                    slot='6905737434'
                     style={{
                         display: 'block',
-                        height: 50 + 'px',
+                        height: 250 + 'px',
+                        width: 250 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
-                        marginTop: 12 + 'px',
+                        marginTop: 10 + 'px',
                         marginBottom: 10 + 'px',
                         textAlign: 'center'
                     }}
@@ -107,12 +108,12 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <AdSense.Google
-                    // 300x250-indi
+                    // 300x50-indi-alto
                     client='ca-pub-3630578707238850'
-                    slot='6438145214'
+                    slot='2418913037'
                     style={{
                         display: 'block',
-                        height: 250 + 'px',
+                        height: 50 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
