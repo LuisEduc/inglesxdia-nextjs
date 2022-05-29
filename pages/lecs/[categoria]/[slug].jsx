@@ -102,7 +102,7 @@ export default function Individual({ dataLec, dataCat }) {
                     titulo='Vocabulario de hoy'
                     icono='fa-stream'
                     dir='/vocabulario'
-                    bg='bg-primario'
+                    bg='bg-secundario'
                 />
 
                 <AdSense.Google
