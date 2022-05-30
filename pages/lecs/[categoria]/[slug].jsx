@@ -75,18 +75,20 @@ export default function Individual({ dataLec, dataCat }) {
                 {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
 
                 <AdSense.Google
-                    // full-indi
+                    // 300x250-indi
                     client='ca-pub-3630578707238850'
-                    slot='6905737434'
+                    slot='6438145214'
                     style={{
                         display: 'block',
+                        height: 250 + 'px',
+                        width: 85 + '%',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         marginTop: 10 + 'px',
                         marginBottom: 10 + 'px',
                         textAlign: 'center'
                     }}
-                    format='auto'
+                    format=''
                     responsive='true'
                 />
 
