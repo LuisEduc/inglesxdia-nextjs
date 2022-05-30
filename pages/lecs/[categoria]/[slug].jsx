@@ -89,7 +89,6 @@ export default function Individual({ dataLec, dataCat }) {
                         textAlign: 'center'
                     }}
                     format=''
-                    responsive='true'
                 />
 
                 <div className="lecs-titulo">
