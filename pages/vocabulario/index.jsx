@@ -18,12 +18,12 @@ export default function index({ data }) {
             </Head>
 
             <AdSense.Google
-                // 300x100-voc-hero
+                // 300x250-voc
                 client='ca-pub-3630578707238850'
-                slot='8340267634'
+                slot='6102898405'
                 style={{
                     display: 'block',
-                    height: 100 + 'px',
+                    height: 250 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginBottom: 15 + 'px',
@@ -57,12 +57,12 @@ export default function index({ data }) {
             </div>
 
             <AdSense.Google
-                // 300x100-voc-alto
+                // 300x50-voc-alto
                 client='ca-pub-3630578707238850'
-                slot='4255056118'
+                slot='9793863809'
                 style={{
                     display: 'block',
-                    height: 100 + 'px',
+                    height: 50 + 'px',
                     marginTop: 30 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
@@ -84,14 +84,6 @@ export default function index({ data }) {
                         <a type="button" onClick={() => window.open("https://www.youtube.com/channel/UC17wrAHkky26woClR91Pr1A", "_blank")} className="btn btn-outline-red btn-redes">Visítanos
                             en Youtube<i className="ms-2 fab fa-youtube"></i></a>
                     </div>
-
-                    <AdSense.Google
-                        // 300x100-voc-medio
-                        client='ca-pub-3630578707238850'
-                        slot='1820464467'
-                        style={{ display: 'block', height: 100 + 'px', width: 98 + '%', marginTop: 12 + 'px', textAlign: 'center' }}
-                        format=''
-                    />
 
                 </div>
                 <div className="div-carousel-voc">
