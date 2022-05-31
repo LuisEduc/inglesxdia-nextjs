@@ -34,7 +34,7 @@ export default function index({ bloques, cats, buscar }) {
                     height: 100 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
-                    marginBottom: -12 + 'px',
+                    marginBottom: -15 + 'px',
                     textAlign: 'center'
                 }}
                 format=''
@@ -66,6 +66,23 @@ export default function index({ bloques, cats, buscar }) {
                                 ))
                             }
                         </div>
+
+                        <AdSense.Google
+                            // 300x50-inicio
+                            client='ca-pub-3630578707238850'
+                            slot='4872113806'
+                            style={{
+                                display: 'block',
+                                height: 50 + 'px',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                marginTop: 15 + 'px',
+                                marginBottom: -15 + 'px',
+                                textAlign: 'center'
+                            }}
+                            format=''
+                            responsive='true'
+                        />
                     </div>
                 ))
             }
@@ -85,7 +102,7 @@ export default function index({ bloques, cats, buscar }) {
                     height: 100 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
-                    marginBottom: -32 + 'px',
+                    marginBottom: -35 + 'px',
                     textAlign: 'center'
                 }}
                 format=''
