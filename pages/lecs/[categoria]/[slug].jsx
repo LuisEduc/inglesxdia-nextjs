@@ -74,14 +74,13 @@ export default function Individual({ dataLec, dataCat }) {
                 <div id="ezoic-pub-ad-placeholder-103"> </div>
                 {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
 
-                {/* <AdSense.Google
-                    // 300x250-indi
+                <AdSense.Google
+                    // 300x50-indi-alto
                     client='ca-pub-3630578707238850'
-                    slot='6438145214'
+                    slot='2418913037'
                     style={{
                         display: 'block',
-                        height: 250 + 'px',
-                        width: 85 + '%',
+                        height: 50 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         marginTop: 10 + 'px',
@@ -89,21 +88,6 @@ export default function Individual({ dataLec, dataCat }) {
                         textAlign: 'center'
                     }}
                     format=''
-                /> */}
-
-                <AdSense.Google
-                    // full-indi
-                    client='ca-pub-3630578707238850'
-                    slot='6905737434'
-                    style={{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginTop: 10 + 'px',
-                        marginBottom: 10 + 'px',
-                        textAlign: 'center'
-                    }}
-                    format='auto'
                     responsive='true'
                 />
 
@@ -123,12 +107,13 @@ export default function Individual({ dataLec, dataCat }) {
                 />
 
                 <AdSense.Google
-                    // 300x50-indi-alto
+                    // 300x250-indi
                     client='ca-pub-3630578707238850'
-                    slot='2418913037'
+                    slot='6438145214'
                     style={{
                         display: 'block',
-                        height: 50 + 'px',
+                        height: 250 + 'px',
+                        width: 85 + '%',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         marginTop: -2 + 'px',
@@ -136,19 +121,18 @@ export default function Individual({ dataLec, dataCat }) {
                         textAlign: 'center'
                     }}
                     format=''
-                    responsive='true'
                 />
 
                 {/* <!-- Ezoic - display-lec-btn-voc - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-105"> </div>
                 {/* <!-- End Ezoic - display-lec-btn-voc - top_of_page --> */}
 
-                {/* <BotonMain
+                <BotonMain
                     titulo='Lecciones similares'
                     icono='fa-chevron-circle-left'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
-                /> */}
+                />
 
                 {/* <!-- Ezoic - display-lec-btn-simil - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-106"> </div>
