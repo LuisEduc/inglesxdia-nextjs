@@ -216,6 +216,23 @@ export default function Individual({ dataLec, dataCat }) {
                     bg='bg-secundario'
                 />
 
+                <AdSense.Google
+                    // 300x50-indi-bajo
+                    client='ca-pub-3630578707238850'
+                    slot='5989861498'
+                    style={{
+                        display: 'block',
+                        height: 50 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        marginTop: 10 + 'px',
+                        marginBottom: 10 + 'px',
+                        textAlign: 'center'
+                    }}
+                    format=''
+                    responsive='true'
+                />
+
                 {/* <!-- Ezoic - display-lec-btn-rel - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-111"> </div>
                 {/* <!-- End Ezoic - display-lec-btn-rel - top_of_page --> */}
@@ -238,22 +255,6 @@ export default function Individual({ dataLec, dataCat }) {
                         }
                     </div>
                 }
-
-                <AdSense.Google
-                    // 300x50-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='5989861498'
-                    style={{
-                        display: 'block',
-                        height: 50 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginBottom: 15 + 'px',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                    responsive='true'
-                />
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-112"> </div>
