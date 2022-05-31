@@ -113,14 +113,14 @@ export default function Individual({ dataLec, dataCat }) {
                     style={{
                         display: 'block',
                         height: 250 + 'px',
-                        width: 85 + '%',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         marginTop: -2 + 'px',
-                        marginBottom: 13 + 'px',
+                        marginBottom: 10 + 'px',
                         textAlign: 'center'
                     }}
                     format=''
+                    responsive='true'
                 />
 
                 {/* <!-- Ezoic - display-lec-btn-voc - top_of_page --> */}
