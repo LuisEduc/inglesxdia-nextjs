@@ -18,6 +18,8 @@ export default function index({ bloques, cats, buscar }) {
                 <meta name="description" content="Clases de inglés todos los días de lecturas cortas, lecturas básicas, vocabulario básico, frases comunes, expresiones, formas de decir, verbos, phrasal verbs y mucho más." />
             </Head>
 
+            <div id="lecs"></div>
+
             <BotonMain
                 titulo='Vocabulario de hoy'
                 icono='fa-stream'
@@ -40,8 +42,6 @@ export default function index({ bloques, cats, buscar }) {
                 format=''
                 responsive='true'
             />
-
-            <div id="lecs"></div>
 
             {
                 bloques.secciones.map(({ id, icono, titulo, color, bg, data }) => (

@@ -304,7 +304,7 @@ a {
   grid-auto-rows: 16rem;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   row-gap: 2rem;
-  margin: 2.5rem auto;
+  margin: 0 auto 2.5rem auto;
 }
 
 @media (max-width: 770px) {
