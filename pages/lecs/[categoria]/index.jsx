@@ -31,6 +31,8 @@ export default function post({ dataCat }) {
                     display: 'block',
                     marginLeft: 'auto',
                     marginRight: 'auto',
+                    marginTop: 15 + 'px',
+                    marginBottom: 15 + 'px',
                     textAlign: 'center'
                 }}
                 format='auto'
@@ -65,10 +67,10 @@ export default function post({ dataCat }) {
                 style={{
                     display: 'block',
                     height: 100 + 'px',
-                    marginBottom: 15 + 'px',
-                    marginTop: 15 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
+                    marginBottom: 15 + 'px',
+                    marginTop: 15 + 'px',
                     textAlign: 'center'
                 }}
                 format=''
@@ -93,6 +95,8 @@ export default function post({ dataCat }) {
                     height: 50 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
+                    marginTop: 15 + 'px',
+                    marginBottom: 15 + 'px',
                     textAlign: 'center'
                 }}
                 format=''
