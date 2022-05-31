@@ -9,18 +9,18 @@ export default function Hero({ buscar }) {
             <div className="hero-bg">
                 <div style={{ height: '12px' }}></div>
                 <AdSense.Google
-                    // 300x100-inicio-hero
+                    // 300x250-inicio-hero
                     client='ca-pub-3630578707238850'
-                    slot='8009250674'
+                    slot='4249839185'
                     style={{
                         display: 'block',
-                        height: 100 + 'px',
+                        height: 250 + 'px',
+                        width: 90 + '%',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
                     format=''
-                    responsive='true'
                 />
                 <div className="hero">
                     <div className="hero-text">
