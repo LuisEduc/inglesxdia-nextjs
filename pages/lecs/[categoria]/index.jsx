@@ -96,7 +96,6 @@ export default function post({ dataCat }) {
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginTop: 15 + 'px',
-                    marginBottom: 15 + 'px',
                     textAlign: 'center'
                 }}
                 format=''

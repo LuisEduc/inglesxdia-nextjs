@@ -93,7 +93,7 @@ export default function index({ bloques, cats, buscar }) {
                 bg='bg-primario'
             />
 
-            <AdSense.Google
+            {/* <AdSense.Google
                 // 300x100-inicio-bajo
                 client='ca-pub-3630578707238850'
                 slot='5282218829'
@@ -107,7 +107,7 @@ export default function index({ bloques, cats, buscar }) {
                 }}
                 format=''
                 responsive='true'
-            />
+            /> */}
 
             <div className="galeria-cat">
                 {
