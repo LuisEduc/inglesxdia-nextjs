@@ -240,12 +240,12 @@ export default function Individual({ dataLec, dataCat }) {
                 }
 
                 <AdSense.Google
-                    // 300x100-indi-bajo
+                    // 300x50-indi-bajo
                     client='ca-pub-3630578707238850'
-                    slot='1183870334'
+                    slot='5989861498'
                     style={{
                         display: 'block',
-                        height: 100 + 'px',
+                        height: 50 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         marginBottom: 15 + 'px',
