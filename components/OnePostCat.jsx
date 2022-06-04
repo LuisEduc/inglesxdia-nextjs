@@ -16,7 +16,7 @@ export default function OnePostCat({ slug, slug_cat, titulo, imagen, audio }) {
                     <Link href={`/lecs/${slug_cat}/${slug}`}>
                         <a>
                             <div className="one-post-cat-top" style={{ height: '100%' }}>
-                                <h2>{titulo}</h2>
+                                <h3>{titulo}</h3>
                             </div>
                         </a>
                     </Link>

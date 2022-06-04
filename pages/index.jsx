@@ -15,7 +15,7 @@ export default function index({ bloques, cats, buscar }) {
             <Head>
                 <link rel="icon" href="/favicon.png" />
                 <title>Curso de inglés en línea | inglesxdia</title>
-                <meta name="description" content="Clases de inglés todos los días de lecturas cortas, lecturas básicas, vocabulario básico, frases comunes, expresiones, formas de decir, verbos, phrasal verbs y mucho más." />
+                <meta name="description" content="Clases de inglés todos los días. Aprende a hablar, leer y escribir en inglés con nuestras lecciones diarias. Lecturas cortas, vocabulario, verbos y más clases con preguntas para practicar." />
             </Head>
 
             <div id="lecs"></div>
@@ -51,7 +51,7 @@ export default function index({ bloques, cats, buscar }) {
                             icono={icono}
                             bg="bg-primario"
                         />
-                        <div id="cats" className="galeria-bloque-inicio">
+                        <div className="galeria-bloque-inicio">
                             {
                                 data.map(({ id, titulo, imagen, slug_cat, slug }) => (
                                     <div key={id}>
@@ -86,6 +86,8 @@ export default function index({ bloques, cats, buscar }) {
                     </div>
                 ))
             }
+            
+            <div id="cats"></div>
 
             <TituloBloque
                 titulo='Todas las categorías'

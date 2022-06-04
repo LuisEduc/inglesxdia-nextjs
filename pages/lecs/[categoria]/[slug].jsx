@@ -29,9 +29,26 @@ const settings = {
     swipeScrollTolerance: 60,
 };
 
-export default function Individual({ dataLec, dataCat }) {
+export default function Individual({ dataLec, dataCat, contLec }) {
 
     const { leccion, preguntas, imagenes } = dataLec;
+    const { contenido } = contLec;
+
+    const texto = contenido[0].contenido
+    const texto1 = texto.replace(
+        `<p><strong><em>`, 
+        `<p><strong><em>`
+        );
+
+    const texto2 = texto1.replace(
+        `¡Completa la clase de hoy resolviendo el cuestionario!</h2>`, 
+        `¡Completa la clase de hoy resolviendo el cuestionario!</h2>`
+        );
+
+    const texto3 = texto2.replace(
+        `<span class=\"ql-cursor\">﻿</span>`, 
+        ``
+        );
 
     const [slide, setSlide] = useState(0);
 
@@ -40,6 +57,7 @@ export default function Individual({ dataLec, dataCat }) {
     }
 
     const dynamicRoute = useRouter().asPath
+
 
     useEffect(() => {
         setSlide(0)
@@ -68,6 +86,10 @@ export default function Individual({ dataLec, dataCat }) {
                     <link rel="icon" href="/favicon.png" />
                     <title>{leccion[0].titulo_seo}</title>
                     <meta name="description" content={leccion[0].descripcion} />
+
+                    <link rel="preconnect" href="https://fonts.googleapis.com" />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
                 </Head>
 
                 {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
@@ -198,10 +220,15 @@ export default function Individual({ dataLec, dataCat }) {
                     <a>
                         <div className='btn-main bg-app'>
                             <i className='fab fa-google-play fa-xs'></i>
-                            <h2>Descargar aplicación</h2>
+                            <p>Descargar aplicación</p>
                         </div>
                     </a>
                 </Link>
+
+                <div
+                    dangerouslySetInnerHTML={{ __html: texto3 }}
+                    className='contenido'
+                />
 
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-109"> </div>
@@ -301,6 +328,7 @@ export async function getStaticProps({ params }) {
                 },
             })
         const dataLec = await resLec.json()
+
         const resCat = await fetch(`https://admin.inglesxdia.com/api/categoria/${params.categoria}`,
             {
                 method: "GET",
@@ -311,10 +339,23 @@ export async function getStaticProps({ params }) {
             }
         )
         const dataCat = await resCat.json()
+
+        const resCont = await fetch(`https://admin.inglesxdia.com/api/contenido/${params.categoria}/${params.slug}`,
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            }
+        )
+        const contLec = await resCont.json()
+
         return {
             props: {
                 dataLec,
                 dataCat,
+                contLec,
             },
             revalidate: 5, // In seconds
         }

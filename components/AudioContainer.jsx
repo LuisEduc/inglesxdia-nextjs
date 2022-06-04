@@ -7,7 +7,7 @@ export default function AudioContainer({ titulo, audio }) {
         <div>
             <div className="container-audio">
                 <div className="mx-auto text-center">
-                    <h5 className="font-weight-bold text-light">{titulo}</h5>
+                    <p className="font-weight-bold text-light">{titulo}</p>
                 </div>
                 <div >
                     <AudioPlayer

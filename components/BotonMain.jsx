@@ -7,7 +7,7 @@ export default function BotonMain({dir, icono, titulo, bg, css, cssIcon}) {
                 <a>
                     <div className={`btn-main ${bg}`}>
                         <i className={`fas ${icono} ${cssIcon}`}></i>
-                        <h2>{titulo}</h2>
+                        <p>{titulo}</p>
                     </div>
                 </a>
             </Link>

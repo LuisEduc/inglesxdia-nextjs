@@ -184,7 +184,7 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                 <a>
                     <div onClick={() => setModal(1)} className={`btn btn-cuestionario bg-primario`} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <i className={`fas fa-graduation-cap`}></i>
-                        <h2>Cuestionario</h2>
+                        <p>Cuestionario</p>
                         <i className="fas fa-chevron-right"></i>
                     </div>
                 </a>
@@ -194,15 +194,15 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                 <div className="modal-dialog mx-auto">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="staticBackdropLabel">Cuestionario</h5>
+                            <p className="modal-title fw-bold-600" id="staticBackdropLabel">Cuestionario</p>
                             <button onClick={() => (router.back())} className="btn-close" ></button>
                             <button onClick={() => setModal(0)} style={{ display: 'none' }} ref={refBtnClose} className="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
                             <div className="quiz-container">
                                 <div className="question-number">
-                                    <h3>Pregunta {numeroPregunta + 1} de {preguntas.length}
-                                    </h3>
+                                    <p className="fw-bold-600">Pregunta {numeroPregunta + 1} de {preguntas.length}
+                                    </p>
                                 </div>
                                 <div className="question">
                                     {addPregunta()}
@@ -218,7 +218,7 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                             <div ref={refQuizOver} className="quiz-over">
                                 <div className="box">
                                     <button className="cerrar text-light" onClick={() => reiniciar()}>x</button>
-                                    <h2 className="text-center">
+                                    <div className="text-center h1">
                                         <span ref={refTextEnd1} className="text-end"></span>
                                         {
                                             puntaje == 1 ?
@@ -230,12 +230,12 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                                                     <i style={{ color: '#ff9797' }} className="far fa-2x fa-thumbs-down"></i>
                                                 </div>
                                         }
-                                    </h2>
-                                    <p className="text-center">
+                                    </div>
+                                    <p className="text-center h2">
                                         <span ref={refCorrectAnswers}></span> de <span ref={refTotalQuestions}></span> respuestas correctas.
                                         <br />
                                     </p>
-                                    <h5 ref={refTextEnd2} className="text-end text-center"></h5>
+                                    <p ref={refTextEnd2} className="text-end text-center h3"></p>
                                     <button className="btn-final" onClick={() => finalizar()}><span ref={refTextBtnEnd}></span></button>
                                 </div>
                             </div >

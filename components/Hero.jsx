@@ -46,9 +46,13 @@ export default function Hero({ buscar }) {
                             </Link>
                             <div className="item-hero-text">
                                 <Link href="/vocabulario">
-                                    <a>Vocabulario diario en inglés.</a>
+                                    <a>
+                                        <h3>
+                                            Vocabulario diario en inglés.
+                                        </h3>
+                                    </a>
                                 </Link>
-                                <p>Vocabulario fácil, medio y avanzado en inglés. Significado, traducción, frases de ejemplo y pronunciación, todos los días.</p>
+                                <p>Vocabulario fácil, medio y avanzado en inglés. Significado, traducción, frases de ejemplo y pronunciación todos los días.</p>
                             </div>
                         </div>
                         <div className="hero-resumen-item">
@@ -61,9 +65,11 @@ export default function Hero({ buscar }) {
                             </Link>
                             <div className="item-hero-text">
                                 <Link href="/#lecs">
-                                    <a href="/#lecs">Frases y expresiones.</a>
+                                    <h3>
+                                        <a href="/#lecs">Lecturas cortas y básicas.</a>
+                                    </h3>
                                 </Link>
-                                <p>Expresiones y frases útiles en inglés, verbos con todas las letras, lecturas, vocabulario básico de inglés y mucho más.</p>
+                                <p>Lecturas en inglés para principiantes y nivel intermedio. Textos y cuentos cortos para aprender inglés.</p>
                             </div>
                         </div>
                         <div className="hero-resumen-item">
@@ -75,10 +81,12 @@ export default function Hero({ buscar }) {
                                 </a>
                             </Link>
                             <div className="item-hero-text" >
-                                <Link href="/#lecs">
-                                    <a href="/#lecs">Ejercicios para estudiar.</a>
+                                <Link href="/#cats">
+                                    <h3>
+                                        <a href="/#cats">Clases para practicar.</a>
+                                    </h3>
                                 </Link>
-                                <p>Todas las lecciones incluyen cuestionario, traducción y pronunciación en inglés-español, la voz es natural y pausada.</p>
+                                <p>Frases, expresiones, verbos, verbos frasales, frases motivadoras, conversaciones en inglés con traducción.</p>
                             </div>
                         </div>
                     </div>
