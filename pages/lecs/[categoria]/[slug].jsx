@@ -238,7 +238,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                                 display: 'inline-block',
                                 minWidth: 300 + 'px',
                                 maxWidth: 720 + 'px',
-                                width: 100 + '%',
+                                width: 90 + '%',
                                 height: 50 + 'px',
                             }}
                             format=''
