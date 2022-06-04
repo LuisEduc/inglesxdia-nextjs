@@ -228,7 +228,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     </a>
                 </Link>
 
-                <div>
+                <div className='bg-contenido'>
                     <div dangerouslySetInnerHTML={{ __html: miTexto[0] }}
                         className='contenido' />
                     <div>
@@ -241,7 +241,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                                 display: 'inline-block',
                                 minWidth: 300 + 'px',
                                 maxWidth: 720 + 'px',
-                                width: 100 + '%',
+                                width: 90 + '%',
                                 height: 50 + 'px',
                                 marginLeft: 'auto',
                                 marginRight: 'auto',
