@@ -676,6 +676,7 @@ a {
   background: var(--color-primario) !important;
   box-shadow: none !important;
   overflow: hidden;
+  padding: 8px 15px !important;
 }
 
 .rhap_progress-indicator {
@@ -783,7 +784,7 @@ a {
   margin: 2rem auto;
   padding: 1rem;
   width: 60%;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .contenido h2,
@@ -797,6 +798,7 @@ a {
   color: var(--color-primario);
   font-weight: 600;
   margin-bottom: 0;
+  font-size: calc(1.2rem + 0.9vw) !important;
 }
 
 /* .contenido h3 {
@@ -815,7 +817,7 @@ a {
   font-size: 16px;
   margin-bottom: 2px;
   color: var(--color-secundario)!important;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .contenido h3>strong 
@@ -844,7 +846,7 @@ a {
 {
   font-style: normal;
   display: inline-block;
-  font-size: 21px;
+  font-size: 18px;
   margin-bottom: 12px;
 }
 
@@ -873,17 +875,9 @@ a {
   }
 }
 
-@media (max-width: 770px) {
-  .contenido {
-    width: 85%;
-  }
-
-}
-
 @media (max-width: 540px) {
   .contenido {
-    width: 100%;
-    border-radius: 0px;
+    width: 93%;
   }
 }
 
