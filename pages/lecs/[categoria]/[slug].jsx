@@ -36,19 +36,23 @@ export default function Individual({ dataLec, dataCat, contLec }) {
 
     const texto = contenido[0].contenido
     const texto1 = texto.replace(
-        `<p><strong><em>`, 
-        `<p><strong><em>`
-        );
+        `<p><strong><em>`,
+        `
+        *
+        <p><strong><em>`
+    );
 
     const texto2 = texto1.replace(
-        `¡Completa la clase de hoy resolviendo el cuestionario!</h2>`, 
+        `¡Completa la clase de hoy resolviendo el cuestionario!</h2>`,
         `¡Completa la clase de hoy resolviendo el cuestionario!</h2>`
-        );
+    );
 
     const texto3 = texto2.replace(
-        `<span class=\"ql-cursor\">﻿</span>`, 
+        `<span class=\"ql-cursor\">﻿</span>`,
         ``
-        );
+    );
+
+    const miTexto = texto3.split("*");
 
     const [slide, setSlide] = useState(0);
 
@@ -57,7 +61,6 @@ export default function Individual({ dataLec, dataCat, contLec }) {
     }
 
     const dynamicRoute = useRouter().asPath
-
 
     useEffect(() => {
         setSlide(0)
@@ -225,10 +228,24 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     </a>
                 </Link>
 
-                <div
-                    dangerouslySetInnerHTML={{ __html: texto3 }}
-                    className='contenido'
-                />
+                <div className='contenido'>
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} />
+                    <AdSense.Google
+                        // 300x50-txt-alto
+                        client='ca-pub-3630578707238850'
+                        slot='9023314408'
+                        style={{
+                            display: 'block',
+                            height: 50 + 'px',
+                            with: 90 + '%',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            textAlign: 'center'
+                        }}
+                        format=''
+                    />
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} />
+                </div>
 
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-109"> </div>
