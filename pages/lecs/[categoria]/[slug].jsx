@@ -37,7 +37,18 @@ export default function Individual({ dataLec, dataCat, contLec }) {
     const texto = contenido[0].contenido
     const texto1 = texto.replace(
         `<p><strong><em>`, 
-        `<p><strong><em>`
+        `
+        <!-- 300x50-indi-alto -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-3630578707238850"
+            data-ad-slot="2418913037"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <p><strong><em>`
         );
 
     const texto2 = texto1.replace(
