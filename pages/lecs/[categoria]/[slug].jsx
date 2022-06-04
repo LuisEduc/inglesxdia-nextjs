@@ -227,8 +227,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} />
                     <div
                         style={{
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
+                            margin: '2rem auto',
                             marginBottom: 15 + 'px',
                             textAlign: 'center'
                         }}>
@@ -239,7 +238,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                             slot='9023314408'
                             style={{
                                 display: 'block',
-                                width: 90 + '%',
+                                width: 100 + '%',
                                 height: 50 + 'px',
                             }}
                             format=''
