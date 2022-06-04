@@ -238,11 +238,10 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                             slot='9023314408'
                             style={{
                                 display: 'block',
-                                width: 100 + '%',
                                 height: 50 + 'px',
                             }}
                             format=''
-                            // responsive='true'
+                            responsive='true'
                         />
                     </div>
                     <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} />
