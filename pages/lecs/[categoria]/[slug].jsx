@@ -239,7 +239,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                         style={{
                             display: 'block',
                             height: 50 + 'px',
-                            width: 90 + '%',
+                            width: 100 + '%',
                             marginLeft: 'auto',
                             marginRight: 'auto',
                             marginBottom: 15 + 'px',
