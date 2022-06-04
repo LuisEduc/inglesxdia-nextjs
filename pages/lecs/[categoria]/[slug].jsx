@@ -240,7 +240,6 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                             display: 'inline-block',
                             minWidth: 200 + 'px',
                             maxWidth: 720 + 'px',
-                            width: 100 + '%',
                             height: 50 + 'px',
                             marginLeft: 'auto',
                             marginRight: 'auto',
