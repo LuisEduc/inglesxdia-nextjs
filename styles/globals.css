@@ -779,8 +779,11 @@ a {
 /* CONTENIDO POST INDIVIDUAL */
 /* ----------------------------------------------------------- */
 
-.contenido {
+.bg-contenido>.contenido {
   background-color: #fff;
+}
+
+.contenido {
   margin: 2rem auto;
   padding: 1rem;
   width: 60%;
