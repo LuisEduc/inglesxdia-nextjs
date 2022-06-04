@@ -38,7 +38,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
     const texto1 = texto.replace(
         `<p><strong><em>`,
         `
-        *
+        *ads*
         <p><strong><em>`
     );
 
@@ -52,7 +52,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
         ``
     );
 
-    const miTexto = texto3.split("*");
+    const miTexto = texto3.split("*ads*");
 
     const [slide, setSlide] = useState(0);
 
@@ -228,7 +228,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     </a>
                 </Link>
 
-                <div className='bg-contenido'>
+                <div>
                     <div dangerouslySetInnerHTML={{ __html: miTexto[0] }}
                         className='contenido' />
                     <div>
@@ -241,7 +241,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                                 display: 'inline-block',
                                 minWidth: 300 + 'px',
                                 maxWidth: 720 + 'px',
-                                width: 90 + '%',
+                                width: 100 + '%',
                                 height: 50 + 'px',
                                 marginLeft: 'auto',
                                 marginRight: 'auto',
