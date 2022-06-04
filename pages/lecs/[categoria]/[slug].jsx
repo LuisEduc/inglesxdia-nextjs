@@ -238,8 +238,10 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                         slot='9023314408'
                         style={{
                             display: 'block',
+                            minWidth: 300 + 'px',
+                            maxWidth: 720 + 'px',
                             height: 50 + 'px',
-                            width: 300 + 'px',
+                            width: 100 + '%',
                             marginLeft: 'auto',
                             marginRight: 'auto',
                             marginBottom: 15 + 'px',
