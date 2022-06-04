@@ -45,9 +45,11 @@ export default function Individual({ dataLec, dataCat, contLec }) {
             data-ad-slot="2418913037"
             data-ad-format="auto"
             data-full-width-responsive="true"></ins>
+        (
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
+        )
         <p><strong><em>`
         );
 
