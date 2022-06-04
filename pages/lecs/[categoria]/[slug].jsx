@@ -227,9 +227,9 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} />
                     <div
                         style={{
-                            marginLeft: 'auto', 
-                            marginRight: 'auto', 
-                            marginBottom: 15 + 'px', 
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginBottom: 15 + 'px',
                             textAlign: 'center'
                         }}>
                         <AdSense.Google
@@ -238,11 +238,12 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                             className='ads-txt'
                             slot='9023314408'
                             style={{
-                                display: 'inline-block',
+                                display: 'block',
                                 width: 90 + '%',
                                 height: 50 + 'px',
                             }}
                             format=''
+                            // responsive='true'
                         />
                     </div>
                     <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} />
