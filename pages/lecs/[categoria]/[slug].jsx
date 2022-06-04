@@ -223,7 +223,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     </a>
                 </Link>
 
-                <div>
+                <div className="contenido">
                     <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} />
                     <div
                         style={{
