@@ -35,24 +35,19 @@ export default function Individual({ dataLec, dataCat, contLec }) {
     const { contenido } = contLec;
 
     const texto = contenido[0].contenido
-    const texto1 = texto.replace(
-        `<p><strong><em>`,
-        `
-        *ads*
-        <p><strong><em>`
-    );
+    const texto1 = texto
+        .replace('<p><strong><em>', '*ads*<p><strong><em>')
+        .replace('<p><strong style="color: rgb(0, 0, 0);"><em>', '*ads*<p><strong><em>')
+        .replace('<ul><li><strong><em>', '*ads*<ul><li><strong><em>')
+        .replace('<span class=\"ql-cursor\">﻿</span>', '')
 
     const texto2 = texto1.replace(
         `¡Completa la clase de hoy resolviendo el cuestionario!</h2>`,
         `¡Completa la clase de hoy resolviendo el cuestionario!</h2>`
     );
 
-    const texto3 = texto2.replace(
-        `<span class=\"ql-cursor\">﻿</span>`,
-        ``
-    );
-
-    const miTexto = texto3.split("*ads*");
+    const miTexto = texto2.split("*ads*");
+    console.log(miTexto)
 
     const [slide, setSlide] = useState(0);
 
@@ -229,9 +224,11 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                 </Link>
 
                 <div>
-                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }}
-                        className='contenido' />
-                    <div>
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} />
+                    <div
+                        style={{
+                            marginLeft: 'auto', marginRight: 'auto', marginBottom: 15 + 'px', textAlign: 'center'
+                        }}>
                         <AdSense.Google
                             // 300x50-txt-alto
                             client='ca-pub-3630578707238850'
@@ -243,16 +240,11 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                                 maxWidth: 720 + 'px',
                                 width: 100 + '%',
                                 height: 50 + 'px',
-                                marginLeft: 'auto',
-                                marginRight: 'auto',
-                                marginBottom: 15 + 'px',
-                                textAlign: 'center'
                             }}
                             format=''
                         />
                     </div>
-                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }}
-                        className='contenido' />
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} />
                 </div>
 
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
