@@ -237,12 +237,13 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                         style={{
                             display: 'block',
                             height: 50 + 'px',
-                            width: 90 + '%',
                             marginLeft: 'auto',
                             marginRight: 'auto',
+                            marginBottom: 15 + 'px',
                             textAlign: 'center'
                         }}
                         format=''
+                        responsive='true'
                     />
                     <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} />
                 </div>
