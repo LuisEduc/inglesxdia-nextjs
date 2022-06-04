@@ -228,29 +228,31 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     </a>
                 </Link>
 
-                <div className='contenido'>
-                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} />
+                <div>
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }}
+                        className='contenido' />
                     <div>
-                    <AdSense.Google
-                        // 300x50-txt-alto
-                        client='ca-pub-3630578707238850'
-                        className='ads-txt'
-                        slot='9023314408'
-                        style={{
-                            display: 'inline-block',
-                            minWidth: 300 + 'px',
-                            maxWidth: 720 + 'px',
-                            width: 100 + '%',
-                            height: 50 + 'px',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                            marginBottom: 15 + 'px',
-                            textAlign: 'center'
-                        }}
-                        format=''
-                    />
+                        <AdSense.Google
+                            // 300x50-txt-alto
+                            client='ca-pub-3630578707238850'
+                            className='ads-txt'
+                            slot='9023314408'
+                            style={{
+                                display: 'inline-block',
+                                minWidth: 300 + 'px',
+                                maxWidth: 720 + 'px',
+                                width: 100 + '%',
+                                height: 50 + 'px',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                marginBottom: 15 + 'px',
+                                textAlign: 'center'
+                            }}
+                            format=''
+                        />
                     </div>
-                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} />
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }}
+                        className='contenido' />
                 </div>
 
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
