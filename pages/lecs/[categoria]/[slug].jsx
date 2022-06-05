@@ -223,7 +223,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                 </Link>
 
                 <div>
-                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} className="contenido mt-5" />
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} className="contenido mt-4" />
                     <div className="div-ads">
                         <AdSense.Google
                         // 300x50-txt-alto
@@ -240,7 +240,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                         responsive=''
                     />
                     </div>
-                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} className="contenido" />
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} className="contenido mb-4" />
                 </div>
 
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
