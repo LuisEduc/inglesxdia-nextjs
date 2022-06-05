@@ -225,25 +225,21 @@ export default function Individual({ dataLec, dataCat, contLec }) {
 
                 <div className="contenido">
                     <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} />
-                    <div
-                        style={{
-                            margin: '1rem 1rem',
-                            marginBottom: 15 + 'px',
-                            textAlign: 'center'
-                        }}>
                         <AdSense.Google
                             // 300x50-txt-alto
                             client='ca-pub-3630578707238850'
-                            className='ads-txt'
                             slot='9023314408'
                             style={{
                                 display: 'block',
+                                width: 90 + '%',
                                 height: 50 + 'px',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                textAlign: 'center'
                             }}
                             format=''
-                            responsive='true'
+                            responsive=''
                         />
-                    </div>
                     <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} />
                 </div>
 
