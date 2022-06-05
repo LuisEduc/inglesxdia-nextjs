@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import AdSense from 'react-adsense'
+import AudioContainer from './AudioContainer'
 
 const preguntaInicial = [{
     q: '',
@@ -9,7 +10,7 @@ const preguntaInicial = [{
     answer: ''
 }]
 
-export default function Cuestionario({ questions, nextQ, firstQ }) {
+export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, textos }) {
 
     const router = useRouter()
 
@@ -189,6 +190,51 @@ export default function Cuestionario({ questions, nextQ, firstQ }) {
                     </div>
                 </a>
             </Link>
+
+            <AudioContainer
+                titulo={titulo}
+                audio={audio}
+            />
+
+            <Link href='https://bit.ly/34j0kVS'>
+                <a>
+                    <div className='btn-main bg-app'>
+                        <i className='fab fa-google-play fa-xs'></i>
+                        <p>Descargar aplicación</p>
+                    </div>
+                </a>
+            </Link>
+
+            <div>
+                <div dangerouslySetInnerHTML={{ __html: textos[0] }} className="contenido mt-4 margen-txt-top"
+                />
+
+                <div className="div-ads">
+                    <AdSense.Google
+                        // 300x50-txt-alto
+                        client='ca-pub-3630578707238850'
+                        className='ads-txt-mob'
+                        slot='9023314408'
+                        style={{
+                            height: 50 + 'px',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            textAlign: 'center'
+                        }}
+                    />
+                </div>
+
+                <div dangerouslySetInnerHTML={{ __html: textos[1] }} className="contenido margen-txt-center"
+                />
+
+                <Link href="#c">
+                    <a>
+                        <div onClick={() => setModal(1)} dangerouslySetInnerHTML={{ __html: textos[2] }} className="contenido mb-4 margen-txt-bottom" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        </div>
+                    </a>
+                </Link>
+
+            </div>
 
             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div className="modal-dialog mx-auto">
