@@ -782,6 +782,7 @@ a {
 .div-ads {
   background-color: #fff;
   padding-bottom: 10px;
+  width: 60%;
 }
 
 .contenido {
@@ -879,12 +880,18 @@ a {
   .contenido {
     width: 85%;
   }
+  .div-ads {
+    width: 85%;
+  }
 }
 
 @media (max-width: 540px) {
   .contenido {
     width: 100%;
     border-radius: 0px;
+  }
+  .div-ads {
+    width: 100%;
   }
 }
 
