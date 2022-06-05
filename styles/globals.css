@@ -787,8 +787,8 @@ a {
 .contenido {
   background-color: #fff;
   padding: 1rem;
-  width: 60%;
-  border-radius: 10px;
+  width: 100%;
+  border-radius: 0px;
 }
 
 .contenido h2,
