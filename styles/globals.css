@@ -781,6 +781,8 @@ a {
 
 .div-ads {
   background-color: #fff;
+  width: 90% !important;
+  padding-bottom: 10px;
 }
 
 .contenido {
