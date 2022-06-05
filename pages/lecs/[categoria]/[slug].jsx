@@ -227,7 +227,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} />
                     <div
                         style={{
-                            margin: '2rem auto',
+                            margin: '1rem 1rem',
                             marginBottom: 15 + 'px',
                             textAlign: 'center'
                         }}>
