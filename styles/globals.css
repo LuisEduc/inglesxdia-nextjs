@@ -676,7 +676,6 @@ a {
   background: var(--color-primario) !important;
   box-shadow: none !important;
   overflow: hidden;
-  padding: 8px 15px !important;
 }
 
 .rhap_progress-indicator {
@@ -787,9 +786,6 @@ a {
   align-items: center;
 }
 
-.ads-txt-web {
-  display: block;
-}
 .ads-txt-mob {
   display: none;
 }
@@ -910,9 +906,6 @@ a {
   }
   .div-ads {
     width: 100%;
-  }
-  .ads-txt-web {
-    display: none;
   }
   .ads-txt-mob {
     display: block;
