@@ -47,7 +47,6 @@ export default function Individual({ dataLec, dataCat, contLec }) {
     );
 
     const miTexto = texto2.split("*ads*");
-    console.log(miTexto)
 
     const [slide, setSlide] = useState(0);
 
@@ -225,21 +224,22 @@ export default function Individual({ dataLec, dataCat, contLec }) {
 
                 <div className="contenido">
                     <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} />
-                        <AdSense.Google
-                            // 300x50-txt-alto
-                            client='ca-pub-3630578707238850'
-                            slot='9023314408'
-                            style={{
-                                display: 'block',
-                                width: 90 + '%',
-                                height: 50 + 'px',
-                                marginLeft: 'auto',
-                                marginRight: 'auto',
-                                textAlign: 'center'
-                            }}
-                            format=''
-                            responsive=''
-                        />
+                    <AdSense.Google
+                        // 300x50-txt-alto
+                        client='ca-pub-3630578707238850'
+                        slot='9023314408'
+                        style={{
+                            display: 'block',
+                            width: 100 + '%',
+                            height: 50 + 'px',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginBottom: 15 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format=''
+                        responsive=''
+                    />
                     <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} />
                 </div>
 
