@@ -227,10 +227,10 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     />
                     <div className="div-ads">
                         <AdSense.Google
-                            // 300x50-txt-alto
+                            // 300x50-txt-alto-web
                             client='ca-pub-3630578707238850'
                             className='ads-txt-web'
-                            slot='9023314408'
+                            slot='3072698316'
                             style={{
                                 height: 50 + 'px',
                                 marginLeft: 'auto',
