@@ -222,25 +222,27 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     </a>
                 </Link>
 
-                <div className="contenido">
-                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} />
-                    <AdSense.Google
+                <div>
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} className="contenido" />
+                    <div className="div-ads">
+                        <AdSense.Google
                         // 300x50-txt-alto
                         client='ca-pub-3630578707238850'
                         slot='9023314408'
                         style={{
                             display: 'block',
-                            width: 100 + '%',
                             height: 50 + 'px',
                             marginLeft: 'auto',
                             marginRight: 'auto',
+                            marginTop: 15 + 'px',
                             marginBottom: 15 + 'px',
                             textAlign: 'center'
                         }}
                         format=''
-                        responsive=''
+                        responsive='true'
                     />
-                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} />
+                    </div>
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} className="contenido" />
                 </div>
 
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
