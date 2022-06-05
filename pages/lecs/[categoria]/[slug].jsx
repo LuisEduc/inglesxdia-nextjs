@@ -237,7 +237,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                             textAlign: 'center'
                         }}
                         format=''
-                        responsive='true'
+                        responsive=''
                     />
                     </div>
                     <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} className="contenido" />
