@@ -38,7 +38,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
     const texto1 = texto
         .replace('<p><strong><em>', '*ads*<p><strong><em>')
         .replace('<p><strong style="color: rgb(0, 0, 0);"><em>', '*ads*<p><strong><em>')
-        .replace('<ul><li><strong><em>', '*ads*<ul><li><strong><em>')
+        .replace('<ul><li><strong', '*ads*<ul><li><strong')
         .replace('<span class=\"ql-cursor\">﻿</span>', '')
 
     const texto2 = texto1.replace(
