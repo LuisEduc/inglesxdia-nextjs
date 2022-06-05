@@ -223,7 +223,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                 </Link>
 
                 <div>
-                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} className="contenido mt-4"
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} className="contenido mt-4 margen-txt-top"
                     />
                     <div className="div-ads">
                         <AdSense.Google
@@ -252,7 +252,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                             }}
                         />
                     </div>
-                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} className="contenido mb-4"
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} className="contenido mb-4 margen-txt-bottom"
                     />
                 </div>
 

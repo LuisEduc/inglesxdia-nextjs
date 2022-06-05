@@ -794,6 +794,15 @@ a {
   display: none;
 }
 
+.margen-txt-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.margen-txt-bottom {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 
 .contenido {
   background-color: #fff;
