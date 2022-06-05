@@ -223,26 +223,36 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                 </Link>
 
                 <div>
-                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} className="contenido mt-4" 
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[0] }} className="contenido mt-4"
                     />
                     <div className="div-ads">
                         <AdSense.Google
-                        // 300x50-txt-alto
-                        client='ca-pub-3630578707238850'
-                        className='ads-txt'
-                        slot='9023314408'
-                        style={{
-                            display: 'block',
-                            height: 50 + 'px',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                            textAlign: 'center'
-                        }}
-                        format='horizontal'
-                        responsive=''
-                    />
+                            // 300x50-txt-alto
+                            client='ca-pub-3630578707238850'
+                            className='ads-txt-web'
+                            slot='9023314408'
+                            style={{
+                                height: 50 + 'px',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                textAlign: 'center'
+                            }}
+                            format='auto'
+                        />
+                        <AdSense.Google
+                            // 300x50-txt-alto
+                            client='ca-pub-3630578707238850'
+                            className='ads-txt-mob'
+                            slot='9023314408'
+                            style={{
+                                height: 50 + 'px',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                textAlign: 'center'
+                            }}
+                        />
                     </div>
-                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} className="contenido mb-4" 
+                    <div dangerouslySetInnerHTML={{ __html: miTexto[1] }} className="contenido mb-4"
                     />
                 </div>
 

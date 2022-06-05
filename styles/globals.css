@@ -781,12 +781,19 @@ a {
 
 .div-ads {
   background-color: #fff;
-  padding-bottom: 10px;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
 }
+
+.ads-txt-web {
+  display: block;
+}
+.ads-txt-mob {
+  display: none;
+}
+
 
 .contenido {
   background-color: #fff;
@@ -794,7 +801,6 @@ a {
   margin-right: auto;
   padding: 1rem;
   width: 60%;
-  border-radius: 10px;
 }
 
 .contenido h2,
@@ -895,6 +901,12 @@ a {
   }
   .div-ads {
     width: 100%;
+  }
+  .ads-txt-web {
+    display: none;
+  }
+  .ads-txt-mob {
+    display: block;
   }
 }
 
