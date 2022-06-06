@@ -213,7 +213,6 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                     <AdSense.Google
                         // 300x50-txt-alto
                         client='ca-pub-3630578707238850'
-                        className='ads-txt-mob'
                         slot='9023314408'
                         style={{
                             height: 50 + 'px',
@@ -221,6 +220,7 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                             marginRight: 'auto',
                             textAlign: 'center'
                         }}
+                        format='horizontal'
                     />
                 </div>
 
