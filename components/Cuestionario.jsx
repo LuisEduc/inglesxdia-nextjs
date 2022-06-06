@@ -215,6 +215,7 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                         client='ca-pub-3630578707238850'
                         slot='9023314408'
                         style={{
+                            display: 'block',
                             height: 50 + 'px',
                             marginLeft: 'auto',
                             marginRight: 'auto',
