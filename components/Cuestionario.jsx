@@ -211,17 +211,17 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
 
                 <div className="div-ads">
                     <AdSense.Google
-                        // 300x50-txt-alto
+                        // full-txt
                         client='ca-pub-3630578707238850'
-                        slot='9023314408'
+                        slot='5166247291'
                         style={{
                             display: 'block',
-                            height: 50 + 'px',
                             marginLeft: 'auto',
                             marginRight: 'auto',
                             textAlign: 'center'
                         }}
                         format='horizontal'
+                        responsive='true'
                     />
                 </div>
 
