@@ -354,6 +354,11 @@ a {
   color: #fff;
   margin-bottom: 0.4rem;
   margin-top: -2px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .grid-cat-inicio:hover > .detalles-cat-inicio {
@@ -459,6 +464,11 @@ a {
   margin-bottom: 0.4rem;
   margin-top: -2px;
   line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .icon-cat-info {
