@@ -221,7 +221,7 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                             marginRight: 'auto',
                             textAlign: 'center'
                         }}
-                        format='auto'
+                        format=''
                     />
                 </div>
 
