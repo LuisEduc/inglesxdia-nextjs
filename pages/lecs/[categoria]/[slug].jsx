@@ -139,7 +139,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                         textAlign: 'center'
                     }}
                     format='rectangle'
-                    responsive='true'
+                    responsive=''
                 />
 
                 {/* <!-- Ezoic - display-lec-btn-voc - top_of_page --> */}
