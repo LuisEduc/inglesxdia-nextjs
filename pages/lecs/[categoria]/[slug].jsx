@@ -138,7 +138,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
-                    format=''
+                    format='rectangle'
                     responsive='true'
                 />
 
