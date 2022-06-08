@@ -213,7 +213,7 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                     <AdSense.Google
                         // 300x250-txt
                         client='ca-pub-3630578707238850'
-                        slot='5166247291'
+                        slot='6479684187'
                         style={{
                             display: 'block',
                             height: 250 + 'px',
