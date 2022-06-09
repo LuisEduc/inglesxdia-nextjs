@@ -790,6 +790,10 @@ a {
 /* CONTENIDO POST INDIVIDUAL */
 /* ----------------------------------------------------------- */
 
+.enlace{
+  color: var(--color-secundario);
+}
+
 .div-ads {
   background-color: #fff;
   width: 60%;

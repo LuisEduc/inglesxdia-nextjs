@@ -57,10 +57,10 @@ export default function Individual({ dataLec, dataCat, contLec }) {
         .replace(' style="color: rgb(0, 0, 0);"', '')
         .replace(/<br>/g, '<div class="space"></div>')
         .replace(/ql-cursor/g, '')
-        .replace(/<p><strong><em>/g, '*ads*<p><strong><em>')
-        .replace(/<ul><li><strong/g, '*ads*<ul><li><strong')
+        .replace('<p><strong><em>', '*ads*<p><strong><em>')
+        .replace('<ul><li><strong', '*ads*<ul><li><strong')
         .replace(/<a/g, '<Link')
-        .replace(/target="_blank">/g, '><a>')
+        .replace(/target="_blank">/g, '><a class="enlace">')
         .replace(/<\/a>/g, '</a></Link>')
         .replace(fuente, '')
 
