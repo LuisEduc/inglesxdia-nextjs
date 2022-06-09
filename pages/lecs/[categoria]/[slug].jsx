@@ -66,8 +66,8 @@ export default function Individual({ dataLec, dataCat, contLec }) {
 
     const texto2 = texto1
         .replace(
-            `<h2>¡Completa la clase de hoy resolviendo el cuestionario!</h2>`,
-            `*ads*<h2>¡Completa la clase de hoy resolviendo el cuestionario!</h2>`
+            `<h2>¡Completa`,
+            `*ads*<h2>¡Completa`
         )
         .replace(/<u><\/u>/g, '');
 
