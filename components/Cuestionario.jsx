@@ -208,7 +208,8 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
 
             <div>
 
-                <div dangerouslySetInnerHTML={{ __html: textos[0] }} className="contenido mt-4 margen-txt-top"/>
+                {/* <div dangerouslySetInnerHTML={{ __html: textos[0] }} className="contenido mt-4 margen-txt-top"/> */}
+                <JsxParser components={{ Link }} jsx={ `${textos[0]}` } className="contenido mt-4 margen-txt-top" />
 
                 {/* <div className="div-ads">
                     <AdSense.Google

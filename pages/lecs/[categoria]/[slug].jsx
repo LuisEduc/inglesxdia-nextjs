@@ -71,6 +71,8 @@ export default function Individual({ dataLec, dataCat, contLec }) {
         )
         .replace(/<u><\/u>/g, '');
 
+    console.log(texto2)
+
     const miTexto = texto2.split("*ads*");
 
     const [slide, setSlide] = useState(0);
