@@ -10,7 +10,7 @@ const preguntaInicial = [{
     answer: ''
 }]
 
-export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, textos }) {
+export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, textos, video, fuente }) {
 
     const router = useRouter()
 
@@ -224,6 +224,17 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                         format='rectangle'
                     />
                 </div>
+
+                {video === 1 ? (
+                    <iframe
+                        className='video-txt'
+                        src={fuente}
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen>
+                    </iframe>
+                ) : ''}
 
                 <div dangerouslySetInnerHTML={{ __html: textos[1] }} className="contenido margen-txt-center"
                 />

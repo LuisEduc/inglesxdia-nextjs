@@ -35,18 +35,38 @@ export default function Individual({ dataLec, dataCat, contLec }) {
     const { contenido } = contLec;
 
     const texto = contenido[0].contenido
+    let fields
+    let fuente
+    let video
+
+    texto.includes('https://www.youtube.com/') ?
+        (
+            fields = texto.split('u>'),
+            fuente = fields[1].replace('</', ''),
+            video = 1
+        )
+        :
+        (
+            fuente = '',
+            video = 0
+        )
+
+
     const texto1 = texto
         .replace('<p><strong><em>', '*ads*<p><strong><em>')
         .replace('<p><strong style="color: rgb(0, 0, 0);"><em>', '*ads*<p><strong><em>')
         .replace('<ul><li><strong', '*ads*<ul><li><strong')
         .replace('<span class=\"ql-cursor\">﻿</span>', '')
+        .replace(fuente, '')
 
-    const texto2 = texto1.replace(
+    const texto2 = texto1
+    .replace(
         `<h2>¡Completa la clase de hoy resolviendo el cuestionario!</h2>`,
         `
         *ads*
         <h2>¡Completa la clase de hoy resolviendo el cuestionario!</h2>`
-    );
+    )
+    .replace('<u></u>', '');
 
     const miTexto = texto2.split("*ads*");
 
@@ -206,6 +226,8 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     valorInicial={0}
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
+                    video={video}
+                    fuente={fuente}
                     textos={[
                         miTexto[0],
                         miTexto[1],
