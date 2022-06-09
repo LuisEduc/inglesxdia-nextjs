@@ -15,6 +15,7 @@ import { useState, useEffect } from 'react'
 import AdSense from 'react-adsense';
 import GoogleAdSense from 'react-simple-adsense';
 import Link from "next/link"
+import JsxParser from 'react-jsx-parser'
 
 const settings = {
     showIndicators: false,
@@ -53,20 +54,22 @@ export default function Individual({ dataLec, dataCat, contLec }) {
 
 
     const texto1 = texto
-        .replace('<p><strong><em>', '*ads*<p><strong><em>')
-        .replace('<p><strong style="color: rgb(0, 0, 0);"><em>', '*ads*<p><strong><em>')
-        .replace('<ul><li><strong', '*ads*<ul><li><strong')
-        .replace('<span class=\"ql-cursor\">﻿</span>', '')
+        .replace(' style="color: rgb(0, 0, 0);"', '')
+        .replace(/<br>/g, '<div class="space"></div>')
+        .replace(/ql-cursor/g, '')
+        .replace(/<p><strong><em>/g, '*ads*<p><strong><em>')
+        .replace(/<ul><li><strong/g, '*ads*<ul><li><strong')
+        .replace(/<a/g, '<Link')
+        .replace(/target="_blank">/g, '><a>')
+        .replace(/<\/a>/g, '</a></Link>')
         .replace(fuente, '')
 
     const texto2 = texto1
-    .replace(
-        `<h2>¡Completa la clase de hoy resolviendo el cuestionario!</h2>`,
-        `
-        *ads*
-        <h2>¡Completa la clase de hoy resolviendo el cuestionario!</h2>`
-    )
-    .replace('<u></u>', '');
+        .replace(
+            `<h2>¡Completa la clase de hoy resolviendo el cuestionario!</h2>`,
+            `*ads*<h2>¡Completa la clase de hoy resolviendo el cuestionario!</h2>`
+        )
+        .replace(/<u><\/u>/g, '');
 
     const miTexto = texto2.split("*ads*");
 

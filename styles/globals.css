@@ -330,13 +330,15 @@ a {
   overflow: hidden;
 }
 
-.grid-cat-inicio span {
+.grid-cat-inicio h2 {
   text-transform: uppercase;
   font-weight: 200;
   color: #212529;
+  font-size: 16px;
+  margin-top: 4px;
 }
 
-.grid-cat-inicio h2 {
+.grid-cat-inicio h3 {
   color: #364d59;
   font-size: 1.5rem;
   margin-top: 5px;
@@ -821,6 +823,10 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+}
+
+.contenido .space {
+  height: 24px;
 }
 
 .contenido h2,
@@ -1382,7 +1388,7 @@ a {
   margin: 0px;
   color: var(--color-primario);
   font-family: "Righteous", cursive;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .item-hero-text h3 > a:hover {
@@ -2774,7 +2780,7 @@ a {
 }
 
 .bagde-app {
-  padding: 12px 0;
+  padding: 12px 35px;
   cursor: pointer;
 }
 

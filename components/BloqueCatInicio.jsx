@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function BloqueCatInicio({nivel, icono, slug, titulo, descripcion}) {
+export default function BloqueCatInicio({ nivel, icono, slug, titulo, descripcion }) {
     return (
         <>
             <div className="grid-cat-inicio">
@@ -8,8 +8,11 @@ export default function BloqueCatInicio({nivel, icono, slug, titulo, descripcion
                     <a>
                         <div className="titulo-cat-inicio">
                             <div>
-                                <span>Nivel {nivel}</span>
-                                <h2>{titulo}</h2>
+                                {nivel === 'basico' ?
+                                <h2>Curso nivel básico</h2>
+                                :
+                                <h2>Curso nivel {nivel}</h2>}
+                                <h3>{titulo}</h3>
                             </div>
                             <div className="icon-cat-inicio">
                                 <i className={`fas fa-2x ${icono}`}></i>

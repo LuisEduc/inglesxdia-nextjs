@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import AdSense from 'react-adsense'
 import AudioContainer from './AudioContainer'
+import JsxParser from 'react-jsx-parser'
 
 const preguntaInicial = [{
     q: '',
@@ -206,8 +207,8 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
             </Link>
 
             <div>
-                <div dangerouslySetInnerHTML={{ __html: textos[0] }} className="contenido mt-4 margen-txt-top"
-                />
+
+                <div dangerouslySetInnerHTML={{ __html: textos[0] }} className="contenido mt-4 margen-txt-top"/>
 
                 {/* <div className="div-ads">
                     <AdSense.Google
@@ -236,8 +237,8 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                     </iframe>
                 ) : ''}
 
-                <div dangerouslySetInnerHTML={{ __html: textos[1] }} className="contenido margen-txt-center"
-                />
+                {/* <div dangerouslySetInnerHTML={{ __html: textos[1] }} className="contenido margen-txt-center" /> */}
+                <JsxParser components={{ Link }} jsx={ `${textos[1]}` } className="contenido margen-txt-center" />
 
                 <Link href="#c">
                     <a>
