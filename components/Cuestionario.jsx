@@ -209,7 +209,7 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                 <div dangerouslySetInnerHTML={{ __html: textos[0] }} className="contenido mt-4 margen-txt-top"
                 />
 
-                <div className="div-ads">
+                {/* <div className="div-ads">
                     <AdSense.Google
                         // 300x250-txt
                         client='ca-pub-3630578707238850'
@@ -223,7 +223,7 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                         }}
                         format='rectangle'
                     />
-                </div>
+                </div> */}
 
                 {video === 1 ? (
                     <iframe
