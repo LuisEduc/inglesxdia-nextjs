@@ -211,21 +211,21 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                 {/* <div dangerouslySetInnerHTML={{ __html: textos[0] }} className="contenido mt-4 margen-txt-top"/> */}
                 <JsxParser components={{ Link }} jsx={ `${textos[0]}` } className="contenido mt-4 margen-txt-top" />
 
-                {/* <div className="div-ads">
+                <div className="div-ads">
                     <AdSense.Google
-                        // 300x250-txt
+                        // 300x50-txt-alto
                         client='ca-pub-3630578707238850'
-                        slot='6479684187'
+                        slot='9023314408'
                         style={{
                             display: 'block',
-                            height: 250 + 'px',
+                            height: 50 + 'px',
                             marginLeft: 'auto',
                             marginRight: 'auto',
                             textAlign: 'center'
                         }}
-                        format='rectangle'
+                        format='auto'
                     />
-                </div> */}
+                </div>
 
                 {video === 1 ? (
                     <iframe
