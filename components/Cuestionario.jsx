@@ -209,16 +209,29 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
             <div>
 
                 {/* <div dangerouslySetInnerHTML={{ __html: textos[0] }} className="contenido mt-4 margen-txt-top"/> */}
-                <JsxParser components={{ Link }} jsx={ `${textos[0]}` } className="contenido mt-4 margen-txt-top" />
+                <JsxParser components={{ Link }} jsx={`${textos[0]}`} className="contenido mt-4 margen-txt-top" />
 
                 <div className="div-ads">
-                    <AdSense.Google
+                    {/* <AdSense.Google
                         // 300x50-txt-alto
                         client='ca-pub-3630578707238850'
                         slot='9023314408'
                         style={{
                             display: 'block',
                             height: 50 + 'px',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            textAlign: 'center'
+                        }}
+                        format='auto'
+                    /> */}
+                    <AdSense.Google
+                        // 300x250-txt-alto
+                        client='ca-pub-3630578707238850'
+                        slot='7664627550'
+                        style={{
+                            display: 'block',
+                            height: 250 + 'px',
                             marginLeft: 'auto',
                             marginRight: 'auto',
                             textAlign: 'center'
@@ -239,7 +252,7 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                 ) : ''}
 
                 {/* <div dangerouslySetInnerHTML={{ __html: textos[1] }} className="contenido margen-txt-center" /> */}
-                <JsxParser components={{ Link }} jsx={ `${textos[1]}` } className="contenido margen-txt-center" />
+                <JsxParser components={{ Link }} jsx={`${textos[1]}`} className="contenido margen-txt-center" />
 
                 <Link href="#c">
                     <a>

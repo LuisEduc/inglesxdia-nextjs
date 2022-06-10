@@ -205,7 +205,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     </Carousel>
                 </div>
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // 300x50-indi-medio
                     client='ca-pub-3630578707238850'
                     slot='9884836482'
@@ -218,6 +218,21 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     }}
                     format=''
                     responsive='true'
+                /> */}
+
+                <AdSense.Google
+                    // 300x250-indi-medio
+                    client='ca-pub-3630578707238850'
+                    slot='1381741492'
+                    style={{
+                        display: 'block',
+                        height: 250 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
+                    format='rectangle'
+                    responsive=''
                 />
 
                 {/* <!-- Ezoic - display-lec-carousel - top_of_page --> */}
@@ -275,7 +290,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     </div>
                 }
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // 300x50-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='5989861498'
@@ -290,6 +305,23 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     }}
                     format=''
                     responsive='true'
+                /> */}
+
+                <AdSense.Google
+                    // 300x250-indi-bajo
+                    client='ca-pub-3630578707238850'
+                    slot='5129414813'
+                    style={{
+                        display: 'block',
+                        height: 250 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        marginTop: 5 + 'px',
+                        marginBottom: 15 + 'px',
+                        textAlign: 'center'
+                    }}
+                    format='rectangle'
+                    responsive=''
                 />
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
