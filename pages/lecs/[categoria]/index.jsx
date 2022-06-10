@@ -57,6 +57,7 @@ export default function post({ dataCat }) {
             <InfoCat
                 icono={dataCat.categoria[0].icono}
                 titulo={dataCat.categoria[0].titulo}
+                nivel={dataCat.categoria[0].nivel}
                 descripcion={dataCat.categoria[0].descripcion}
             />
 
