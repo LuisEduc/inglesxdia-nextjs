@@ -24,7 +24,7 @@ export default function BloqueCatInicio({ nivel, icono, slug, titulo, descripcio
                     <p>{descripcion}</p>
                     <div className="flex-center">
                         <Link href={`/lecs/${slug}`}>
-                            <a type="button" className="btn btn-in-cat">Detalles<i className="fas fa-headphones-alt ms-2"></i></a>
+                            <a type="button" className="btn btn-in-cat">Aprender<i className="fas fa-headphones-alt ms-2"></i></a>
                         </Link>
                     </div>
                 </div>

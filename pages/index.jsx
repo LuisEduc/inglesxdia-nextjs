@@ -15,7 +15,7 @@ export default function index({ bloques, cats, buscar }) {
             <Head>
                 <link rel="icon" href="/favicon.png" />
                 <title>Curso de inglés en línea / inglesxdia</title>
-                <meta name="description" content="Clases de inglés todos los días. Aprende a hablar, leer y escribir en inglés con nuestras lecciones diarias. Lecturas cortas, vocabulario, verbos y más clases con preguntas para practicar." />
+                <meta name="description" content="Clases y lecciones de inglés todos los días. En este curso en línea aprende a hablar, leer y escribir en inglés con nuestras lecciones diarias. Lecturas básicas y cortas, vocabulario, verbos y más clases con preguntas para practicar." />
             </Head>
 
             <div id="lecs"></div>
