@@ -71,8 +71,6 @@ export default function Individual({ dataLec, dataCat, contLec }) {
         )
         .replace(/<u><\/u>/g, '');
 
-    console.log(texto2)
-
     const miTexto = texto2.split("*ads*");
 
     const [slide, setSlide] = useState(0);
@@ -205,7 +203,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     </Carousel>
                 </div>
 
-                {/* <AdSense.Google
+                <AdSense.Google
                     // 300x50-indi-medio
                     client='ca-pub-3630578707238850'
                     slot='9884836482'
@@ -218,8 +216,8 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     }}
                     format=''
                     responsive='true'
-                /> */}
-
+                />
+                {/* 
                 <AdSense.Google
                     // 300x250-indi-medio
                     client='ca-pub-3630578707238850'
@@ -233,7 +231,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     }}
                     format='rectangle'
                     responsive=''
-                />
+                /> */}
 
                 {/* <!-- Ezoic - display-lec-carousel - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-108"> </div>
@@ -290,7 +288,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     </div>
                 }
 
-                {/* <AdSense.Google
+                <AdSense.Google
                     // 300x50-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='5989861498'
@@ -305,9 +303,9 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     }}
                     format=''
                     responsive='true'
-                /> */}
+                />
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // 300x250-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='5129414813'
@@ -322,7 +320,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     }}
                     format='rectangle'
                     responsive=''
-                />
+                /> */}
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
                 <div id="ezoic-pub-ad-placeholder-112"> </div>

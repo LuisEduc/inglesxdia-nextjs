@@ -11,7 +11,7 @@ const preguntaInicial = [{
     answer: ''
 }]
 
-export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, textos, video, fuente }) {
+export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, textos }) {
 
     const router = useRouter()
 
@@ -212,7 +212,7 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                 <JsxParser components={{ Link }} jsx={`${textos[0]}`} className="contenido mt-4 margen-txt-top" />
 
                 <div className="div-ads">
-                    {/* <AdSense.Google
+                    <AdSense.Google
                         // 300x50-txt-alto
                         client='ca-pub-3630578707238850'
                         slot='9023314408'
@@ -224,8 +224,8 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                             textAlign: 'center'
                         }}
                         format='auto'
-                    /> */}
-                    <AdSense.Google
+                    />
+                    {/* <AdSense.Google
                         // 300x250-txt-alto
                         client='ca-pub-3630578707238850'
                         slot='7664627550'
@@ -237,29 +237,18 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                             textAlign: 'center'
                         }}
                         format='auto'
-                    />
+                    /> */}
                 </div>
 
-                {video === 1 ? (
-                    <iframe
-                        className='video-txt'
-                        src={fuente}
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen>
-                    </iframe>
-                ) : ''}
+                {/* <JsxParser components={{ Link }} jsx={`${textos[1]}`} className="contenido margen-txt-center" /> */}
+                <JsxParser components={{ Link }} jsx={`${textos[1]}`} className="contenido mb-4 margen-txt-bottom" />
 
-                {/* <div dangerouslySetInnerHTML={{ __html: textos[1] }} className="contenido margen-txt-center" /> */}
-                <JsxParser components={{ Link }} jsx={`${textos[1]}`} className="contenido margen-txt-center" />
-
-                <Link href="#c">
+                {/* <Link href="#c">
                     <a>
                         <div onClick={() => setModal(1)} dangerouslySetInnerHTML={{ __html: textos[2] }} className="contenido mb-4 margen-txt-bottom" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         </div>
                     </a>
-                </Link>
+                </Link> */}
 
             </div>
 

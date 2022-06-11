@@ -713,7 +713,7 @@ a {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 5px;
-  width: 85%;
+  width: 60%;
 }
 
 .lecs-titulo h1 {
@@ -766,6 +766,10 @@ a {
 
   .container-audio {
     width: 60%;
+  }
+
+  .lecs-titulo {
+    width: 85%;
   }
 }
 
