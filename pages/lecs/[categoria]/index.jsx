@@ -140,8 +140,8 @@ export async function getStaticPaths() {
         }))
         return {
             paths,
-            // fallback: 'blocking',
-            fallback: false,
+            fallback: 'blocking',
+            // fallback: false,
         }
     } catch (error) {
         console.log(error)
