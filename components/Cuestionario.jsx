@@ -211,7 +211,7 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                 {/* <div dangerouslySetInnerHTML={{ __html: textos[0] }} className="contenido mt-4 margen-txt-top"/> */}
                 <JsxParser components={{ Link }} jsx={`${textos[0]}`} className="contenido mt-4 margen-txt-top" />
 
-                <div className="div-ads">
+                {/* <div className="div-ads">
                     <AdSense.Google
                         // 300x50-txt-alto
                         client='ca-pub-3630578707238850'
@@ -225,7 +225,7 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                         }}
                         format='auto'
                     />
-                    {/* <AdSense.Google
+                    <AdSense.Google
                         // 300x250-txt-alto
                         client='ca-pub-3630578707238850'
                         slot='7664627550'
@@ -237,8 +237,8 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                             textAlign: 'center'
                         }}
                         format='auto'
-                    /> */}
-                </div>
+                    />
+                </div> */}
 
                 {/* <JsxParser components={{ Link }} jsx={`${textos[1]}`} className="contenido margen-txt-center" /> */}
                 <JsxParser components={{ Link }} jsx={`${textos[1]}`} className="contenido mb-4 margen-txt-bottom" />
