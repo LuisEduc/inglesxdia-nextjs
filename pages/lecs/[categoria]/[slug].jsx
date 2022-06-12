@@ -186,7 +186,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                             imagenes.map(({ imagen }, id) => (
                                 <div key={id} className="carousel-lec" >
                                     <Image
-                                        src={`${imagen}`}
+                                        src={`https://admin.inglesxdia.com/imagen/${imagen}`}
                                         alt={`${leccion[0].titulo_seo}`}
                                         width="85%"
                                         height="100%"

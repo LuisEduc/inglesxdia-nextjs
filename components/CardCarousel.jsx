@@ -39,7 +39,7 @@ export default function CardCarousel({ data }) {
           data.palabras.map(({ id, imagen }) => (
             <div key={id} className="carousel-voc">
               <Image
-                src={`${imagen}`}
+                src={`https://admin.inglesxdia.com/imagen/${imagen}`}
                 width="85%"
                 height="100%"
                 layout="responsive"
