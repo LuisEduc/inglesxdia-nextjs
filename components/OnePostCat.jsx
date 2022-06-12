@@ -24,7 +24,7 @@ export default function OnePostCat({ slug, slug_cat, titulo, imagen, audio }) {
                         <a className="bg-one-post-cat-mid ">
                             <div className="one-post-cat-mid">
                                 <Image
-                                    src={`https://admin.inglesxdia.com/imagen/${imagen}`}
+                                    src={`${imagen}`}
                                     alt={`${titulo}`}
                                     width="85%"
                                     height="100%"
