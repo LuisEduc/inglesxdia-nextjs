@@ -36,42 +36,23 @@ export default function Individual({ dataLec, dataCat, contLec }) {
     const { contenido } = contLec;
 
     const texto = contenido[0].contenido
-    let fields
-    let fuente
-    let video
-
-    texto.includes('https://www.youtube.com/') ?
-        (
-            fields = texto.split('u>'),
-            fuente = fields[1].replace('</', ''),
-            video = 1
-        )
-        :
-        (
-            fuente = '',
-            video = 0
-        )
-
 
     const texto1 = texto
         .replace(' style="color: rgb(0, 0, 0);"', '')
         .replace(/<br>/g, '<div class="space"></div>')
         .replace(/ql-cursor/g, '')
-        .replace('<p><strong><em>', '*ads*<p><strong><em>')
-        .replace('<ul><li><strong', '*ads*<ul><li><strong')
         .replace(/<a/g, '<Link')
         .replace(/target="_blank">/g, '><a class="enlace">')
         .replace(/<\/a>/g, '</a></Link>')
-        .replace(fuente, '')
+        .replace(/<u><\/u>/g, '');
 
     const texto2 = texto1
         .replace(
             `<h2>¡Completa`,
-            `*ads*<h2>¡Completa`
+            `*--*<h2>¡Completa`
         )
-        .replace(/<u><\/u>/g, '');
 
-    const miTexto = texto2.split("*ads*");
+    const miTexto = texto2.split("*--*");
 
     const [slide, setSlide] = useState(0);
 
@@ -244,14 +225,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     valorInicial={0}
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
-                    video={video}
-                    fuente={fuente}
-                    textos={[
-                        miTexto[0],
-                        miTexto[1],
-                        miTexto[2],
-                    ]}
-                >
+                    textos={miTexto[0]}>
                 </Cuestionario>
 
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}

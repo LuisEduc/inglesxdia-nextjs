@@ -4,9 +4,28 @@ import BotonMain from "../../../components/BotonMain"
 import InfoCat from "../../../components/InfoCat"
 import OnePostCat from "../../../components/OnePostCat"
 import Head from "next/head"
-import AdSense from 'react-adsense';
+import AdSense from 'react-adsense'
+import JsxParser from 'react-jsx-parser'
+import Link from "next/link"
 
-export default function post({ dataCat }) {
+export default function post({ dataCat, dataContCat }) {
+
+    const { catcontenido } = dataContCat.contenido[0]
+    let texto = ''
+
+    catcontenido ?
+        texto = catcontenido
+            .replace(/<p><br><\/p>/g, '<div class="space"></div>')
+            .replace(/ql-cursor/g, '')
+            .replace(/<a/g, '<Link')
+            .replace(/target="_blank">/g, '><a class="enlace">')
+            .replace(/<\/a>/g, '</a></Link>')
+        : ''
+
+    texto === '<div class="space"></div>' ?
+        texto = ''
+        : ''
+
     return (
 
         <Layout>
@@ -14,6 +33,10 @@ export default function post({ dataCat }) {
                 <link rel="icon" href="/favicon.png" />
                 <title>{dataCat.categoria[0].titulo} en inglés | Curso de inglés en línea</title>
                 <meta name="description" content={dataCat.categoria[0].descripcion} />
+
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+                <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
             </Head>
 
             <BotonMain
@@ -24,35 +47,21 @@ export default function post({ dataCat }) {
             />
 
             <AdSense.Google
-                // full-cat
+                // 300x250-cat
                 client='ca-pub-3630578707238850'
-                slot='2941801066'
+                slot='5960467215'
                 style={{
                     display: 'block',
+                    height: 250 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginTop: 15 + 'px',
                     marginBottom: 15 + 'px',
                     textAlign: 'center'
                 }}
-                format='auto'
-                responsive='true'
+                format='rectangle'
+                responsive=''
             />
-
-            {/* <AdSense.Google
-                // 300x100-cat-hero
-                client='ca-pub-3630578707238850'
-                slot='3033090313'
-                style={{
-                    display: 'block',
-                    height: 100 + 'px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    textAlign: 'center'
-                }}
-                format=''
-                responsive='true'
-            /> */}
 
             <InfoCat
                 icono={dataCat.categoria[0].icono}
@@ -62,12 +71,12 @@ export default function post({ dataCat }) {
             />
 
             <AdSense.Google
-                // 300x100-cat-alto
+                // 300x50-cat-alto
                 client='ca-pub-3630578707238850'
-                slot='8093845306'
+                slot='9604712415'
                 style={{
                     display: 'block',
-                    height: 100 + 'px',
+                    height: 50 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginBottom: 15 + 'px',
@@ -77,6 +86,16 @@ export default function post({ dataCat }) {
                 format=''
                 responsive='true'
             />
+
+            {texto === '' ?
+                ''
+                :
+                (
+                    <div>
+                        <JsxParser components={{ Link }} jsx={`${texto}`} className="contenido" />
+                    </div>
+                )
+            }
 
             <div>
                 <BotonMain
@@ -159,9 +178,21 @@ export async function getStaticProps({ params }) {
                 },
             })
         const dataCat = await resCat.json()
+
+        const resContCat = await fetch(`https://admin.inglesxdia.com/api/catcontenido/${params.categoria}`,
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            })
+        const dataContCat = await resContCat.json()
+
         return {
             props: {
                 dataCat,
+                dataContCat
             },
             revalidate: 5, // In seconds
         }
