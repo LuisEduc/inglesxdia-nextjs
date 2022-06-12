@@ -104,7 +104,7 @@ export default function index({ data }) {
                     <div className="tip-preview">
                         <span>Consejo 1</span>
                         <h3 className="tip-title">Dedicación</h3>
-                        <div className="img-bloque-tip mx-auto">
+                        {/* <div className="img-bloque-tip mx-auto">
                             <Image
                                 src="/img/dedicacion.svg"
                                 alt="Dedicación en inglés"
@@ -113,7 +113,7 @@ export default function index({ data }) {
                                 layout="responsive"
                                 priority
                             />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="tip-info mt-3">
                         <span>inglesXdia</span>
@@ -123,9 +123,9 @@ export default function index({ data }) {
                 </div>
                 <div className="tip">
                     <div className="tip-preview">
-                        <span>Consejo 1</span>
+                        <span>Consejo 2</span>
                         <h3 className="tip-title">Constancia</h3>
-                        <div className="img-bloque-tip mx-auto">
+                        {/* <div className="img-bloque-tip mx-auto">
                             <Image
                                 src="/img/sesion.svg"
                                 alt="Constancia en inglés"
@@ -134,7 +134,7 @@ export default function index({ data }) {
                                 layout="responsive"
                                 priority
                             />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="tip-info mt-3">
                         <span>inglesXdia</span>
@@ -145,9 +145,9 @@ export default function index({ data }) {
                 </div>
                 <div className="tip">
                     <div className="tip-preview">
-                        <span>Consejo 1</span>
+                        <span>Consejo 3</span>
                         <h3 className="tip-title">Imaginación</h3>
-                        <div className="img-bloque-tip mx-auto">
+                        {/* <div className="img-bloque-tip mx-auto">
                             <Image
                                 src="/img/brain.svg"
                                 alt="Imaginación en inglés"
@@ -156,7 +156,7 @@ export default function index({ data }) {
                                 layout="responsive"
                                 priority
                             />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="tip-info mt-3">
                         <span>inglesXdia</span>
@@ -169,9 +169,9 @@ export default function index({ data }) {
                 </div>
                 <div className="tip">
                     <div className="tip-preview">
-                        <span>Consejo 1</span>
+                        <span>Consejo 4</span>
                         <h3 className="tip-title">Asociación</h3>
-                        <div className="img-bloque-tip mx-auto">
+                        {/* <div className="img-bloque-tip mx-auto">
                             <Image
                                 src="/img/asociacion.svg"
                                 alt="Asociación en inglés"
@@ -180,7 +180,7 @@ export default function index({ data }) {
                                 layout="responsive"
                                 priority
                             />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="tip-info mt-3">
                         <span>inglesXdia</span>
