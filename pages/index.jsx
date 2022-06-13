@@ -18,7 +18,7 @@ export default function index({ bloques, cats, buscar }) {
                 <meta name="description" content="Clases y lecciones de inglés todos los días. En este curso en línea aprende a hablar, leer y escribir en inglés con nuestras lecciones diarias. Lecturas básicas y cortas, vocabulario, verbos y más clases con preguntas para practicar." />
             </Head>
 
-            <div id="lecs"></div>
+            <div id="lecciones"></div>
 
             <BotonMain
                 titulo='Vocabulario de hoy'
@@ -87,7 +87,7 @@ export default function index({ bloques, cats, buscar }) {
                 ))
             }
             
-            <div id="cats"></div>
+            <div id="cursos"></div>
 
             <TituloBloque
                 titulo='Todas las categorías'

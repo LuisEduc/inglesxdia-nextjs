@@ -32,8 +32,7 @@ export default function OnePostCat({ slug, slug_cat, titulo, imagen, audio }) {
                                     objectFit="cover"
                                     placeholder="blur"
                                     blurDataURL="/img/placeholder.webp"
-                                    sizes="50vw"
-                                    priority
+                                    sizes="48vw"
                                 />
                             </div>
                         </a>

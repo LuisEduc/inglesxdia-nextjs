@@ -56,34 +56,34 @@ export default function Hero({ buscar }) {
                             </div>
                         </div>
                         <div className="hero-resumen-item">
-                            <Link href="/#lecs">
-                                <a href="/#lecs">
+                            <Link href="/#lecciones">
+                                <a href="/#lecciones">
                                     <div className="item-hero-number">
                                         <span>2</span>
                                     </div>
                                 </a>
                             </Link>
                             <div className="item-hero-text">
-                                <Link href="/#lecs">
+                                <Link href="/#lecciones">
                                     <h3>
-                                        <a href="/#lecs">Lecturas cortas y básicas.</a>
+                                        <a href="/#lecciones">Lecturas cortas y básicas.</a>
                                     </h3>
                                 </Link>
                                 <p>Lecturas en inglés para principiantes y nivel intermedio. Textos y cuentos cortos para aprender inglés.</p>
                             </div>
                         </div>
                         <div className="hero-resumen-item">
-                            <Link href="/#lecs">
-                                <a href="/#lecs">
+                            <Link href="/#lecciones">
+                                <a href="/#lecciones">
                                     <div className="item-hero-number">
                                         <span>3</span>
                                     </div>
                                 </a>
                             </Link>
                             <div className="item-hero-text" >
-                                <Link href="/#cats">
+                                <Link href="/#cursos">
                                     <h3>
-                                        <a href="/#cats">Clases para practicar.</a>
+                                        <a href="/#cursos">Clases para practicar.</a>
                                     </h3>
                                 </Link>
                                 <p>Frases, expresiones, verbos, verbos frasales, frases motivadoras, conversaciones en inglés con traducción.</p>

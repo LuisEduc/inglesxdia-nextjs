@@ -16,6 +16,7 @@ import AdSense from 'react-adsense';
 import GoogleAdSense from 'react-simple-adsense';
 import Link from "next/link"
 import JsxParser from 'react-jsx-parser'
+import ListaLinks from "../../../components/ListaLinks"
 
 const settings = {
     showIndicators: false,
@@ -30,10 +31,10 @@ const settings = {
     swipeScrollTolerance: 60,
 };
 
-export default function Individual({ dataLec, dataCat, contLec }) {
+export default function Individual({ dataLec, dataCat, cats }) {
 
     const { leccion, preguntas, imagenes } = dataLec;
-    
+
     // const { contenido } = contLec;
 
     // const texto = contenido[0].contenido
@@ -177,7 +178,6 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                                         placeholder="blur"
                                         blurDataURL="/img/placeholder.webp"
                                         sizes="48vw"
-                                        priority
                                     />
                                 </div>
                             ))
@@ -300,6 +300,28 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                 <div id="ezoic-pub-ad-placeholder-112"> </div>
                 {/* <!-- End Ezoic - display-lec-rel - top_of_page --> */}
 
+                <BotonMain
+                    titulo='Todos los cursos'
+                    icono='fa-grip-horizontal'
+                    dir={`/#cursos`}
+                    bg='bg-primario'
+                />
+
+                <div className="div-lista-links">
+                    {
+                        cats.categorias.map(({ id, icono, slug, nivel, titulo }) => (
+                            <div key={id}>
+                                <ListaLinks
+                                    icono={icono}
+                                    nivel={nivel}
+                                    titulo={titulo}
+                                    slug={slug}
+                                />
+                            </div>
+                        ))
+                    }
+                </div>
+
             </Layout>
         </>
     )
@@ -356,22 +378,21 @@ export async function getStaticProps({ params }) {
         )
         const dataCat = await resCat.json()
 
-        const resCont = await fetch(`https://admin.inglesxdia.com/api/contenido/${params.categoria}/${params.slug}`,
+        const resCats = await fetch('https://admin.inglesxdia.com/api/categorias',
             {
                 method: "GET",
                 headers: {
                     "User-Agent": "*",
                     Accept: "application/json; charset=UTF-8",
                 },
-            }
-        )
-        const contLec = await resCont.json()
+            })
+        const cats = await resCats.json()
 
         return {
             props: {
                 dataLec,
                 dataCat,
-                contLec,
+                cats,
             },
             revalidate: 5, // In seconds
         }

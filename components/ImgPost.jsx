@@ -12,7 +12,6 @@ export default function ImgPost({ imagen }) {
                     objectFit="cover"
                     placeholder="blur"
                     blurDataURL="/img/placeholder.webp"
-                    priority
                 />
             </div>
         </>

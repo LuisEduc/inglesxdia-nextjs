@@ -47,7 +47,6 @@ export default function CardCarousel({ data }) {
                 placeholder="blur"
                 blurDataURL="/img/placeholder.webp"
                 sizes="48vw"
-                priority
               />
             </div>
           ))

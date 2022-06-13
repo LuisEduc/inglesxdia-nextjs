@@ -33,8 +33,8 @@ export default function Navbar() {
                                         </Link>
                                     </li>
                                     <li onClick={Desplegar}>
-                                        <Link href="/#lecs">
-                                            <a href="/#lecs">Lecciones</a>
+                                        <Link href="/#lecciones">
+                                            <a href="/#lecciones">Lecciones</a>
                                         </Link>
                                     </li>
                                     <li onClick={() => window.open("https://bit.ly/34j0kVS", "_blank")}>
