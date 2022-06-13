@@ -11,7 +11,7 @@ const preguntaInicial = [{
     answer: ''
 }]
 
-export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, textos }) {
+export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio }) {
 
     const router = useRouter()
 
@@ -206,12 +206,10 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                 </a>
             </Link>
 
-            <div>
+            {/* <div dangerouslySetInnerHTML={{ __html[0] }} className="contenido mt-4 margen-txt-top"/> */}
+            {/* <JsxParser components={{ Link }} jsx={`}`} className="contenido" /> */}
 
-                {/* <div dangerouslySetInnerHTML={{ __html: textos[0] }} className="contenido mt-4 margen-txt-top"/> */}
-                <JsxParser components={{ Link }} jsx={`${textos}`} className="contenido" />
-
-                {/* <div className="div-ads">
+            {/* <div className="div-ads">
                     <AdSense.Google
                         // 300x50-txt-alto
                         client='ca-pub-3630578707238850'
@@ -240,17 +238,15 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                     />
                 </div> */}
 
-                {/* <JsxParser components={{ Link }} jsx={`${textos[1]}`} className="contenido margen-txt-center" /> */}
-                {/* <JsxParser components={{ Link }} jsx={`${textos[1]}`} className="contenido mb-4 margen-txt-bottom" /> */}
+            {/* <JsxParser components={{ Link }} jsx={`[1]}`} className="contenido margen-txt-center" /> */}
+            {/* <JsxParser components={{ Link }} jsx={`[1]}`} className="contenido mb-4 margen-txt-bottom" /> */}
 
-                {/* <Link href="#c">
+            {/* <Link href="#c">
                     <a>
-                        <div onClick={() => setModal(1)} dangerouslySetInnerHTML={{ __html: textos[2] }} className="contenido mb-4 margen-txt-bottom" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div onClick={() => setModal(1)} dangerouslySetInnerHTML={{ __html[2] }} className="contenido mb-4 margen-txt-bottom" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         </div>
                     </a>
                 </Link> */}
-
-            </div>
 
             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div className="modal-dialog mx-auto">

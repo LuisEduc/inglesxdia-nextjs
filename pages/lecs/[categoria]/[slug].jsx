@@ -33,26 +33,27 @@ const settings = {
 export default function Individual({ dataLec, dataCat, contLec }) {
 
     const { leccion, preguntas, imagenes } = dataLec;
-    const { contenido } = contLec;
+    
+    // const { contenido } = contLec;
 
-    const texto = contenido[0].contenido
+    // const texto = contenido[0].contenido
 
-    const texto1 = texto
-        .replace(' style="color: rgb(0, 0, 0);"', '')
-        .replace(/<br>/g, '<div class="space"></div>')
-        .replace(/ql-cursor/g, '')
-        .replace(/<a/g, '<Link')
-        .replace(/target="_blank">/g, '><a class="enlace">')
-        .replace(/<\/a>/g, '</a></Link>')
-        .replace(/<u><\/u>/g, '');
+    // const texto1 = texto
+    //     .replace(' style="color: rgb(0, 0, 0);"', '')
+    //     .replace(/<br>/g, '<div class="space"></div>')
+    //     .replace(/ql-cursor/g, '')
+    //     .replace(/<a/g, '<Link')
+    //     .replace(/target="_blank">/g, '><a class="enlace">')
+    //     .replace(/<\/a>/g, '</a></Link>')
+    //     .replace(/<u><\/u>/g, '');
 
-    const texto2 = texto1
-        .replace(
-            `<h2>¡Completa`,
-            `*--*<h2>¡Completa`
-        )
+    // const texto2 = texto1
+    //     .replace(
+    //         `<h2>¡Completa`,
+    //         `*--*<h2>¡Completa`
+    //     )
 
-    const miTexto = texto2.split("*--*");
+    // const miTexto = texto2.split("*--*");
 
     const [slide, setSlide] = useState(0);
 
@@ -224,8 +225,7 @@ export default function Individual({ dataLec, dataCat, contLec }) {
                     firstQ={firstQ}
                     valorInicial={0}
                     titulo={leccion[0].titulo}
-                    audio={leccion[0].audio}
-                    textos={miTexto[0]}>
+                    audio={leccion[0].audio}>
                 </Cuestionario>
 
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
