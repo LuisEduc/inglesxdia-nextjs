@@ -90,7 +90,7 @@ export default function index({ bloques, cats, buscar }) {
             <div id="cursos"></div>
 
             <TituloBloque
-                titulo='Todas las categorías'
+                titulo='Todas los cursos'
                 icono='fa-th-list'
                 bg='bg-primario'
             />
