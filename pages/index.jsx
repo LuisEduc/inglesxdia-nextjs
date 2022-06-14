@@ -95,22 +95,6 @@ export default function index({ bloques, cats, buscar }) {
                 bg='bg-primario'
             />
 
-            {/* <AdSense.Google
-                // 300x100-inicio-bajo
-                client='ca-pub-3630578707238850'
-                slot='5282218829'
-                style={{
-                    display: 'block',
-                    height: 100 + 'px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginBottom: -35 + 'px',
-                    textAlign: 'center'
-                }}
-                format=''
-                responsive='true'
-            /> */}
-
             <div className="galeria-cat">
                 {
                     cats.categorias.map(({ id, icono, slug, nivel, titulo, descripcion }) => (
