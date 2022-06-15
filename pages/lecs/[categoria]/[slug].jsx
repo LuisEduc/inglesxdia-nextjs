@@ -134,17 +134,17 @@ export default function Individual({ dataLec, dataCat, cats }) {
                 />
 
                 <AdSense.Google
-                    // full-article-indi
+                    // full-indi
                     client='ca-pub-3630578707238850'
-                    slot='1846815359'
+                    slot='6905737434'
                     style={{
                         display: 'block',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
-                    layout="in-article"
-                    format="fluid"
+                    format='auto'
+                    responsive='true'
                 />
 
                 {/* <AdSense.Google
@@ -305,7 +305,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                         marginBottom: 15 + 'px',
                         textAlign: 'center'
                     }}
-                    format="auto"
+                    format='auto'
                     responsive='true'
                 />
 
