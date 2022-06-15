@@ -18,6 +18,21 @@ export default function index({ data }) {
             </Head>
 
             <AdSense.Google
+                // full-voc
+                client='ca-pub-3630578707238850'
+                slot='1345454840'
+                style={{
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    marginBottom: 15 + 'px',
+                    marginTop: 15 + 'px',
+                    textAlign: 'center'
+                }}
+                format='auto'
+                responsive='true'
+            />
+            {/* <AdSense.Google
                 // 300x250-voc
                 client='ca-pub-3630578707238850'
                 slot='6102898405'
@@ -32,7 +47,7 @@ export default function index({ data }) {
                 }}
                 format=''
                 responsive='true'
-            />
+            /> */}
 
             <div className="inicio-badge">
                 <BotonVoc

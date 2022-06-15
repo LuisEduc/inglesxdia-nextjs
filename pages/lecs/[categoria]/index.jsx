@@ -46,7 +46,7 @@ export default function post({ dataCat, dataContCat }) {
                 bg='bg-secundario'
             />
 
-            <AdSense.Google
+            {/* <AdSense.Google
                 // 300x250-cat
                 client='ca-pub-3630578707238850'
                 slot='5960467215'
@@ -61,6 +61,22 @@ export default function post({ dataCat, dataContCat }) {
                 }}
                 format='rectangle'
                 responsive=''
+            /> */}
+
+            <AdSense.Google
+                // full-cat
+                client='ca-pub-3630578707238850'
+                slot='2941801066'
+                style={{
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    marginTop: 15 + 'px',
+                    marginBottom: 15 + 'px',
+                    textAlign: 'center'
+                }}
+                format='auto'
+                responsive='true'
             />
 
             <InfoCat
