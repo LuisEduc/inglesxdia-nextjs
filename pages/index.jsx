@@ -28,6 +28,20 @@ export default function index({ bloques, cats, buscar }) {
             />
 
             <AdSense.Google
+                // full-inicio-voc
+                client='ca-pub-3630578707238850'
+                slot='3909957638'
+                style={{
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    marginBottom: -15 + 'px',
+                    textAlign: 'center'
+                }}
+                format='auto'
+                responsive='true'
+            />
+            {/* <AdSense.Google
                 // 300x100-inicio-voc
                 client='ca-pub-3630578707238850'
                 slot='5353536865'
@@ -41,7 +55,7 @@ export default function index({ bloques, cats, buscar }) {
                 }}
                 format=''
                 responsive='true'
-            />
+            /> */}
 
             {
                 bloques.secciones.map(({ id, icono, titulo, color, bg, data }) => (
@@ -66,8 +80,7 @@ export default function index({ bloques, cats, buscar }) {
                                 ))
                             }
                         </div>
-
-                        <AdSense.Google
+                        {/* <AdSense.Google
                             // 300x50-inicio
                             client='ca-pub-3630578707238850'
                             slot='4872113806'
@@ -82,7 +95,7 @@ export default function index({ bloques, cats, buscar }) {
                             }}
                             format=''
                             responsive='true'
-                        />
+                        /> */}
                     </div>
                 ))
             }
