@@ -941,7 +941,8 @@ a {
 .contenido p > strong > em {
   font-style: normal;
   display: inline-block;
-  font-size: 18px;
+  font-size: 17px;
+  margin-bottom: 12px;
 }
 
 .contenido ul {
@@ -956,7 +957,7 @@ a {
 
 .contenido li em {
   font-style: normal;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .contenido ul > li > a {
