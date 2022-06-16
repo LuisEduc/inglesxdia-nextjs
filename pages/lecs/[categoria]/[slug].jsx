@@ -119,7 +119,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                 /> */}
 
                 <div className="lecs-titulo">
-                    <h1>{leccion[0].titulo_seo}__</h1>
+                    <h1>{leccion[0].titulo_seo}</h1>
                 </div>
 
                 {/* <!-- Ezoic - display-lec-titulo - top_of_page --> */}
