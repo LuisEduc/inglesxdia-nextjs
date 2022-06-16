@@ -31,30 +31,33 @@ const settings = {
     swipeScrollTolerance: 60,
 };
 
-export default function Individual({ dataLec, dataCat, cats }) {
+export default function Individual({ dataLec, dataCat, cats, contLec }) {
 
     const { leccion, preguntas, imagenes } = dataLec;
 
-    // const { contenido } = contLec;
+    const { contenido } = contLec.contenido[0];
 
-    // const texto = contenido[0].contenido
+    let texto = ''
 
-    // const texto1 = texto
-    //     .replace(' style="color: rgb(0, 0, 0);"', '')
-    //     .replace(/<br>/g, '<div class="space"></div>')
-    //     .replace(/ql-cursor/g, '')
-    //     .replace(/<a/g, '<Link')
-    //     .replace(/target="_blank">/g, '><a class="enlace">')
-    //     .replace(/<\/a>/g, '</a></Link>')
-    //     .replace(/<u><\/u>/g, '');
+    contenido ?
+        texto = contenido
+            .replace(/<p><br><\/p>/g, '<div class="space"></div>')
+            .replace(/<h3><br><\/h3>/g, '<div class="space"></div>')
+            .replace(/<h2><br><\/h2>/g, '<div class="space"></div>')
+            .replace(/ql-cursor/g, '')
+            .replace(/<a/g, '<Link')
+            .replace(/target="_blank">/g, '><a class="enlace">')
+            .replace(/<\/a>/g, '</a></Link>')
+            .replace(/<u><\/u>/g, '')
+            .replace('<h2>¡Completa', '*--*<h2>¡Completa')
+            .replace(' style="color: rgb(0, 0, 0);"', '')
+        : ''
 
-    // const texto2 = texto1
-    //     .replace(
-    //         `<h2>¡Completa`,
-    //         `*--*<h2>¡Completa`
-    //     )
+    texto === '<div class="space"></div>' ?
+        texto = ''
+        : ''
 
-    // const miTexto = texto2.split("*--*");
+    const miTexto = texto.split("*--*");
 
     const [slide, setSlide] = useState(0);
 
@@ -239,7 +242,9 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     firstQ={firstQ}
                     valorInicial={0}
                     titulo={leccion[0].titulo}
-                    audio={leccion[0].audio}>
+                    audio={leccion[0].audio}
+                    textos={miTexto[0]}
+                >
                 </Cuestionario>
 
                 {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
@@ -401,11 +406,22 @@ export async function getStaticProps({ params }) {
             })
         const cats = await resCats.json()
 
+        const resContLec = await fetch(`https://admin.inglesxdia.com/api/contenido/${params.categoria}/${params.slug}`,
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            })
+        const contLec = await resContLec.json()
+
         return {
             props: {
                 dataLec,
                 dataCat,
                 cats,
+                contLec
             },
             revalidate: 5, // In seconds
         }
