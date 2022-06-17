@@ -27,52 +27,7 @@ export default function index({ bloques, cats, buscar }) {
                 bg='bg-secundario'
             />
 
-            <AdSense.Google
-                // 300x250-inicio-voc
-                client='ca-pub-3630578707238850'
-                slot='5293878410'
-                style={{
-                    display: 'block',
-                    height: 250 + 'px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginBottom: -15 + 'px',
-                    textAlign: 'center'
-                }}
-                format='rectangle'
-                responsive=''
-            />
-
-            {/* <AdSense.Google
-                // full-inicio-voc
-                client='ca-pub-3630578707238850'
-                slot='3909957638'
-                style={{
-                    display: 'block',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginBottom: -15 + 'px',
-                    textAlign: 'center'
-                }}
-                format='auto'
-                responsive='true'
-            /> */}
-
-            {/* <AdSense.Google
-                // 300x100-inicio-voc
-                client='ca-pub-3630578707238850'
-                slot='5353536865'
-                style={{
-                    display: 'block',
-                    height: 100 + 'px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginBottom: -15 + 'px',
-                    textAlign: 'center'
-                }}
-                format=''
-                responsive='true'
-            /> */}
+            <div id="ezoic-pub-ad-placeholder-110"> </div>
 
             {
                 bloques.secciones.map(({ id, icono, titulo, color, bg, data }) => (
@@ -97,33 +52,24 @@ export default function index({ bloques, cats, buscar }) {
                                 ))
                             }
                         </div>
-                        {/* <AdSense.Google
-                            // 300x50-inicio
-                            client='ca-pub-3630578707238850'
-                            slot='4872113806'
-                            style={{
-                                display: 'block',
-                                height: 50 + 'px',
-                                marginLeft: 'auto',
-                                marginRight: 'auto',
-                                marginTop: 15 + 'px',
-                                marginBottom: -15 + 'px',
-                                textAlign: 'center'
-                            }}
-                            format=''
-                            responsive='true'
-                        /> */}
+
+                        <div id="ezoic-pub-ad-placeholder-115"> </div>
+
                     </div>
                 ))
             }
 
             <div id="cursos"></div>
 
+            <div id="ezoic-pub-ad-placeholder-118"> </div>
+
             <TituloBloque
                 titulo='Todos los cursos'
                 icono='fa-th-list'
                 bg='bg-primario'
             />
+
+            <div id="ezoic-pub-ad-placeholder-124"> </div>
 
             <div className="galeria-cat">
                 {
@@ -140,6 +86,7 @@ export default function index({ bloques, cats, buscar }) {
                     ))
                 }
             </div>
+
             <CookieConsent
                 location="bottom"
                 buttonText="Aceptar"
@@ -156,6 +103,9 @@ export default function index({ bloques, cats, buscar }) {
             >
                 <span style={{ fontSize: "14px", color: "#232d39" }}>Utilizamos cookies, si continúa navegando, está aceptando su uso.</span>
             </CookieConsent>
+
+            <EzoicAds ids={[103, 110, 115, 118, 124]} />
+
         </Layout>
 
     )
