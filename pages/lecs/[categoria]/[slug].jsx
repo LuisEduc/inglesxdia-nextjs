@@ -12,11 +12,10 @@ import "react-h5-audio-player/lib/styles.css";
 import Image from "next/image"
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
-import AdSense from 'react-adsense';
-import GoogleAdSense from 'react-simple-adsense';
 import Link from "next/link"
 import JsxParser from 'react-jsx-parser'
 import ListaLinks from "../../../components/ListaLinks"
+import Script from "next/script"
 
 const settings = {
     showIndicators: false,
@@ -58,6 +57,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         : ''
 
     const miTexto = texto.split("*--*");
+    let textos = miTexto[0]
 
     const [slide, setSlide] = useState(0);
 
@@ -98,36 +98,26 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
                     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
+
+                    <Script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                            var ezstandalone = window.ezstandalone || {};
+                            ezstandalone.cmd = ezstandalone.cmd || [];
+                            ezstandalone.cmd.push(function() {
+                            ezstandalone.displayMore(131, 128);
+                            });
+                         `,
+                        }}
+                    />
+
                 </Head>
 
-                {/* <!-- Ezoic - sidebar-lec - sidebar --> */}
-                <div id="ezoic-pub-ad-placeholder-103"> </div>
-                {/* <!-- End Ezoic - sidebar-lec - sidebar --> */}
-
-                {/* <AdSense.Google
-                    // 300x50-indi-alto
-                    client='ca-pub-3630578707238850'
-                    slot='2418913037'
-                    style={{
-                        display: 'block',
-                        height: 50 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginTop: 15 + 'px',
-                        marginBottom: 15 + 'px',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                    responsive='true'
-                /> */}
+                <div id="ezoic-pub-ad-placeholder-131"> </div>
 
                 <div className="lecs-titulo">
                     <h1>{leccion[0].titulo_seo}</h1>
                 </div>
-
-                {/* <!-- Ezoic - display-lec-titulo - top_of_page --> */}
-                <div id="ezoic-pub-ad-placeholder-104"> </div>
-                {/* <!-- End Ezoic - display-lec-titulo - top_of_page --> */}
 
                 <BotonMain
                     titulo='Vocabulario de hoy'
@@ -136,49 +126,12 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     bg='bg-secundario'
                 />
 
-                <AdSense.Google
-                    // full-indi
-                    client='ca-pub-3630578707238850'
-                    slot='6905737434'
-                    style={{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format='auto'
-                    responsive='true'
-                />
-
-                {/* <AdSense.Google
-                    // 300x250-indi
-                    client='ca-pub-3630578707238850'
-                    slot='6438145214'
-                    style={{
-                        display: 'block',
-                        height: 250 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format='rectangle'
-                    responsive=''
-                /> */}
-
-                {/* <!-- Ezoic - display-lec-btn-voc - top_of_page --> */}
-                <div id="ezoic-pub-ad-placeholder-105"> </div>
-                {/* <!-- End Ezoic - display-lec-btn-voc - top_of_page --> */}
-
                 <BotonMain
                     titulo='Lecciones similares'
                     icono='fa-chevron-circle-left'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
                 />
-
-                {/* <!-- Ezoic - display-lec-btn-simil - top_of_page --> */}
-                <div id="ezoic-pub-ad-placeholder-106"> </div>
-                {/* <!-- End Ezoic - display-lec-btn-simil - top_of_page --> */}
 
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
@@ -202,54 +155,37 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </Carousel>
                 </div>
 
-                {/* <AdSense.Google
-                    // 300x50-indi-medio
-                    client='ca-pub-3630578707238850'
-                    slot='9884836482'
-                    style={{
-                        display: 'block',
-                        height: 50 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                    responsive='true'
-                /> */}
-
-                <AdSense.Google
-                    // 300x250-indi-medio
-                    client='ca-pub-3630578707238850'
-                    slot='1381741492'
-                    style={{
-                        display: 'block',
-                        height: 250 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format='rectangle'
-                    responsive=''
-                />
-
-                {/* <!-- Ezoic - display-lec-carousel - top_of_page --> */}
-                <div id="ezoic-pub-ad-placeholder-108"> </div>
-                {/* <!-- End Ezoic - display-lec-carousel - top_of_page --> */}
-
                 <Cuestionario
                     questions={preguntas}
                     nextQ={nextQ}
                     firstQ={firstQ}
                     valorInicial={0}
-                    titulo={leccion[0].titulo}
-                    audio={leccion[0].audio}
-                    textos={miTexto[0]}
                 >
                 </Cuestionario>
 
-                {/* <!-- Ezoic - display-lec-audio - top_of_page --> */}
-                <div id="ezoic-pub-ad-placeholder-109"> </div>
-                {/* <!-- End Ezoic - display-lec-audio - top_of_page --> */}
+                <AudioContainer
+                    titulo={leccion[0].titulo}
+                    audio={leccion[0].audio}
+                />
+
+                <Link href='https://bit.ly/34j0kVS'>
+                    <a>
+                        <div className='btn-main bg-app'>
+                            <i className='fab fa-google-play fa-xs'></i>
+                            <p>Descargar aplicación</p>
+                        </div>
+                    </a>
+                </Link>
+
+                {textos === '' ?
+                    ''
+                    :
+                    (
+                        <div>
+                            <JsxParser components={{ Link }} jsx={`${textos}`} className="contenido" />
+                        </div>
+                    )
+                }
 
                 <BotonMain
                     titulo='Relacionadas'
@@ -257,10 +193,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-secundario'
                 />
-
-                {/* <!-- Ezoic - display-lec-btn-rel - top_of_page --> */}
-                <div id="ezoic-pub-ad-placeholder-111"> </div>
-                {/* <!-- End Ezoic - display-lec-btn-rel - top_of_page --> */}
 
                 {
                     <div className="galeria-bloque-inicio" style={{ marginTop: -15 + 'px' }}>
@@ -281,59 +213,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </div>
                 }
 
-                {/* <AdSense.Google
-                    // 300x50-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='5989861498'
-                    style={{
-                        display: 'block',
-                        height: 50 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginTop: 5 + 'px',
-                        marginBottom: 15 + 'px',
-                        textAlign: 'center'
-                    }}
-                    format=''
-                    responsive='true'
-                /> */}
-
-                {/* <AdSense.Google
-                    // full-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='4370311034'
-                    style={{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginTop: 5 + 'px',
-                        marginBottom: 15 + 'px',
-                        textAlign: 'center'
-                    }}
-                    format='auto'
-                    responsive='true'
-                /> */}
-
-                <AdSense.Google
-                    // 300x250-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='5129414813'
-                    style={{
-                        display: 'block',
-                        height: 250 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginTop: 5 + 'px',
-                        marginBottom: 15 + 'px',
-                        textAlign: 'center'
-                    }}
-                    format='rectangle'
-                    responsive=''
-                />
-
-                {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
-                <div id="ezoic-pub-ad-placeholder-112"> </div>
-                {/* <!-- End Ezoic - display-lec-rel - top_of_page --> */}
+                <div id="ezoic-pub-ad-placeholder-128"> </div>
 
                 <BotonMain
                     titulo='Todos los cursos'

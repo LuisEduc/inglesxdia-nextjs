@@ -11,7 +11,7 @@ const preguntaInicial = [{
     answer: ''
 }]
 
-export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, textos }) {
+export default function Cuestionario({ questions, nextQ, firstQ }) {
 
     const router = useRouter()
 
@@ -191,30 +191,6 @@ export default function Cuestionario({ questions, nextQ, firstQ, titulo, audio, 
                     </div>
                 </a>
             </Link>
-
-            <AudioContainer
-                titulo={titulo}
-                audio={audio}
-            />
-
-            <Link href='https://bit.ly/34j0kVS'>
-                <a>
-                    <div className='btn-main bg-app'>
-                        <i className='fab fa-google-play fa-xs'></i>
-                        <p>Descargar aplicación</p>
-                    </div>
-                </a>
-            </Link>
-
-            {textos === '' ?
-                ''
-                :
-                (
-                    <div>
-                        <JsxParser components={{ Link }} jsx={`${textos}`} className="contenido" />
-                    </div>
-                )
-            }
 
             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div className="modal-dialog mx-auto">
