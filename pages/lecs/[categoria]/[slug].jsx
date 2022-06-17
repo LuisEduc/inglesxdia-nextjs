@@ -298,7 +298,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     responsive='true'
                 /> */}
 
-                <AdSense.Google
+                {/* <AdSense.Google
                     // full-indi-bajo
                     client='ca-pub-3630578707238850'
                     slot='4370311034'
@@ -312,6 +312,23 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     }}
                     format='auto'
                     responsive='true'
+                /> */}
+
+                <AdSense.Google
+                    // 300x250-indi-bajo
+                    client='ca-pub-3630578707238850'
+                    slot='5129414813'
+                    style={{
+                        display: 'block',
+                        height: 250 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        marginTop: 5 + 'px',
+                        marginBottom: 15 + 'px',
+                        textAlign: 'center'
+                    }}
+                    format='rectangle'
+                    responsive=''
                 />
 
                 {/* <!-- Ezoic - display-lec-rel - top_of_page --> */}
