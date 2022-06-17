@@ -100,13 +100,13 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
                 </Head>
 
-                <div id="ezoic-pub-ad-placeholder-131"> </div>
+                <div id="ezoic-pub-ad-placeholder-103"> </div>
 
                 <div className="lecs-titulo">
                     <h1>{leccion[0].titulo_seo}</h1>
                 </div>
 
-                <div id="ezoic-pub-ad-placeholder-127"> </div>
+                <div id="ezoic-pub-ad-placeholder-105"> </div>
 
                 <BotonMain
                     titulo='Vocabulario de hoy'
@@ -115,7 +115,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     bg='bg-secundario'
                 />
 
-                <div id="ezoic-pub-ad-placeholder-124"> </div>
+                <div id="ezoic-pub-ad-placeholder-108"> </div>
 
                 <BotonMain
                     titulo='Lecciones similares'
@@ -123,6 +123,8 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
                 />
+
+                <div id="ezoic-pub-ad-placeholder-110"> </div>
 
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
@@ -163,6 +165,8 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     audio={leccion[0].audio}
                 />
 
+                <div id="ezoic-pub-ad-placeholder-115"> </div>
+
                 <Link href='https://bit.ly/34j0kVS'>
                     <a>
                         <div className='btn-main bg-app'>
@@ -171,6 +175,8 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         </div>
                     </a>
                 </Link>
+
+                <div id="ezoic-pub-ad-placeholder-118"> </div>
 
                 {textos === '' ?
                     ''
@@ -182,12 +188,16 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     )
                 }
 
+                <div id="ezoic-pub-ad-placeholder-124"> </div>
+
                 <BotonMain
                     titulo='Relacionadas'
                     icono='fa-grip-horizontal'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-secundario'
                 />
+
+                <div id="ezoic-pub-ad-placeholder-128"> </div>
 
                 {
                     <div className="galeria-bloque-inicio" style={{ marginTop: -15 + 'px' }}>
@@ -208,7 +218,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </div>
                 }
 
-                <div id="ezoic-pub-ad-placeholder-128"> </div>
+                <div id="ezoic-pub-ad-placeholder-129"> </div>
 
                 <BotonMain
                     titulo='Todos los cursos'
@@ -232,7 +242,9 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     }
                 </div>
 
-                <EzoicAds ids={[131, 128, 127, 111, 124, 109]} />
+                <div id="ezoic-pub-ad-placeholder-132"> </div>
+
+                <EzoicAds ids={[103, 105, 108, 110, 115, 118, 124, 128, 129, 132]} />
 
             </Layout>
         </>
