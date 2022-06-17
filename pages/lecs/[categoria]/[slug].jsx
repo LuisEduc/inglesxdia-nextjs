@@ -232,7 +232,9 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                             var ezstandalone = window.ezstandalone || {};
                             ezstandalone.cmd = ezstandalone.cmd || [];
                             ezstandalone.cmd.push(function() {
-                            ezstandalone.displayMore(131, 128);
+                                ezstandalone.define(131, 128);
+                                ezstandalone.enable();
+                                ezstandalone.display();
                             });
                          `,
                     }}
