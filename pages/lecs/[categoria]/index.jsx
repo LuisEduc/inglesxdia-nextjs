@@ -31,7 +31,7 @@ export default function post({ dataCat, dataContCat }) {
         <Layout>
             <Head>
                 <link rel="icon" href="/favicon.png" />
-                <title>{dataCat.categoria[0].titulo} en inglés | Curso de inglés en línea</title>
+                <title>▷ {dataCat.categoria[0].titulo} en inglés | Curso de inglés básico en línea</title>
                 <meta name="description" content={dataCat.categoria[0].descripcion} />
 
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
