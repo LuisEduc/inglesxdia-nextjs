@@ -13,10 +13,6 @@ export default function EzoicAds({ ids }) {
                             ezstandalone.enable();
                             ezstandalone.display();
                         });
-
-                        setInterval(function() {
-                            ezstandalone.refresh(); 
-                        }, 5000);
                      `,
             }}
         />
