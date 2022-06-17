@@ -99,18 +99,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
                     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
 
-                    <Script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                            var ezstandalone = window.ezstandalone || {};
-                            ezstandalone.cmd = ezstandalone.cmd || [];
-                            ezstandalone.cmd.push(function() {
-                            ezstandalone.displayMore(131, 128);
-                            });
-                         `,
-                        }}
-                    />
-
                 </Head>
 
                 <div id="ezoic-pub-ad-placeholder-131"> </div>
@@ -236,6 +224,19 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         ))
                     }
                 </div>
+
+                <Script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            var ezstandalone = window.ezstandalone || {};
+                            ezstandalone.cmd = ezstandalone.cmd || [];
+                            ezstandalone.cmd.push(function() {
+                            ezstandalone.displayMore(131, 128);
+                            });
+                         `,
+                    }}
+                />
+                
             </Layout>
         </>
     )
