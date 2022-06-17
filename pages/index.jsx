@@ -7,6 +7,7 @@ import IconoSuperior from "../components/IconoSuperior"
 import Head from "next/head"
 import CookieConsent from "react-cookie-consent"
 import AdSense from 'react-adsense';
+import EzoicAds from "../components/EzoicAds"
 
 export default function index({ bloques, cats, buscar }) {
 
