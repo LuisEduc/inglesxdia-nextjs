@@ -236,7 +236,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         ))
                     }
                 </div>
-
             </Layout>
         </>
     )
