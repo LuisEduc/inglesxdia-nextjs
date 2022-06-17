@@ -28,6 +28,22 @@ export default function index({ bloques, cats, buscar }) {
             />
 
             <AdSense.Google
+                // 300x250-inicio-voc
+                client='ca-pub-3630578707238850'
+                slot='5293878410'
+                style={{
+                    display: 'block',
+                    height: 250 + 'px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    marginBottom: -15 + 'px',
+                    textAlign: 'center'
+                }}
+                format='rectangle'
+                responsive=''
+            />
+
+            {/* <AdSense.Google
                 // full-inicio-voc
                 client='ca-pub-3630578707238850'
                 slot='3909957638'
@@ -40,7 +56,8 @@ export default function index({ bloques, cats, buscar }) {
                 }}
                 format='auto'
                 responsive='true'
-            />
+            /> */}
+
             {/* <AdSense.Google
                 // 300x100-inicio-voc
                 client='ca-pub-3630578707238850'
@@ -99,7 +116,7 @@ export default function index({ bloques, cats, buscar }) {
                     </div>
                 ))
             }
-            
+
             <div id="cursos"></div>
 
             <TituloBloque
