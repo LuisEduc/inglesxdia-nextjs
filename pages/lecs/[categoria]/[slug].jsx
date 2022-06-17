@@ -226,6 +226,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                 </div>
 
                 <Script
+                    id="ezoic-init"
                     dangerouslySetInnerHTML={{
                         __html: `
                             var ezstandalone = window.ezstandalone || {};
@@ -236,7 +237,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                          `,
                     }}
                 />
-                
+
             </Layout>
         </>
     )
