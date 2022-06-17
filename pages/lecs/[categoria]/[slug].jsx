@@ -15,7 +15,7 @@ import { useState, useEffect } from 'react'
 import Link from "next/link"
 import JsxParser from 'react-jsx-parser'
 import ListaLinks from "../../../components/ListaLinks"
-import Script from "next/script"
+import EzoicAds from "../../../components/EzoicAds"
 
 const settings = {
     showIndicators: false,
@@ -106,12 +106,16 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     <h1>{leccion[0].titulo_seo}</h1>
                 </div>
 
+                <div id="ezoic-pub-ad-placeholder-127"> </div>
+
                 <BotonMain
                     titulo='Vocabulario de hoy'
                     icono='fa-stream'
                     dir='/vocabulario'
                     bg='bg-secundario'
                 />
+
+                <div id="ezoic-pub-ad-placeholder-124"> </div>
 
                 <BotonMain
                     titulo='Lecciones similares'
@@ -142,6 +146,8 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </Carousel>
                 </div>
 
+                <div id="ezoic-pub-ad-placeholder-109"> </div>
+
                 <Cuestionario
                     questions={preguntas}
                     nextQ={nextQ}
@@ -149,6 +155,8 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     valorInicial={0}
                 >
                 </Cuestionario>
+
+                <div id="ezoic-pub-ad-placeholder-111"> </div>
 
                 <AudioContainer
                     titulo={leccion[0].titulo}
@@ -224,20 +232,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     }
                 </div>
 
-                <Script
-                    id="ezoic-init"
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                            var ezstandalone = window.ezstandalone || {};
-                            ezstandalone.cmd = ezstandalone.cmd || [];
-                            ezstandalone.cmd.push(function() {
-                                ezstandalone.define(131, 128);
-                                ezstandalone.enable();
-                                ezstandalone.display();
-                            });
-                         `,
-                    }}
-                />
+                <EzoicAds ids={[131, 128, 127, 111, 124, 109]} />
 
             </Layout>
         </>
