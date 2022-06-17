@@ -16,7 +16,7 @@ export default function EzoicAds({ ids }) {
 
                         setInterval(function() {
                             ezstandalone.refresh(); 
-                        }, 10);
+                        }, 5000);
                      `,
             }}
         />
