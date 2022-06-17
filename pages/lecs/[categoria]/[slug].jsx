@@ -98,9 +98,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
                     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
-
-                    <script src="//www.ezojs.com/ezoic/sa.min.js"></script>
-
+                    
                 </Head>
 
                 <div id="ezoic-pub-ad-placeholder-131"> </div>
@@ -234,9 +232,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                             var ezstandalone = window.ezstandalone || {};
                             ezstandalone.cmd = ezstandalone.cmd || [];
                             ezstandalone.cmd.push(function() {
-                                ezstandalone.define(131, 128);
-                                ezstandalone.enable();
-                                ezstandalone.display();
+                                ezstandalone.displayMore(131, 128);
                             });
                          `,
                     }}
