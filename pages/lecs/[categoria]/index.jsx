@@ -7,6 +7,7 @@ import Head from "next/head"
 import AdSense from 'react-adsense'
 import JsxParser from 'react-jsx-parser'
 import Link from "next/link"
+import EzoicAds from "../../../components/EzoicAds"
 
 export default function post({ dataCat, dataContCat }) {
 
@@ -39,6 +40,8 @@ export default function post({ dataCat, dataContCat }) {
                 <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
             </Head>
 
+            <div id="ezoic-pub-ad-placeholder-103"> </div>
+
             <BotonMain
                 titulo='Vocabulario de hoy'
                 icono='fa-stream'
@@ -46,38 +49,7 @@ export default function post({ dataCat, dataContCat }) {
                 bg='bg-secundario'
             />
 
-            {/* <AdSense.Google
-                // 300x250-cat
-                client='ca-pub-3630578707238850'
-                slot='5960467215'
-                style={{
-                    display: 'block',
-                    height: 250 + 'px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginTop: 15 + 'px',
-                    marginBottom: 15 + 'px',
-                    textAlign: 'center'
-                }}
-                format='rectangle'
-                responsive=''
-            /> */}
-
-            <AdSense.Google
-                // full-cat
-                client='ca-pub-3630578707238850'
-                slot='2941801066'
-                style={{
-                    display: 'block',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginTop: 15 + 'px',
-                    marginBottom: 15 + 'px',
-                    textAlign: 'center'
-                }}
-                format='auto'
-                responsive='true'
-            />
+            <div id="ezoic-pub-ad-placeholder-105"> </div>
 
             <InfoCat
                 icono={dataCat.categoria[0].icono}
@@ -86,22 +58,7 @@ export default function post({ dataCat, dataContCat }) {
                 descripcion={dataCat.categoria[0].descripcion}
             />
 
-            <AdSense.Google
-                // 300x50-cat-alto
-                client='ca-pub-3630578707238850'
-                slot='9604712415'
-                style={{
-                    display: 'block',
-                    height: 50 + 'px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginBottom: 15 + 'px',
-                    marginTop: 15 + 'px',
-                    textAlign: 'center'
-                }}
-                format=''
-                responsive='true'
-            />
+            <div id="ezoic-pub-ad-placeholder-108"> </div>
 
             {texto === '' ?
                 ''
@@ -113,6 +70,8 @@ export default function post({ dataCat, dataContCat }) {
                 )
             }
 
+            <div id="ezoic-pub-ad-placeholder-109"> </div>
+
             <div>
                 <BotonMain
                     titulo='Todas las lecciones'
@@ -122,21 +81,7 @@ export default function post({ dataCat, dataContCat }) {
                 />
             </div>
 
-            <AdSense.Google
-                // 300x50-cat-medio
-                client='ca-pub-3630578707238850'
-                slot='3722806718'
-                style={{
-                    display: 'block',
-                    height: 50 + 'px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginTop: 15 + 'px',
-                    textAlign: 'center'
-                }}
-                format=''
-                responsive='true'
-            />
+            <div id="ezoic-pub-ad-placeholder-110"> </div>
 
             <div className="galeria-posts-cat">
                 {
@@ -153,6 +98,9 @@ export default function post({ dataCat, dataContCat }) {
                     ))
                 }
             </div>
+
+            <EzoicAds ids={[103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]} />
+
         </Layout>
     )
 }

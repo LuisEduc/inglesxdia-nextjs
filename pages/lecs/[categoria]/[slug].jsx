@@ -124,7 +124,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     bg='bg-primario'
                 />
 
-                <div id="ezoic-pub-ad-placeholder-110"> </div>
+                <div id="ezoic-pub-ad-placeholder-109"> </div>
 
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
@@ -148,7 +148,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </Carousel>
                 </div>
 
-                <div id="ezoic-pub-ad-placeholder-109"> </div>
+                <div id="ezoic-pub-ad-placeholder-110"> </div>
 
                 <Cuestionario
                     questions={preguntas}
@@ -244,7 +244,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
 
                 <div id="ezoic-pub-ad-placeholder-132"> </div>
 
-                <EzoicAds ids={[103, 105, 108, 110, 115, 118, 124, 128, 129, 132]} />
+                <EzoicAds ids={[103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]} />
 
             </Layout>
         </>
