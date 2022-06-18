@@ -28,8 +28,7 @@ export default function Index({ bloques, cats, buscar }) {
     }
 
     useEffect(() => {
-        const ids = [110, 115, 118, 124]
-        // const ids = [103, 110, 115, 118, 124]
+        const ids = [103, 110, 118, 124]
         reloadEzoic(ids)
         console.log('Ezoic listo')
     }, [])
@@ -76,8 +75,6 @@ export default function Index({ bloques, cats, buscar }) {
                                 ))
                             }
                         </div>
-
-                        <div id="ezoic-pub-ad-placeholder-115"> </div>
 
                     </div>
                 ))
