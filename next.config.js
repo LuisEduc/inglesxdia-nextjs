@@ -18,7 +18,7 @@ module.exports = {
     return [
       {
         source: '/:path*',
-        destination: 'https://prebid.smilewanted.com/:path*',
+        destination: 'https://prebid.smilewanted.com/',
       },
     ]
   },
