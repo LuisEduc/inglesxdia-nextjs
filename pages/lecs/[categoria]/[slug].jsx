@@ -64,14 +64,11 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
     const onChange = (item) => {
         setSlide(item)
     }
-
+    
     const reloadEzoic = (ids) => {
         ezstandalone.define(ids);
         if (ezstandalone.enabled) {
-            ezstandalone.destroy();
-            ezstandalone.define(ids);
-            ezstandalone.enable();
-            ezstandalone.display();
+            ezstandalone.refresh();
         } else {
             ezstandalone.enable();
             ezstandalone.display();

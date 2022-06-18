@@ -16,10 +16,7 @@ export default function Index({ bloques, cats, buscar }) {
     const reloadEzoic = (ids) => {
         ezstandalone.define(ids);
         if (ezstandalone.enabled) {
-            ezstandalone.destroy();
-            ezstandalone.define(ids);
-            ezstandalone.enable();
-            ezstandalone.display();
+            ezstandalone.refresh();
         } else {
             ezstandalone.enable();
             ezstandalone.display();

@@ -32,10 +32,7 @@ export default function IndexCat({ dataCat, dataContCat }) {
     const reloadEzoic = (ids) => {
         ezstandalone.define(ids);
         if (ezstandalone.enabled) {
-            ezstandalone.destroy();
-            ezstandalone.define(ids);
-            ezstandalone.enable();
-            ezstandalone.display();
+            ezstandalone.refresh();
         } else {
             ezstandalone.enable();
             ezstandalone.display();
