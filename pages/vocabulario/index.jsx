@@ -13,10 +13,9 @@ import EzoicAds from "../../components/EzoicAds";
 export default function IndexVoc({ data }) {
 
     const reloadEzoic = (ids) => {
-        let ezstandalone = window.ezstandalone || {};
+        let ezstandalone = ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
-            ezstandalone.destroy();
             ezstandalone.define(ids);
             if (ezstandalone.enabled) {
                 ezstandalone.refresh();
