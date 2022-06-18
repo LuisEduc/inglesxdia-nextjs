@@ -16,8 +16,6 @@ export default function Index({ bloques, cats, buscar }) {
         let ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
-            ezstandalone.refresh();
-            ezstandalone.setEzoicAnchorAd(true);
             ezstandalone.define(103, 110, 115, 118, 124);
             ezstandalone.enable();
             ezstandalone.display();
