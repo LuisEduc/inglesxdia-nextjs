@@ -33,7 +33,6 @@ export default function IndexCat({ dataCat, dataContCat }) {
         let ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
-            ezstandalone.setEzoicAnchorAd(false);
             ezstandalone.define(ids);
             ezstandalone.refresh();
             ezstandalone.enable();
