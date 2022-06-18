@@ -8,19 +8,7 @@ export default function Hero({ buscar }) {
         <>
             <div className="hero-bg">
                 <div style={{ height: '15px' }}></div>
-                <AdSense.Google
-                    // full-hero
-                    client='ca-pub-3630578707238850'
-                    slot='4810977003'
-                    style={{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format='auto'
-                    responsive='true'
-                />
+
                 <div id="ezoic-pub-ad-placeholder-103"> </div>
 
                 <div className="hero">
