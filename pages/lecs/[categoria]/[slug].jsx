@@ -195,7 +195,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </a>
                 </Link>
 
-                <div id="ezoic-pub-ad-placeholder-118"> </div>
+                {/* <div id="ezoic-pub-ad-placeholder-118"> </div> */}
 
                 {textos === '' ?
                     ''
