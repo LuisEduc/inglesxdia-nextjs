@@ -15,6 +15,7 @@ import { useState, useEffect } from 'react'
 import Link from "next/link"
 import JsxParser from 'react-jsx-parser'
 import ListaLinks from "../../../components/ListaLinks"
+import EzoicAds from "../../../components/EzoicAds"
 
 const settings = {
     showIndicators: false,
@@ -64,18 +65,20 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         setSlide(item)
     }
 
-    const reloadEzoic = () => {
+
+    const reloadEzoic = (ids) => {
         let ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
-            ezstandalone.define(103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132);
-            ezstandalone.enable();
-            ezstandalone.display();
+            ezstandalone.define(ids);
+            ezstandalone.refresh();
         });
     }
 
+    const ids = [103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]
+
     useEffect(() => {
-        reloadEzoic()
+        reloadEzoic(ids)
         console.log('Ezoic listo')
     }, [])
 
@@ -257,6 +260,8 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                 </div>
 
                 <div id="ezoic-pub-ad-placeholder-132"> </div>
+
+                <EzoicAds ids={ids} />
 
             </Layout>
         </>

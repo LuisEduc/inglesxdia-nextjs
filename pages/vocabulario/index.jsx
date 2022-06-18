@@ -11,18 +11,19 @@ import { useEffect } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    const reloadEzoic = () => {
+    const reloadEzoic = (ids) => {
         let ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
-            ezstandalone.define(103, 105);
-            ezstandalone.enable();
-            ezstandalone.display();
+            ezstandalone.define(ids);
+            ezstandalone.refresh();
         });
     }
 
+    const ids = [103, 105]
+
     useEffect(() => {
-        reloadEzoic()
+        reloadEzoic(ids)
         console.log('Ezoic listo')
     }, [])
 
@@ -188,6 +189,7 @@ export default function IndexVoc({ data }) {
 
             </div>
 
+            <EzoicAds ids={ids} />
 
         </Layout>
     )

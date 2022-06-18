@@ -10,12 +10,8 @@ export default function EzoicAds({ ids }) {
                         ezstandalone.cmd = ezstandalone.cmd || [];
                         ezstandalone.cmd.push(function() {
                             ezstandalone.define(${ids});
-                            if (ezstandalone.enabled) {
-                                ezstandalone.refresh();
-                            } else {
-                                ezstandalone.enable();
-                                ezstandalone.display();
-                            }
+                            ezstandalone.enable();
+                            ezstandalone.display();
                         });
                      `,
             }}
