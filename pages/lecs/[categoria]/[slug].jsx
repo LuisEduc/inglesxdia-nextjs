@@ -68,18 +68,22 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         let ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
+            ezstandalone.refresh();
             ezstandalone.define(103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132);
             ezstandalone.enable();
             ezstandalone.display();
         });
     }
 
+    useEffect(() => {
+        reloadEzoic()
+        console.log('Ezoic listo')
+    }, [])
+
     const dynamicRoute = useRouter().asPath
 
     useEffect(() => {
         setSlide(0)
-        reloadEzoic()
-        console.log('Ezoic listo')
     }, [dynamicRoute])
 
     const data = [];
