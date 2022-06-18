@@ -33,6 +33,7 @@ export default function IndexCat({ dataCat, dataContCat }) {
         let ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
+            ezstandalone.setEzoicAnchorAd(false);
             ezstandalone.define(ids);
             ezstandalone.refresh();
             ezstandalone.enable();
@@ -41,8 +42,7 @@ export default function IndexCat({ dataCat, dataContCat }) {
     }
 
     useEffect(() => {
-        const ids = [103]
-        // const ids = [103, 105, 108, 109, 110]
+        const ids = [103, 105, 108, 109, 110]
         reloadEzoic(ids)
         console.log('Ezoic listo')
     }, [])

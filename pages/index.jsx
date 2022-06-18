@@ -17,6 +17,7 @@ export default function Index({ bloques, cats, buscar }) {
         let ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
+            ezstandalone.setEzoicAnchorAd(false);
             ezstandalone.define(ids);
             ezstandalone.refresh();
             ezstandalone.enable();
@@ -25,7 +26,7 @@ export default function Index({ bloques, cats, buscar }) {
     }
 
     useEffect(() => {
-        const ids = [118]
+        const ids = [103, 110, 115, 118, 124]
         reloadEzoic(ids)
         console.log('Ezoic listo')
     }, [])
@@ -47,7 +48,7 @@ export default function Index({ bloques, cats, buscar }) {
                 bg='bg-secundario'
             />
 
-            {/* <div id="ezoic-pub-ad-placeholder-110"> </div> */}
+            <div id="ezoic-pub-ad-placeholder-110"> </div>
 
             {
                 bloques.secciones.map(({ id, icono, titulo, color, bg, data }) => (
@@ -73,7 +74,7 @@ export default function Index({ bloques, cats, buscar }) {
                             }
                         </div>
 
-                        {/* <div id="ezoic-pub-ad-placeholder-115"> </div> */}
+                        <div id="ezoic-pub-ad-placeholder-115"> </div>
 
                     </div>
                 ))
@@ -89,7 +90,7 @@ export default function Index({ bloques, cats, buscar }) {
                 bg='bg-primario'
             />
 
-            {/* <div id="ezoic-pub-ad-placeholder-124"> </div> */}
+            <div id="ezoic-pub-ad-placeholder-124"> </div>
 
             <div className="galeria-cat">
                 {

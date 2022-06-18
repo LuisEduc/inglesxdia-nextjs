@@ -9,6 +9,8 @@ export default function Hero({ buscar }) {
             <div className="hero-bg">
                 <div style={{ height: '15px' }}></div>
 
+                <div id="ezoic-pub-ad-placeholder-103"> </div>
+
                 <div className="hero">
                     <div className="hero-text">
                         <div className="hero-titulo">
