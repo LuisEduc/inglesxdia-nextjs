@@ -34,9 +34,12 @@ export default function IndexCat({ dataCat, dataContCat }) {
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
             ezstandalone.define(ids);
-            ezstandalone.refresh();
-            ezstandalone.enable();
-            ezstandalone.display();
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh();
+            } else {
+                ezstandalone.enable();
+                ezstandalone.display();
+            }
         });
     }
 
