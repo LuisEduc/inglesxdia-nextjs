@@ -66,6 +66,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
     }
 
     const reloadEzoic = (ids) => {
+        ezstandalone.clear();
         ezstandalone.define(ids);
         ezstandalone.enable();
         ezstandalone.display();
