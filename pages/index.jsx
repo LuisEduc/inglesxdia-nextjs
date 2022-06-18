@@ -24,10 +24,17 @@ export default function Index({ bloques, cats, buscar }) {
 
     const ids = [103, 110, 115, 118, 124]
 
+    // useEffect(() => {
+    //     reloadEzoic(ids)
+    //     console.log('Ezoic listo')
+    // }, [])
+
+    const dynamicRoute = useRouter().asPath
+
     useEffect(() => {
         reloadEzoic(ids)
         console.log('Ezoic listo')
-    }, [])
+    }, [dynamicRoute])
 
     return (
         <Layout home buscar={buscar}>

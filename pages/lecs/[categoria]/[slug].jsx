@@ -77,15 +77,17 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
 
     const ids = [103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]
 
-    useEffect(() => {
-        reloadEzoic(ids)
-        console.log('Ezoic listo')
-    }, [])
+    // useEffect(() => {
+    //     reloadEzoic(ids)
+    //     console.log('Ezoic listo')
+    // }, [])
 
     const dynamicRoute = useRouter().asPath
 
     useEffect(() => {
         setSlide(0)
+        reloadEzoic(ids)
+        console.log('Ezoic listo')
     }, [dynamicRoute])
 
     const data = [];

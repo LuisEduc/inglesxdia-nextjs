@@ -6,7 +6,7 @@ export default function EzoicAds({ ids }) {
             id="ezoic-init"
             dangerouslySetInnerHTML={{
                 __html: `
-                        var ezstandalone = window.ezstandalone || {};
+                        let ezstandalone = window.ezstandalone || {};
                         ezstandalone.cmd = ezstandalone.cmd || [];
                         ezstandalone.cmd.push(function() {
                             ezstandalone.define(${ids});

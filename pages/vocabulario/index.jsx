@@ -23,10 +23,17 @@ export default function IndexVoc({ data }) {
 
     const ids = [103, 105]
 
+    // useEffect(() => {
+    //     reloadEzoic(ids)
+    //     console.log('Ezoic listo')
+    // }, [])
+
+    const dynamicRoute = useRouter().asPath
+
     useEffect(() => {
         reloadEzoic(ids)
         console.log('Ezoic listo')
-    }, [])
+    }, [dynamicRoute])
 
     return (
         <Layout>
