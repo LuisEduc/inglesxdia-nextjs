@@ -14,13 +14,10 @@ import EzoicAds from "../components/EzoicAds"
 export default function Index({ bloques, cats, buscar }) {
 
     const reloadEzoic = (ids) => {
+        ezstandalone.destroy();
         ezstandalone.define(ids);
-        if (ezstandalone.enabled) {
-            ezstandalone.refresh();
-        } else {
-            ezstandalone.enable();
-            ezstandalone.display();
-        }
+        ezstandalone.enable();
+        ezstandalone.display();
     }
 
     useEffect(() => {
