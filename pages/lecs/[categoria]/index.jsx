@@ -30,10 +30,13 @@ export default function IndexCat({ dataCat, dataContCat }) {
         : ''
 
     const reloadEzoic = (ids) => {
-        ezstandalone.clear();
         ezstandalone.define(ids);
-        ezstandalone.enable();
-        ezstandalone.display();
+        if (ezstandalone.enabled) {
+            ezstandalone.refresh();
+        } else {
+            ezstandalone.enable();
+            ezstandalone.display();
+        }
     }
 
     useEffect(() => {

@@ -13,10 +13,13 @@ import EzoicAds from "../../components/EzoicAds";
 export default function IndexVoc({ data }) {
 
     const reloadEzoic = (ids) => {
-        ezstandalone.destroy();
         ezstandalone.define(ids);
-        ezstandalone.enable();
-        ezstandalone.display();
+        if (ezstandalone.enabled) {
+            ezstandalone.refresh();
+        } else {
+            ezstandalone.enable();
+            ezstandalone.display();
+        }
     }
 
     useEffect(() => {

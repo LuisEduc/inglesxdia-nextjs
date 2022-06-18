@@ -64,16 +64,19 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
     const onChange = (item) => {
         setSlide(item)
     }
-
+    
     const reloadEzoic = (ids) => {
-        ezstandalone.clear();
         ezstandalone.define(ids);
-        ezstandalone.enable();
-        ezstandalone.display();
+        if (ezstandalone.enabled) {
+            ezstandalone.refresh();
+        } else {
+            ezstandalone.enable();
+            ezstandalone.display();
+        }
     }
 
     useEffect(() => {
-        const ids = [103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]
+        const ids = [100, 103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]
         reloadEzoic(ids)
         console.log('Ezoic listo')
     }, [])
