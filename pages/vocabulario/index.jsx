@@ -24,7 +24,7 @@ export default function IndexVoc({ data }) {
     }
 
     useEffect(() => {
-        const ids = [103, 105]
+        const ids = [105]
         reloadEzoic(ids)
         console.log('Ezoic listo')
     }, [])

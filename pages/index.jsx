@@ -25,7 +25,7 @@ export default function Index({ bloques, cats, buscar }) {
     }
 
     useEffect(() => {
-        const ids = [103, 110, 115, 118, 124]
+        const ids = [118]
         reloadEzoic(ids)
         console.log('Ezoic listo')
     }, [])
