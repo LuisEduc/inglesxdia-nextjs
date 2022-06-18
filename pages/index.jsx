@@ -14,7 +14,7 @@ import EzoicAds from "../components/EzoicAds"
 export default function Index({ bloques, cats, buscar }) {
 
     const reloadEzoic = (ids) => {
-        let ezstandalone = ezstandalone || {};
+        let ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
             ezstandalone.define(ids);
