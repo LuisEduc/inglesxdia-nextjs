@@ -30,17 +30,13 @@ export default function IndexCat({ dataCat, dataContCat }) {
         : ''
 
     const reloadEzoic = (ids) => {
-        let ezstandalone = window.ezstandalone || {};
-        ezstandalone.cmd = ezstandalone.cmd || [];
-        ezstandalone.cmd.push(function () {
-            ezstandalone.define(ids);
-            if (ezstandalone.enabled) {
-                ezstandalone.refresh();
-            } else {
-                ezstandalone.enable();
-                ezstandalone.display();
-            }
-        });
+        ezstandalone.define(ids);
+        if (ezstandalone.enabled) {
+            ezstandalone.refresh();
+        } else {
+            ezstandalone.enable();
+            ezstandalone.display();
+        }
     }
 
     useEffect(() => {
