@@ -9,6 +9,7 @@ import CookieConsent from "react-cookie-consent"
 import AdSense from 'react-adsense';
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import EzoicAds from "../components/EzoicAds"
 
 export default function Index({ bloques, cats, buscar }) {
 

@@ -8,6 +8,7 @@ import Head from "next/head"
 import AdSense from 'react-adsense'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import EzoicAds from "../../components/EzoicAds";
 
 export default function IndexVoc({ data }) {
 

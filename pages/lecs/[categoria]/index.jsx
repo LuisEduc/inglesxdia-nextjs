@@ -9,6 +9,7 @@ import JsxParser from 'react-jsx-parser'
 import Link from "next/link"
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import EzoicAds from "../../../components/EzoicAds"
 
 export default function IndexCat({ dataCat, dataContCat }) {
 
