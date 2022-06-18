@@ -26,7 +26,7 @@ export default function post({ dataCat, dataContCat }) {
     texto === '<div class="space"></div>' ?
         texto = ''
         : ''
-
+    
     return (
 
         <Layout>
@@ -99,7 +99,7 @@ export default function post({ dataCat, dataContCat }) {
                 }
             </div>
 
-            <EzoicAds ids={[103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]} />
+            {/* <EzoicAds ids={[103, 105, 108, 109, 110]} /> */}
 
         </Layout>
     )
