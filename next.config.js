@@ -17,7 +17,7 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/api/:path*',
+        source: '/:path*',
         destination: 'https://prebid.smilewanted.com/:path*',
       },
     ]
