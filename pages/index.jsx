@@ -84,8 +84,6 @@ export default function Index({ bloques, cats, buscar }) {
 
             <div id="cursos"></div>
 
-            <div id="ezoic-pub-ad-placeholder-118"> </div>
-
             <TituloBloque
                 titulo='Todos los cursos'
                 icono='fa-th-list'
