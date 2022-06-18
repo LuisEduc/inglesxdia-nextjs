@@ -47,7 +47,7 @@ export default function Index({ bloques, cats, buscar }) {
                 bg='bg-secundario'
             />
 
-            <div id="ezoic-pub-ad-placeholder-110"> </div>
+            {/* <div id="ezoic-pub-ad-placeholder-110"> </div> */}
 
             {
                 bloques.secciones.map(({ id, icono, titulo, color, bg, data }) => (
@@ -73,7 +73,7 @@ export default function Index({ bloques, cats, buscar }) {
                             }
                         </div>
 
-                        <div id="ezoic-pub-ad-placeholder-115"> </div>
+                        {/* <div id="ezoic-pub-ad-placeholder-115"> </div> */}
 
                     </div>
                 ))
@@ -89,7 +89,7 @@ export default function Index({ bloques, cats, buscar }) {
                 bg='bg-primario'
             />
 
-            <div id="ezoic-pub-ad-placeholder-124"> </div>
+            {/* <div id="ezoic-pub-ad-placeholder-124"> </div> */}
 
             <div className="galeria-cat">
                 {
