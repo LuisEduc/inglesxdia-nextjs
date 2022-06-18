@@ -16,6 +16,7 @@ export default function IndexVoc({ data }) {
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
             ezstandalone.refresh();
+            ezstandalone.setEzoicAnchorAd(true);
             ezstandalone.define(103, 105);
             ezstandalone.enable();
             ezstandalone.display();

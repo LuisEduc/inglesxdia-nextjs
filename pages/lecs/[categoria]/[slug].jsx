@@ -69,6 +69,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
             ezstandalone.refresh();
+            ezstandalone.setEzoicAnchorAd(true);
             ezstandalone.define(103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132);
             ezstandalone.enable();
             ezstandalone.display();
