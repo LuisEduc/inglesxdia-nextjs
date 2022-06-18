@@ -259,8 +259,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
 
                 <div id="ezoic-pub-ad-placeholder-132"> </div>
 
-                {/* <EzoicAds ids={[103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]} /> */}
-
             </Layout>
         </>
     )
