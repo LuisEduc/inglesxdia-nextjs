@@ -39,12 +39,10 @@ export default function IndexCat({ dataCat, dataContCat }) {
         });
     }
 
-    const dynamicRoute = useRouter().asPath
-
     useEffect(() => {
         reloadEzoic()
         console.log('Ezoic listo')
-    }, [dynamicRoute])
+    }, [])
 
     return (
 

@@ -22,12 +22,10 @@ export default function IndexVoc({ data }) {
         });
     }
 
-    const dynamicRoute = useRouter().asPath
-
     useEffect(() => {
         reloadEzoic()
         console.log('Ezoic listo')
-    }, [dynamicRoute])
+    }, [])
 
     return (
         <Layout>
