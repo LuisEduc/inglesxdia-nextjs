@@ -65,7 +65,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         setSlide(item)
     }
 
-
     const reloadEzoic = (ids) => {
         let ezstandalone = ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
