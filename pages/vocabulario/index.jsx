@@ -5,9 +5,29 @@ import "react-h5-audio-player/lib/styles.css";
 import AudioPlayer from "react-h5-audio-player";
 import Image from "next/image";
 import Head from "next/head"
-import AdSense from 'react-adsense';
+import AdSense from 'react-adsense'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 export default function index({ data }) {
+
+    const reloadEzoic = () => {
+        let ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+        ezstandalone.cmd.push(function () {
+            ezstandalone.refresh();
+            ezstandalone.define(103, 105);
+            ezstandalone.enable();
+            ezstandalone.display();
+        });
+    }
+
+    const dynamicRoute = useRouter().asPath
+
+    useEffect(() => {
+        reloadEzoic()
+        console.log('Ezoic listo')
+    }, [dynamicRoute])
 
     return (
         <Layout>
@@ -17,37 +37,7 @@ export default function index({ data }) {
                 <meta name="description" content="Aprende nuevo vocabulario en inglés todos los días. La palabras son básicas, medias y avanzadas, incluyen audio de la pronunciación y frases de ejemplo." />
             </Head>
 
-            <AdSense.Google
-                // full-voc
-                client='ca-pub-3630578707238850'
-                slot='1345454840'
-                style={{
-                    display: 'block',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginBottom: 15 + 'px',
-                    marginTop: 15 + 'px',
-                    textAlign: 'center'
-                }}
-                format='auto'
-                responsive='true'
-            />
-            {/* <AdSense.Google
-                // 300x250-voc
-                client='ca-pub-3630578707238850'
-                slot='6102898405'
-                style={{
-                    display: 'block',
-                    height: 250 + 'px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginBottom: 15 + 'px',
-                    marginTop: 15 + 'px',
-                    textAlign: 'center'
-                }}
-                format=''
-                responsive='true'
-            /> */}
+            <div id="ezoic-pub-ad-placeholder-103"> </div>
 
             <div className="inicio-badge">
                 <BotonVoc
@@ -71,21 +61,7 @@ export default function index({ data }) {
                 />
             </div>
 
-            <AdSense.Google
-                // 300x50-voc-alto
-                client='ca-pub-3630578707238850'
-                slot='9793863809'
-                style={{
-                    display: 'block',
-                    height: 50 + 'px',
-                    marginTop: 30 + 'px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    textAlign: 'center'
-                }}
-                format=''
-                responsive='true'
-            />
+            <div id="ezoic-pub-ad-placeholder-105"> </div>
 
             <div className="grid-info">
                 <div className="info">

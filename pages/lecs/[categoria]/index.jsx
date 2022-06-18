@@ -7,7 +7,8 @@ import Head from "next/head"
 import AdSense from 'react-adsense'
 import JsxParser from 'react-jsx-parser'
 import Link from "next/link"
-import EzoicAds from "../../../components/EzoicAds"
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 export default function post({ dataCat, dataContCat }) {
 
@@ -26,7 +27,25 @@ export default function post({ dataCat, dataContCat }) {
     texto === '<div class="space"></div>' ?
         texto = ''
         : ''
-    
+
+    const reloadEzoic = () => {
+        let ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+        ezstandalone.cmd.push(function () {
+            ezstandalone.refresh();
+            ezstandalone.define(103, 105, 108, 109, 110);
+            ezstandalone.enable();
+            ezstandalone.display();
+        });
+    }
+
+    const dynamicRoute = useRouter().asPath
+
+    useEffect(() => {
+        reloadEzoic()
+        console.log('Ezoic listo')
+    }, [dynamicRoute])
+
     return (
 
         <Layout>

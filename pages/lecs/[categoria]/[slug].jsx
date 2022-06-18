@@ -15,7 +15,6 @@ import { useState, useEffect } from 'react'
 import Link from "next/link"
 import JsxParser from 'react-jsx-parser'
 import ListaLinks from "../../../components/ListaLinks"
-import EzoicAds from "../../../components/EzoicAds"
 
 const settings = {
     showIndicators: false,
@@ -81,7 +80,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
     useEffect(() => {
         setSlide(0)
         reloadEzoic()
-        console.log('Ezoic ejecutado')
+        console.log('Ezoic listo')
     }, [dynamicRoute])
 
     const data = [];

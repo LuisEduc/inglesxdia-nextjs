@@ -7,9 +7,28 @@ import IconoSuperior from "../components/IconoSuperior"
 import Head from "next/head"
 import CookieConsent from "react-cookie-consent"
 import AdSense from 'react-adsense';
-import EzoicAds from "../components/EzoicAds"
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 export default function index({ bloques, cats, buscar }) {
+
+    const reloadEzoic = () => {
+        let ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+        ezstandalone.cmd.push(function () {
+            ezstandalone.refresh();
+            ezstandalone.define(103, 110, 115, 118, 124);
+            ezstandalone.enable();
+            ezstandalone.display();
+        });
+    }
+
+    const dynamicRoute = useRouter().asPath
+
+    useEffect(() => {
+        reloadEzoic()
+        console.log('Ezoic listo')
+    }, [dynamicRoute])
 
     return (
         <Layout home buscar={buscar}>
@@ -104,8 +123,6 @@ export default function index({ bloques, cats, buscar }) {
             >
                 <span style={{ fontSize: "14px", color: "#232d39" }}>Utilizamos cookies, si continúa navegando, está aceptando su uso.</span>
             </CookieConsent>
-
-            <EzoicAds ids={[103, 110, 115, 118, 124]} />
 
         </Layout>
 
