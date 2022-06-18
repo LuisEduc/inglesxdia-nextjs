@@ -72,22 +72,21 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         ezstandalone.cmd.push(function () {
             ezstandalone.define(ids);
             ezstandalone.refresh();
+            ezstandalone.enable();
+            ezstandalone.display();
         });
     }
 
-    const ids = [103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]
-
-    // useEffect(() => {
-    //     reloadEzoic(ids)
-    //     console.log('Ezoic listo')
-    // }, [])
+    useEffect(() => {
+        const ids = [103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]
+        reloadEzoic(ids)
+        console.log('Ezoic listo')
+    }, [])
 
     const dynamicRoute = useRouter().asPath
 
     useEffect(() => {
         setSlide(0)
-        reloadEzoic(ids)
-        console.log('Ezoic listo')
     }, [dynamicRoute])
 
     const data = [];
@@ -262,9 +261,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                 </div>
 
                 <div id="ezoic-pub-ad-placeholder-132"> </div>
-
-                <EzoicAds ids={ids} />
-
+                
             </Layout>
         </>
     )

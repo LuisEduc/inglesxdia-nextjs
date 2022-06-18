@@ -35,22 +35,16 @@ export default function IndexCat({ dataCat, dataContCat }) {
         ezstandalone.cmd.push(function () {
             ezstandalone.define(ids);
             ezstandalone.refresh();
+            ezstandalone.enable();
+            ezstandalone.display();
         });
     }
 
-    const ids = [103, 105, 108, 109, 110]
-
-    // useEffect(() => {
-    //     reloadEzoic(ids)
-    //     console.log('Ezoic listo')
-    // }, [])
-
-    const dynamicRoute = useRouter().asPath
-
     useEffect(() => {
+        const ids = [103, 105, 108, 109, 110]
         reloadEzoic(ids)
         console.log('Ezoic listo')
-    }, [dynamicRoute])
+    }, [])
 
     return (
 
@@ -123,9 +117,6 @@ export default function IndexCat({ dataCat, dataContCat }) {
                     ))
                 }
             </div>
-
-            <EzoicAds ids={ids} />
-
         </Layout>
     )
 }

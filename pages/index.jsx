@@ -19,22 +19,16 @@ export default function Index({ bloques, cats, buscar }) {
         ezstandalone.cmd.push(function () {
             ezstandalone.define(ids);
             ezstandalone.refresh();
+            ezstandalone.enable();
+            ezstandalone.display();
         });
     }
 
-    const ids = [103, 110, 115, 118, 124]
-
-    // useEffect(() => {
-    //     reloadEzoic(ids)
-    //     console.log('Ezoic listo')
-    // }, [])
-
-    const dynamicRoute = useRouter().asPath
-
     useEffect(() => {
+        const ids = [103, 110, 115, 118, 124]
         reloadEzoic(ids)
         console.log('Ezoic listo')
-    }, [dynamicRoute])
+    }, [])
 
     return (
         <Layout home buscar={buscar}>
@@ -129,9 +123,6 @@ export default function Index({ bloques, cats, buscar }) {
             >
                 <span style={{ fontSize: "14px", color: "#232d39" }}>Utilizamos cookies, si continúa navegando, está aceptando su uso.</span>
             </CookieConsent>
-
-            <EzoicAds ids={ids} />
-
         </Layout>
 
     )

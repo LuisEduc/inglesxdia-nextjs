@@ -18,22 +18,16 @@ export default function IndexVoc({ data }) {
         ezstandalone.cmd.push(function () {
             ezstandalone.define(ids);
             ezstandalone.refresh();
+            ezstandalone.enable();
+            ezstandalone.display();
         });
     }
 
-    const ids = [103, 105]
-
-    // useEffect(() => {
-    //     reloadEzoic(ids)
-    //     console.log('Ezoic listo')
-    // }, [])
-
-    const dynamicRoute = useRouter().asPath
-
     useEffect(() => {
+        const ids = [103, 105]
         reloadEzoic(ids)
         console.log('Ezoic listo')
-    }, [dynamicRoute])
+    }, [])
 
     return (
         <Layout>
@@ -196,8 +190,6 @@ export default function IndexVoc({ data }) {
                 </div>
 
             </div>
-
-            <EzoicAds ids={ids} />
 
         </Layout>
     )
