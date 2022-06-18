@@ -10,7 +10,7 @@ import Link from "next/link"
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 
-export default function post({ dataCat, dataContCat }) {
+export default function IndexCat({ dataCat, dataContCat }) {
 
     const { catcontenido } = dataContCat.contenido[0]
     let texto = ''

@@ -10,7 +10,7 @@ import AdSense from 'react-adsense';
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 
-export default function index({ bloques, cats, buscar }) {
+export default function Index({ bloques, cats, buscar }) {
 
     const reloadEzoic = () => {
         let ezstandalone = window.ezstandalone || {};

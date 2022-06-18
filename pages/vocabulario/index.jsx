@@ -9,7 +9,7 @@ import AdSense from 'react-adsense'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 
-export default function index({ data }) {
+export default function IndexVoc({ data }) {
 
     const reloadEzoic = () => {
         let ezstandalone = window.ezstandalone || {};
