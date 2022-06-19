@@ -64,15 +64,19 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
     const onChange = (item) => {
         setSlide(item)
     }
-    
+
     const reloadEzoic = (ids) => {
-        ezstandalone.define(ids);
-        if (ezstandalone.enabled) {
-            ezstandalone.refresh();
-        } else {
-            ezstandalone.enable();
-            ezstandalone.display();
-        }
+        let ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+        ezstandalone.cmd.push(function () {
+            ezstandalone.define(ids);
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh();
+            } else {
+                ezstandalone.enable();
+                ezstandalone.display();
+            }
+        });
     }
 
     useEffect(() => {

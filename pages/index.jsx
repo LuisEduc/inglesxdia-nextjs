@@ -14,13 +14,17 @@ import EzoicAds from "../components/EzoicAds"
 export default function Index({ bloques, cats, buscar }) {
 
     const reloadEzoic = (ids) => {
-        ezstandalone.define(ids);
-        if (ezstandalone.enabled) {
-            ezstandalone.refresh();
-        } else {
-            ezstandalone.enable();
-            ezstandalone.display();
-        }
+        let ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+        ezstandalone.cmd.push(function () {
+            ezstandalone.define(ids);
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh();
+            } else {
+                ezstandalone.enable();
+                ezstandalone.display();
+            }
+        });
     }
 
     useEffect(() => {
