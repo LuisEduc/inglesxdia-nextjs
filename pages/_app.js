@@ -53,12 +53,6 @@ const App = ({ Component, pageProps }) => {
       /> */}
 
       <Script
-        strategy="beforeInteractive"
-        async='async'
-        src={`https://www.ezojs.com/ezoic/sa.min.js`}
-      />
-
-      <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
       />
