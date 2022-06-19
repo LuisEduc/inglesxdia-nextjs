@@ -7,8 +7,6 @@ import Head from "next/head"
 import AdSense from 'react-adsense'
 import JsxParser from 'react-jsx-parser'
 import Link from "next/link"
-import { useRouter } from 'next/router'
-import { useEffect } from 'react'
 
 export default function IndexCat({ dataCat, dataContCat }) {
 

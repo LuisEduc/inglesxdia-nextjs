@@ -1,7 +1,6 @@
 
 import Layout from "../../../components/Layout"
 import BotonMain from "../../../components/BotonMain"
-import TituloBloque from "../../../components/TituloBloque"
 import AudioContainer from "../../../components/AudioContainer"
 import BloqueInicio from "../../../components/BloqueInicio"
 import Head from "next/head"
@@ -99,6 +98,38 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
                 </Head>
 
+                <AdSense.Google
+                    // 320x50-indi-title
+                    client='ca-pub-3630578707238850'
+                    slot='6438145214'
+                    style={{
+                        display: 'block',
+                        width: 320 + 'px',
+                        height: 50 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        marginBottom: 5 + 'px',
+                        textAlign: 'center'
+                    }}
+                    format='auto'
+                    responsive=''
+                />
+
+                <AdSense.Google
+                    // 320x50-indi-title
+                    client='ca-pub-3630578707238850'
+                    slot='6438145214'
+                    style={{
+                        display: 'block',
+                        width: 320 + 'px',
+                        height: 50 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
+                    format='auto'
+                    responsive=''
+                />
 
                 <div className="lecs-titulo">
                     <h1>{leccion[0].titulo_seo}</h1>
@@ -109,6 +140,20 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     icono='fa-stream'
                     dir='/vocabulario'
                     bg='bg-secundario'
+                />
+
+                <AdSense.Google
+                    // full-indi
+                    client='ca-pub-3630578707238850'
+                    slot='6905737434'
+                    style={{
+                        display: 'block',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
+                    format='auto'
+                    responsive='true'
                 />
 
                 <BotonMain
