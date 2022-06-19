@@ -241,6 +241,55 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </div>
                 }
 
+                <AdSense.Google
+                    // 300x250-indi-bajo
+                    client='ca-pub-3630578707238850'
+                    slot='5129414813'
+                    style={{
+                        display: 'inline-block',
+                        height: 250 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        marginTop: 5 + 'px',
+                        textAlign: 'center'
+                    }}
+                    format='rectangle'
+                    responsive=''
+                />
+                <AdSense.Google
+                    // 300x250-indi-bajo
+                    client='ca-pub-3630578707238850'
+                    slot='5129414813'
+                    style={{
+                        display: 'inline-block',
+                        height: 250 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        marginTop: 5 + 'px',
+                        marginBottom: 15 + 'px',
+                        textAlign: 'center'
+                    }}
+                    format='rectangle'
+                    responsive=''
+                />
+
+                <AdSense.Google
+                    // 300x250-indi-bajo
+                    client='ca-pub-3630578707238850'
+                    slot='5129414813'
+                    style={{
+                        display: 'block',
+                        height: 250 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        marginTop: 5 + 'px',
+                        marginBottom: 15 + 'px',
+                        textAlign: 'center'
+                    }}
+                    format='rectangle'
+                    responsive=''
+                />
+
                 <BotonMain
                     titulo='Todos los cursos'
                     icono='fa-grip-horizontal'
