@@ -104,7 +104,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     client='ca-pub-3630578707238850'
                     slot='6438145214'
                     style={{
-                        display: 'inline-block',
+                        display: 'block',
                         width: 320 + 'px',
                         height: 50 + 'px',
                         marginLeft: 'auto',
@@ -119,7 +119,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     client='ca-pub-3630578707238850'
                     slot='6438145214'
                     style={{
-                        display: 'inline-block',
+                        display: 'block',
                         width: 320 + 'px',
                         height: 50 + 'px',
                         marginLeft: 'auto',
