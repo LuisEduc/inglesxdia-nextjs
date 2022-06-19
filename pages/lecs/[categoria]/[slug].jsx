@@ -251,8 +251,8 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                             display: 'inline-block',
                             width: 300 + 'px',
                             height: 250 + 'px',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
+                            marginLeft: 5 + 'px',
+                            marginRight: 5 + 'px',
                             marginTop: 5 + 'px',
                             textAlign: 'center'
                         }}
@@ -267,8 +267,8 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                             display: 'inline-block',
                             width: 300 + 'px',
                             height: 250 + 'px',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
+                            marginLeft: 5 + 'px',
+                            marginRight: 5 + 'px',
                             marginTop: 5 + 'px',
                             marginBottom: 15 + 'px',
                             textAlign: 'center'
