@@ -112,7 +112,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         marginBottom: 5 + 'px',
                         textAlign: 'center'
                     }}
-                    format='auto'
+                    format='horizontal'
                     responsive=''
                 />
 
