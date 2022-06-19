@@ -104,7 +104,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     client='ca-pub-3630578707238850'
                     slot='6438145214'
                     style={{
-                        display: 'block',
+                        display: 'inline-block',
                         width: 320 + 'px',
                         height: 50 + 'px',
                         marginLeft: 'auto',
@@ -112,8 +112,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         marginBottom: 5 + 'px',
                         textAlign: 'center'
                     }}
-                    format='horizontal'
-                    responsive=''
                 />
 
                 <AdSense.Google
@@ -121,15 +119,13 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     client='ca-pub-3630578707238850'
                     slot='6438145214'
                     style={{
-                        display: 'block',
+                        display: 'inline-block',
                         width: 320 + 'px',
                         height: 50 + 'px',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         textAlign: 'center'
                     }}
-                    format='horizontal'
-                    responsive=''
                 />
 
                 <div className="lecs-titulo">
