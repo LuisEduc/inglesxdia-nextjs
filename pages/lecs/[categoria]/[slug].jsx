@@ -69,13 +69,10 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         let ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
+            ezstandalone.refresh();
             ezstandalone.define(ids);
-            if (ezstandalone.enabled) {
-                ezstandalone.refresh();
-            } else {
-                ezstandalone.enable();
-                ezstandalone.display();
-            }
+            ezstandalone.enable();
+            ezstandalone.display();
         });
     }
 
