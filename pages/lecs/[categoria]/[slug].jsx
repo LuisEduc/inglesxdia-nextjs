@@ -241,39 +241,41 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </div>
                 }
 
-                <AdSense.Google
-                    // 300x250-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='5129414813'
-                    style={{
-                        display: 'inline-block',
-                        width: 300 + 'px',
-                        height: 250 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginTop: 5 + 'px',
-                        textAlign: 'center'
-                    }}
-                    format='rectangle'
-                    responsive=''
-                />
-                <AdSense.Google
-                    // 300x250-indi-bajo
-                    client='ca-pub-3630578707238850'
-                    slot='5129414813'
-                    style={{
-                        display: 'inline-block',
-                        width: 300 + 'px',
-                        height: 250 + 'px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginTop: 5 + 'px',
-                        marginBottom: 15 + 'px',
-                        textAlign: 'center'
-                    }}
-                    format='rectangle'
-                    responsive=''
-                />
+                <div className="text-center">
+                    <AdSense.Google
+                        // 300x250-indi-bajo
+                        client='ca-pub-3630578707238850'
+                        slot='5129414813'
+                        style={{
+                            display: 'inline-block',
+                            width: 300 + 'px',
+                            height: 250 + 'px',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginTop: 5 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='rectangle'
+                        responsive=''
+                    />
+                    <AdSense.Google
+                        // 300x250-indi-bajo
+                        client='ca-pub-3630578707238850'
+                        slot='5129414813'
+                        style={{
+                            display: 'inline-block',
+                            width: 300 + 'px',
+                            height: 250 + 'px',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginTop: 5 + 'px',
+                            marginBottom: 15 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='rectangle'
+                        responsive=''
+                    />
+                </div>
 
                 <BotonMain
                     titulo='Todos los cursos'
