@@ -44,6 +44,7 @@ export default function IndexCat({ dataCat, dataContCat }) {
     }
 
     useEffect(() => {
+        console.log('Empieza Ezoic')
         const ids = [103, 105, 108, 109, 110]
         reloadEzoic(ids)
         console.log('Ezoic listo')
