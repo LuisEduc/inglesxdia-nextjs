@@ -14,6 +14,7 @@ import { useState, useEffect } from 'react'
 import Link from "next/link"
 import JsxParser from 'react-jsx-parser'
 import ListaLinks from "../../../components/ListaLinks"
+import AdSense from 'react-adsense'
 
 const settings = {
     showIndicators: false,
