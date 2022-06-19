@@ -17,10 +17,13 @@ export default function Index({ bloques, cats, buscar }) {
         let ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
-            ezstandalone.refresh();
             ezstandalone.define(ids);
-            ezstandalone.enable();
-            ezstandalone.display();
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh();
+            } else {
+                ezstandalone.enable();
+                ezstandalone.display();
+            }
         });
     }
 
