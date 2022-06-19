@@ -12,22 +12,7 @@ import EzoicAds from "../../components/EzoicAds";
 
 export default function IndexVoc({ data }) {
 
-    // const reloadEzoic = (ids) => {
-    //     let ezstandalone = window.ezstandalone || {};
-    //     ezstandalone.cmd = ezstandalone.cmd || [];
-    //     ezstandalone.cmd.push(function () {
-    //         ezstandalone.define(ids);
-    //         if (ezstandalone.enabled) {
-    //             ezstandalone.refresh();
-    //         } else {
-    //             ezstandalone.enable();
-    //             ezstandalone.display();
-    //         }
-    //     });
-    // }
-
-    useEffect(() => {
-        const ids = [103, 105]
+    const reloadEzoic = (ids) => {
         let ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
@@ -39,6 +24,11 @@ export default function IndexVoc({ data }) {
                 ezstandalone.display();
             }
         });
+    }
+
+    useEffect(() => {
+        const ids = [103, 105]
+        reloadEzoic(ids)
         console.log('Ezoic listo')
     }, [])
 

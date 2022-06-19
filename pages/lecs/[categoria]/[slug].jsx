@@ -65,22 +65,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         setSlide(item)
     }
 
-    // const reloadEzoic = (ids) => {
-    //     let ezstandalone = window.ezstandalone || {};
-    //     ezstandalone.cmd = ezstandalone.cmd || [];
-    //     ezstandalone.cmd.push(function () {
-    //         ezstandalone.define(ids);
-    //         if (ezstandalone.enabled) {
-    //             ezstandalone.refresh();
-    //         } else {
-    //             ezstandalone.enable();
-    //             ezstandalone.display();
-    //         }
-    //     });
-    // }
-
-    useEffect(() => {
-        const ids = [100, 103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]
+    const reloadEzoic = (ids) => {
         let ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
         ezstandalone.cmd.push(function () {
@@ -92,6 +77,11 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                 ezstandalone.display();
             }
         });
+    }
+
+    useEffect(() => {
+        const ids = [100, 103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]
+        reloadEzoic(ids)
         console.log('Ezoic listo')
     }, [])
 
