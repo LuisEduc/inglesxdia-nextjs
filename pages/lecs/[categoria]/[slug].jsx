@@ -300,6 +300,42 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     }
                 </div>
 
+                <div className="text-center">
+                    <AdSense.Google
+                        // 160x600-indi-bajo
+                        client='ca-pub-3630578707238850'
+                        slot='8035962954'
+                        style={{
+                            display: 'inline-block',
+                            width: 160 + 'px',
+                            height: 600 + 'px',
+                            marginLeft: 10 + 'px',
+                            marginRight: 10 + 'px',
+                            marginTop: 5 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='vertical'
+                        responsive=''
+                    />
+                    <AdSense.Google
+                        // 160x600-indi-bajo
+                        client='ca-pub-3630578707238850'
+                        slot='8035962954'
+                        style={{
+                            display: 'inline-block',
+                            width: 160 + 'px',
+                            height: 600 + 'px',
+                            marginLeft: 10 + 'px',
+                            marginRight: 10 + 'px',
+                            marginTop: 5 + 'px',
+                            marginBottom: 15 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='vertical'
+                        responsive=''
+                    />
+                </div>
+
             </Layout>
         </>
     )
