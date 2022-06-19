@@ -15,7 +15,6 @@ import { useState, useEffect } from 'react'
 import Link from "next/link"
 import JsxParser from 'react-jsx-parser'
 import ListaLinks from "../../../components/ListaLinks"
-import EzoicAds from "../../../components/EzoicAds"
 
 const settings = {
     showIndicators: false,
@@ -65,27 +64,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         setSlide(item)
     }
 
-    const reloadEzoic = (ids) => {
-        let ezstandalone = window.ezstandalone || {};
-        ezstandalone.cmd = ezstandalone.cmd || [];
-        ezstandalone.cmd.push(function () {
-            ezstandalone.define(ids);
-            if (ezstandalone.enabled) {
-                ezstandalone.refresh();
-            } else {
-                ezstandalone.enable();
-                ezstandalone.display();
-            }
-        });
-    }
-
-    useEffect(() => {
-        console.log('Empieza Ezoic')
-        const ids = [100, 103, 105, 108, 109, 110, 115, 118, 124, 128, 129, 132]
-        reloadEzoic(ids)
-        console.log('Ezoic listo')
-    }, [])
-
     const dynamicRoute = useRouter().asPath
 
     useEffect(() => {
@@ -121,13 +99,10 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
                 </Head>
 
-                <div id="ezoic-pub-ad-placeholder-103"> </div>
 
                 <div className="lecs-titulo">
                     <h1>{leccion[0].titulo_seo}</h1>
                 </div>
-
-                {/* <div id="ezoic-pub-ad-placeholder-105"> </div> */}
 
                 <BotonMain
                     titulo='Vocabulario de hoy'
@@ -136,16 +111,12 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     bg='bg-secundario'
                 />
 
-                <div id="ezoic-pub-ad-placeholder-108"> </div>
-
                 <BotonMain
                     titulo='Lecciones similares'
                     icono='fa-chevron-circle-left'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
                 />
-
-                <div id="ezoic-pub-ad-placeholder-109"> </div>
 
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
@@ -169,8 +140,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </Carousel>
                 </div>
 
-                <div id="ezoic-pub-ad-placeholder-110"> </div>
-
                 <Cuestionario
                     questions={preguntas}
                     nextQ={nextQ}
@@ -179,14 +148,10 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                 >
                 </Cuestionario>
 
-                <div id="ezoic-pub-ad-placeholder-111"> </div>
-
                 <AudioContainer
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
                 />
-
-                <div id="ezoic-pub-ad-placeholder-115"> </div>
 
                 <Link href='https://bit.ly/34j0kVS'>
                     <a>
@@ -196,8 +161,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         </div>
                     </a>
                 </Link>
-
-                <div id="ezoic-pub-ad-placeholder-118"> </div>
 
                 {textos === '' ?
                     ''
@@ -209,16 +172,12 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     )
                 }
 
-                <div id="ezoic-pub-ad-placeholder-124"> </div>
-
                 <BotonMain
                     titulo='Relacionadas'
                     icono='fa-grip-horizontal'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-secundario'
                 />
-
-                <div id="ezoic-pub-ad-placeholder-128"> </div>
 
                 {
                     <div className="galeria-bloque-inicio" style={{ marginTop: -15 + 'px' }}>
@@ -238,8 +197,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         }
                     </div>
                 }
-
-                <div id="ezoic-pub-ad-placeholder-129"> </div>
 
                 <BotonMain
                     titulo='Todos los cursos'
@@ -262,8 +219,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         ))
                     }
                 </div>
-
-                <div id="ezoic-pub-ad-placeholder-132"> </div>
 
             </Layout>
         </>

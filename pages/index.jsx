@@ -9,29 +9,8 @@ import CookieConsent from "react-cookie-consent"
 import AdSense from 'react-adsense';
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import EzoicAds from "../components/EzoicAds"
 
 export default function Index({ bloques, cats, buscar }) {
-
-    const reloadEzoic = (ids) => {
-        let ezstandalone = window.ezstandalone || {};
-        ezstandalone.cmd = ezstandalone.cmd || [];
-        ezstandalone.cmd.push(function () {
-            ezstandalone.define(ids);
-            if (ezstandalone.enabled) {
-                ezstandalone.refresh();
-            } else {
-                ezstandalone.enable();
-                ezstandalone.display();
-            }
-        });
-    }
-
-    useEffect(() => {
-        const ids = [110, 115]
-        reloadEzoic(ids)
-        console.log('Ezoic listo')
-    }, [])
 
     return (
         <Layout home buscar={buscar}>
@@ -49,8 +28,6 @@ export default function Index({ bloques, cats, buscar }) {
                 dir='/vocabulario'
                 bg='bg-secundario'
             />
-
-            <div id="ezoic-pub-ad-placeholder-110"> </div>
 
             {
                 bloques.secciones.map(({ id, icono, titulo, color, bg, data }) => (
@@ -75,9 +52,6 @@ export default function Index({ bloques, cats, buscar }) {
                                 ))
                             }
                         </div>
-
-                        <div id="ezoic-pub-ad-placeholder-115"> </div>
-
                     </div>
                 ))
             }

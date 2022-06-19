@@ -9,7 +9,6 @@ import JsxParser from 'react-jsx-parser'
 import Link from "next/link"
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import EzoicAds from "../../../components/EzoicAds"
 
 export default function IndexCat({ dataCat, dataContCat }) {
 
@@ -29,27 +28,6 @@ export default function IndexCat({ dataCat, dataContCat }) {
         texto = ''
         : ''
 
-    const reloadEzoic = (ids) => {
-        let ezstandalone = window.ezstandalone || {};
-        ezstandalone.cmd = ezstandalone.cmd || [];
-        ezstandalone.cmd.push(function () {
-            ezstandalone.define(ids);
-            if (ezstandalone.enabled) {
-                ezstandalone.refresh();
-            } else {
-                ezstandalone.enable();
-                ezstandalone.display();
-            }
-        });
-    }
-
-    useEffect(() => {
-        console.log('Empieza Ezoic')
-        const ids = [103, 105, 108, 109, 110]
-        reloadEzoic(ids)
-        console.log('Ezoic listo')
-    }, [])
-
     return (
 
         <Layout>
@@ -63,8 +41,6 @@ export default function IndexCat({ dataCat, dataContCat }) {
                 <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
             </Head>
 
-            <div id="ezoic-pub-ad-placeholder-103"> </div>
-
             <BotonMain
                 titulo='Vocabulario de hoy'
                 icono='fa-stream'
@@ -72,16 +48,12 @@ export default function IndexCat({ dataCat, dataContCat }) {
                 bg='bg-secundario'
             />
 
-            <div id="ezoic-pub-ad-placeholder-105"> </div>
-
             <InfoCat
                 icono={dataCat.categoria[0].icono}
                 titulo={dataCat.categoria[0].titulo}
                 nivel={dataCat.categoria[0].nivel}
                 descripcion={dataCat.categoria[0].descripcion}
             />
-
-            <div id="ezoic-pub-ad-placeholder-108"> </div>
 
             {texto === '' ?
                 ''
@@ -93,8 +65,6 @@ export default function IndexCat({ dataCat, dataContCat }) {
                 )
             }
 
-            <div id="ezoic-pub-ad-placeholder-109"> </div>
-
             <div>
                 <BotonMain
                     titulo='Todas las lecciones'
@@ -103,8 +73,6 @@ export default function IndexCat({ dataCat, dataContCat }) {
                     bg='bg-primario'
                 />
             </div>
-
-            <div id="ezoic-pub-ad-placeholder-110"> </div>
 
             <div className="galeria-posts-cat">
                 {

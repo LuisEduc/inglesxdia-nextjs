@@ -8,29 +8,8 @@ import Head from "next/head"
 import AdSense from 'react-adsense'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import EzoicAds from "../../components/EzoicAds";
 
 export default function IndexVoc({ data }) {
-
-    const reloadEzoic = (ids) => {
-        let ezstandalone = window.ezstandalone || {};
-        ezstandalone.cmd = ezstandalone.cmd || [];
-        ezstandalone.cmd.push(function () {
-            ezstandalone.define(ids);
-            if (ezstandalone.enabled) {
-                ezstandalone.refresh();
-            } else {
-                ezstandalone.enable();
-                ezstandalone.display();
-            }
-        });
-    }
-
-    useEffect(() => {
-        const ids = [103, 105]
-        reloadEzoic(ids)
-        console.log('Ezoic listo')
-    }, [])
 
     return (
         <Layout>
@@ -39,8 +18,6 @@ export default function IndexVoc({ data }) {
                 <title>Aprender palabras en inglés cada día | inglesxdia</title>
                 <meta name="description" content="Aprende nuevo vocabulario en inglés todos los días. La palabras son básicas, medias y avanzadas, incluyen audio de la pronunciación y frases de ejemplo." />
             </Head>
-
-            <div id="ezoic-pub-ad-placeholder-103"> </div>
 
             <div className="inicio-badge">
                 <BotonVoc
@@ -64,8 +41,6 @@ export default function IndexVoc({ data }) {
                 />
             </div>
 
-            <div id="ezoic-pub-ad-placeholder-105"> </div>
-
             <div className="grid-info">
                 <div className="info">
                     <div className="info-text">
@@ -78,7 +53,6 @@ export default function IndexVoc({ data }) {
                         <a type="button" onClick={() => window.open("https://www.youtube.com/channel/UC17wrAHkky26woClR91Pr1A", "_blank")} className="btn btn-outline-red btn-redes">Visítanos
                             en Youtube<i className="ms-2 fab fa-youtube"></i></a>
                     </div>
-
                 </div>
                 <div className="div-carousel-voc">
                     <CardCarousel
