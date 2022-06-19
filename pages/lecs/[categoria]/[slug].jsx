@@ -126,7 +126,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     <h1>{leccion[0].titulo_seo}</h1>
                 </div>
 
-                {/* <div id="ezoic-pub-ad-placeholder-105"> </div> */}
+                <div id="ezoic-pub-ad-placeholder-105"> </div>
 
                 <BotonMain
                     titulo='Vocabulario de hoy'
@@ -144,7 +144,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     bg='bg-primario'
                 />
 
-                {/* <div id="ezoic-pub-ad-placeholder-109"> </div> */}
+                <div id="ezoic-pub-ad-placeholder-109"> </div>
 
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
@@ -178,7 +178,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                 >
                 </Cuestionario>
 
-                {/* <div id="ezoic-pub-ad-placeholder-111"> </div> */}
+                <div id="ezoic-pub-ad-placeholder-111"> </div>
 
                 <AudioContainer
                     titulo={leccion[0].titulo}
