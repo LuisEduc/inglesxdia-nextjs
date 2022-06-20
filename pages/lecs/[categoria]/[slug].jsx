@@ -249,7 +249,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         slot='5129414813'
                         style={{
                             display: 'inline-block',
-                            width: 300 + 'px',
                             height: 250 + 'px',
                             marginLeft: 5 + 'px',
                             marginRight: 5 + 'px',
@@ -257,7 +256,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                             textAlign: 'center'
                         }}
                         format='rectangle'
-                        responsive=''
+                        responsive='true'
                     />
                     <AdSense.Google
                         // 300x250-indi-bajo
@@ -265,7 +264,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         slot='5129414813'
                         style={{
                             display: 'inline-block',
-                            width: 300 + 'px',
                             height: 250 + 'px',
                             marginLeft: 5 + 'px',
                             marginRight: 5 + 'px',
@@ -274,7 +272,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                             textAlign: 'center'
                         }}
                         format='rectangle'
-                        responsive=''
+                        responsive='true'
                     />
                 </div>
 
