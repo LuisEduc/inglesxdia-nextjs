@@ -60,6 +60,7 @@ export default function IndexVoc({ data }) {
                 slot='9793863809'
                 style={{
                     display: 'block',
+                    height: 50 + 'px',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginTop: 15 + 'px',
