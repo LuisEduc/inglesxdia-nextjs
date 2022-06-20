@@ -169,7 +169,6 @@ export default function Individual({ dataLec, dataCat, cats }) {
                             textAlign: 'center'
                         }}
                         format=''
-                        responsive=''
                     />
                     <AdSense.Google
                         // 320x50-indi-title
@@ -184,7 +183,6 @@ export default function Individual({ dataLec, dataCat, cats }) {
                             textAlign: 'center'
                         }}
                         format=''
-                        responsive=''
                     />
                 </div>
 
