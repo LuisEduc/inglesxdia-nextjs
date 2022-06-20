@@ -160,6 +160,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                         slot='5356176334'
                         style={{
                             display: 'inline-block',
+                            width: 320 + 'px',
                             height: 50 + 'px',
                             marginLeft: 5 + 'px',
                             marginRight: 5 + 'px',
@@ -168,7 +169,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                             textAlign: 'center'
                         }}
                         format=''
-                        responsive='true'
+                        responsive=''
                     />
                     <AdSense.Google
                         // 320x50-indi-title
@@ -176,13 +177,14 @@ export default function Individual({ dataLec, dataCat, cats }) {
                         slot='5356176334'
                         style={{
                             display: 'inline-block',
+                            width: 320 + 'px',
                             height: 50 + 'px',
                             marginLeft: 5 + 'px',
                             marginRight: 5 + 'px',
                             textAlign: 'center'
                         }}
                         format=''
-                        responsive='true'
+                        responsive=''
                     />
                 </div>
 
