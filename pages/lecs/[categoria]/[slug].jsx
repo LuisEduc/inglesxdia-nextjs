@@ -155,9 +155,9 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
 
                 <div className="text-center">
                     <AdSense.Google
-                        // 320x50-indi-title
+                        // 320x50-indi-medio
                         client='ca-pub-3630578707238850'
-                        slot='6438145214'
+                        slot='5356176334'
                         style={{
                             display: 'inline-block',
                             width: 320 + 'px',
@@ -165,13 +165,14 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                             marginLeft: 5 + 'px',
                             marginRight: 5 + 'px',
                             marginBottom: 5 + 'px',
+                            marginTop: 5 + 'px',
                             textAlign: 'center'
                         }}
                     />
                     <AdSense.Google
                         // 320x50-indi-title
                         client='ca-pub-3630578707238850'
-                        slot='6438145214'
+                        slot='5356176334'
                         style={{
                             display: 'inline-block',
                             width: 320 + 'px',
