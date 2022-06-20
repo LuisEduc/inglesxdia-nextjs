@@ -17,6 +17,21 @@ export default function IndexVoc({ data }) {
                 <meta name="description" content="Aprende nuevo vocabulario en inglés todos los días. La palabras son básicas, medias y avanzadas, incluyen audio de la pronunciación y frases de ejemplo." />
             </Head>
 
+            <AdSense.Google
+                // full-voc
+                client='ca-pub-3630578707238850'
+                slot='1345454840'
+                style={{
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    marginTop: 15 + 'px',
+                    textAlign: 'center'
+                }}
+                format='auto'
+                responsive='true'
+            />
+
             <div className="inicio-badge">
                 <BotonVoc
                     title='Lecciones útiles'
@@ -30,7 +45,7 @@ export default function IndexVoc({ data }) {
 
             <div className="inicio-badge">
                 <BotonVoc
-                    title='Lecturas en inglés'
+                    title='Lecturas cortas'
                     text='color-blanco'
                     icon='fas fa-book-open fa-xs'
                     bg='bg-secundario'
@@ -38,6 +53,21 @@ export default function IndexVoc({ data }) {
                     dir='/lecs/lc'
                 />
             </div>
+
+            <AdSense.Google
+                // 300x50-voc-alto
+                client='ca-pub-3630578707238850'
+                slot='9793863809'
+                style={{
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    marginTop: 15 + 'px',
+                    textAlign: 'center'
+                }}
+                format=''
+                responsive='true'
+            />
 
             <div className="grid-info">
                 <div className="info">

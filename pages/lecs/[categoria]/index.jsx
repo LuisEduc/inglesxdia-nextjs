@@ -46,6 +46,20 @@ export default function IndexCat({ dataCat, dataContCat }) {
                 bg='bg-secundario'
             />
 
+            <AdSense.Google
+                // full-cat
+                client='ca-pub-3630578707238850'
+                slot='2941801066'
+                style={{
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    textAlign: 'center'
+                }}
+                format='auto'
+                responsive='true'
+            />
+
             <InfoCat
                 icono={dataCat.categoria[0].icono}
                 titulo={dataCat.categoria[0].titulo}
@@ -69,6 +83,22 @@ export default function IndexCat({ dataCat, dataContCat }) {
                     icono='fa-home'
                     dir='/#lecciones'
                     bg='bg-primario'
+                />
+            </div>
+
+            <div className="text-center">
+                <AdSense.Google
+                    // 320x50-cat-medio
+                    client='ca-pub-3630578707238850'
+                    slot='4629132616'
+                    style={{
+                        display: 'inline-block',
+                        width: 320 + 'px',
+                        height: 50 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
                 />
             </div>
 

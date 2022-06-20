@@ -27,6 +27,20 @@ export default function Index({ bloques, cats, buscar }) {
                 bg='bg-secundario'
             />
 
+            <AdSense.Google
+                // full-inicio
+                client='ca-pub-3630578707238850'
+                slot='3265336329'
+                style={{
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    textAlign: 'center'
+                }}
+                format='auto'
+                responsive='true'
+            />
+
             {
                 bloques.secciones.map(({ id, icono, titulo, color, bg, data }) => (
                     <div key={id}>
