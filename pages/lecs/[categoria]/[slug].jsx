@@ -258,8 +258,8 @@ export default function Individual({ dataLec, dataCat, cats }) {
                             marginTop: 5 + 'px',
                             textAlign: 'center'
                         }}
-                        format='rectangle'
-                        responsive='true'
+                        format='auto'
+                        responsive=''
                     />
                     <AdSense.Google
                         // 300x250-indi-bajo
@@ -275,8 +275,8 @@ export default function Individual({ dataLec, dataCat, cats }) {
                             marginBottom: 15 + 'px',
                             textAlign: 'center'
                         }}
-                        format='rectangle'
-                        responsive='true'
+                        format='auto'
+                        responsive=''
                     />
                 </div>
 
