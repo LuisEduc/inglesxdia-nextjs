@@ -99,37 +99,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
                 </Head>
 
-                <div className="text-center">
-                    <AdSense.Google
-                        // 320x50-indi-title
-                        client='ca-pub-3630578707238850'
-                        slot='6438145214'
-                        style={{
-                            display: 'inline-block',
-                            width: 320 + 'px',
-                            height: 50 + 'px',
-                            marginLeft: 5 + 'px',
-                            marginRight: 5 + 'px',
-                            marginTop: 12 + 'px',
-                            marginBottom: 5 + 'px',
-                            textAlign: 'center'
-                        }}
-                    />
-                    <AdSense.Google
-                        // 320x50-indi-title
-                        client='ca-pub-3630578707238850'
-                        slot='6438145214'
-                        style={{
-                            display: 'inline-block',
-                            width: 320 + 'px',
-                            height: 50 + 'px',
-                            marginLeft: 5 + 'px',
-                            marginRight: 5 + 'px',
-                            textAlign: 'center'
-                        }}
-                    />
-                </div>
-
                 <div className="lecs-titulo">
                     <h1>{leccion[0].titulo_seo}</h1>
                 </div>
@@ -182,6 +151,36 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                             ))
                         }
                     </Carousel>
+                </div>
+
+                <div className="text-center">
+                    <AdSense.Google
+                        // 320x50-indi-title
+                        client='ca-pub-3630578707238850'
+                        slot='6438145214'
+                        style={{
+                            display: 'inline-block',
+                            width: 320 + 'px',
+                            height: 50 + 'px',
+                            marginLeft: 5 + 'px',
+                            marginRight: 5 + 'px',
+                            marginBottom: 5 + 'px',
+                            textAlign: 'center'
+                        }}
+                    />
+                    <AdSense.Google
+                        // 320x50-indi-title
+                        client='ca-pub-3630578707238850'
+                        slot='6438145214'
+                        style={{
+                            display: 'inline-block',
+                            width: 320 + 'px',
+                            height: 50 + 'px',
+                            marginLeft: 5 + 'px',
+                            marginRight: 5 + 'px',
+                            textAlign: 'center'
+                        }}
+                    />
                 </div>
 
                 <Cuestionario
