@@ -168,7 +168,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                             marginTop: 5 + 'px',
                             textAlign: 'center'
                         }}
-                        format=''
+                        format='auto'
                     />
                     <AdSense.Google
                         // 320x50-indi-title
@@ -182,7 +182,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                             marginRight: 5 + 'px',
                             textAlign: 'center'
                         }}
-                        format=''
+                        format='auto'
                     />
                 </div>
 
