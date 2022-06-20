@@ -249,6 +249,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         slot='5129414813'
                         style={{
                             display: 'inline-block',
+                            width: 300 + 'px',
                             height: 250 + 'px',
                             marginLeft: 5 + 'px',
                             marginRight: 5 + 'px',
@@ -264,6 +265,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         slot='5129414813'
                         style={{
                             display: 'inline-block',
+                            width: 300 + 'px',
                             height: 250 + 'px',
                             marginLeft: 5 + 'px',
                             marginRight: 5 + 'px',
