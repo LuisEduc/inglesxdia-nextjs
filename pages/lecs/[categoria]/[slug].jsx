@@ -31,32 +31,6 @@ const settings = {
 
 export default function Individual({ dataLec, dataCat, cats }) {
 
-    let adsenseActive
-
-    const reloadEzoic = (ids) => {
-        var ezstandalone = window.ezstandalone || {};
-        ezstandalone.cmd = ezstandalone.cmd || [];
-        ezstandalone.cmd.push(function () {
-            var percentageToRunEzoic = 0;
-            if (ezstandalone.isEzoicUser(percentageToRunEzoic) === true) {
-                ezstandalone.define(ids);
-                if (ezstandalone.enabled) {
-                    ezstandalone.refresh();
-                } else {
-                    ezstandalone.enable();
-                    ezstandalone.display();
-                }
-            } else {
-                adsenseActive = true
-            }
-        });
-    }
-
-    useEffect(() => {
-        const ids = [103, 105]
-        reloadEzoic(ids)
-    }, [])
-
     const { leccion, preguntas, imagenes } = dataLec;
 
     // const { contenido } = contLec.contenido[0];
@@ -136,24 +110,19 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     bg='bg-secundario'
                 />
 
-                {
-                    adsenseActive ?
-                        <AdSense.Google
-                            // full-indi
-                            client='ca-pub-3630578707238850'
-                            slot='6905737434'
-                            style={{
-                                display: 'block',
-                                marginLeft: 'auto',
-                                marginRight: 'auto',
-                                textAlign: 'center'
-                            }}
-                            format='auto'
-                            responsive='true'
-                        />
-                        :
-                        <div id="ezoic-pub-ad-placeholder-103"></div>
-                }
+                <AdSense.Google
+                    // full-indi
+                    client='ca-pub-3630578707238850'
+                    slot='6905737434'
+                    style={{
+                        display: 'block',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center'
+                    }}
+                    format='auto'
+                    responsive='true'
+                />
 
                 <BotonMain
                     titulo='Lecciones similares'
@@ -162,12 +131,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     bg='bg-primario'
                 />
 
-                {
-                    adsenseActive ?
-                        ''
-                        :
-                        <div id="ezoic-pub-ad-placeholder-105"></div>
-                }
+                <div id="ezoic-pub-ad-placeholder-103"> </div>
 
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
@@ -191,43 +155,38 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     </Carousel>
                 </div>
 
-                {
-                    adsenseActive ?
-                        <div className="text-center">
-                            <AdSense.Google
-                                // 320x50-indi-medio
-                                client='ca-pub-3630578707238850'
-                                slot='5356176334'
-                                style={{
-                                    display: 'inline-block',
-                                    width: 320 + 'px',
-                                    height: 50 + 'px',
-                                    marginLeft: 5 + 'px',
-                                    marginRight: 5 + 'px',
-                                    marginBottom: 5 + 'px',
-                                    marginTop: 5 + 'px',
-                                    textAlign: 'center'
-                                }}
-                                format='auto'
-                            />
-                            <AdSense.Google
-                                // 320x50-indi-title
-                                client='ca-pub-3630578707238850'
-                                slot='5356176334'
-                                style={{
-                                    display: 'inline-block',
-                                    width: 320 + 'px',
-                                    height: 50 + 'px',
-                                    marginLeft: 5 + 'px',
-                                    marginRight: 5 + 'px',
-                                    textAlign: 'center'
-                                }}
-                                format='auto'
-                            />
-                        </div>
-                        :
-                        ''
-                }
+                <div className="text-center">
+                    <AdSense.Google
+                        // 320x50-indi-medio
+                        client='ca-pub-3630578707238850'
+                        slot='5356176334'
+                        style={{
+                            display: 'inline-block',
+                            width: 320 + 'px',
+                            height: 50 + 'px',
+                            marginLeft: 5 + 'px',
+                            marginRight: 5 + 'px',
+                            marginBottom: 5 + 'px',
+                            marginTop: 5 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='auto'
+                    />
+                    <AdSense.Google
+                        // 320x50-indi-title
+                        client='ca-pub-3630578707238850'
+                        slot='5356176334'
+                        style={{
+                            display: 'inline-block',
+                            width: 320 + 'px',
+                            height: 50 + 'px',
+                            marginLeft: 5 + 'px',
+                            marginRight: 5 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='auto'
+                    />
+                </div>
 
                 <Cuestionario
                     questions={preguntas}
@@ -287,46 +246,41 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     </div>
                 }
 
-                {
-                    adsenseActive ?
-                        <div className="text-center">
-                            <AdSense.Google
-                                // 300x250-indi-bajo
-                                client='ca-pub-3630578707238850'
-                                slot='5129414813'
-                                style={{
-                                    display: 'inline-block',
-                                    width: 300 + 'px',
-                                    height: 250 + 'px',
-                                    marginLeft: 5 + 'px',
-                                    marginRight: 5 + 'px',
-                                    marginTop: 5 + 'px',
-                                    textAlign: 'center'
-                                }}
-                                format='auto'
-                                responsive=''
-                            />
-                            <AdSense.Google
-                                // 300x250-indi-bajo
-                                client='ca-pub-3630578707238850'
-                                slot='5129414813'
-                                style={{
-                                    display: 'inline-block',
-                                    width: 300 + 'px',
-                                    height: 250 + 'px',
-                                    marginLeft: 5 + 'px',
-                                    marginRight: 5 + 'px',
-                                    marginTop: 5 + 'px',
-                                    marginBottom: 15 + 'px',
-                                    textAlign: 'center'
-                                }}
-                                format='auto'
-                                responsive=''
-                            />
-                        </div>
-                        :
-                        ''
-                }
+                <div className="text-center">
+                    <AdSense.Google
+                        // 300x250-indi-bajo
+                        client='ca-pub-3630578707238850'
+                        slot='5129414813'
+                        style={{
+                            display: 'inline-block',
+                            width: 300 + 'px',
+                            height: 250 + 'px',
+                            marginLeft: 5 + 'px',
+                            marginRight: 5 + 'px',
+                            marginTop: 5 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='auto'
+                        responsive=''
+                    />
+                    <AdSense.Google
+                        // 300x250-indi-bajo
+                        client='ca-pub-3630578707238850'
+                        slot='5129414813'
+                        style={{
+                            display: 'inline-block',
+                            width: 300 + 'px',
+                            height: 250 + 'px',
+                            marginLeft: 5 + 'px',
+                            marginRight: 5 + 'px',
+                            marginTop: 5 + 'px',
+                            marginBottom: 15 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='auto'
+                        responsive=''
+                    />
+                </div>
 
                 <BotonMain
                     titulo='Todos los cursos'
@@ -350,46 +304,42 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     }
                 </div>
 
-                {
-                    adsenseActive ?
-                        <div className="text-center">
-                            <AdSense.Google
-                                // 160x600-indi-bajo
-                                client='ca-pub-3630578707238850'
-                                slot='8035962954'
-                                style={{
-                                    display: 'inline-block',
-                                    width: 160 + 'px',
-                                    height: 600 + 'px',
-                                    marginLeft: 10 + 'px',
-                                    marginRight: 10 + 'px',
-                                    marginTop: 5 + 'px',
-                                    textAlign: 'center'
-                                }}
-                                format='vertical'
-                                responsive=''
-                            />
-                            <AdSense.Google
-                                // 160x600-indi-bajo
-                                client='ca-pub-3630578707238850'
-                                slot='8035962954'
-                                style={{
-                                    display: 'inline-block',
-                                    width: 160 + 'px',
-                                    height: 600 + 'px',
-                                    marginLeft: 10 + 'px',
-                                    marginRight: 10 + 'px',
-                                    marginTop: 5 + 'px',
-                                    marginBottom: 15 + 'px',
-                                    textAlign: 'center'
-                                }}
-                                format='vertical'
-                                responsive=''
-                            />
-                        </div>
-                        :
-                        ''
-                }
+                <div className="text-center">
+                    <AdSense.Google
+                        // 160x600-indi-bajo
+                        client='ca-pub-3630578707238850'
+                        slot='8035962954'
+                        style={{
+                            display: 'inline-block',
+                            width: 160 + 'px',
+                            height: 600 + 'px',
+                            marginLeft: 10 + 'px',
+                            marginRight: 10 + 'px',
+                            marginTop: 5 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='vertical'
+                        responsive=''
+                    />
+                    <AdSense.Google
+                        // 160x600-indi-bajo
+                        client='ca-pub-3630578707238850'
+                        slot='8035962954'
+                        style={{
+                            display: 'inline-block',
+                            width: 160 + 'px',
+                            height: 600 + 'px',
+                            marginLeft: 10 + 'px',
+                            marginRight: 10 + 'px',
+                            marginTop: 5 + 'px',
+                            marginBottom: 15 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='vertical'
+                        responsive=''
+                    />
+                </div>
+
             </Layout>
         </>
     )
