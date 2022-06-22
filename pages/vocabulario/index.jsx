@@ -10,7 +10,7 @@ import { useEffect } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    let adsenseActive
+    let adsenseActive = false
 
     const reloadEzoic = (ids) => {
         var ezstandalone = window.ezstandalone || {};
@@ -27,7 +27,7 @@ export default function IndexVoc({ data }) {
     }
 
     useEffect(() => {
-        if (ezoicTestActive) {
+        if (typeof ezoicTestActive !== 'undefined') {
             const ids = [103, 105]
             reloadEzoic(ids)
             adsenseActive = true
