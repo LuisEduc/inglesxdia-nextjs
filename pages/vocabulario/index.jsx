@@ -31,8 +31,11 @@ export default function IndexVoc({ data }) {
             const ids = [103, 105]
             reloadEzoic(ids)
             adsenseActive = false
-            console.log("ezoicTestActive is true")
-            console.log("adsenseActive is false")
+            console.log("ezoicTestActive true")
+            console.log("adsenseActive false")
+        } else {
+            console.log("ezoicTestActive false")
+            console.log("adsenseActive true")
         }
     }, [])
 
