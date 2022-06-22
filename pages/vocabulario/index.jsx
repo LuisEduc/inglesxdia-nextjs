@@ -6,6 +6,7 @@ import AudioPlayer from "react-h5-audio-player";
 import Image from "next/image";
 import Head from "next/head"
 import AdSense from 'react-adsense'
+import { useEffect } from 'react'
 
 export default function IndexVoc({ data }) {
 
