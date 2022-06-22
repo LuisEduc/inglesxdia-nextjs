@@ -53,7 +53,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
     }
 
     useEffect(() => {
-        const ids = 103
+        const ids = [103, 105]
         reloadEzoic(ids)
     }, [])
 
