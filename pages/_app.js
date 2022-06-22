@@ -58,6 +58,11 @@ const App = ({ Component, pageProps }) => {
       />
 
       <Script
+        strategy="beforeInteractive"
+        async src={`http://www.ezojs.com/ezoic/sa.min.js`}
+      />
+
+      <Script
         id="gtag-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
