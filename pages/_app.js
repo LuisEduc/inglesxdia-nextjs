@@ -59,7 +59,7 @@ const App = ({ Component, pageProps }) => {
 
       <Script
         strategy="beforeInteractive"
-        async src={`https://www.ezojs.com/ezoic/sa.min.js`}
+        src={`https://www.ezojs.com/ezoic/sa.min.js`}
       />
 
       <Script
