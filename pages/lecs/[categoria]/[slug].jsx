@@ -390,9 +390,6 @@ export default function Individual({ dataLec, dataCat, cats }) {
                         :
                         ''
                 }
-
-
-
             </Layout>
         </>
     )
