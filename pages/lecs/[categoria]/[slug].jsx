@@ -279,7 +279,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                 }
 
                 <div className="text-center">
-                    <AdSense.Google
+                    {/* <AdSense.Google
                         // 300x250-indi-bajo
                         client='ca-pub-3630578707238850'
                         slot='5129414813'
@@ -294,7 +294,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                         }}
                         format='auto'
                         responsive=''
-                    />
+                    /> */}
                     <AdSense.Google
                         // 300x250-indi-bajo
                         client='ca-pub-3630578707238850'
