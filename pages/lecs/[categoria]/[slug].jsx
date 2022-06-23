@@ -99,6 +99,40 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
                 </Head>
 
+
+                <div className="text-center">
+                    <AdSense.Google
+                        // 320x50-indi-alto
+                        client='ca-pub-3630578707238850'
+                        slot='8271636794'
+                        style={{
+                            display: 'inline-block',
+                            width: 320 + 'px',
+                            height: 50 + 'px',
+                            marginLeft: 5 + 'px',
+                            marginRight: 5 + 'px',
+                            marginBottom: 5 + 'px',
+                            marginTop: 10 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='auto'
+                    />
+                    <AdSense.Google
+                        // 320x50-indi-alto
+                        client='ca-pub-3630578707238850'
+                        slot='8271636794'
+                        style={{
+                            display: 'inline-block',
+                            width: 320 + 'px',
+                            height: 50 + 'px',
+                            marginLeft: 5 + 'px',
+                            marginRight: 5 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='auto'
+                    />
+                </div>
+
                 <div className="lecs-titulo">
                     <h1>{leccion[0].titulo_seo}</h1>
                 </div>
