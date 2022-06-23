@@ -10,39 +10,39 @@ import { useEffect } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    let adsenseActive = true
+    // let adsenseActive = true
 
-    // if (typeof ezoicTestActive !== 'undefined') {
-    //     adsenseActive = false
-    // } else {
-    //     adsenseActive = true
-    // }
+    if (typeof ezoicTestActive !== 'undefined') {
+        adsenseActive = false
+    } else {
+        adsenseActive = true
+    }
 
-    // const reloadEzoic = (ids) => {
-    //     var ezstandalone = window.ezstandalone || {};
-    //     ezstandalone.cmd = ezstandalone.cmd || [];
-    //     ezstandalone.cmd.push(function () {
-    //         ezstandalone.define(ids);
-    //         if (ezstandalone.enabled) {
-    //             ezstandalone.refresh();
-    //         } else {
-    //             ezstandalone.enable();
-    //             ezstandalone.display();
-    //         }
-    //     });
-    // }
+    const reloadEzoic = (ids) => {
+        var ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+        ezstandalone.cmd.push(function () {
+            ezstandalone.define(ids);
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh();
+            } else {
+                ezstandalone.enable();
+                ezstandalone.display();
+            }
+        });
+    }
 
-    // useEffect(() => {
-    //     if (typeof ezoicTestActive !== 'undefined') {
-    //         const ids = [103, 105]
-    //         reloadEzoic(ids)
-    //         console.log("ezoicTestActive true")
-    //         console.log("adsenseActive false")
-    //     } else {
-    //         console.log("ezoicTestActive false")
-    //         console.log("adsenseActive true")
-    //     }
-    // }, [])
+    useEffect(() => {
+        if (typeof ezoicTestActive !== 'undefined') {
+            const ids = [103, 105]
+            reloadEzoic(ids)
+            console.log("ezoicTestActive true")
+            console.log("adsenseActive false")
+        } else {
+            console.log("ezoicTestActive false")
+            console.log("adsenseActive true")
+        }
+    }, [])
 
     return (
         <Layout>
