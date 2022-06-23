@@ -44,7 +44,7 @@ export default function Layout({ children, home, buscar }) {
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                     })(window,document,'script','dataLayer','GTM-N4SG9PL');`}}></script>
 
-                <script src="//www.ezojs.com/ezoic/sa.min.js"></script>
+                <script src="//www.ezojs.com/ezoic/sa.min.js" async></script>
 
             </Head>
 
