@@ -11,6 +11,7 @@ import { useEffect } from 'react'
 export default function IndexVoc({ data }) {
 
     // let adsenseActive = true
+    let adsenseActive
 
     if (typeof ezoicTestActive !== 'undefined') {
         adsenseActive = false
