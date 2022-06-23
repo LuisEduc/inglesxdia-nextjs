@@ -131,8 +131,6 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     bg='bg-primario'
                 />
 
-                <div id="ezoic-pub-ad-placeholder-103"> </div>
-
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
                         {
