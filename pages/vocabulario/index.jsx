@@ -20,14 +20,7 @@ export default function IndexVoc({ data }) {
     }
 
     const reloadEzoic = () => {
-        ezstandalone.define(103, 105);
-        if (!ezstandalone.enabled) {
-            ezstandalone.enable();
-            ezstandalone.display();
-        }
-        else {
-            ezstandalone.refresh();
-        }
+        ezstandalone.displayMore(103, 105);
     }
 
     useEffect(() => {
