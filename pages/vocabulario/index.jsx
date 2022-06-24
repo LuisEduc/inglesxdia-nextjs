@@ -21,10 +21,12 @@ export default function IndexVoc({ data }) {
                 setAdsenseActive(false)
                 console.log("adsenseActive false")
                 ezstandalone.define(103, 105)
-                ezstandalone.enable()
-                ezstandalone.display()
-                console.log("Script cargado")
-
+                if (ezstandalone.enabled) {
+                    ezstandalone.refresh()
+                } else {
+                    ezstandalone.enable()
+                    ezstandalone.display()
+                }
             } else {
                 setAdsenseActive(true)
                 console.log("adsenseActive true")
@@ -35,7 +37,6 @@ export default function IndexVoc({ data }) {
     useEffect(() => {
         document.cookie = "ezstandaloneuser=;path=/;max-age=172800"
         reloadEzoic()
-        console.log("reloadEzoic ejecutado")
     }, [])
 
     return (
