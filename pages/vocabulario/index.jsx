@@ -73,7 +73,7 @@ export default function IndexVoc({ data }) {
                     icon='fas fa-headphones fa-xs'
                     bg='bg-primario'
                     border='border-blanco'
-                    dir='/#lecs'
+                    dir='/#lecciones'
                 />
             </div>
 
