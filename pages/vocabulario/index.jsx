@@ -11,7 +11,6 @@ import { useEffect, useState } from 'react'
 export default function IndexVoc({ data }) {
 
     const [adsenseActive, setAdsenseActive] = useState(true)
-    const [ezoicScript, setEzoicScript] = useState(false)
 
     const reloadEzoic = () => {
         var ezstandalone = window.ezstandalone || {}
@@ -24,7 +23,6 @@ export default function IndexVoc({ data }) {
                 ezstandalone.define(103, 105)
                 ezstandalone.enable()
                 ezstandalone.display()
-                setEzoicScript(true)
                 console.log("Script cargado")
 
             } else {
@@ -35,6 +33,7 @@ export default function IndexVoc({ data }) {
     }
 
     useEffect(() => {
+        document.cookie = `ezstandaloneuser=""`
         reloadEzoic()
         console.log("reloadEzoic ejecutado")
     }, [])
@@ -46,16 +45,6 @@ export default function IndexVoc({ data }) {
                 <title>Aprender palabras en inglés cada día | inglesxdia</title>
                 <meta name="description" content="Aprende nuevo vocabulario en inglés todos los días. La palabras son básicas, medias y avanzadas, incluyen audio de la pronunciación y frases de ejemplo." />
             </Head>
-
-            {
-                ezoicScript ?
-                    <Script
-                        id='ezoic-script'
-                        src='https://www.ezojs.com/ezoic/sa.min.js'
-                    />
-                    :
-                    ''
-            }
 
             {
                 adsenseActive ?
