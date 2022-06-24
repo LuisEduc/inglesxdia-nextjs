@@ -60,6 +60,8 @@ export default function IndexVoc({ data }) {
                 />
             </div>
 
+            <div id="ezoic-pub-ad-placeholder-105"></div>
+
             <div className="grid-info">
                 <div className="info">
                     <div className="info-text">
@@ -79,8 +81,6 @@ export default function IndexVoc({ data }) {
                     />
                 </div>
             </div>
-
-            <div id="ezoic-pub-ad-placeholder-105"></div>
 
             <div className="w-75 mx-auto text-center mt-5">
                 <h2 className="font-weight-bold text-aviso-consejo">Consejos para aprender nuevo vocabulario en inglés con
