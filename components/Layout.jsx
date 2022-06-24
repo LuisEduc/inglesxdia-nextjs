@@ -43,6 +43,8 @@ export default function Layout({ children, home, buscar }) {
                     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                     })(window,document,'script','dataLayer','GTM-N4SG9PL');`}}></script>
+                
+                <script src="//www.ezojs.com/ezoic/sa.min.js"></script>
 
             </Head>
 
