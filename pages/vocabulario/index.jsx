@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    const [adsenseActive, setAdsenseActive] = useState(false)
+    // const [adsenseActive, setAdsenseActive] = useState(false)
 
     // const reloadEzoic = () => {
     //     var ezstandalone = window.ezstandalone || {}
@@ -36,7 +36,7 @@ export default function IndexVoc({ data }) {
         var ezstandalone = window.ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
-            setAdsenseActive(false)
+            // setAdsenseActive(false)
             console.log("adsenseActive false")
             ezstandalone.define(103, 105)
             if (ezstandalone.enabled) {
@@ -61,7 +61,7 @@ export default function IndexVoc({ data }) {
                 <meta name="description" content="Aprende nuevo vocabulario en inglés todos los días. La palabras son básicas, medias y avanzadas, incluyen audio de la pronunciación y frases de ejemplo." />
             </Head>
 
-            {
+            {/* {
                 adsenseActive ?
                     <AdSense.Google
                         // full-voc
@@ -77,9 +77,9 @@ export default function IndexVoc({ data }) {
                         format='auto'
                         responsive='true'
                     />
-                    :
+                    : */}
                     <div id="ezoic-pub-ad-placeholder-103"></div>
-            }
+            {/* } */}
 
             <div className="inicio-badge">
                 <BotonVoc
@@ -103,7 +103,7 @@ export default function IndexVoc({ data }) {
                 />
             </div>
 
-            {
+            {/* {
                 adsenseActive ?
                     <AdSense.Google
                         // 300x50-voc-alto
@@ -122,7 +122,7 @@ export default function IndexVoc({ data }) {
                     />
                     :
                     ''
-            }
+            } */}
 
             <div className="grid-info">
                 <div className="info">
@@ -141,12 +141,12 @@ export default function IndexVoc({ data }) {
                     <CardCarousel
                         data={data}
                     />
-                    {
+                    {/* {
                         adsenseActive ?
                             ''
-                            :
+                            : */}
                             <div id="ezoic-pub-ad-placeholder-105"></div>
-                    }
+                    {/* } */}
                 </div>
             </div>
 
