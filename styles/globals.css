@@ -1762,6 +1762,7 @@ a {
   width: 96%;
   border: 2px solid var(--color-blanco);
   box-shadow: 3px 3px 1px 1px rgb(0 0 0 / 40%);
+  margin-bottom: 15px;
 }
 
 .tips-container {

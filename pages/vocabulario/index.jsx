@@ -136,7 +136,7 @@ export default function IndexVoc({ data }) {
                 </div>
             </div>
 
-            <div className="w-75 mx-auto text-center mt-5">
+            <div className="w-75 mx-auto text-center mt-4">
                 <h2 className="font-weight-bold text-aviso-consejo">Consejos para aprender nuevo vocabulario en inglés con
                     <span className="resalt">inglesxdia.tech</span>
                 </h2>
