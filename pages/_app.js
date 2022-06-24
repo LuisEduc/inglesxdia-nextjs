@@ -62,6 +62,8 @@ const App = ({ Component, pageProps }) => {
         src={`https://www.ezojs.com/ezoic/sa.min.js`}
       /> */}
 
+      <script src="//www.ezojs.com/ezoic/sa.min.js"></script>
+
       <Script
         id="gtag-init"
         strategy="afterInteractive"
