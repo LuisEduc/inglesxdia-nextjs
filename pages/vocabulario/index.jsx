@@ -33,7 +33,7 @@ export default function IndexVoc({ data }) {
     }
 
     useEffect(() => {
-        document.cookie = "ezstandaloneuser= ;"
+        document.cookie = "ezstandaloneuser=;path=/;max-age=172800"
         reloadEzoic()
         console.log("reloadEzoic ejecutado")
     }, [])
