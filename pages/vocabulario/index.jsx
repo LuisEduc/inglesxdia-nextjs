@@ -10,17 +10,17 @@ import { useEffect } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    var adsenseActive = true
+    var adsenseActive
     // var ezstandalone = ezstandalone || {}
     // ezstandalone.cmd = ezstandalone.cmd || []
-    // ezstandalone.cmd.push(function () {
-    //     var percentageToRunEzoic = 50
-    //     if (ezstandalone.isEzoicUser(percentageToRunEzoic) === true) {
-    //         adsenseActive = false
-    //     } else {
-    //         adsenseActive = true
-    //     }
-    // });
+    ezstandalone.cmd.push(function () {
+        var percentageToRunEzoic = 50
+        if (ezstandalone.isEzoicUser(percentageToRunEzoic) === true) {
+            adsenseActive = false
+        } else {
+            adsenseActive = true
+        }
+    });
 
     const reloadEzoic = () => {
         ezstandalone.define(103, 105)
