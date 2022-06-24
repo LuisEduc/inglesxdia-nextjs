@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    const [adsenseActive, setAdsenseActive] = useState(true)
+    const [adsenseActive, setAdsenseActive] = useState(false)
 
     const reloadEzoic = () => {
         var ezstandalone = window.ezstandalone || {}
