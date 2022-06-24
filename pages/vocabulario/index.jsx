@@ -3,7 +3,7 @@ import BotonVoc from "../../components/BotonVoc"
 import CardCarousel from "../../components/CardCarousel"
 import "react-h5-audio-player/lib/styles.css";
 import AudioPlayer from "react-h5-audio-player";
-import Image from "next/image";
+import Script from "next/script";
 import Head from "next/head"
 import AdSense from 'react-adsense'
 import { useEffect, useState } from 'react'
@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react'
 export default function IndexVoc({ data }) {
 
     const [adsenseActive, setAdsenseActive] = useState(true)
+    const [ezoicScript, setEzoicScript] = useState(false)
 
     const reloadEzoic = () => {
         var ezstandalone = window.ezstandalone || {}
@@ -23,6 +24,9 @@ export default function IndexVoc({ data }) {
                 ezstandalone.define(103, 105)
                 ezstandalone.enable()
                 ezstandalone.display()
+                setEzoicScript(true)
+                console.log("Script cargado")
+
             } else {
                 setAdsenseActive(true)
                 console.log("adsenseActive true")
@@ -42,6 +46,21 @@ export default function IndexVoc({ data }) {
                 <title>Aprender palabras en inglés cada día | inglesxdia</title>
                 <meta name="description" content="Aprende nuevo vocabulario en inglés todos los días. La palabras son básicas, medias y avanzadas, incluyen audio de la pronunciación y frases de ejemplo." />
             </Head>
+
+            {
+                ezoicScript ?
+                    <Script
+                        id='ezoic-script'
+                        src='https://www.ezojs.com/ezoic/sa.min.js'
+                    />
+                    :
+                    ''
+            }
+
+            <Script
+                id='ezoic-script'
+                src={ezoicScript}
+            />
 
             {
                 adsenseActive ?
