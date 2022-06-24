@@ -10,46 +10,46 @@ export default function IndexVoc({ data }) {
 
     const [adsenseActive, setAdsenseActive] = useState(false)
 
-    // const reloadEzoic = () => {
-    //     var ezstandalone = window.ezstandalone || {}
-    //     ezstandalone.cmd = ezstandalone.cmd || []
-    //     ezstandalone.cmd.push(function () {
-    //         var percentageToRunEzoic = 50
-    //         if (ezstandalone.isEzoicUser(percentageToRunEzoic)) {
-    //             setAdsenseActive(false)
-    //             console.log("adsenseActive false")
-    //             ezstandalone.define(103, 105)
-    //             if (ezstandalone.enabled) {
-    //                 ezstandalone.refresh()
-    //             } else {
-    //                 ezstandalone.enable()
-    //                 ezstandalone.display()
-    //             }
-    //         } else {
-    //             setAdsenseActive(true)
-    //             console.log("adsenseActive true")
-    //         }
-    //     });
-    // }
-
     const reloadEzoic = () => {
         var ezstandalone = window.ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
-            setAdsenseActive(false)
-            console.log("adsenseActive false")
-            ezstandalone.define(103, 105)
-            if (ezstandalone.enabled) {
-                ezstandalone.refresh()
+            var percentageToRunEzoic = 20
+            if (ezstandalone.isEzoicUser(percentageToRunEzoic)) {
+                setAdsenseActive(false)
+                console.log("adsenseActive false")
+                ezstandalone.define(103, 105)
+                if (ezstandalone.enabled) {
+                    ezstandalone.refresh()
+                } else {
+                    ezstandalone.enable()
+                    ezstandalone.display()
+                }
             } else {
-                ezstandalone.enable()
-                ezstandalone.display()
+                setAdsenseActive(true)
+                console.log("adsenseActive true")
             }
         });
     }
 
+    // const reloadEzoic = () => {
+    //     var ezstandalone = window.ezstandalone || {}
+    //     ezstandalone.cmd = ezstandalone.cmd || []
+    //     ezstandalone.cmd.push(function () {
+    //         setAdsenseActive(false)
+    //         console.log("adsenseActive false")
+    //         ezstandalone.define(103, 105)
+    //         if (ezstandalone.enabled) {
+    //             ezstandalone.refresh()
+    //         } else {
+    //             ezstandalone.enable()
+    //             ezstandalone.display()
+    //         }
+    //     });
+    // }
+
     useEffect(() => {
-        // document.cookie = "ezstandaloneuser=;path=/;max-age=172800"
+        document.cookie = "ezstandaloneuser=;path=/;max-age=172800"
         reloadEzoic()
     }, [])
 
