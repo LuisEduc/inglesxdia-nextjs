@@ -10,37 +10,30 @@ import { useEffect } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    // let adsenseActive = true
-    let adsenseActive
-
-    if (typeof ezoicTestActive !== 'undefined') {
-        adsenseActive = false
-    } else {
-        adsenseActive = true
-    }
+    var adsenseActive = true
+    // var ezstandalone = ezstandalone || {}
+    // ezstandalone.cmd = ezstandalone.cmd || []
+    // ezstandalone.cmd.push(function () {
+    //     var percentageToRunEzoic = 50
+    //     if (ezstandalone.isEzoicUser(percentageToRunEzoic) === true) {
+    //         adsenseActive = false
+    //     } else {
+    //         adsenseActive = true
+    //     }
+    // });
 
     const reloadEzoic = () => {
-        var ezstandalone = window.ezstandalone || {};
-        ezstandalone.cmd = ezstandalone.cmd || [];
-        ezstandalone.cmd.push(function () {
-            ezstandalone.define(103, 105);
-            if (ezstandalone.enabled) {
-                ezstandalone.refresh();
-            } else {
-                ezstandalone.enable();
-                ezstandalone.display();
-            }
-        });
+        ezstandalone.define(103, 105)
+        ezstandalone.enable()
+        ezstandalone.display()
     }
 
     useEffect(() => {
-        if (typeof ezoicTestActive !== 'undefined') {
-            reloadEzoic()
-            console.log("ezoicTestActive true")
-            console.log("adsenseActive false")
-        } else {
-            console.log("ezoicTestActive false")
+        if (adsenseActive) {
             console.log("adsenseActive true")
+        } else {
+            reloadEzoic()
+            console.log("adsenseActive false")
         }
     }, [])
 
