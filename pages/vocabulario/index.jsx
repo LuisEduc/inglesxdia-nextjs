@@ -32,6 +32,7 @@ export default function IndexVoc({ data }) {
 
     useEffect(() => {
         reloadEzoic()
+        console.log("reloadEzoic ejecutado")
     }, [])
 
     return (
