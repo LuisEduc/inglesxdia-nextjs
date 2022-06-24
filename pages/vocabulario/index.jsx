@@ -13,7 +13,7 @@ export default function IndexVoc({ data }) {
     const [adsenseActive, setAdsenseActive] = useState(true)
 
     const reloadEzoic = () => {
-        var ezstandalone = ezstandalone || {}
+        var ezstandalone = window.ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
             var percentageToRunEzoic = 50
