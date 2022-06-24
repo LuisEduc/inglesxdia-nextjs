@@ -14,6 +14,7 @@ export default function IndexVoc({ data }) {
         var ezstandalone = window.ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
+            ezstandalone.define(103, 105)
             if (ezstandalone.enabled) {
                 ezstandalone.refresh()
             } else {
