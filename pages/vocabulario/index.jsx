@@ -2,42 +2,40 @@ import Layout from "../../components/Layout"
 import BotonVoc from "../../components/BotonVoc"
 import CardCarousel from "../../components/CardCarousel"
 import "react-h5-audio-player/lib/styles.css";
-import AudioPlayer from "react-h5-audio-player";
-import Script from "next/script";
 import Head from "next/head"
 import AdSense from 'react-adsense'
 import { useEffect, useState } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    const [adsenseActive, setAdsenseActive] = useState(false)
+    const [adsenseActive, setAdsenseActive] = useState(true)
 
-    const reloadEzoic = () => {
-        var ezstandalone = window.ezstandalone || {}
-        ezstandalone.cmd = ezstandalone.cmd || []
-        ezstandalone.cmd.push(function () {
-            var percentageToRunEzoic = 50
-            if (ezstandalone.isEzoicUser(percentageToRunEzoic)) {
-                setAdsenseActive(false)
-                console.log("adsenseActive false")
-                ezstandalone.define(103, 105)
-                if (ezstandalone.enabled) {
-                    ezstandalone.refresh()
-                } else {
-                    ezstandalone.enable()
-                    ezstandalone.display()
-                }
-            } else {
-                setAdsenseActive(true)
-                console.log("adsenseActive true")
-            }
-        });
-    }
+    // const reloadEzoic = () => {
+    //     var ezstandalone = window.ezstandalone || {}
+    //     ezstandalone.cmd = ezstandalone.cmd || []
+    //     ezstandalone.cmd.push(function () {
+    //         var percentageToRunEzoic = 50
+    //         if (ezstandalone.isEzoicUser(percentageToRunEzoic)) {
+    //             setAdsenseActive(false)
+    //             console.log("adsenseActive false")
+    //             ezstandalone.define(103, 105)
+    //             if (ezstandalone.enabled) {
+    //                 ezstandalone.refresh()
+    //             } else {
+    //                 ezstandalone.enable()
+    //                 ezstandalone.display()
+    //             }
+    //         } else {
+    //             setAdsenseActive(true)
+    //             console.log("adsenseActive true")
+    //         }
+    //     });
+    // }
 
-    useEffect(() => {
-        document.cookie = "ezstandaloneuser=;path=/;max-age=172800"
-        reloadEzoic()
-    }, [])
+    // useEffect(() => {
+    //     document.cookie = "ezstandaloneuser=;path=/;max-age=172800"
+    //     reloadEzoic()
+    // }, [])
 
     return (
         <Layout>
