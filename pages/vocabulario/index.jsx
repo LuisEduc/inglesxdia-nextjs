@@ -33,7 +33,7 @@ export default function IndexVoc({ data }) {
     }
 
     useEffect(() => {
-        document.cookie = `ezstandaloneuser=""`
+        document.cookie = "ezstandaloneuser= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
         reloadEzoic()
         console.log("reloadEzoic ejecutado")
     }, [])
