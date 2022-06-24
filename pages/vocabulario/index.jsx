@@ -27,7 +27,7 @@ export default function IndexVoc({ data }) {
                 }
             } else {
                 setAdsenseActive(true)
-                ezstandalone.setEzoicAnchorAd(false)
+                // ezstandalone.setEzoicAnchorAd(false)
                 console.log("adsenseActive true")
             }
         });
