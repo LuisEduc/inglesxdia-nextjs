@@ -10,31 +10,28 @@ import { useEffect, useState } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    const [adsenseActive, setAdsenseActive] = useState();
+    const [adsenseActive, setAdsenseActive] = useState(true)
 
     const reloadEzoic = () => {
         var ezstandalone = ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
             var percentageToRunEzoic = 50
-            if (ezstandalone.isEzoicUser(percentageToRunEzoic) === true) {
+            if (ezstandalone.isEzoicUser(percentageToRunEzoic)) {
                 setAdsenseActive(false)
+                console.log("adsenseActive false")
                 ezstandalone.define(103, 105)
                 ezstandalone.enable()
                 ezstandalone.display()
             } else {
                 setAdsenseActive(true)
+                console.log("adsenseActive true")
             }
         });
     }
 
     useEffect(() => {
-        if (adsenseActive) {
-            console.log("adsenseActive true")
-        } else {
-            reloadEzoic()
-            console.log("adsenseActive false")
-        }
+        reloadEzoic()
     }, [])
 
     return (
