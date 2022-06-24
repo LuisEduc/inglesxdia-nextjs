@@ -57,11 +57,6 @@ export default function IndexVoc({ data }) {
                     ''
             }
 
-            <Script
-                id='ezoic-script'
-                src={ezoicScript}
-            />
-
             {
                 adsenseActive ?
                     <AdSense.Google
