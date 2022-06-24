@@ -13,10 +13,10 @@ export default function IndexVoc({ data }) {
     const [adsenseActive, setAdsenseActive] = useState(true)
 
     const reloadEzoic = () => {
-        let ezstandalone = window.ezstandalone || {}
+        var ezstandalone = window.ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
-            let percentageToRunEzoic = 50
+            var percentageToRunEzoic = 50
             if (ezstandalone.isEzoicUser(percentageToRunEzoic)) {
                 setAdsenseActive(false)
                 console.log("adsenseActive false")
@@ -31,9 +31,7 @@ export default function IndexVoc({ data }) {
     }
 
     useEffect(() => {
-        console.log("reloadEzoic iniciado")
         reloadEzoic()
-        console.log("reloadEzoic ejecutado")
     }, [])
 
     return (
