@@ -6,26 +6,26 @@ import AudioPlayer from "react-h5-audio-player";
 import Image from "next/image";
 import Head from "next/head"
 import AdSense from 'react-adsense'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    var adsenseActive
-    // var ezstandalone = ezstandalone || {}
-    // ezstandalone.cmd = ezstandalone.cmd || []
-    ezstandalone.cmd.push(function () {
-        var percentageToRunEzoic = 50
-        if (ezstandalone.isEzoicUser(percentageToRunEzoic) === true) {
-            adsenseActive = false
-        } else {
-            adsenseActive = true
-        }
-    });
+    const [adsenseActive, setAdsenseActive] = useState();
 
     const reloadEzoic = () => {
-        ezstandalone.define(103, 105)
-        ezstandalone.enable()
-        ezstandalone.display()
+        var ezstandalone = ezstandalone || {}
+        ezstandalone.cmd = ezstandalone.cmd || []
+        ezstandalone.cmd.push(function () {
+            var percentageToRunEzoic = 50
+            if (ezstandalone.isEzoicUser(percentageToRunEzoic) === true) {
+                setAdsenseActive(false)
+                ezstandalone.define(103, 105)
+                ezstandalone.enable()
+                ezstandalone.display()
+            } else {
+                setAdsenseActive(true)
+            }
+        });
     }
 
     useEffect(() => {
