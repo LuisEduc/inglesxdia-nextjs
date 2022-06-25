@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react'
 export default function IndexVoc({ data }) {
 
     const reloadEzoic = () => {
-        var ezstandalone = window.ezstandalone || {}
+        var ezstandalone = ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
             console.log("adsenseActive false")
