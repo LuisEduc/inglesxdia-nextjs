@@ -15,7 +15,6 @@ export default function IndexVoc({ data }) {
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
             console.log("adsenseActive false")
-            ezstandalone.setEzoicAnchorAd(false)
             ezstandalone.define(103, 105)
             if (ezstandalone.enabled) {
                 ezstandalone.refresh()
