@@ -10,32 +10,22 @@ import { useEffect, useState } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    const [adsenseActive, setAdsenseActive] = useState(false)
-
     const reloadEzoic = () => {
-        var ezstandalone = window.ezstandalone || {}
+        var ezstandalone = ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
-            var percentageToRunEzoic = 50
-            if (ezstandalone.isEzoicUser(percentageToRunEzoic)) {
-                setAdsenseActive(false)
-                console.log("adsenseActive false")
-                ezstandalone.define(103, 105)
-                if (ezstandalone.enabled) {
-                    ezstandalone.refresh()
-                } else {
-                    ezstandalone.enable()
-                    ezstandalone.display()
-                }
+            console.log("adsenseActive false")
+            ezstandalone.define(103, 105)
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh()
             } else {
-                setAdsenseActive(true)
-                console.log("adsenseActive true")
+                ezstandalone.enable()
+                ezstandalone.display()
             }
         });
     }
 
     useEffect(() => {
-        document.cookie = "ezstandaloneuser=;path=/;max-age=172800"
         reloadEzoic()
     }, [])
 
@@ -47,25 +37,7 @@ export default function IndexVoc({ data }) {
                 <meta name="description" content="Aprende nuevo vocabulario en inglés todos los días. La palabras son básicas, medias y avanzadas, incluyen audio de la pronunciación y frases de ejemplo." />
             </Head>
 
-            {
-                adsenseActive ?
-                    <AdSense.Google
-                        // full-voc
-                        client='ca-pub-3630578707238850'
-                        slot='1345454840'
-                        style={{
-                            display: 'block',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                            marginTop: 15 + 'px',
-                            textAlign: 'center'
-                        }}
-                        format='auto'
-                        responsive='true'
-                    />
-                    :
-                    <div id="ezoic-pub-ad-placeholder-103"></div>
-            }
+            <div id="ezoic-pub-ad-placeholder-103"></div>
 
             <div className="inicio-badge">
                 <BotonVoc
@@ -89,26 +61,7 @@ export default function IndexVoc({ data }) {
                 />
             </div>
 
-            {
-                adsenseActive ?
-                    <AdSense.Google
-                        // 300x50-voc-alto
-                        client='ca-pub-3630578707238850'
-                        slot='9793863809'
-                        style={{
-                            display: 'block',
-                            height: 50 + 'px',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                            marginTop: 15 + 'px',
-                            textAlign: 'center'
-                        }}
-                        format=''
-                        responsive='true'
-                    />
-                    :
-                    ''
-            }
+            <div id="ezoic-pub-ad-placeholder-105"></div>
 
             <div className="grid-info">
                 <div className="info">
@@ -127,12 +80,6 @@ export default function IndexVoc({ data }) {
                     <CardCarousel
                         data={data}
                     />
-                    {
-                        adsenseActive ?
-                            ''
-                            :
-                            <div id="ezoic-pub-ad-placeholder-105"></div>
-                    }
                 </div>
             </div>
 
