@@ -36,15 +36,15 @@ export default function IndexVoc({ data }) {
                 <title>Aprender palabras en inglés cada día | inglesxdia</title>
                 <meta name="description" content="Aprende nuevo vocabulario en inglés todos los días. La palabras son básicas, medias y avanzadas, incluyen audio de la pronunciación y frases de ejemplo." />
 
-                <script dangerouslySetInnerHTML={{
+                <script type="text/javascript" dangerouslySetInnerHTML={{
                     __html:
                         `
-                    var ezstandalone = ezstandalone || { }
-                    ezstandalone.cmd = ezstandalone.cmd || []
+                    var ezstandalone = ezstandalone || { };
+                    ezstandalone.cmd = ezstandalone.cmd || [];
                     ezstandalone.cmd.push(function() {
-                        ezstandalone.define(103, 105, 106)
-                        ezstandalone.enable()
-                        ezstandalone.display()
+                        ezstandalone.define(103, 105, 106);
+                        ezstandalone.enable();
+                        ezstandalone.display();
                     });
                 ` }}>
                 </script>
