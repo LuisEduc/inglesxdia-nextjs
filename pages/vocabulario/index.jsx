@@ -10,24 +10,24 @@ import { useEffect, useState } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    // const reloadEzoic = () => {
-    //     let ezstandalone = window.ezstandalone || {}
-    //     ezstandalone.cmd = ezstandalone.cmd || []
-    //     ezstandalone.cmd.push(function () {
-    //         console.log("adsenseActive false")
-    //         ezstandalone.define(103, 105, 106)
-    //         if (ezstandalone.enabled) {
-    //             ezstandalone.refresh()
-    //         } else {
-    //             ezstandalone.enable()
-    //             ezstandalone.display()
-    //         }
-    //     });
-    // }
+    const reloadEzoic = () => {
+        var ezstandalone = window.ezstandalone || {}
+        ezstandalone.cmd = ezstandalone.cmd || []
+        ezstandalone.cmd.push(function () {
+            console.log("adsenseActive false")
+            ezstandalone.define(103, 105, 106)
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh()
+            } else {
+                ezstandalone.enable()
+                ezstandalone.display()
+            }
+        });
+    }
 
-    // useEffect(() => {
-    //     reloadEzoic()
-    // }, [])
+    useEffect(() => {
+        reloadEzoic()
+    }, [])
 
     return (
         <Layout>
@@ -35,22 +35,6 @@ export default function IndexVoc({ data }) {
                 <link rel="icon" href="/favicon.png" />
                 <title>Aprender palabras en inglés cada día | inglesxdia</title>
                 <meta name="description" content="Aprende nuevo vocabulario en inglés todos los días. La palabras son básicas, medias y avanzadas, incluyen audio de la pronunciación y frases de ejemplo." />
-
-                <script type="text/javascript" dangerouslySetInnerHTML={{
-                    __html:
-                        `
-                    var ezstandalone = ezstandalone || { };
-                    ezstandalone.cmd = ezstandalone.cmd || [];
-                    ezstandalone.cmd.push(function() {
-                        ezstandalone.define(103, 105, 106);
-                        ezstandalone.enable();
-                        ezstandalone.display();
-                    });
-                ` }}>
-                </script>
-
-                <script src="//www.ezojs.com/ezoic/sa.min.js"></script>
-
             </Head>
 
             <div id="ezoic-pub-ad-placeholder-103"></div>
