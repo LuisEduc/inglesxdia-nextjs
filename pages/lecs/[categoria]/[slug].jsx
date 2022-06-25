@@ -102,32 +102,14 @@ export default function Individual({ dataLec, dataCat, cats }) {
 
                 <div className="text-center">
                     <AdSense.Google
-                        // 320x50-indi-alto
+                        // 300x50-indi-alto
                         client='ca-pub-3630578707238850'
-                        slot='8271636794'
+                        slot='2418913037'
                         style={{
                             display: 'inline-block',
-                            width: 320 + 'px',
+                            width: 100 + '%',
                             height: 50 + 'px',
-                            marginLeft: 5 + 'px',
-                            marginRight: 5 + 'px',
-                            marginBottom: 5 + 'px',
                             marginTop: 12 + 'px',
-                            textAlign: 'center'
-                        }}
-                        format='auto'
-                    />
-                    <AdSense.Google
-                        // 320x50-indi-alto
-                        client='ca-pub-3630578707238850'
-                        slot='8271636794'
-                        style={{
-                            display: 'inline-block',
-                            width: 320 + 'px',
-                            height: 50 + 'px',
-                            marginLeft: 5 + 'px',
-                            marginRight: 5 + 'px',
-                            textAlign: 'center'
                         }}
                         format='auto'
                     />
@@ -144,19 +126,20 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     bg='bg-secundario'
                 />
 
-                <AdSense.Google
-                    // full-indi
-                    client='ca-pub-3630578707238850'
-                    slot='6905737434'
-                    style={{
-                        display: 'block',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textAlign: 'center'
-                    }}
-                    format='auto'
-                    responsive='true'
-                />
+                <div className="text-center">
+                    <AdSense.Google
+                        // 300x250-indi
+                        client='ca-pub-3630578707238850'
+                        slot='6438145214'
+                        style={{
+                            display: 'inline-block',
+                            width: 300 + 'px',
+                            height: 250 + 'px',
+                        }}
+                        format='auto'
+                    />
+                </div>
+
 
                 <BotonMain
                     titulo='Lecciones similares'
@@ -189,32 +172,14 @@ export default function Individual({ dataLec, dataCat, cats }) {
 
                 <div className="text-center">
                     <AdSense.Google
-                        // 320x50-indi-medio
+                        // 300x50-indi-medio
                         client='ca-pub-3630578707238850'
-                        slot='5356176334'
+                        slot='9884836482'
                         style={{
                             display: 'inline-block',
-                            width: 320 + 'px',
+                            width: 100 + '%',
                             height: 50 + 'px',
-                            marginLeft: 5 + 'px',
-                            marginRight: 5 + 'px',
-                            marginBottom: 5 + 'px',
-                            marginTop: 5 + 'px',
-                            textAlign: 'center'
-                        }}
-                        format='auto'
-                    />
-                    <AdSense.Google
-                        // 320x50-indi-title
-                        client='ca-pub-3630578707238850'
-                        slot='5356176334'
-                        style={{
-                            display: 'inline-block',
-                            width: 320 + 'px',
-                            height: 50 + 'px',
-                            marginLeft: 5 + 'px',
-                            marginRight: 5 + 'px',
-                            textAlign: 'center'
+                            marginTop: 10 + 'px',
                         }}
                         format='auto'
                     />
@@ -279,38 +244,18 @@ export default function Individual({ dataLec, dataCat, cats }) {
                 }
 
                 <div className="text-center">
-                    {/* <AdSense.Google
-                        // 300x250-indi-bajo
-                        client='ca-pub-3630578707238850'
-                        slot='5129414813'
-                        style={{
-                            display: 'inline-block',
-                            width: 300 + 'px',
-                            height: 250 + 'px',
-                            marginLeft: 5 + 'px',
-                            marginRight: 5 + 'px',
-                            marginTop: 5 + 'px',
-                            textAlign: 'center'
-                        }}
-                        format='auto'
-                        responsive=''
-                    /> */}
                     <AdSense.Google
-                        // 300x250-indi-bajo
+                        // 300x50-indi-bajo
                         client='ca-pub-3630578707238850'
-                        slot='5129414813'
+                        slot='5989861498'
                         style={{
                             display: 'inline-block',
-                            width: 300 + 'px',
-                            height: 250 + 'px',
-                            marginLeft: 5 + 'px',
-                            marginRight: 5 + 'px',
+                            width: 100 + '%',
+                            height: 50 + 'px',
                             marginTop: 5 + 'px',
                             marginBottom: 15 + 'px',
-                            textAlign: 'center'
                         }}
                         format='auto'
-                        responsive=''
                     />
                 </div>
 
@@ -334,42 +279,6 @@ export default function Individual({ dataLec, dataCat, cats }) {
                             </div>
                         ))
                     }
-                </div>
-
-                <div className="text-center">
-                    <AdSense.Google
-                        // 160x600-indi-bajo
-                        client='ca-pub-3630578707238850'
-                        slot='8035962954'
-                        style={{
-                            display: 'inline-block',
-                            width: 160 + 'px',
-                            height: 600 + 'px',
-                            marginLeft: 10 + 'px',
-                            marginRight: 10 + 'px',
-                            marginTop: 5 + 'px',
-                            textAlign: 'center'
-                        }}
-                        format='vertical'
-                        responsive=''
-                    />
-                    <AdSense.Google
-                        // 160x600-indi-bajo
-                        client='ca-pub-3630578707238850'
-                        slot='8035962954'
-                        style={{
-                            display: 'inline-block',
-                            width: 160 + 'px',
-                            height: 600 + 'px',
-                            marginLeft: 10 + 'px',
-                            marginRight: 10 + 'px',
-                            marginTop: 5 + 'px',
-                            marginBottom: 15 + 'px',
-                            textAlign: 'center'
-                        }}
-                        format='vertical'
-                        responsive=''
-                    />
                 </div>
 
             </Layout>
