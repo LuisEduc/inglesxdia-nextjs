@@ -58,6 +58,7 @@ const App = ({ Component, pageProps }) => {
       />
 
       <Script
+        strategy="beforeInteractive"
         src={`https://www.ezojs.com/ezoic/sa.min.js`}
       />
 
