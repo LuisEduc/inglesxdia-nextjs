@@ -133,10 +133,10 @@ export default function Individual({ dataLec, dataCat, cats }) {
                         slot='6438145214'
                         style={{
                             display: 'inline-block',
-                            width: 300 + 'px',
                             height: 250 + 'px',
                         }}
                         format='auto'
+                        responsive='true'
                     />
                 </div>
 
