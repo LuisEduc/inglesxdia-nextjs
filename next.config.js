@@ -11,6 +11,11 @@ module.exports = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/ads.txt',
+        destination: 'https://srv.adstxtmanager.com/32306/inglesxdia.tech',
+        permanent: true,
+      },
     ]
   },
 
