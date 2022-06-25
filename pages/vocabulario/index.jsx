@@ -11,18 +11,18 @@ import { useEffect, useState } from 'react'
 export default function IndexVoc({ data }) {
 
     const reloadEzoic = () => {
-        // var ezstandalone = window.ezstandalone || {}
-        // ezstandalone.cmd = ezstandalone.cmd || []
-        // ezstandalone.cmd.push(function () {
-        console.log("adsenseActive false")
-        ezstandalone.define(103, 105, 106)
-        if (ezstandalone.enabled) {
-            ezstandalone.refresh()
-        } else {
-            ezstandalone.enable()
-            ezstandalone.display()
-        }
-        // });
+        let ezstandalone = window.ezstandalone || {}
+        ezstandalone.cmd = ezstandalone.cmd || []
+        ezstandalone.cmd.push(function () {
+            console.log("adsenseActive false")
+            ezstandalone.define(103, 105, 106)
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh()
+            } else {
+                ezstandalone.enable()
+                ezstandalone.display()
+            }
+        });
     }
 
     useEffect(() => {
