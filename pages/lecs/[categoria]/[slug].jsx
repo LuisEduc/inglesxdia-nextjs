@@ -132,7 +132,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                         client='ca-pub-3630578707238850'
                         slot='6438145214'
                         style={{
-                            display: 'inline-block',
+                            display: 'block',
                             height: 250 + 'px',
                         }}
                         format='auto'
