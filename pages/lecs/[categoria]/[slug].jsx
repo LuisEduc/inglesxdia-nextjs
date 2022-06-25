@@ -135,7 +135,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                             display: 'block',
                             height: 250 + 'px',
                         }}
-                        format='auto'
+                        format=''
                         responsive='true'
                     />
                 </div>
@@ -253,7 +253,6 @@ export default function Individual({ dataLec, dataCat, cats }) {
                             width: 100 + '%',
                             height: 50 + 'px',
                             marginTop: 5 + 'px',
-                            marginBottom: 15 + 'px',
                         }}
                         format='auto'
                     />
