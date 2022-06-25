@@ -11,14 +11,18 @@ import { useEffect, useState } from 'react'
 export default function IndexVoc({ data }) {
 
     const reloadEzoic = () => {
-        console.log("adsenseActive false")
-        ezstandalone.define(103, 105, 106)
-        if (ezstandalone.enabled) {
-            ezstandalone.refresh()
-        } else {
-            ezstandalone.enable()
-            ezstandalone.display()
-        }
+        var ezstandalone = window.ezstandalone || {}
+        ezstandalone.cmd = ezstandalone.cmd || []
+        ezstandalone.cmd.push(function () {
+            console.log("adsenseActive false")
+            ezstandalone.define(103, 105)
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh()
+            } else {
+                ezstandalone.enable()
+                ezstandalone.display()
+            }
+        });
     }
 
     useEffect(() => {
@@ -78,8 +82,6 @@ export default function IndexVoc({ data }) {
                     />
                 </div>
             </div>
-
-            <div id="ezoic-pub-ad-placeholder-106"></div>
 
             <div className="w-75 mx-auto text-center mt-5">
                 <h2 className="font-weight-bold text-aviso-consejo">Consejos para aprender nuevo vocabulario en inglés con
