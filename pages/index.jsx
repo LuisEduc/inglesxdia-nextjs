@@ -13,28 +13,37 @@ export default function Index({ bloques, cats, buscar }) {
 
     const [adsenseActive, setAdsenseActive] = useState(false)
 
-    const reloadEzoic = (percent, ids) => {
+    const getCookie = (name) => {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    const reloadEzoic = (percent, ids, cookieIXD) => {
         var ezstandalone = window.ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
 
-            var rand = Math.random() * 100
-
-            if (percent > rand) {
-                setAdsenseActive(false)
-                console.log("adsenseActive false")
-                ezstandalone.define(ids)
+            if (cookieIXD) {
+                var rand = Math.random() * 100
+                if (percent > rand) {
+                    setAdsenseActive(false)
+                    console.log("adsenseActive false")
+                    ezstandalone.define(ids)
+                } else {
+                    ezstandalone.define(100)
+                    setAdsenseActive(true)
+                    console.log("adsenseActive true")
+                }
+                if (ezstandalone.enabled) {
+                    ezstandalone.refresh()
+                } else {
+                    ezstandalone.enable()
+                    ezstandalone.display()
+                }
             } else {
-                ezstandalone.define(100)
+                console.log("cookieIXD false")
                 setAdsenseActive(true)
-                console.log("adsenseActive true")
-            }
-
-            if (ezstandalone.enabled) {
-                ezstandalone.refresh()
-            } else {
-                ezstandalone.enable()
-                ezstandalone.display()
             }
         });
     }
@@ -42,7 +51,8 @@ export default function Index({ bloques, cats, buscar }) {
     useEffect(() => {
         let percent = 40
         let ids = [103, 105, 106]
-        reloadEzoic(percent, ids)
+        let cookieIXD = getCookie('CookieIXD')
+        reloadEzoic(percent, ids, cookieIXD)
     }, [])
 
     return (
