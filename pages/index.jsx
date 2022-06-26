@@ -6,7 +6,8 @@ import BloqueCatInicio from "../components/BloqueCatInicio"
 import IconoSuperior from "../components/IconoSuperior"
 import Head from "next/head"
 import CookieConsent from "react-cookie-consent"
-import AdSense from 'react-adsense';
+import AdSense from 'react-adsense'
+import { useState, useEffect } from 'react'
 
 export default function Index({ bloques, cats, buscar }) {
 
