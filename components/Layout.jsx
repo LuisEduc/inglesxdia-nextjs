@@ -7,7 +7,7 @@ import Navbar from './Navbar'
 import Hero from './Hero'
 import Footer from './Footer'
 
-export default function Layout({ children, home, buscar }) {
+export default function Layout({ children, home, buscar, adsenseActive }) {
 
     const router = useRouter();
 
@@ -48,7 +48,7 @@ export default function Layout({ children, home, buscar }) {
             <Navbar />
             <header>
                 {home ? (
-                    <Hero buscar={buscar} />
+                    <Hero buscar={buscar} adsenseActive={adsenseActive} />
                 ) : ''}
             </header>
 

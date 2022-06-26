@@ -10,8 +10,42 @@ import AdSense from 'react-adsense';
 
 export default function Index({ bloques, cats, buscar }) {
 
+    const [adsenseActive, setAdsenseActive] = useState(false)
+
+    const reloadEzoic = (percent, ids) => {
+        var ezstandalone = window.ezstandalone || {}
+        ezstandalone.cmd = ezstandalone.cmd || []
+        ezstandalone.cmd.push(function () {
+
+            var rand = Math.random() * 100
+
+            if (percent > rand) {
+                setAdsenseActive(false)
+                console.log("adsenseActive false")
+                ezstandalone.define(ids)
+            } else {
+                ezstandalone.define(100)
+                setAdsenseActive(true)
+                console.log("adsenseActive true")
+            }
+
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh()
+            } else {
+                ezstandalone.enable()
+                ezstandalone.display()
+            }
+        });
+    }
+
+    useEffect(() => {
+        let percent = 40
+        let ids = [103, 105, 106]
+        reloadEzoic(percent, ids)
+    }, [])
+
     return (
-        <Layout home buscar={buscar}>
+        <Layout home buscar={buscar} adsenseActive={adsenseActive}>
             <Head>
                 <link rel="icon" href="/favicon.png" />
                 <title>▷ Curso de inglés básico en línea / inglesxdia</title>
@@ -27,19 +61,24 @@ export default function Index({ bloques, cats, buscar }) {
                 bg='bg-secundario'
             />
 
-            <AdSense.Google
-                // full-inicio
-                client='ca-pub-3630578707238850'
-                slot='3265336329'
-                style={{
-                    display: 'block',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    textAlign: 'center'
-                }}
-                format='auto'
-                responsive='true'
-            />
+            {
+                adsenseActive ?
+                    <AdSense.Google
+                        // full-inicio
+                        client='ca-pub-3630578707238850'
+                        slot='3265336329'
+                        style={{
+                            display: 'block',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            textAlign: 'center'
+                        }}
+                        format='auto'
+                        responsive='true'
+                    />
+                    :
+                    <div id="ezoic-pub-ad-placeholder-105"></div>
+            }
 
             {
                 bloques.secciones.map(({ id, icono, titulo, color, bg, data }) => (
@@ -64,6 +103,12 @@ export default function Index({ bloques, cats, buscar }) {
                                 ))
                             }
                         </div>
+                        {
+                            adsenseActive ?
+                                ''
+                                :
+                                <div id="ezoic-pub-ad-placeholder-106"></div>
+                        }
                     </div>
                 ))
             }
