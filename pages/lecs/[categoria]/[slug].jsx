@@ -140,7 +140,6 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     />
                 </div>
 
-
                 <BotonMain
                     titulo='Lecciones similares'
                     icono='fa-chevron-circle-left'
@@ -179,7 +178,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                             display: 'inline-block',
                             width: 100 + '%',
                             height: 50 + 'px',
-                            marginTop: 10 + 'px',
+                            marginTop: 5 + 'px',
                         }}
                         format='auto'
                     />
