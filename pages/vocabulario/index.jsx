@@ -10,23 +10,35 @@ import { useEffect, useState } from 'react'
 
 export default function IndexVoc({ data }) {
 
-    const reloadEzoic = () => {
+    const [adsenseActive, setAdsenseActive] = useState(false)
+
+    const reloadEzoic = (percent, ids) => {
         var ezstandalone = window.ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
-            console.log("adsenseActive false")
-            ezstandalone.define(103, 105)
-            if (ezstandalone.enabled) {
-                ezstandalone.refresh()
+            var rand = Math.random() * 100
+            console.log('random', rand)
+            if (percent > rand) {
+                setAdsenseActive(false)
+                console.log("adsenseActive false")
+                ezstandalone.define(ids)
+                if (ezstandalone.enabled) {
+                    ezstandalone.refresh()
+                } else {
+                    ezstandalone.enable()
+                    ezstandalone.display()
+                }
             } else {
-                ezstandalone.enable()
-                ezstandalone.display()
+                setAdsenseActive(true)
+                console.log("adsenseActive true")
             }
         });
     }
 
     useEffect(() => {
-        reloadEzoic()
+        let percent = 50
+        let ids = [103, 105, 106, 108]
+        reloadEzoic(percent, ids)
     }, [])
 
     return (
@@ -37,7 +49,25 @@ export default function IndexVoc({ data }) {
                 <meta name="description" content="Aprende nuevo vocabulario en inglés todos los días. La palabras son básicas, medias y avanzadas, incluyen audio de la pronunciación y frases de ejemplo." />
             </Head>
 
-            <div id="ezoic-pub-ad-placeholder-103"></div>
+            {
+                adsenseActive ?
+                    <AdSense.Google
+                        // full-voc
+                        client='ca-pub-3630578707238850'
+                        slot='1345454840'
+                        style={{
+                            display: 'block',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginTop: 15 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format='auto'
+                        responsive='true'
+                    />
+                    :
+                    <div id="ezoic-pub-ad-placeholder-103"></div>
+            }
 
             <div className="inicio-badge">
                 <BotonVoc
@@ -61,7 +91,27 @@ export default function IndexVoc({ data }) {
                 />
             </div>
 
-            <div id="ezoic-pub-ad-placeholder-105"></div>
+            {
+                adsenseActive ?
+                    <AdSense.Google
+                        // 300x50-voc-alto
+                        client='ca-pub-3630578707238850'
+                        slot='9793863809'
+                        style={{
+                            display: 'block',
+                            height: 50 + 'px',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginTop: 15 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format=''
+                        responsive='true'
+                    />
+                    :
+                    <div id="ezoic-pub-ad-placeholder-105"></div>
+            }
+
 
             <div className="grid-info">
                 <div className="info">
@@ -79,9 +129,17 @@ export default function IndexVoc({ data }) {
                 <div className="div-carousel-voc">
                     <CardCarousel
                         data={data}
+                        adsenseActive={adsenseActive}
                     />
                 </div>
             </div>
+
+            {
+                adsenseActive ?
+                    ''
+                    :
+                    <div id="ezoic-pub-ad-placeholder-108"></div>
+            }
 
             <div className="w-75 mx-auto text-center mt-5">
                 <h2 className="font-weight-bold text-aviso-consejo">Consejos para aprender nuevo vocabulario en inglés con
