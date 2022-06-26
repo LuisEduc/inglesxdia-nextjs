@@ -373,7 +373,6 @@ export default function Individual({ dataLec, dataCat, cats }) {
                         :
                         <div id="ezoic-pub-ad-placeholder-116"></div>
                 }
-
             </Layout>
         </>
     )
