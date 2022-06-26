@@ -16,8 +16,9 @@ export default function IndexVoc({ data }) {
         var ezstandalone = window.ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
+
             var rand = Math.random() * 100
-            console.log('random', rand)
+
             if (percent > rand) {
                 setAdsenseActive(false)
                 console.log("adsenseActive false")
@@ -27,6 +28,7 @@ export default function IndexVoc({ data }) {
                 setAdsenseActive(true)
                 console.log("adsenseActive true")
             }
+
             if (ezstandalone.enabled) {
                 ezstandalone.refresh()
             } else {
@@ -37,7 +39,7 @@ export default function IndexVoc({ data }) {
     }
 
     useEffect(() => {
-        let percent = 50
+        let percent = 40
         let ids = [103, 105, 106, 108]
         reloadEzoic(percent, ids)
     }, [])

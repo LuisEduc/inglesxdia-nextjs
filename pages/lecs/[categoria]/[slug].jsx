@@ -33,6 +33,40 @@ export default function Individual({ dataLec, dataCat, cats }) {
 
     const { leccion, preguntas, imagenes } = dataLec;
 
+    const [adsenseActive, setAdsenseActive] = useState(false)
+
+    const reloadEzoic = (percent, ids) => {
+        var ezstandalone = window.ezstandalone || {}
+        ezstandalone.cmd = ezstandalone.cmd || []
+        ezstandalone.cmd.push(function () {
+
+            var rand = Math.random() * 100
+
+            if (percent > rand) {
+                setAdsenseActive(false)
+                console.log("adsenseActive false")
+                ezstandalone.define(ids)
+            } else {
+                ezstandalone.define(100)
+                setAdsenseActive(true)
+                console.log("adsenseActive true")
+            }
+
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh()
+            } else {
+                ezstandalone.enable()
+                ezstandalone.display()
+            }
+        });
+    }
+
+    useEffect(() => {
+        let percent = 40
+        let ids = [103, 105, 106, 108, 109, 110, 111, 114, 115, 116]
+        reloadEzoic(percent, ids)
+    }, [])
+
     // const { contenido } = contLec.contenido[0];
 
     // let texto = ''
@@ -99,21 +133,25 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
                 </Head>
 
-
-                <div className="text-center">
-                    <AdSense.Google
-                        // 300x50-indi-alto
-                        client='ca-pub-3630578707238850'
-                        slot='2418913037'
-                        style={{
-                            display: 'inline-block',
-                            width: 100 + '%',
-                            height: 50 + 'px',
-                            marginTop: 12 + 'px',
-                        }}
-                        format='auto'
-                    />
-                </div>
+                {
+                    adsenseActive ?
+                        <div className="text-center">
+                            <AdSense.Google
+                                // 300x50-indi-alto
+                                client='ca-pub-3630578707238850'
+                                slot='2418913037'
+                                style={{
+                                    display: 'inline-block',
+                                    width: 100 + '%',
+                                    height: 50 + 'px',
+                                    marginTop: 12 + 'px',
+                                }}
+                                format='auto'
+                            />
+                        </div>
+                        :
+                        <div id="ezoic-pub-ad-placeholder-103"></div>
+                }
 
                 <div className="lecs-titulo">
                     <h1>{leccion[0].titulo_seo}</h1>
@@ -126,19 +164,24 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     bg='bg-secundario'
                 />
 
-                <div className="text-center">
-                    <AdSense.Google
-                        // 300x250-indi
-                        client='ca-pub-3630578707238850'
-                        slot='6438145214'
-                        style={{
-                            display: 'block',
-                            height: 250 + 'px',
-                        }}
-                        format=''
-                        responsive='true'
-                    />
-                </div>
+                {
+                    adsenseActive ?
+                        <div className="text-center">
+                            <AdSense.Google
+                                // 300x250-indi
+                                client='ca-pub-3630578707238850'
+                                slot='6438145214'
+                                style={{
+                                    display: 'block',
+                                    height: 250 + 'px',
+                                }}
+                                format=''
+                                responsive='true'
+                            />
+                        </div>
+                        :
+                        <div id="ezoic-pub-ad-placeholder-105"></div>
+                }
 
                 <BotonMain
                     titulo='Lecciones similares'
@@ -169,20 +212,25 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     </Carousel>
                 </div>
 
-                <div className="text-center">
-                    <AdSense.Google
-                        // 300x50-indi-medio
-                        client='ca-pub-3630578707238850'
-                        slot='9884836482'
-                        style={{
-                            display: 'inline-block',
-                            width: 100 + '%',
-                            height: 50 + 'px',
-                            marginTop: 5 + 'px',
-                        }}
-                        format='auto'
-                    />
-                </div>
+                {
+                    adsenseActive ?
+                        <div className="text-center">
+                            <AdSense.Google
+                                // 300x50-indi-medio
+                                client='ca-pub-3630578707238850'
+                                slot='9884836482'
+                                style={{
+                                    display: 'inline-block',
+                                    width: 100 + '%',
+                                    height: 50 + 'px',
+                                    marginTop: 5 + 'px',
+                                }}
+                                format='auto'
+                            />
+                        </div>
+                        :
+                        <div id="ezoic-pub-ad-placeholder-106"></div>
+                }
 
                 <Cuestionario
                     questions={preguntas}
@@ -192,10 +240,24 @@ export default function Individual({ dataLec, dataCat, cats }) {
                 >
                 </Cuestionario>
 
+                {
+                    adsenseActive ?
+                        ''
+                        :
+                        <div id="ezoic-pub-ad-placeholder-108"></div>
+                }
+
                 <AudioContainer
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
                 />
+
+                {
+                    adsenseActive ?
+                        ''
+                        :
+                        <div id="ezoic-pub-ad-placeholder-109"></div>
+                }
 
                 <Link href='https://bit.ly/34j0kVS'>
                     <a>
@@ -205,6 +267,13 @@ export default function Individual({ dataLec, dataCat, cats }) {
                         </div>
                     </a>
                 </Link>
+
+                {
+                    adsenseActive ?
+                        ''
+                        :
+                        <div id="ezoic-pub-ad-placeholder-110"></div>
+                }
 
                 {/* {textos === '' ?
                     ''
@@ -222,6 +291,13 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-secundario'
                 />
+
+                {
+                    adsenseActive ?
+                        ''
+                        :
+                        <div id="ezoic-pub-ad-placeholder-111"></div>
+                }
 
                 {
                     <div className="galeria-bloque-inicio" style={{ marginTop: -15 + 'px' }}>
@@ -242,20 +318,25 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     </div>
                 }
 
-                <div className="text-center">
-                    <AdSense.Google
-                        // 300x50-indi-bajo
-                        client='ca-pub-3630578707238850'
-                        slot='5989861498'
-                        style={{
-                            display: 'inline-block',
-                            width: 100 + '%',
-                            height: 50 + 'px',
-                            marginTop: 5 + 'px',
-                        }}
-                        format='auto'
-                    />
-                </div>
+                {
+                    adsenseActive ?
+                        <div className="text-center">
+                            <AdSense.Google
+                                // 300x50-indi-bajo
+                                client='ca-pub-3630578707238850'
+                                slot='5989861498'
+                                style={{
+                                    display: 'inline-block',
+                                    width: 100 + '%',
+                                    height: 50 + 'px',
+                                    marginTop: 5 + 'px',
+                                }}
+                                format='auto'
+                            />
+                        </div>
+                        :
+                        <div id="ezoic-pub-ad-placeholder-114"></div>
+                }
 
                 <BotonMain
                     titulo='Todos los cursos'
@@ -263,6 +344,13 @@ export default function Individual({ dataLec, dataCat, cats }) {
                     dir={`/#cursos`}
                     bg='bg-primario'
                 />
+
+                {
+                    adsenseActive ?
+                        ''
+                        :
+                        <div id="ezoic-pub-ad-placeholder-115"></div>
+                }
 
                 <div className="div-lista-links">
                     {
@@ -278,6 +366,13 @@ export default function Individual({ dataLec, dataCat, cats }) {
                         ))
                     }
                 </div>
+
+                {
+                    adsenseActive ?
+                        ''
+                        :
+                        <div id="ezoic-pub-ad-placeholder-116"></div>
+                }
 
             </Layout>
         </>
