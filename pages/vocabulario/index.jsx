@@ -29,6 +29,12 @@ export default function IndexVoc({ data }) {
                     ezstandalone.display()
                 }
             } else {
+                if (ezstandalone.enabled) {
+                    ezstandalone.refresh()
+                } else {
+                    ezstandalone.enable()
+                    ezstandalone.display()
+                }
                 setAdsenseActive(true)
                 console.log("adsenseActive true")
             }
