@@ -63,7 +63,7 @@ export default function IndexCat({ dataCat, dataContCat }) {
 
     return (
 
-        <Layout>
+        <Layout adsenseActive={adsenseActive}>
             <Head>
                 <link rel="icon" href="/favicon.png" />
                 <title>▷ {dataCat.categoria[0].titulo} en inglés | Curso de inglés básico en línea</title>

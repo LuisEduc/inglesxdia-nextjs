@@ -122,7 +122,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
 
     return (
         <>
-            <Layout>
+            <Layout adsenseActive={adsenseActive}>
                 <Head>
                     <link rel="icon" href="/favicon.png" />
                     <title>{leccion[0].titulo_seo}</title>
