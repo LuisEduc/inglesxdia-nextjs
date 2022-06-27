@@ -29,7 +29,7 @@ const settings = {
     swipeScrollTolerance: 60,
 };
 
-export default function Individual({ dataLec, dataCat, cats }) {
+export default function Individual({ dataLec, dataCat, cats, contLec }) {
 
     const { leccion, preguntas, imagenes } = dataLec;
 
@@ -67,30 +67,30 @@ export default function Individual({ dataLec, dataCat, cats }) {
         reloadEzoic(percent, ids)
     }, [])
 
-    // const { contenido } = contLec.contenido[0];
+    const { contenido } = contLec.contenido[0];
 
-    // let texto = ''
+    let texto = ''
 
-    // contenido ?
-    //     texto = contenido
-    //         .replace(/<p><br><\/p>/g, '<div class="space"></div>')
-    //         .replace(/<h3><br><\/h3>/g, '<div class="space"></div>')
-    //         .replace(/<h2><br><\/h2>/g, '<div class="space"></div>')
-    //         .replace(/ql-cursor/g, '')
-    //         .replace(/<a/g, '<Link')
-    //         .replace(/target="_blank">/g, '><a class="enlace">')
-    //         .replace(/<\/a>/g, '</a></Link>')
-    //         .replace(/<u><\/u>/g, '')
-    //         .replace('<h2>¡Completa', '*--*<h2>¡Completa')
-    //         .replace(' style="color: rgb(0, 0, 0);"', '')
-    //     : ''
+    contenido ?
+        texto = contenido
+            .replace(/<p><br><\/p>/g, '<div class="space"></div>')
+            .replace(/<h3><br><\/h3>/g, '<div class="space"></div>')
+            .replace(/<h2><br><\/h2>/g, '<div class="space"></div>')
+            .replace(/ql-cursor/g, '')
+            .replace(/<a/g, '<Link')
+            .replace(/target="_blank">/g, '><a class="enlace">')
+            .replace(/<\/a>/g, '</a></Link>')
+            .replace(/<u><\/u>/g, '')
+            .replace('<h2>¡Completa', '*--*<h2>¡Completa')
+            .replace(' style="color: rgb(0, 0, 0);"', '')
+        : ''
 
-    // texto === '<div class="space"></div>' ?
-    //     texto = ''
-    //     : ''
+    texto === '<div class="space"></div>' ?
+        texto = ''
+        : ''
 
-    // const miTexto = texto.split("*--*");
-    // let textos = miTexto[0]
+    const miTexto = texto.split("*--*");
+    let textos = miTexto[0]
 
     const [slide, setSlide] = useState(0);
 
@@ -275,7 +275,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                         <div id="ezoic-pub-ad-placeholder-110"></div>
                 }
 
-                {/* {textos === '' ?
+                {textos === '' ?
                     ''
                     :
                     (
@@ -283,7 +283,7 @@ export default function Individual({ dataLec, dataCat, cats }) {
                             <JsxParser components={{ Link }} jsx={`${textos}`} className="contenido" />
                         </div>
                     )
-                } */}
+                }
 
                 <BotonMain
                     titulo='Relacionadas'
@@ -439,21 +439,22 @@ export async function getStaticProps({ params }) {
             })
         const cats = await resCats.json()
 
-        // const resContLec = await fetch(`https://admin.inglesxdia.com/api/contenido/${params.categoria}/${params.slug}`,
-        //     {
-        //         method: "GET",
-        //         headers: {
-        //             "User-Agent": "*",
-        //             Accept: "application/json; charset=UTF-8",
-        //         },
-        //     })
-        // const contLec = await resContLec.json()
+        const resContLec = await fetch(`https://admin.inglesxdia.com/api/contenido/${params.categoria}/${params.slug}`,
+            {
+                method: "GET",
+                headers: {
+                    "User-Agent": "*",
+                    Accept: "application/json; charset=UTF-8",
+                },
+            })
+        const contLec = await resContLec.json()
 
         return {
             props: {
                 dataLec,
                 dataCat,
-                cats
+                cats,
+                contLec
             },
             revalidate: 5, // In seconds
         }
