@@ -12,10 +12,7 @@ export default function ScriptAdSenseEzoic({ adsenseActive }) {
                         crossOrigin="anonymous"
                     />
                     :
-                    <Script
-                        strategy="beforeInteractive"
-                        src={`https://www.ezojs.com/ezoic/sa.min.js`}
-                    />
+                    ''
             }
         </>
     )
