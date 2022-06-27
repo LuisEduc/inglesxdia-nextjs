@@ -45,7 +45,7 @@ export default function IndexVoc({ data }) {
     }, [])
 
     return (
-        <Layout adsenseActive={adsenseActive}>
+        <Layout>
             <Head>
                 <link rel="icon" href="/favicon.png" />
                 <title>Aprender palabras en inglés cada día | inglesxdia</title>
