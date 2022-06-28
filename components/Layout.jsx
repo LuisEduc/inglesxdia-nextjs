@@ -5,7 +5,6 @@ import NProgress from 'nprogress'
 import Navbar from './Navbar'
 import Hero from './Hero'
 import Footer from './Footer'
-import ScriptAdSenseEzoic from './ScriptAdSenseEzoic'
 
 export default function Layout({ children, home, buscar, adsenseActive }) {
 
@@ -44,8 +43,6 @@ export default function Layout({ children, home, buscar, adsenseActive }) {
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                     })(window,document,'script','dataLayer','GTM-N4SG9PL');`}}></script>
             </Head>
-
-            <ScriptAdSenseEzoic adsenseActive={adsenseActive} />
 
             <Navbar />
             <header>
