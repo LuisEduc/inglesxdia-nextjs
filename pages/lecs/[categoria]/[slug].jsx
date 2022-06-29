@@ -63,7 +63,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
     }
 
     useEffect(() => {
-        let percent = 35
+        let percent = 40
         let ids = [103, 105, 106, 108, 109, 110, 111, 114, 115, 116]
         reloadEzoic(percent, ids)
     }, [])
