@@ -191,6 +191,13 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     bg='bg-primario'
                 />
 
+                {
+                    adsenseActive ?
+                        ''
+                        :
+                        <div id="ezoic-pub-ad-placeholder-106"></div>
+                }
+
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
                         {
@@ -230,7 +237,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                             />
                         </div>
                         :
-                        <div id="ezoic-pub-ad-placeholder-106"></div>
+                        <div id="ezoic-pub-ad-placeholder-108"></div>
                 }
 
                 <Cuestionario
@@ -245,7 +252,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     adsenseActive ?
                         ''
                         :
-                        <div id="ezoic-pub-ad-placeholder-108"></div>
+                        <div id="ezoic-pub-ad-placeholder-109"></div>
                 }
 
                 <AudioContainer
@@ -257,7 +264,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     adsenseActive ?
                         ''
                         :
-                        <div id="ezoic-pub-ad-placeholder-109"></div>
+                        <div id="ezoic-pub-ad-placeholder-110"></div>
                 }
 
                 <Link href='https://bit.ly/34j0kVS'>
@@ -273,7 +280,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     adsenseActive ?
                         ''
                         :
-                        <div id="ezoic-pub-ad-placeholder-110"></div>
+                        <div id="ezoic-pub-ad-placeholder-111"></div>
                 }
 
                 {textos === '' ?
@@ -297,7 +304,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     adsenseActive ?
                         ''
                         :
-                        <div id="ezoic-pub-ad-placeholder-111"></div>
+                        <div id="ezoic-pub-ad-placeholder-114"></div>
                 }
 
                 {
@@ -336,7 +343,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                             />
                         </div>
                         :
-                        <div id="ezoic-pub-ad-placeholder-114"></div>
+                        <div id="ezoic-pub-ad-placeholder-115"></div>
                 }
 
                 <BotonMain
@@ -350,7 +357,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     adsenseActive ?
                         ''
                         :
-                        <div id="ezoic-pub-ad-placeholder-115"></div>
+                        <div id="ezoic-pub-ad-placeholder-116"></div>
                 }
 
                 <div className="div-lista-links">
@@ -372,7 +379,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     adsenseActive ?
                         ''
                         :
-                        <div id="ezoic-pub-ad-placeholder-116"></div>
+                        <div id="ezoic-pub-ad-placeholder-117"></div>
                 }
             </Layout>
         </>
