@@ -100,7 +100,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
 
     const intro = `
     <p>Te damos la bienvenida a la clase <strong> número ${numLeccion}</strong>
-     del curso de <strong>${dataCat.categoria[0].titulo.toLowerCase()} en inglés</strong>.
+     del curso de "<strong>${dataCat.categoria[0].titulo.toLowerCase()} en inglés</strong>."
      Visita todos los cursos disponibles <Link href={'/#cursos'}><a>AQUÍ.</a></Link>
      Las clases incluyen traducción, audio y preguntas para practicar.</p>
      <div class="space"></div>`
