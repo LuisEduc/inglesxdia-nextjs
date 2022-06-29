@@ -24,18 +24,17 @@ export default function IndexCat({ dataCat, dataContCat }) {
                 setAdsenseActive(false)
                 console.log("adsenseActive false")
                 ezstandalone.define(ids)
+                if (ezstandalone.enabled) {
+                    ezstandalone.refresh()
+                } else {
+                    ezstandalone.enable()
+                    ezstandalone.display()
+                }
             } else {
-                ezstandalone.define(100)
                 setAdsenseActive(true)
                 console.log("adsenseActive true")
             }
 
-            if (ezstandalone.enabled) {
-                ezstandalone.refresh()
-            } else {
-                ezstandalone.enable()
-                ezstandalone.display()
-            }
         });
     }
 
