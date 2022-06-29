@@ -9,9 +9,9 @@ export default function ListaLinks({ nivel, icono, slug, titulo }) {
                         <div className="titulo-lista-links">
                             <div>
                                 {nivel === 'medio' ?
-                                <h2>Curso nivel intermedio</h2>
+                                <h2>Curso de inglés intermedio</h2>
                                 :
-                                <h2>Curso nivel {nivel}</h2>}
+                                <h2>Curso de inglés {nivel}</h2>}
                                 <h3>{titulo}</h3>
                             </div>
                             <div className="icon-lista-links">

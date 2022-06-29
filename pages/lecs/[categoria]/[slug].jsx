@@ -91,10 +91,23 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         : ''
 
     const miTexto = texto.split("*--*");
-    let textos = miTexto[0]
+
+    let indexLeccion
+    dataCat.lecciones.map((data, index) => (
+        data.id === leccion[0].id ? indexLeccion = index : ''
+    ))
+    const numLeccion = dataCat.lecciones.length - indexLeccion
+
+    const intro = `
+    <p>Te damos la bienvenida a la clase <strong> número ${numLeccion}</strong>
+     del curso de <strong>${dataCat.categoria[0].titulo.toLowerCase()} en inglés</strong>.
+     Visita todos los cursos disponibles <Link href={'/#cursos'}><a>AQUÍ.</a></Link>
+     Las clases incluyen traducción, audio y preguntas para practicar.</p>
+     <div class="space"></div>`
+
+    let textos = intro.concat(miTexto[0])
 
     const [slide, setSlide] = useState(0);
-
     const onChange = (item) => {
         setSlide(item)
     }
@@ -188,7 +201,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                 }
 
                 <BotonMain
-                    titulo='Lecciones similares'
+                    titulo='Clases similares'
                     icono='fa-chevron-circle-left'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
@@ -316,7 +329,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                 }
 
                 <BotonMain
-                    titulo='Relacionadas'
+                    titulo='Clases relacionadas'
                     icono='fa-grip-horizontal'
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-secundario'
@@ -372,7 +385,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                 }
 
                 <BotonMain
-                    titulo='Todos los cursos'
+                    titulo='Más cursos de inglés'
                     icono='fa-grip-horizontal'
                     dir={`/#cursos`}
                     bg='bg-primario'
