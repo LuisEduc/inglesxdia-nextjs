@@ -53,6 +53,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     ezstandalone.display()
                 }
             } else {
+                ezstandalone.destroy()
                 setAdsenseActive(true)
                 console.log("adsenseActive true")
             }

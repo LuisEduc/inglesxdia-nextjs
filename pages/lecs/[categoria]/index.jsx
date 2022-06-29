@@ -31,6 +31,7 @@ export default function IndexCat({ dataCat, dataContCat }) {
                     ezstandalone.display()
                 }
             } else {
+                ezstandalone.destroy()
                 setAdsenseActive(true)
                 console.log("adsenseActive true")
             }

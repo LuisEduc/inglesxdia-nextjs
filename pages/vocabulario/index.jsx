@@ -30,6 +30,7 @@ export default function IndexVoc({ data }) {
                     ezstandalone.display()
                 }
             } else {
+                ezstandalone.destroy()
                 setAdsenseActive(true)
                 console.log("adsenseActive true")
             }

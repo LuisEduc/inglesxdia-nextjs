@@ -37,12 +37,14 @@ export default function Index({ bloques, cats, buscar }) {
                         ezstandalone.display()
                     }
                 } else {
+                    ezstandalone.destroy()
                     setAdsenseActive(true)
                     console.log("adsenseActive true")
                 }
             } else {
-                console.log("cookieIXD false")
+                ezstandalone.destroy()
                 setAdsenseActive(true)
+                console.log("cookieIXD false")
             }
         });
     }
