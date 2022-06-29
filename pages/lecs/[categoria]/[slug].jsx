@@ -142,12 +142,15 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                                 client='ca-pub-3630578707238850'
                                 slot='2418913037'
                                 style={{
-                                    display: 'inline-block',
-                                    width: 100 + '%',
+                                    display: 'block',
                                     height: 50 + 'px',
+                                    marginLeft: 'auto',
+                                    marginRight: 'auto',
                                     marginTop: 12 + 'px',
+                                    textAlign: 'center'
                                 }}
-                                format='auto'
+                                format=''
+                                responsive='true'
                             />
                         </div>
                         :
@@ -228,12 +231,15 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                                 client='ca-pub-3630578707238850'
                                 slot='9884836482'
                                 style={{
-                                    display: 'inline-block',
-                                    width: 100 + '%',
+                                    display: 'block',
                                     height: 50 + 'px',
+                                    marginLeft: 'auto',
+                                    marginRight: 'auto',
                                     marginTop: 5 + 'px',
+                                    textAlign: 'center'
                                 }}
-                                format='auto'
+                                format=''
+                                responsive='true'
                             />
                         </div>
                         :
@@ -278,7 +284,23 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
 
                 {
                     adsenseActive ?
-                        ''
+                        <div className="text-center">
+                            <AdSense.Google
+                                // 300x50-indi-texto
+                                client='ca-pub-3630578707238850'
+                                slot='8782255764'
+                                style={{
+                                    display: 'block',
+                                    height: 50 + 'px',
+                                    marginLeft: 'auto',
+                                    marginRight: 'auto',
+                                    marginTop: 5 + 'px',
+                                    textAlign: 'center'
+                                }}
+                                format=''
+                                responsive='true'
+                            />
+                        </div>
                         :
                         <div id="ezoic-pub-ad-placeholder-111"></div>
                 }
@@ -334,12 +356,15 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                                 client='ca-pub-3630578707238850'
                                 slot='5989861498'
                                 style={{
-                                    display: 'inline-block',
-                                    width: 100 + '%',
+                                    display: 'block',
                                     height: 50 + 'px',
+                                    marginLeft: 'auto',
+                                    marginRight: 'auto',
                                     marginTop: 5 + 'px',
+                                    textAlign: 'center'
                                 }}
-                                format='auto'
+                                format=''
+                                responsive='true'
                             />
                         </div>
                         :
