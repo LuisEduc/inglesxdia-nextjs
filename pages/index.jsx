@@ -25,7 +25,10 @@ export default function Index({ bloques, cats, buscar }) {
         ezstandalone.cmd.push(function () {
 
             if (cookieIXD) {
+                
                 var rand = Math.random() * 100
+                console.log('Rand ', rand)
+
                 if (percent > rand) {
                     setAdsenseActive(false)
                     console.log("adsenseActive false")

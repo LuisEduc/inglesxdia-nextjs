@@ -19,6 +19,7 @@ export default function IndexCat({ dataCat, dataContCat }) {
         ezstandalone.cmd.push(function () {
 
             var rand = Math.random() * 100
+            console.log('Rand ', rand)
 
             if (percent > rand) {
                 setAdsenseActive(false)

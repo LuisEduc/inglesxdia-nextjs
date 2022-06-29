@@ -41,6 +41,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         ezstandalone.cmd.push(function () {
 
             var rand = Math.random() * 100
+            console.log('Rand ', rand)
 
             if (percent > rand) {
                 setAdsenseActive(false)
