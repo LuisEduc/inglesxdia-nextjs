@@ -1,10 +1,10 @@
 
-import Layout from "../../../components/Layout"
-import BotonMain from "../../../components/BotonMain"
-import AudioContainer from "../../../components/AudioContainer"
-import BloqueInicio from "../../../components/BloqueInicio"
+import Layout from "../../../../components/Layout"
+import BotonMain from "../../../../components/BotonMain"
+import AudioContainer from "../../../../components/AudioContainer"
+import BloqueInicio from "../../../../components/BloqueInicio"
 import Head from "next/head"
-import Cuestionario from "../../../components/Cuestionario"
+import Cuestionario from "../../../../components/Cuestionario"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-h5-audio-player/lib/styles.css";
@@ -13,7 +13,7 @@ import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import Link from "next/link"
 import JsxParser from 'react-jsx-parser'
-import ListaLinks from "../../../components/ListaLinks"
+import ListaLinks from "../../../../components/ListaLinks"
 import AdSense from 'react-adsense'
 
 const settings = {
@@ -34,6 +34,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
     const { leccion, preguntas, imagenes } = dataLec;
 
     const [adsenseActive, setAdsenseActive] = useState(false)
+    const [lecturas, setLecturas] = useState(true)
 
     const reloadEzoic = (percent, ids) => {
         var ezstandalone = window.ezstandalone || {}
@@ -63,6 +64,9 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
     }
 
     useEffect(() => {
+        const c_s = dataCat.categoria[0].slug
+        c_s === 'lc' || c_s === 'lb' || c_s === 'fm' ? setLecturas(true) : setLecturas(false)
+
         let percent = 40
         let ids = [103, 105, 106, 108, 109, 110, 111, 114, 115, 116, 117]
         reloadEzoic(percent, ids)
@@ -257,6 +261,21 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         </div>
                         :
                         <div id="ezoic-pub-ad-placeholder-108"></div>
+                }
+
+                {
+                    lecturas ?
+                        <Link href={`/lecs/${dataCat.categoria[0].slug}/${leccion[0].slug}/traduccion`}>
+                            <a>
+                                <div className={`btn btn-cuestionario bg-secundario`}>
+                                    <i className={`fas fa-edit`}></i>
+                                    <p>Traducir lectura</p>
+                                    <i className="fas fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </Link>
+                        :
+                        ''
                 }
 
                 <Cuestionario

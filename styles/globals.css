@@ -786,6 +786,12 @@ a {
   margin-bottom: 0px;
 }
 
+.lecs-titulo span {
+  font-size: 1.1rem;
+  color: var(--color-gray);
+  font-family: "Righteous", cursive;
+}
+
 .img-post {
   margin-left: auto;
   margin-right: auto;
@@ -859,10 +865,102 @@ a {
 }
 
 /* ----------------------------------------------------------- */
+/* CONTENIDO TRADUCCIÓN */
+/* ----------------------------------------------------------- */
+
+.texto-main-traduccion {
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+}
+
+.texto-main-resultado {
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding: 0.5rem 1rem 1rem;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.texto-main-resultado h3 {
+  color: var(--color-primario);
+  font-weight: 600;
+}
+
+.texto-main-traduccion h2 {
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: calc(1.2rem + 0.9vw) !important;
+}
+
+.div-textarea-traduccion {
+  display: flex;
+  text-align: center;
+}
+
+.textarea-traduccion {
+  font-weight: 400;
+  font-size: calc(1.2rem + 0.9vw) !important;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 5px;
+  text-align: center;
+  border: #fff;
+  resize: none;
+  overflow: hidden;
+  min-height: 80px;
+  max-height: 500px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+}
+
+.css-1xidqu1-marker {
+  display: none !important;
+}
+
+@media (max-width: 1280px) {
+  .texto-main-traduccion,
+  .textarea-traduccion,
+  .texto-main-resultado {
+    width: 85%;
+  }
+}
+
+@media (max-width: 540px) {
+  .texto-main-traduccion,
+  .textarea-traduccion,
+  .texto-main-resultado {
+    width: 92%;
+  }
+}
+
+@media (max-width: 370px) {
+  .texto-main-traduccion,
+  .textarea-traduccion,
+  .texto-main-resultado {
+    padding: 0.6rem;
+  }
+}
+
+/* ----------------------------------------------------------- */
 /* CONTENIDO POST INDIVIDUAL */
 /* ----------------------------------------------------------- */
 
-.enlace{
+.enlace {
   color: var(--color-secundario);
 }
 
