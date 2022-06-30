@@ -50,6 +50,7 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
     console.log(contenido)
 
     let texto = contenido
+        .replace(/<em style="color((.|\n)*?) <\/em>/g, '')
         .replace(/ style="color((.|\n)*?);"/g, '')
         .replace('<h2>', '*--*')
         .replace('</h2>', '*--*')
@@ -57,8 +58,8 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
         .replace(/<\/em><\/strong><\/p><p><em>/g, '*--*')
         .replace('</em></p>', '*--*')
 
+        console.log(texto)
     const miTexto = texto.split("*--*")
-    console.log(miTexto)
     const textoIng = miTexto[3]
     const textoEsp = miTexto[4]
 
