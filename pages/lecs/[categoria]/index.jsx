@@ -41,7 +41,7 @@ export default function IndexCat({ dataCat, dataContCat }) {
     }
 
     useEffect(() => {
-        let percent = 40
+        let percent = 30
         let ids = [103, 105, 106, 108]
         reloadEzoic(percent, ids)
     }, [])
