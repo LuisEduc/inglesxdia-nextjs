@@ -47,9 +47,10 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
     let refTextArea = useRef()
 
     const { contenido } = contLec.contenido[0];
+    console.log(contenido)
 
     let texto = contenido
-        .replace(' style="color: rgb(0, 0, 0);"', '')
+        .replace(/ style="color((.|\n)*?);"/g, '')
         .replace('<h2>', '*--*')
         .replace('</h2>', '*--*')
         .replace(/<p><strong><em>/g, '*--*')
@@ -57,6 +58,7 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
         .replace('</em></p>', '*--*')
 
     const miTexto = texto.split("*--*")
+    console.log(miTexto)
     const textoIng = miTexto[3]
     const textoEsp = miTexto[4]
 
