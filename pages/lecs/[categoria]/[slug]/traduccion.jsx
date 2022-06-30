@@ -57,8 +57,8 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
         .replace('</em></p>', '*--*')
 
     const miTexto = texto.split("*--*")
-    const textoIng = miTexto[3].trim()
-    const textoEsp = miTexto[4].trim()
+    const textoIng = miTexto[3]
+    const textoEsp = miTexto[4]
 
     const [message, setMessage] = useState('');
     const [diferencia, setDiferencia] = useState(false);
@@ -105,8 +105,8 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
 
             <Head>
                 <link rel="icon" href="/favicon.png" />
-                <title>{miTexto[1].trim()} · Ejercico de traducción</title>
-                <meta name="description" content={miTexto[3].trim()} />
+                <title>{miTexto[1]} · Ejercico de traducción</title>
+                <meta name="description" content={miTexto[3]} />
             </Head>
 
             {
@@ -247,7 +247,7 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
 
 export async function getStaticPaths() {
     try {
-        const res = await fetch('https://admin.inglesxdia.com/api/lecciones',
+        const res = await fetch('https://admin.inglesxdia.com/api/lecturas',
             {
                 method: "GET",
                 headers: {
