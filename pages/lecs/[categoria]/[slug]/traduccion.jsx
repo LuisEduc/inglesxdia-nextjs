@@ -52,6 +52,8 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
     let texto = contenido
         .replace(/ style="color((.|\n)*?);"/g, '')
         .replace(/<em> <\/em((.|\n)*?)>/g, '')
+        .replace(/<strong><em><span class="ql-cursor((.|\n)*?)strong>/g, '')
+        .replace(/<span class="ql-cursor((.|\n)*?)span>/g, '')
         .replace('<h2>', '*--*')
         .replace('</h2>', '*--*')
         .replace(/<p><strong><em>/g, '*--*')
