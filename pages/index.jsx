@@ -53,7 +53,7 @@ export default function Index({ bloques, cats, buscar }) {
     }
 
     useEffect(() => {
-        let percent = 30
+        let percent = 20
         let ids = [103, 105, 106]
         let cookieIXD = getCookie('CookieIXD')
         reloadEzoic(percent, ids, cookieIXD)

@@ -40,7 +40,7 @@ export default function IndexVoc({ data }) {
     }
 
     useEffect(() => {
-        let percent = 30
+        let percent = 20
         let ids = [103, 105, 106, 108]
         reloadEzoic(percent, ids)
     }, [])
