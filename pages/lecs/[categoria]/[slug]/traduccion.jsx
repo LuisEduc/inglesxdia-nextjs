@@ -40,7 +40,7 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
 
     useEffect(() => {
         let percent = 90
-        let ids = [103, 105, 106]
+        let ids = [100, 103, 105, 106]
         reloadEzoic(percent, ids)
     }, [])
 
