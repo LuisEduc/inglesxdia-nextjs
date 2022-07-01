@@ -63,7 +63,7 @@ export default function Index({ bloques, cats, buscar }) {
         <Layout home buscar={buscar} adsenseActive={adsenseActive}>
             <Head>
                 <link rel="icon" href="/favicon.png" />
-                <title>▷ Curso de inglés básico en línea / inglesxdia</title>
+                <title>Curso de inglés en línea / inglesxdia</title>
                 <meta name="description" content="Lecciones de inglés básico todos los días. En este curso en línea para principiantes aprende a hablar, leer y escribir en inglés gratis con nuestras publicaciones diarias, perfectas para niños, adolescentes y adultos." />
             </Head>
 
