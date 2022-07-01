@@ -47,7 +47,6 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
     let refTextArea = useRef()
 
     const { contenido } = contLec.contenido[0];
-    console.log(contenido)
 
     let texto = contenido
         .replace(/ style="color((.|\n)*?);"/g, '')
@@ -208,7 +207,7 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
                                 height: 50 + 'px',
                                 marginLeft: 'auto',
                                 marginRight: 'auto',
-                                marginTop: 5 + 'px',
+                                marginTop: 15 + 'px',
                                 textAlign: 'center'
                             }}
                             format=''
