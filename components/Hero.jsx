@@ -3,31 +3,26 @@ import Buscador from "../components/Buscador"
 import AdSense from 'react-adsense';
 import Link from "next/link";
 
-export default function Hero({ buscar, adsenseActive }) {
+export default function Hero({ buscar }) {
     return (
         <>
             <div className="hero-bg">
                 <div style={{ height: '15px' }}></div>
 
-                {
-                    adsenseActive ?
-                        <AdSense.Google
-                            // full-hero
-                            client='ca-pub-3630578707238850'
-                            slot='4810977003'
-                            style={{
-                                display: 'block',
-                                marginLeft: 'auto',
-                                marginRight: 'auto',
-                                marginTop: 15 + 'px',
-                                textAlign: 'center'
-                            }}
-                            format='auto'
-                            responsive='true'
-                        />
-                        :
-                        <div id="ezoic-pub-ad-placeholder-103"></div>
-                }
+                <AdSense.Google
+                    // full-hero
+                    client='ca-pub-3630578707238850'
+                    slot='4810977003'
+                    style={{
+                        display: 'block',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        marginTop: 15 + 'px',
+                        textAlign: 'center'
+                    }}
+                    format='auto'
+                    responsive='true'
+                />
 
                 <div className="hero">
                     <div className="hero-text">

@@ -18,7 +18,7 @@ const settings = {
   swipeScrollTolerance: 40,
 };
 
-export default function CardCarousel({ data, adsenseActive }) {
+export default function CardCarousel({ data }) {
 
   const [audioVoc, setAudioVoc] = useState(data.palabras[0].audio);
 
@@ -51,13 +51,6 @@ export default function CardCarousel({ data, adsenseActive }) {
           ))
         }
       </Carousel>
-
-      {
-        adsenseActive ?
-          ''
-          :
-          <div id="ezoic-pub-ad-placeholder-106"></div>
-      }
 
       <div className="audio-palabras mx-auto">
         <AudioPlayer

@@ -11,56 +11,39 @@ import { useState, useEffect } from 'react'
 
 export default function Index({ bloques, cats, buscar }) {
 
-    const [adsenseActive, setAdsenseActive] = useState(false)
-
     const getCookie = (name) => {
         const value = `; ${document.cookie}`;
         const parts = value.split(`; ${name}=`);
         if (parts.length === 2) return parts.pop().split(';').shift();
     }
 
-    const reloadEzoic = (percent, ids, cookieIXD) => {
+    const reloadEzoic = (ids, cookieIXD) => {
         var ezstandalone = window.ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
-
             if (cookieIXD) {
-                
-                var rand = Math.random() * 100
-                console.log('Rand ', rand)
-
-                if (percent > rand) {
-                    setAdsenseActive(false)
-                    console.log("adsenseActive false")
-                    ezstandalone.define(ids)
-                    if (ezstandalone.enabled) {
-                        ezstandalone.refresh()
-                    } else {
-                        ezstandalone.enable()
-                        ezstandalone.display()
-                    }
+                ezstandalone.define(ids)
+                if (ezstandalone.enabled) {
+                    ezstandalone.refresh()
                 } else {
-                    ezstandalone.destroy()
-                    setAdsenseActive(true)
-                    console.log("adsenseActive true")
+                    ezstandalone.enable()
+                    ezstandalone.display()
                 }
             } else {
                 ezstandalone.destroy()
-                setAdsenseActive(true)
                 console.log("cookieIXD false")
             }
         });
     }
 
     useEffect(() => {
-        let percent = 10
-        let ids = [100, 103, 105, 106]
+        let ids = [100]
         let cookieIXD = getCookie('CookieIXD')
-        reloadEzoic(percent, ids, cookieIXD)
+        reloadEzoic(ids, cookieIXD)
     }, [])
 
     return (
-        <Layout home buscar={buscar} adsenseActive={adsenseActive}>
+        <Layout home buscar={buscar}>
             <Head>
                 <link rel="icon" href="/favicon.png" />
                 <title>Curso de inglés en línea / inglesxdia</title>
@@ -76,24 +59,19 @@ export default function Index({ bloques, cats, buscar }) {
                 bg='bg-secundario'
             />
 
-            {
-                adsenseActive ?
-                    <AdSense.Google
-                        // full-inicio
-                        client='ca-pub-3630578707238850'
-                        slot='3265336329'
-                        style={{
-                            display: 'block',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                            textAlign: 'center'
-                        }}
-                        format='auto'
-                        responsive='true'
-                    />
-                    :
-                    <div id="ezoic-pub-ad-placeholder-105"></div>
-            }
+            <AdSense.Google
+                // full-inicio
+                client='ca-pub-3630578707238850'
+                slot='3265336329'
+                style={{
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    textAlign: 'center'
+                }}
+                format='auto'
+                responsive='true'
+            />
 
             {
                 bloques.secciones.map(({ id, icono, titulo, color, bg, data }) => (
@@ -118,12 +96,6 @@ export default function Index({ bloques, cats, buscar }) {
                                 ))
                             }
                         </div>
-                        {
-                            adsenseActive ?
-                                ''
-                                :
-                                <div id="ezoic-pub-ad-placeholder-106"></div>
-                        }
                     </div>
                 ))
             }

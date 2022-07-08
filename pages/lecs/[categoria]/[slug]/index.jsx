@@ -33,33 +33,19 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
 
     const { leccion, preguntas, imagenes } = dataLec;
 
-    const [adsenseActive, setAdsenseActive] = useState(false)
     const [lecturas, setLecturas] = useState(true)
 
-    const reloadEzoic = (percent, ids) => {
+    const reloadEzoic = (ids) => {
         var ezstandalone = window.ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
-
-            var rand = Math.random() * 100
-            console.log('Rand ', rand)
-
-            if (percent > rand) {
-                setAdsenseActive(false)
-                console.log("adsenseActive false")
-                ezstandalone.define(ids)
-                if (ezstandalone.enabled) {
-                    ezstandalone.refresh()
-                } else {
-                    ezstandalone.enable()
-                    ezstandalone.display()
-                }
+            ezstandalone.define(ids)
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh()
             } else {
-                ezstandalone.destroy()
-                setAdsenseActive(true)
-                console.log("adsenseActive true")
+                ezstandalone.enable()
+                ezstandalone.display()
             }
-
         });
     }
 
@@ -67,9 +53,8 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         const c_s = dataCat.categoria[0].slug
         c_s === 'lc' || c_s === 'lb' || c_s === 'fm' ? setLecturas(true) : setLecturas(false)
 
-        let percent = 10
-        let ids = [100, 103, 105, 106, 108, 109, 110, 111, 114, 115, 116, 117]
-        reloadEzoic(percent, ids)
+        let ids = [100]
+        reloadEzoic(ids)
     }, [])
 
     const { contenido } = contLec.contenido[0];
@@ -151,28 +136,24 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
                 </Head>
 
-                {
-                    adsenseActive ?
-                        <div className="text-center">
-                            <AdSense.Google
-                                // 300x50-indi-alto
-                                client='ca-pub-3630578707238850'
-                                slot='2418913037'
-                                style={{
-                                    display: 'block',
-                                    height: 50 + 'px',
-                                    marginLeft: 'auto',
-                                    marginRight: 'auto',
-                                    marginTop: 12 + 'px',
-                                    textAlign: 'center'
-                                }}
-                                format=''
-                                responsive='true'
-                            />
-                        </div>
-                        :
-                        <div id="ezoic-pub-ad-placeholder-103"></div>
-                }
+
+                <div className="text-center">
+                    <AdSense.Google
+                        // 300x50-indi-alto
+                        client='ca-pub-3630578707238850'
+                        slot='2418913037'
+                        style={{
+                            display: 'block',
+                            height: 50 + 'px',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginTop: 12 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format=''
+                        responsive='true'
+                    />
+                </div>
 
                 <div className="lecs-titulo">
                     <h1>{leccion[0].titulo_seo}</h1>
@@ -185,10 +166,8 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     bg='bg-secundario'
                 />
 
-                {
-                    adsenseActive ?
-                        <div className="text-center">
-                            {/* <AdSense.Google
+                <div className="text-center">
+                    {/* <AdSense.Google
                                 // 300x250-indi
                                 client='ca-pub-3630578707238850'
                                 slot='6438145214'
@@ -199,23 +178,20 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                                 format=''
                                 responsive='true'
                             /> */}
-                            <AdSense.Google
-                                // full-indi
-                                client='ca-pub-3630578707238850'
-                                slot='6905737434'
-                                style={{
-                                    display: 'block',
-                                    marginLeft: 'auto',
-                                    marginRight: 'auto',
-                                    textAlign: 'center'
-                                }}
-                                format='auto'
-                                responsive='true'
-                            />
-                        </div>
-                        :
-                        <div id="ezoic-pub-ad-placeholder-105"></div>
-                }
+                    <AdSense.Google
+                        // full-indi
+                        client='ca-pub-3630578707238850'
+                        slot='6905737434'
+                        style={{
+                            display: 'block',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            textAlign: 'center'
+                        }}
+                        format='auto'
+                        responsive='true'
+                    />
+                </div>
 
                 <BotonMain
                     titulo='Clases similares'
@@ -223,13 +199,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-primario'
                 />
-
-                {
-                    adsenseActive ?
-                        ''
-                        :
-                        <div id="ezoic-pub-ad-placeholder-106"></div>
-                }
 
                 <div className="div-carousel-lec">
                     <Carousel {...settings} selectedItem={slide} onChange={onChange}>
@@ -253,28 +222,23 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </Carousel>
                 </div>
 
-                {
-                    adsenseActive ?
-                        <div className="text-center">
-                            <AdSense.Google
-                                // 300x50-indi-medio
-                                client='ca-pub-3630578707238850'
-                                slot='9884836482'
-                                style={{
-                                    display: 'block',
-                                    height: 50 + 'px',
-                                    marginLeft: 'auto',
-                                    marginRight: 'auto',
-                                    marginTop: 5 + 'px',
-                                    textAlign: 'center'
-                                }}
-                                format=''
-                                responsive='true'
-                            />
-                        </div>
-                        :
-                        <div id="ezoic-pub-ad-placeholder-108"></div>
-                }
+                <div className="text-center">
+                    <AdSense.Google
+                        // 300x50-indi-medio
+                        client='ca-pub-3630578707238850'
+                        slot='9884836482'
+                        style={{
+                            display: 'block',
+                            height: 50 + 'px',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginTop: 5 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format=''
+                        responsive='true'
+                    />
+                </div>
 
                 {
                     lecturas ?
@@ -299,24 +263,10 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                 >
                 </Cuestionario>
 
-                {
-                    adsenseActive ?
-                        ''
-                        :
-                        <div id="ezoic-pub-ad-placeholder-109"></div>
-                }
-
                 <AudioContainer
                     titulo={leccion[0].titulo}
                     audio={leccion[0].audio}
                 />
-
-                {
-                    adsenseActive ?
-                        ''
-                        :
-                        <div id="ezoic-pub-ad-placeholder-110"></div>
-                }
 
                 <Link href='https://bit.ly/34j0kVS'>
                     <a>
@@ -327,30 +277,25 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </a>
                 </Link>
 
-                {
-                    adsenseActive ?
-                        <div className="text-center">
-                            <AdSense.Google
-                                // 300x50-indi-texto
-                                client='ca-pub-3630578707238850'
-                                slot='8782255764'
-                                style={{
-                                    display: 'block',
-                                    height: 50 + 'px',
-                                    marginLeft: 'auto',
-                                    marginRight: 'auto',
-                                    marginTop: 5 + 'px',
-                                    textAlign: 'center'
-                                }}
-                                format=''
-                                responsive='true'
-                            />
-                        </div>
-                        :
-                        <div id="ezoic-pub-ad-placeholder-111"></div>
-                }
+                <div className="text-center">
+                    <AdSense.Google
+                        // 300x50-indi-texto
+                        client='ca-pub-3630578707238850'
+                        slot='8782255764'
+                        style={{
+                            display: 'block',
+                            height: 50 + 'px',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginTop: 5 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format=''
+                        responsive='true'
+                    />
+                </div>
 
-                { (textos === '' || lecturas)  ?
+                {(textos === '' || lecturas) ?
                     ''
                     :
                     (
@@ -366,13 +311,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     dir={`/lecs/${dataCat.categoria[0].slug}`}
                     bg='bg-secundario'
                 />
-
-                {
-                    adsenseActive ?
-                        ''
-                        :
-                        <div id="ezoic-pub-ad-placeholder-114"></div>
-                }
 
                 {
                     <div className="galeria-bloque-inicio" style={{ marginTop: -15 + 'px' }}>
@@ -393,28 +331,23 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </div>
                 }
 
-                {
-                    adsenseActive ?
-                        <div className="text-center">
-                            <AdSense.Google
-                                // 300x50-indi-bajo
-                                client='ca-pub-3630578707238850'
-                                slot='5989861498'
-                                style={{
-                                    display: 'block',
-                                    height: 50 + 'px',
-                                    marginLeft: 'auto',
-                                    marginRight: 'auto',
-                                    marginTop: 5 + 'px',
-                                    textAlign: 'center'
-                                }}
-                                format=''
-                                responsive='true'
-                            />
-                        </div>
-                        :
-                        <div id="ezoic-pub-ad-placeholder-115"></div>
-                }
+                <div className="text-center">
+                    <AdSense.Google
+                        // 300x50-indi-bajo
+                        client='ca-pub-3630578707238850'
+                        slot='5989861498'
+                        style={{
+                            display: 'block',
+                            height: 50 + 'px',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            marginTop: 5 + 'px',
+                            textAlign: 'center'
+                        }}
+                        format=''
+                        responsive='true'
+                    />
+                </div>
 
                 <BotonMain
                     titulo='Más cursos de inglés'
@@ -422,13 +355,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     dir={`/#cursos`}
                     bg='bg-primario'
                 />
-
-                {
-                    adsenseActive ?
-                        ''
-                        :
-                        <div id="ezoic-pub-ad-placeholder-116"></div>
-                }
 
                 <div className="div-lista-links">
                     {
@@ -445,12 +371,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     }
                 </div>
 
-                {
-                    adsenseActive ?
-                        ''
-                        :
-                        <div id="ezoic-pub-ad-placeholder-117"></div>
-                }
             </Layout>
         </>
     )

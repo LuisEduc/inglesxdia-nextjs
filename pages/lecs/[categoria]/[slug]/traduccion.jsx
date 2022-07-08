@@ -9,39 +9,23 @@ import Head from 'next/head';
 
 export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
 
-    const [adsenseActive, setAdsenseActive] = useState(false)
-
-    const reloadEzoic = (percent, ids) => {
+    const reloadEzoic = (ids) => {
         var ezstandalone = window.ezstandalone || {}
         ezstandalone.cmd = ezstandalone.cmd || []
         ezstandalone.cmd.push(function () {
-
-            var rand = Math.random() * 100
-            console.log('Rand ', rand)
-
-            if (percent > rand) {
-                setAdsenseActive(false)
-                console.log("adsenseActive false")
-                ezstandalone.define(ids)
-                if (ezstandalone.enabled) {
-                    ezstandalone.refresh()
-                } else {
-                    ezstandalone.enable()
-                    ezstandalone.display()
-                }
+            ezstandalone.define(ids)
+            if (ezstandalone.enabled) {
+                ezstandalone.refresh()
             } else {
-                ezstandalone.destroy()
-                setAdsenseActive(true)
-                console.log("adsenseActive true")
+                ezstandalone.enable()
+                ezstandalone.display()
             }
-
         });
     }
 
     useEffect(() => {
-        let percent = 50
-        let ids = [100, 103, 105, 106]
-        reloadEzoic(percent, ids)
+        let ids = [100]
+        reloadEzoic(ids)
     }, [])
 
     let refTextArea = useRef()
@@ -112,28 +96,23 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
                 <meta name="description" content={miTexto[3]} />
             </Head>
 
-            {
-                adsenseActive ?
-                    <div className="text-center">
-                        <AdSense.Google
-                            // 300x50-traduc-alto
-                            client='ca-pub-3630578707238850'
-                            slot='4949470890'
-                            style={{
-                                display: 'block',
-                                height: 50 + 'px',
-                                marginLeft: 'auto',
-                                marginRight: 'auto',
-                                marginTop: 12 + 'px',
-                                textAlign: 'center'
-                            }}
-                            format=''
-                            responsive='true'
-                        />
-                    </div>
-                    :
-                    <div id="ezoic-pub-ad-placeholder-103"></div>
-            }
+            <div className="text-center">
+                <AdSense.Google
+                    // 300x50-traduc-alto
+                    client='ca-pub-3630578707238850'
+                    slot='4949470890'
+                    style={{
+                        display: 'block',
+                        height: 50 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        marginTop: 12 + 'px',
+                        textAlign: 'center'
+                    }}
+                    format=''
+                    responsive='true'
+                />
+            </div>
 
             <div className="lecs-titulo">
                 <h1>
@@ -150,24 +129,19 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
                 bg='bg-secundario'
             />
 
-            {
-                adsenseActive ?
-                    <div className="text-center">
-                        <AdSense.Google
-                            // 300x250-traduc
-                            client='ca-pub-3630578707238850'
-                            slot='8697144212'
-                            style={{
-                                display: 'block',
-                                height: 250 + 'px',
-                            }}
-                            format=''
-                            responsive='true'
-                        />
-                    </div>
-                    :
-                    <div id="ezoic-pub-ad-placeholder-105"></div>
-            }
+            <div className="text-center">
+                <AdSense.Google
+                    // 300x250-traduc
+                    client='ca-pub-3630578707238850'
+                    slot='8697144212'
+                    style={{
+                        display: 'block',
+                        height: 250 + 'px',
+                    }}
+                    format=''
+                    responsive='true'
+                />
+            </div>
 
             <BotonMain
                 titulo='Regresar'
@@ -195,28 +169,23 @@ export default function Traduccion({ contLec, slug_categoria, slug_leccion }) {
                 />
             </div>
 
-            {
-                adsenseActive ?
-                    <div className="text-center">
-                        <AdSense.Google
-                            // 300x50-traduc-medio
-                            client='ca-pub-3630578707238850'
-                            slot='8996527114'
-                            style={{
-                                display: 'block',
-                                height: 50 + 'px',
-                                marginLeft: 'auto',
-                                marginRight: 'auto',
-                                marginTop: 15 + 'px',
-                                textAlign: 'center'
-                            }}
-                            format=''
-                            responsive='true'
-                        />
-                    </div>
-                    :
-                    <div id="ezoic-pub-ad-placeholder-106"></div>
-            }
+            <div className="text-center">
+                <AdSense.Google
+                    // 300x50-traduc-medio
+                    client='ca-pub-3630578707238850'
+                    slot='8996527114'
+                    style={{
+                        display: 'block',
+                        height: 50 + 'px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        marginTop: 15 + 'px',
+                        textAlign: 'center'
+                    }}
+                    format=''
+                    responsive='true'
+                />
+            </div>
 
             <Link href=''>
                 <a>
