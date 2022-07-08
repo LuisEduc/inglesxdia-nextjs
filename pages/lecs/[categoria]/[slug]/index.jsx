@@ -67,7 +67,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
         const c_s = dataCat.categoria[0].slug
         c_s === 'lc' || c_s === 'lb' || c_s === 'fm' ? setLecturas(true) : setLecturas(false)
 
-        let percent = 50
+        let percent = 10
         let ids = [100, 103, 105, 106, 108, 109, 110, 111, 114, 115, 116, 117]
         reloadEzoic(percent, ids)
     }, [])
