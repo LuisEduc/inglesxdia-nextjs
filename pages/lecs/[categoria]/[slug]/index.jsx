@@ -350,7 +350,7 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                         <div id="ezoic-pub-ad-placeholder-111"></div>
                 }
 
-                {textos === '' ?
+                { (textos === '' || lecturas)  ?
                     ''
                     :
                     (
