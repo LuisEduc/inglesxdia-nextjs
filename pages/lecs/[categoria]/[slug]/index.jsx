@@ -277,24 +277,6 @@ export default function Individual({ dataLec, dataCat, cats, contLec }) {
                     </a>
                 </Link>
 
-                <div className="text-center">
-                    <AdSense.Google
-                        // 300x50-indi-texto
-                        client='ca-pub-3630578707238850'
-                        slot='8782255764'
-                        style={{
-                            display: 'block',
-                            height: 50 + 'px',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                            marginTop: 5 + 'px',
-                            textAlign: 'center'
-                        }}
-                        format=''
-                        responsive='true'
-                    />
-                </div>
-
                 {(textos === '' || lecturas) ?
                     ''
                     :
